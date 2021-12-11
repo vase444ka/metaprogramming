@@ -3008,7 +3008,7 @@ d) none of the mentioned
 <!-- *********************************************************************************************************************************** -->
 ## Python Files – 3
 
-### 1. Which is/are the basic I/O connections in file? []
+### 1. Which is/are the basic I/O connections in file? [Що є базовими I/O зв'язки у файлі?]
 
 a) Standard Input
 
@@ -3020,7 +3020,7 @@ c) Standard Errors
 
 > Standard input, standard output and standard error. Standard input is the data that goes to the program. The standard input comes from a keyboard. Standard output is where we print our data with the print keyword. Unless redirected, it is the terminal console. The standard error is a stream where programs write their error messages. It is usually the text terminal. 
 
-### 2. What will be the output of the following Python code? (If entered name is sanfoundry) []
+### 2. What will be the output of the following Python code? (If entered name is sanfoundry) [Яким буде вихід цього Python коду? (якщо введене ім'я sanfoundry)]
 ```
     import sys
 
@@ -3056,7 +3056,7 @@ d) None of the mentioned
 > Enter your name: sanfoundry
 >Your name is: sanfoundry
 
-### 3. What will be the output of the following Python code? []
+### 3. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
 ```
     import sys
 
@@ -3080,10 +3080,11 @@ Python
 > Explanation: None
 >```Output:
 >Hello
->Python```
+>Python`
+``
  
 
-### 4. Which of the following mode will refer to binary data? []
+### 4. Which of the following mode will refer to binary data? [Який з наведених режимів відповідая бінарному?]
 
 a) r
 
@@ -3100,7 +3101,7 @@ c) +
 >b Binary data
 >+ Updating.
 
-### 5. What is the pickling? []
+### 5. What is the pickling? [Що таке pickling?]
 
 **a) It is used for object serialization**
 
@@ -3112,7 +3113,7 @@ d) All of the mentioned
 
 > Pickle is the standard mechanism for object serialization. Pickle uses a simple stack-based virtual machine that records the instructions used to reconstruct the object. This makes pickle vulnerable to security risks by malformed or maliciously constructed data, that may cause the deserializer to import arbitrary modules and instantiate any object.
 
-### 6. What is unpickling? []
+### 6. What is unpickling? [Що таке unpickling?]
 
 a) It is used for object serialization
 
@@ -3124,7 +3125,7 @@ d) All of the mentioned
 
 > We have been working with simple textual data. What if we are working with objects rather than simple text? For such situations, we can use the pickle module. This module serializes Python objects. The Python objects are converted into byte streams and written to text files. This process is called pickling. The inverse operation, reading from a file and reconstructing objects is called deserializing or unpickling. 
  
-### 7. What is the correct syntax of open() function? []
+### 7. What is the correct syntax of open() function? [Який правильний синтаксис функції open()?]
 
 a) file = open(file_name [, access_mode][, buffering])
 
@@ -3143,7 +3144,7 @@ c) file object = open(file_name)
 >access_mode: The access_mode determines the mode in which the file has to be opened, i.e., read, write, append, etc. A complete list of possible values is given below in the table. This is optional parameter and the default file access mode is read (r).
 >buffering: If the buffering value is set to 0, no buffering will take place. If the buffering value is 1, line buffering will be performed while accessing a file. If you specify the buffering value as an integer greater than 1, then buffering action will be performed with the indicated buffer size. If negative, the buffer size is the system default(default behavior). 
 
-### 8. What will be the output of the following Python code? []
+### 8. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
 ```
     fo = open("foo.txt", "wb")
 
@@ -3165,7 +3166,7 @@ c) No Output
 
 > The method flush() flushes the internal buffer. Python automatically flushes the files when closing them. But you may want to flush the data before closing any file.
 
-### 9. Correct syntax of file.writelines() is? []
+### 9. Correct syntax of file.writelines() is? [Який правильний синтаксис функції file.writelines()?]
 
 a) file.writelines(sequence)
 
@@ -3181,7 +3182,7 @@ value.
 >Following is the syntax for writelines() method:
 >fileObject.writelines( sequence ).
 
-### 10. Correct syntax of file.readlines() is? []
+### 10. Correct syntax of file.readlines() is? [Який правильний синтаксис функції file.readlines()?]
 
 **a) fileObject.readlines( sizehint );**
 
@@ -3201,7 +3202,7 @@ d) none of the mentioned
 <!-- ************************************************************************************************************************************************************************** -->
 ## Python Files - 4
 
-### 1. In file handling, what does this terms means “r, a”? []
+### 1. In file handling, what does this terms means “r, a”? [У роботі з файлами, що означає “r, a”?]
 
 **a) read, append**
 
@@ -3213,7 +3214,7 @@ d) none of the mentioned
 
 > r- reading, a-appending.
 
-### 2. What is the use of “w” in file handling? []
+### 2. What is the use of “w” in file handling? [У роботі з файлами, що означає “w”?]
 
 a) Read
 
@@ -3226,7 +3227,7 @@ d) None of the mentioned
 > This opens the file for writing. It will create the file if it doesn’t exist, and if it does, it will overwrite it.
 fh = open(“filename_here”, “w”).
 
-### 3. What is the use of “a” in file handling? []
+### 3. What is the use of “a” in file handling? [У роботі з файлами, що означає “a?]
 
 a) Read
 
@@ -3240,7 +3241,7 @@ d) None of the mentioned
 fh =open(“filename_here”, “a”).
 advertisement
 
-### 4. Which function is used to read all the characters? []
+### 4. Which function is used to read all the characters? [Яка функція читає всі символи?]
 
 **a) Read()**
 
@@ -3254,7 +3255,7 @@ d) Readchar()
 > The read function reads all characters fh = open(“filename”, “r”)
 content = fh.read().
 
-### 5. Which function is used to read single line from file? []
+### 5. Which function is used to read single line from file? [Яка функція читає один рядок?]
 
 **a) Readline()**
 
@@ -3267,7 +3268,7 @@ d) Readfullline()
 >The readline function reads a single line from the file fh = open(“filename”, “r”)
 content = fh.readline().
 
-### 6. Which function is used to write all the characters? []
+### 6. Which function is used to write all the characters? [Яка функція пише всі символи?]
 
 **a) write()**
 
@@ -3277,11 +3278,11 @@ c) writeall()
 
 d) writechar()
 
-> Explanation: To write a fixed sequence of characters to a file
+> To write a fixed sequence of characters to a file
 fh = open(“hello.txt”,”w”)
 write(“Hello World”).
 
-### 7. Which function is used to write a list of string in a file? []
+### 7. Which function is used to write a list of string in a file? [Яка функція пише список рядків]
 
 a) writeline()
 
@@ -3293,9 +3294,10 @@ d) writefullline()
 
 >With the writeline function you can write a list of strings to a file
 >```fh = open(“hello.txt”, “w”)
->lines_of_text = [“a line of text”, “another line of text”, “a third line”] fh.writelines(lines_of_text)```
+>lines_of_text = [“a line of text”, “another line of text”, “a third line”] fh.writelines(lines_of_text)
+>```
 
-### 8. Which function is used to close a file in python? []
+### 8. Which function is used to close a file in python? [Яка функція закриває файл]
 
 **a) Close()**
 
@@ -3307,7 +3309,7 @@ d) Closefile()
 
 >f.close()to close it and free up any system resources taken up by the open file.
 
-### 9. Is it possible to create a text file in python? []
+### 9. Is it possible to create a text file in python? [Чи можливо створити у python текстовий файл?]
 
 **a) Yes**
 
@@ -3321,15 +3323,16 @@ d) All of the mentioned
 >```file = open(“newfile.txt”, “w”)
 >file.write(“hello world in the new file\n”)
 >file.write(“and another line\n”)
->file.close()```
+>file.close()
+>```
 
-### 10. Which of the following are the modes of both writing and reading in binary format in file? []
+### 10. Which of the following are the modes of both writing and reading in binary format in file? [Який режим використовується і для запису, і для читання бінарного файлу?]
 
-**a) wb+**
+a) wb+
 
 b) w
 
-c) wb
+**c) wb**
 
 d) w+
 
