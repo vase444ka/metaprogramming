@@ -748,27 +748,18 @@ _**d) \_\_str\_\_()**_
 a = foo(2) 
 b = foo(3) 
 print(a < b)
-
 ```
 
 a)
 
 ```
-
 class foo:
-
-    def __init__(self, x):
-    
-        self.x = x
-        
-    def __lt__(self, other):
-    
-        if self.x < other.x:
-        
-            return False
-            
-        else:
-        
+    def __init__(self, x):    
+        self.x = x        
+    def __lt__(self, other):    
+        if self.x < other.x:        
+            return False           
+        else:       
             return True
 ```
 
@@ -776,40 +767,25 @@ b)
 
 ```
 class foo:
-
-    def __init__(self, x):
-    
-        self.x = x
-        
-    def __less__(self, other):
-    
+    def __init__(self, x):   
+        self.x = x        
+    def __less__(self, other):    
         if self.x > other.x:
-        
-            return False
-            
+            return False            
         else:
-        
             return True
 ```
             
-_**c) **_
+_**c)**_
 
 ```
-
 class foo:
-
     def __init__(self, x):
-    
         self.x = x
-        
     def __lt__(self, other):
-    
         if self.x < other.x:
-        
             return True
-            
         else:
-        
             return False
  
  ```
@@ -818,19 +794,12 @@ d)
 ```
 
 class foo:
-
     def __init__(self, x):
-    
         self.x = x
-        
     def __less__(self, other):
-    
         if self.x < other.x:
-        
             return False
-            
         else:
-        
             return True
 ```
 
@@ -927,3 +896,201 @@ b) \_\_ceildiv\_\_()
 _**c) \_\_floordiv\_\_()**_
 
 d) \_\_truediv\_\_()
+
+
+## Class and objects - 1
+
+
+## 1. _____ represents an entity in the real world with its identity and behaviour.
+
+a) A method
+
+_**b) An object**_
+
+c) A class
+
+d) An operator
+
+
+## 2. _____ is used to create an object.
+
+a) class
+
+_**b) constructor**_
+
+c) User-defined functions
+
+d) In-built functions
+
+
+
+## **3. What will be the output of the following Python code?**
+
+```
+class test:
+     def __init__(self,a="Hello World"):
+         self.a=a
+ 
+     def display(self):
+         print(self.a)
+obj=test()
+obj.display()
+```
+
+a) The program has an error because constructor can’t have default arguments
+
+b) Nothing is displayed
+
+_**c) “Hello World” is displayed**_
+
+d) The program has an error display function doesn’t have parameters
+
+
+## 4. What is setattr() used for?
+
+a) To access the attribute of the object
+
+_**b) To set an attribute**_
+
+c) To check if an attribute exists or not
+
+d) To delete an attribute
+
+
+## 5. What is getattr() used for?
+
+_**a) To access the attribute of the object**_
+
+b) To delete an attribute
+
+c) To check if an attribute exists or not
+
+d) To set an attribute
+
+
+## 6. What will be the output of the following Python code?
+```
+class change:
+    def __init__(self, x, y, z):
+        self.a = x + y + z
+ 
+x = change(1,2,3)
+y = getattr(x, 'a')
+setattr(x, 'a', y+1)
+print(x.a)
+```
+
+a) 6
+
+**b) 7**
+
+c) Error
+
+d) 0First, a=1+2+3=6. Then, after setattr() is invoked, x.a=6+1=7.
+
+> First, a=1+2+3=6. Then, after setattr() is invoked, x.a=6+1=7.
+
+
+## 7. What will be the output of the following Python code?
+```
+ class test:
+     def __init__(self,a):
+         self.a=a
+ 
+     def display(self):
+         print(self.a)
+obj=test()
+obj.display()
+```
+
+a) Runs normally, doesn’t display anything
+
+b) Displays 0, which is the automatic default value
+
+_**c) Error as one argument is required while creating the object**_
+
+d) Error as display function requires additional argument
+
+
+##  8. Is the following Python code correct?
+```
+>>> class A:
+	def __init__(self,b):
+		self.b=b
+	def display(self):
+		print(self.b)
+>>> obj=A("Hello")
+>>> del obj
+```
+
+a) True
+
+b) False
+
+
+## 9. What will be the output of the following Python code?
+```
+class test:
+    def __init__(self):
+        self.variable = 'Old'
+        self.Change(self.variable)
+    def Change(self, var):
+        var = 'New'
+obj=test()
+print(obj.variable)
+```
+
+a) Error because function change can’t be called in the __init__ function
+
+b) ‘New’ is printed
+
+_**c) ‘Old’ is printed**_
+
+d) Nothing is printed
+
+
+## 10. What is Instantiation in terms of OOP terminology?
+
+a) Deleting an instance of class
+
+b) Modifying an instance of class
+
+c) Copying an instance of class
+
+_**d) Creating an instance of class**_
+
+
+## 11. What will be the output of the following Python code?
+
+a) 12
+
+b) 52
+
+_**c) 13**_
+
+d) 60
+
+
+## 12. What will be the output of the following Python code?
+```
+ class Demo:
+    def __init__(self):
+        pass
+ 
+    def test(self):
+        print(__name__)
+ 
+obj = Demo()
+obj.test()
+```
+
+a) Exception is thrown
+
+_**b) __main__**_
+
+c) Demo
+
+d) test
+
+
+## Class and Objects - 2
