@@ -747,7 +747,7 @@ _**d) \_\_str\_\_()**_
 
 ## 2. Which of the following Python code will print True?
 
-`
+``
 
 a = foo(2) 
 
@@ -755,11 +755,11 @@ b = foo(3)
 
 print(a < b)
 
-`
+``
 
 a)
 
-`
+``
 
 class foo:
 
@@ -776,11 +776,11 @@ class foo:
         else:
         
             return True
-`
+``
 
 b)
 
-`
+``
 class foo:
 
     def __init__(self, x):
@@ -796,11 +796,11 @@ class foo:
         else:
         
             return True
-`
+``
             
 _**c)
 
-`
+``
 
 class foo:
 
@@ -818,11 +818,12 @@ class foo:
         
             return False
  
- `**_
+ ``
+ **_
 
 d)
 
-`
+``
 
 class foo:
 
@@ -839,7 +840,7 @@ class foo:
         else:
         
             return True
-`
+``
 
 > \_\_lt\_\_ overloads the < operator>.
 
@@ -859,7 +860,7 @@ d) none of the mentioned
 
 a) !
 
-_**b) ~**_
+_**b) ~ **_
 
 c) ^
 
@@ -878,10 +879,15 @@ d) none of the mentioned
 
 
 ## 6. Which operator is overloaded by \_\_lg\_\_()?
+
 a) <
+
 b) >
+
 c) !=
+
 _**d) none of the mentioned**_
+
 
 > \_\_lg\_\_() is invalid
 
