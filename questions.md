@@ -2829,7 +2829,7 @@ c) os.symblin()\
 d) os.ln()
 >Explanation: It is the function that allows you to create a symbolic link.
  
-###What will be the output shape of the following Python code? [Який буде вигляд виводу наступного коду?]
+### What will be the output shape of the following Python code? [Який буде вигляд виводу наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -2998,7 +2998,7 @@ a) turtle.color(0,1,0)\
 b) turtle.color(1,0,0)\
 c) turtle.color(0,0,1)\
 **d) turtle.color(0,0,0)**
-Explanation: The function turtle.color(0,0,0) can change the colour of the arrow. The function turtle.color(0,1,0) will make the arrow green. The function turtle.color(1,0,0) will make the arrow red. The function turtle.color(0,0,1) will make the arrow blue. The function turtle.color(0,0,0) will make the arrow black.
+>Explanation: The function turtle.color(0,0,0) can change the colour of the arrow. The function turtle.color(0,1,0) will make the arrow green. The function turtle.color(1,0,0) will make the arrow red. The function turtle.color(0,0,1) will make the arrow blue. The function turtle.color(0,0,0) will make the arrow black.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
