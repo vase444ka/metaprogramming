@@ -2632,7 +2632,9 @@ d) +++99
 
 # Section 25
 
-## 1. To open a file c:\scores.txt for reading, we use _____________ [Щоб відкрити файл c:\scores.txt для читання, ми використовуємо...]
+## Python Files – 1
+
+### 1. To open a file c:\scores.txt for reading, we use _____________ [Щоб відкрити файл c:\scores.txt для читання, ми використовуємо...]
 
 a) infile = open(“c:\scores.txt”, “r”)
 
@@ -2644,7 +2646,7 @@ d) infile = open(file = “c:\\scores.txt”, “r”)
 
 > "r" for reading, \\ is needed after disk name
 
-## 2. To open a file c:\scores.txt for writing, we use ____________ [Щоб відкрити файл c:\scores.txt для запису, ми використовуємо...]
+### 2. To open a file c:\scores.txt for writing, we use ____________ [Щоб відкрити файл c:\scores.txt для запису, ми використовуємо...]
 
 a) outfile = open(“c:\scores.txt”, “w”)
 
@@ -2656,7 +2658,7 @@ d) outfile = open(file = “c:\\scores.txt”, “w”)
 
 > "w" is used to indicate that file is to be written to.
 
-## 3. To open a file c:\scores.txt for appending data, we use ____________ [Щоб відкрити файл c:\scores.txt для запису даних в кінець, ми використовуємо...]
+### 3. To open a file c:\scores.txt for appending data, we use ____________ [Щоб відкрити файл c:\scores.txt для запису даних в кінець, ми використовуємо...]
 
 **a) outfile = open(“c:\\scores.txt”, “a”)**
 
@@ -2668,7 +2670,7 @@ d) outfile = open(file = “c:\\scores.txt”, “w”)
 
 >a is used to indicate that data is to be appended.
 
-## 4. Which of the following statements are true? [Які твердження є правильними?]
+### 4. Which of the following statements are true? [Які твердження є правильними?]
 
 a) When you open a file for reading, if the file does not exist, an error occurs
 
@@ -2678,7 +2680,7 @@ c) When you open a file for writing, if the file exists, the existing file is ov
 
 **d) All of the mentioned**
 
-## 5. To read two characters from a file object infile, we use ____________ [Для читання 2 символів з з файлового об'єкту infile ми використовуємо...]
+### 5. To read two characters from a file object infile, we use ____________ [Для читання 2 символів з з файлового об'єкту infile ми використовуємо...]
 
 **a) infile.read(2)**
 
@@ -2688,7 +2690,7 @@ c) infile.readline()
 
 d) infile.readlines()
 
-## 6. To read the entire remaining contents of the file as a string from a file object infile, we use ____________ [Для читання всього продовження файлу як рядка з файлового об'єкту infile ми використовуємо...]
+### 6. To read the entire remaining contents of the file as a string from a file object infile, we use ____________ [Для читання всього продовження файлу як рядка з файлового об'єкту infile ми використовуємо...]
 
 a) infile.read(2)
 
@@ -2700,7 +2702,7 @@ d) infile.readlines()
 
 > read function is used to read all the lines (that left?) in a file.
 
-## 7. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
+### 7. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
 ```
     f = None
 
@@ -2725,7 +2727,7 @@ d) Error
 
 > The WITH statement when used with open file guarantees that the file object is closed when the with block exits.
 
-## 8. To read the next line of the file from a file object infile, we use ____________ [Для читання наступного рядка з файлового об'єкту infile ми використовуємо...]
+### 8. To read the next line of the file from a file object infile, we use ____________ [Для читання наступного рядка з файлового об'єкту infile ми використовуємо...]
 
 a) infile.read(2)
 
@@ -2736,7 +2738,7 @@ b) infile.read()
 d) infile.readlines()
 
 
-## 9. To read the remaining lines of the file from a file object infile, we use ____________ [Для читання рядків, що залишилися, з файлового об'єкту infile ми використовуємо...]
+### 9. To read the remaining lines of the file from a file object infile, we use ____________ [Для читання рядків, що залишилися, з файлового об'єкту infile ми використовуємо...]
 
 a) infile.read(2)
 
@@ -2771,7 +2773,7 @@ c) infile.readline()
 > ```
 > Apparently in this question they want list of lines and not just string (like in question 6)
 
-## 10. The readlines() method returns ____________ [Метод readlines() повертає ...]
+### 10. The readlines() method returns ____________ [Метод readlines() повертає ...]
 
 a) str
 
@@ -2785,7 +2787,9 @@ d) a list of integers
 
 
 <!-- *************************************************************************************************************************************************************************** -->
-## 1. Which are the two built-in functions to read a line of text from standard input, which by default comes from the keyboard? [Що є двома вбудованими функціями для читання рядка зі стандартного вводу, який за замовчу]
+## Python Files – 2
+
+### 1. Which are the two built-in functions to read a line of text from standard input, which by default comes from the keyboard? [Що є двома вбудованими функціями для читання рядка зі стандартного вводу, який за замовчу]
 
 **a) Raw_input & Input**
 
@@ -2800,7 +2804,7 @@ raw_input and input
 >
 > In Python 3 raw_input() is just input()
 
-## 2. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
+### 2. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
 ```
     str = raw_input("Enter your input: ");
 
@@ -2830,7 +2834,7 @@ d) None of the mentioned
 > The raw_input([prompt]) function reads one line from standard input and returns it as a string. This would prompt you to enter any string and it would display same string on the screen.
 > In python 3 it changed to just input()
 
-## 3. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
+### 3. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
 ```
     str = input("Enter your input: ");
 
@@ -2860,7 +2864,7 @@ d) None of the mentioned
 
 > tested
 
-## 4. Which one of the following is not attributes of file? [Що не є атрибутом файлу?]
+### 4. Which one of the following is not attributes of file? [Що не є атрибутом файлу?]
 
 a) closed
 
@@ -2879,7 +2883,7 @@ d) mode
 >file.softspace	Returns false if space explicitly required with print, true otherwise.
 >```
 
-## 5. What is the use of tell() method in python? [Навіщо метод tell() у python?]
+### 5. What is the use of tell() method in python? [Навіщо метод tell() у python?]
 
 **a) tells you the current position within the file**
 
@@ -2891,7 +2895,7 @@ d) none of the mentioned
 
 > The tell() method tells you the current position within the file; in other words, the next read or write will occur at that many bytes from the beginning of the file.
 
-## 6. What is the current syntax of rename() a file? [Який наразі синтаксис у rename() файл?]
+### 6. What is the current syntax of rename() a file? [Який наразі синтаксис у rename() файл?]
 
 **a) rename(current_file_name, new_file_name)**
 
@@ -2906,7 +2910,7 @@ d) none of the mentioned
 >rename(current_file_name, new_file_name)
 >```
 
-## 7. What is the current syntax of remove() a file? [Який наразі синтаксис у remove() файл?]
+### 7. What is the current syntax of remove() a file? [Який наразі синтаксис у remove() файл?]
 
 **a) remove(file_name)**
 
@@ -2918,7 +2922,7 @@ d) none of the mentioned
 
 > remove(file_name)
 
-## 8. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
+### 8. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
 ```
     fo = open("foo.txt", "rw+")
 
@@ -2947,7 +2951,7 @@ d) none of the mentioned
 
 a) Compilation Error
 
-b) Syntax Error
+**technically in Python 3 print should have () so this also b) Syntax Error**
 
 **from site c) Displays Output**
 
@@ -2960,7 +2964,7 @@ b) Syntax Error
 >```
 > which is runtime error?
 
-## 9. What is the use of seek() method in files? [Навіщо метод seek() для файлів?]
+### 9. What is the use of seek() method in files? [Навіщо метод seek() для файлів?]
 
 **a) sets the file’s current position at the offset**
 
@@ -2981,7 +2985,7 @@ d) none of the mentioned
 >
 >whence — This is optional and defaults to 0 which means absolute file positioning, other values are 1 which means seek relative to the current position and 2 means seek relative to the file’s end.
 
-## 10. What is the use of truncate() method in file? [Навіщо метод truncate() для файлів?]
+### 10. What is the use of truncate() method in file? [Навіщо метод truncate() для файлів?]
 
 **a) truncates the file size**
 
@@ -3002,5 +3006,337 @@ d) none of the mentioned
 
 
 <!-- *********************************************************************************************************************************** -->
+## Python Files – 3
+
+### 1. Which is/are the basic I/O connections in file? []
+
+a) Standard Input
+
+b) Standard Output
+
+c) Standard Errors
+
+**d) All of the mentioned**
+
+> Standard input, standard output and standard error. Standard input is the data that goes to the program. The standard input comes from a keyboard. Standard output is where we print our data with the print keyword. Unless redirected, it is the terminal console. The standard error is a stream where programs write their error messages. It is usually the text terminal. 
+
+### 2. What will be the output of the following Python code? (If entered name is sanfoundry) []
+```
+    import sys
+
+    print 'Enter your name: ',
+
+    name = ''
+
+    while True:
+
+       c = sys.stdin.read(1)
+
+       if c == '\n':
+
+          break
+
+       name = name + c
+
+     
+
+    print 'Your name is:', name
+```
+
+**a) sanfoundry**
+
+b) sanfoundry, sanfoundry
+
+c) San
+
+d) None of the mentioned
+
+> In order to work with standard I/O streams, we must import the sys module. The read() method reads one character from the standard input. In our example we get a prompt saying “Enter your name”. We enter our name and press enter. The enter key generates the new line character: \n.
+>Output:
+> Enter your name: sanfoundry
+>Your name is: sanfoundry
+
+### 3. What will be the output of the following Python code? []
+```
+    import sys
+
+    sys.stdout.write(' Hello\n')
+
+    sys.stdout.write('Python\n')
+```
+
+a) Compilation Error
+
+b) Runtime Error
+
+c) Hello Python
+
+**d)**
+```
+Hello
+Python
+```
+
+> Explanation: None
+>```Output:
+>Hello
+>Python```
+ 
+
+### 4. Which of the following mode will refer to binary data? []
+
+a) r
+
+b) w
+
+c) +
+
+**d) b**
+
+> Mode Meaning is as explained below:
+>r Reading
+>w Writing
+>a Appending
+>b Binary data
+>+ Updating.
+
+### 5. What is the pickling? []
+
+**a) It is used for object serialization**
+
+b) It is used for object deserialization
+
+c) None of the mentioned
+
+d) All of the mentioned
+
+> Pickle is the standard mechanism for object serialization. Pickle uses a simple stack-based virtual machine that records the instructions used to reconstruct the object. This makes pickle vulnerable to security risks by malformed or maliciously constructed data, that may cause the deserializer to import arbitrary modules and instantiate any object.
+
+### 6. What is unpickling? []
+
+a) It is used for object serialization
+
+**b) It is used for object deserialization**
+
+c) None of the mentioned
+
+d) All of the mentioned
+
+> We have been working with simple textual data. What if we are working with objects rather than simple text? For such situations, we can use the pickle module. This module serializes Python objects. The Python objects are converted into byte streams and written to text files. This process is called pickling. The inverse operation, reading from a file and reconstructing objects is called deserializing or unpickling. 
+ 
+### 7. What is the correct syntax of open() function? []
+
+a) file = open(file_name [, access_mode][, buffering])
+
+**b) file object = open(file_name [, access_mode][, buffering])**
+
+c) file object = open(file_name)
+
+**for Python 3 d) none of the mentioned**
+
+> Python 3: open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+
+> Open() function correct syntax with the parameter details as shown below:
+>```file object = open(file_name [, access_mode][, buffering])```
+>Here is parameters’ detail:
+>file_name: The file_name argument is a string value that contains the name of the file that you want to access.
+>access_mode: The access_mode determines the mode in which the file has to be opened, i.e., read, write, append, etc. A complete list of possible values is given below in the table. This is optional parameter and the default file access mode is read (r).
+>buffering: If the buffering value is set to 0, no buffering will take place. If the buffering value is 1, line buffering will be performed while accessing a file. If you specify the buffering value as an integer greater than 1, then buffering action will be performed with the indicated buffer size. If negative, the buffer size is the system default(default behavior). 
+
+### 8. What will be the output of the following Python code? []
+```
+    fo = open("foo.txt", "wb")
+
+    print "Name of the file: ", fo.name
+
+    fo.flush()
+
+    fo.close()
+```
+
+a) Compilation Error
+
+b) Runtime Error
+
+c) No Output
+
+**d) Flushes the file when closing them**
+
+
+> The method flush() flushes the internal buffer. Python automatically flushes the files when closing them. But you may want to flush the data before closing any file.
+
+### 9. Correct syntax of file.writelines() is? []
+
+a) file.writelines(sequence)
+
+b) fileObject.writelines()
+
+**c) fileObject.writelines(sequence)**
+
+d) none of the mentioned
+
+> The method writelines() writes a sequence of strings to the file. The sequence can be any iterable object producing strings, typically a list of strings. There is no return 
+value.
+>Syntax
+>Following is the syntax for writelines() method:
+>fileObject.writelines( sequence ).
+
+### 10. Correct syntax of file.readlines() is? []
+
+**a) fileObject.readlines( sizehint );**
+
+b) fileObject.readlines();
+
+c) fileObject.readlines(sequence)
+
+d) none of the mentioned
+
+> The method readlines() reads until EOF using readline() and returns a list containing the lines. If the optional sizehint argument is present, instead of reading up to EOF, whole lines totalling approximately sizehint bytes (possibly after rounding up to an internal buffer size) are read.
+>Syntax
+>Following is the syntax for readlines() method:
+>fileObject.readlines( sizehint );
+>Parameters
+>sizehint — This is the number of bytes to be read from the file. 
+
+<!-- ************************************************************************************************************************************************************************** -->
+## Python Files - 4
+
+### 1. In file handling, what does this terms means “r, a”? []
+
+**a) read, append**
+
+b) append, read
+
+c) write, append
+
+d) none of the mentioned
+
+> r- reading, a-appending.
+
+### 2. What is the use of “w” in file handling? []
+
+a) Read
+
+**b) Write**
+
+c) Append
+
+d) None of the mentioned
+
+> This opens the file for writing. It will create the file if it doesn’t exist, and if it does, it will overwrite it.
+fh = open(“filename_here”, “w”).
+
+### 3. What is the use of “a” in file handling? []
+
+a) Read
+
+b) Write
+
+**c) Append**
+
+d) None of the mentioned
+
+> This opens the fhe file in appending mode. That means, it will be open for writing and everything will be written to the end of the file.
+fh =open(“filename_here”, “a”).
+advertisement
+
+### 4. Which function is used to read all the characters? []
+
+**a) Read()**
+
+b) Readcharacters()
+
+c) Readall()
+
+d) Readchar()
+
+
+> The read function reads all characters fh = open(“filename”, “r”)
+content = fh.read().
+
+### 5. Which function is used to read single line from file? []
+
+**a) Readline()**
+
+b) Readlines()
+
+c) Readstatement()
+
+d) Readfullline()
+
+>The readline function reads a single line from the file fh = open(“filename”, “r”)
+content = fh.readline().
+
+### 6. Which function is used to write all the characters? []
+
+**a) write()**
+
+b) writecharacters()
+
+c) writeall()
+
+d) writechar()
+
+> Explanation: To write a fixed sequence of characters to a file
+fh = open(“hello.txt”,”w”)
+write(“Hello World”).
+
+### 7. Which function is used to write a list of string in a file? []
+
+a) writeline()
+
+**b) writelines()**
+
+c) writestatement()
+
+d) writefullline()
+
+>With the writeline function you can write a list of strings to a file
+>```fh = open(“hello.txt”, “w”)
+>lines_of_text = [“a line of text”, “another line of text”, “a third line”] fh.writelines(lines_of_text)```
+
+### 8. Which function is used to close a file in python? []
+
+**a) Close()**
+
+b) Stop()
+
+c) End()
+
+d) Closefile()
+
+>f.close()to close it and free up any system resources taken up by the open file.
+
+### 9. Is it possible to create a text file in python? []
+
+**a) Yes**
+
+b) No
+
+c) Machine dependent
+
+d) All of the mentioned
+
+>Yes we can create a file in python. Creation of file is as shown below.
+>```file = open(“newfile.txt”, “w”)
+>file.write(“hello world in the new file\n”)
+>file.write(“and another line\n”)
+>file.close()```
+
+### 10. Which of the following are the modes of both writing and reading in binary format in file? []
+
+**a) wb+**
+
+b) w
+
+c) wb
+
+d) w+
+
+> Here is the description below
+>“w” Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.
+>“wb” Opens a file for writing only in binary format. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.
+>“w+” Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.
+>“wb+” Opens a file for both writing and reading in binary format. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.
 
 # Section 26
