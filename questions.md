@@ -728,13 +728,10 @@ _**d) error**_
 
 ## 1. Which function is called when the following Python code is executed?
 
-`
-
+```
 f = foo()
-
 format(f)
-
-`
+```
 
 a) format()
 
@@ -747,19 +744,16 @@ _**d) \_\_str\_\_()**_
 
 ## 2. Which of the following Python code will print True?
 
-``
-
+```
 a = foo(2) 
-
 b = foo(3) 
-
 print(a < b)
 
-``
+```
 
 a)
 
-``
+```
 
 class foo:
 
@@ -776,11 +770,11 @@ class foo:
         else:
         
             return True
-``
+```
 
 b)
 
-``
+```
 class foo:
 
     def __init__(self, x):
@@ -796,11 +790,11 @@ class foo:
         else:
         
             return True
-``
+```
             
-_**c)
+_**c) **_
 
-``
+```
 
 class foo:
 
@@ -818,12 +812,10 @@ class foo:
         
             return False
  
- ``
- **_
-
+ ```
 d)
 
-``
+```
 
 class foo:
 
@@ -840,7 +832,7 @@ class foo:
         else:
         
             return True
-``
+```
 
 > \_\_lt\_\_ overloads the < operator>.
 
