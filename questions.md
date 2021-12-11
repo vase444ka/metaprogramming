@@ -702,3 +702,50 @@ c) file position remains unchanged
 _**d) error**_
 
 > Need to set offset
+
+
+## Operators overload
+
+## 1. Which function is called when the following Python code is executed?
+
+``
+f = foo()
+format(f)
+``
+
+a) format()
+
+b) \_\_format\_\_()
+
+c) str()
+
+_**d) \_\_str\_\_()**_
+
+
+## 2. Which of the following Python code will print True?
+
+``a = foo(2)
+b = foo(3)
+print(a < b)``
+
+a)
+
+``class foo:
+    def __init__(self, x):
+        self.x = x
+    def __lt__(self, other):
+        if self.x < other.x:
+            return False
+        else:
+            return True``
+
+b)
+
+`class foo:
+    def __init__(self, x):
+        self.x = x
+    def __less__(self, other):
+        if self.x > other.x:
+            return False
+        else:
+            return True`
