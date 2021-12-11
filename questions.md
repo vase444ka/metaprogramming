@@ -590,7 +590,7 @@ c) 1212abcdef
 
 a) ab
 
-**b) rw**
+_**b) rw**_
 
 c) r+
 
@@ -601,7 +601,7 @@ d) w+
 
 2. What is the difference between r+ and w+ modes?
 
-**a) no difference**
+_**a) no difference**_
 
 b) in r+ the pointer is initially placed at the beginning of the file and the pointer is at the end for w+
 
@@ -611,15 +611,16 @@ d) depends on the operating system
 
 > Difference exists, for example r+ will get an error on a file that doesn't exist, and w+ creates it. But all those things are out of the scope of this question.
 
+
 3. How do you get the name of a file from a file object (fp)?
 
-**a) fp.name**
+_**a) fp.name**_
 
 b) fp.file(name)
 
-c) self.__name__(fp)
+c) self.\_\_name\_\_(fp)
 
-d) fp.__name__()
+d) fp.\_\_name\_\_()
 
 > Name is an attribute
 
@@ -632,7 +633,7 @@ b) fp.closed
 
 c) fp.mode
 
-**d) fp.size**
+_**d) fp.size**_
 
 
 5. How do you close a file object (fp)?
@@ -641,7 +642,7 @@ a) close(fp)
 
 b) fclose(fp)
 
-**c) fp.close()**
+_**c) fp.close()**_
 
 d) fp.__close__()
 
@@ -650,7 +651,7 @@ d) fp.__close__()
 
 a) fp.seek()
 
-**b) fp.tell()**
+_**b) fp.tell()**_
 
 c) fp.loc
 
@@ -661,7 +662,7 @@ d) fp.pos
 
 a) fp.name = ‘new_name.txt’
 
-**b) os.rename(existing_name, new_name)**
+_**b) os.rename(existing_name, new_name)**_
 
 c) os.rename(fp, new_name)
 
@@ -674,14 +675,14 @@ a) del(fp)
 
 b) fp.delete()
 
-**c) os.remove(‘file’)**
+_**c) os.remove(‘file’)**_
 
 d) os.delete(‘file’)
 
 
 9. How do you change the file position to an offset value from the start?
 
-**a) fp.seek(offset, 0)**
+_**a) fp.seek(offset, 0)**_
 
 b) fp.seek(offset, 1)
 
@@ -698,6 +699,6 @@ b) file position is set to the end of file
 
 c) file position remains unchanged
 
-**d) error**
+_**d) error**_
 
 > Need to set offset
