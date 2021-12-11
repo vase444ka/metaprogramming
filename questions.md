@@ -53,10 +53,10 @@
 ## Files - 5
 
 ## 1. Which of the following is not a valid mode to open a file?
-\a) ab
-**\b) rw**
-\c) r+
-\d) w+
+\ a) ab
+\ **b) rw**
+\ c) r+
+\ d) w+
 
 > Need to choose either r or w
 
