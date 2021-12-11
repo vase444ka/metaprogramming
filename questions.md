@@ -1687,6 +1687,409 @@ c) 1212abcdef
 
 # Section 9
 
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('for'.isidentifier())`
+
+**a) True**\
+b) False \
+c) None \
+d) Error
+
+>Explanation: Even keywords are considered as valid identifiers.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abc'.islower())`
+
+**a) True**\
+b) False\
+c) None\
+d) Error
+
+>Explanation: There are no uppercase letters.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('a@ 1,'.islower())`
+
+**a) True**\
+b) False\
+c) None\
+d) Error
+
+>Explanation: There are no uppercase letters.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('11'.isnumeric())`
+
+**a) True**\
+b) False\
+c) None\
+d) Error
+
+>Explanation: All the character are numeric.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('1.1'.isnumeric())`
+
+a) True\
+**b) False**\
+c) None\
+d) Error
+
+>Explanation: The character . is not a numeric character.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('1@ a'.isprintable())`
+
+**a) True**\
+b) False\
+c) None\
+d) Error
+
+>Explanation: All those characters are printable.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print(''''''.isspace())`
+
+a) True\
+**b) False**\
+c) None\
+d) Error
+
+>Explanation: None.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('\t'.isspace())`
+
+**a) True**\
+b) False\
+c) None\
+d) Error
+
+>Explanation: Tab Spaces are considered as spaces.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('HelloWorld'.istitle())`
+
+a) True\
+**b) False**\
+c) None\
+d) Error
+
+>Explanation: The letter W is uppercased.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('Hello World'.istitle())`
+
+**a) True**\
+b) False\
+c) None\
+d) Error
+
+>Explanation: It is in title form.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('Hello!2@#World'.istitle())`
+
+**a) True**\
+b) False\
+c) None\
+d) Error
+
+>Explanation: It is in the form of a title.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('1Rn@'.lower())`
+
+a) n\
+**b) 1rn@**\
+c) rn\
+d) r
+
+>Explanation: Uppercase letters are converted to lowercase. The other characters are left unchanged.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('''
+ \tfoo'''.lstrip())
+```
+
+a) \tfoo\
+**b) foo**\
+c)   foo\
+d) none of the mentioned
+
+>Explanation: All leading whitespace is removed.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('xyyzxxyxyy'.lstrip('xyy'))`
+
+a) error\
+**b) zxxyxyy**\
+c) z\
+d) zxxy
+
+>Explanation: The leading characters containing xyy are removed.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('xyxxyyzxxy'.lstrip('xyy'))`
+
+**a) zxxy**\
+b) xyxxyyzxxy\
+c) xyxzxxy\
+d) none of the mentioned
+
+>Explanation: All combinations of the characters passed as an argument are removed from the left hand side.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('cba'.maketrans('abc', '123'))`
+
+**a) {97: 49, 98: 50, 99: 51}**\
+b) {65: 49, 66: 50, 67: 51}\
+c) 321\
+d) 123
+
+>Explanation: A translation table is returned by maketrans.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('a'.maketrans('ABC', '123'))`
+
+a) {97: 49, 98: 50, 99: 51}\
+**b) {65: 49, 66: 50, 67: 51}**\
+c) {97: 49}\
+d) 1
+
+>Explanation: maketrans() is a static method so it's behaviour does not depend on the object from which it is being called.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcdef'.partition('cd'))`
+
+a) ('ab', 'ef')\
+b) ('abef')\
+**c) ('ab', 'cd', 'ef')**\
+d) 1
+
+>Explanation: The string is split into three parts by partition.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcdefcdgh'.partition('cd'))`
+
+a) ('ab', 'cd', 'ef', 'cd', 'gh')\
+**b) ('ab', 'cd', 'efcdgh')**\
+c) ('abcdef', 'cd', 'gh')\
+d) error
+
+>Explanation: The string is partitioned at the point where the separator first appears.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcd'.partition('cd'))`
+
+**a) ('ab', 'cd', ”)**\
+b) ('ab', 'cd')\
+c) error\
+d) none of the mentioned
+
+>Explanation: The last item is a null string.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('cd'.partition('cd'))`
+
+a) ('cd')\
+b) (”)\
+c) ('cd', ”, ”)\
+**d) (”, 'cd', ”)**
+
+>Explanation: The entire string has been passed as the separator hence the first and the last item of the tuple returned are null strings.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abef'.partition('cd'))`
+
+a) ('abef')\
+b) ('abef', 'cd', ”)\
+**c) ('abef', ”, ”)**\
+d) error
+
+>Explanation: The separator is not present in the string hence the second and the third elements of the tuple are null strings.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcdef12'.replace('cd', '12'))`
+
+**a) ab12ef12**\
+b) abcdef12\
+c) ab12efcd\
+d) none of the mentioned
+
+>Explanation: All occurrences of the first substring are replaced by the second substring.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abef'.replace('cd', '12'))`
+
+**a) abef**\
+b) 12\
+c) error\
+d) none of the mentioned
+
+>Explanation: The first substring is not present in the given string and hence nothing is replaced.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcefd'.replace('cd', '12'))`
+
+a) ab1ef2\
+**b) abcefd**\
+c) ab1efd\
+d) ab12ed2
+
+>Explanation: The first substring is not present in the given string and hence nothing is replaced.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('xyyxyyxyxyxxy'.replace('xy', '12', 0))`
+
+**a) xyyxyyxyxyxxy**\
+b) 12y12y1212x12\
+c) 12yxyyxyxyxxy\
+d) xyyxyyxyxyx12
+
+>Explanation: The first 0 occurrences of the given substring are replaced.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('xyyxyyxyxyxxy'.replace('xy', '12', 100))`
+
+a) xyyxyyxyxyxxy\
+**b) 12y12y1212x12**\
+c) none of the mentioned
+d) error
+
+>Explanation: The first 100 occurrences of the given substring are replaced.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcdefcdghcd'.split('cd'))`
+
+a) ['ab', 'ef', 'gh']\
+**b) ['ab', 'ef', 'gh', ”]**\
+c) ('ab', 'ef', 'gh')\
+d) ('ab', 'ef', 'gh', ”)
+
+>Explanation: The given string is split and a list of substrings is returned.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcdefcdghcd'.split('cd', 0))`
+
+**a) ['abcdefcdghcd']**\
+b) 'abcdefcdghcd'\
+c) error\
+d) none of the mentioned
+
+>Explanation: The given string is split at 0 occurances of the specified substring.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcdefcdghcd'.split('cd', -1))`
+
+a) ['ab', 'ef', 'gh']\
+**b) ['ab', 'ef', 'gh', ”]**\
+c) ('ab', 'ef', 'gh')\
+d) ('ab', 'ef', 'gh', ”)
+
+>Explanation: Calling the function with a negative value for maxsplit is the same as calling it without any maxsplit specified. The string will be split into as many substring s as possible.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcdefcdghcd'.split('cd', 2))`
+
+**a) ['ab', 'ef', 'ghcd']**\
+b) ['ab', 'efcdghcd']\
+c) ['abcdef', 'ghcd']\
+d) none of the mentioned
+
+>Explanation: The string is split into a maximum of maxsplit+1 substrings.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('ab\ncd\nef'.splitlines())`
+
+**a) ['ab', 'cd', 'ef']**\
+b) ['ab\n', 'cd\n', 'ef\n']\
+c) ['ab\n', 'cd\n', 'ef']\
+d) ['ab', 'cd', 'ef\n']
+
+>Explanation: It is similar to calling split('\n').
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('Ab!2'.swapcase())`
+
+a) AB!@\
+b) ab12\
+**c) aB!2**\
+d) aB1@
+
+>Explanation: Lowercase letters are converted to uppercase and vice-versa.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('ab cd ef'.title())`
+
+a) Ab cd ef\
+b) Ab cd eF\
+**c) Ab Cd Ef**\
+d) None of the mentioned
+
+>Explanation: The first letter of every word is capitalized.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('ab cd-ef'.title())`
+
+a) Ab cd-ef\
+b) Ab Cd-ef\
+**c) Ab Cd-Ef**\
+d) None of the mentioned
+
+>Explanation: The first letter of every word is capitalized. Special symbols terminate a word.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcd'.translate('a'.maketrans('abc', 'bcd')))`
+
+a) bcde\
+b) abcd\
+c) error\
+**d) bcdd**
+
+>Explanation: The output is bcdd since no translation is provided for d.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcd'.translate({97: 98, 98: 99, 99: 100}))`
+
+a) bcde\
+b) abcd\
+c) error\
+**d) none of the mentioned**
+
+>Explanation: The output is bcdd since no translation is provided for d.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('abcd'.translate({'a': '1', 'b': '2', 'c': '3', 'd': '4'}))`
+
+**a) abcd**\
+b) 1234\
+c) error\
+d) none of the mentioned
+
+>Explanation: The function translate expects a dictionary of integers. Use maketrans() instead of doing the above.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('ab'.zfill(5))`
+
+**a) 000ab**\
+b) 00ab0\
+c) 0ab00\
+d) ab000
+
+>Explanation: The string is padded with zeros on the left hand side. It is useful for formatting numbers.
+
+### What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+`print('+99'.zfill(5))`
+
+a) 00+99\
+b) 00099\
+**c) +0099**\
+d) +++99
+
+>Explanation: zeros are filled in between the first sign and the rest of the string.
+
 # Section 10
 
 # Section 11
