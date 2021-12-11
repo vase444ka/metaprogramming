@@ -4,6 +4,529 @@
 
 # Section 3
 
+## 1. The value of the expressions 4/(3*(2-1)) and 4/3*(2-1) is the same.[Значення виразів 4/(3*(2-1)) і 4/3*(2-1) однакові?]
+
+**a) True**
+
+b) False
+
+Explanation: Although the presence of parenthesis does affect the order of precedence, in the case shown above, it is not making a difference. The result of both of these expressions is 1.333333333. Hence the statement is true.
+
+## 2. What will be the value of the following Python expression?[Яким буде значення наступного виразу Python?]
+
+```4 + 3 % 5```
+
+a) 4
+
+**b) 7**
+
+c) 2
+
+d) 0
+
+Explanation: The order of precedence is: %, +. Hence the expression above, on simplification results in 4 + 3 = 7. Hence the result is 7.
+
+## 3. Evaluate the expression given below if A = 16 and B = 15.[Оцініть наведений нижче вираз, якщо A = 16 і B = 15?]
+
+``` A % B // A ```
+
+a) 0.0
+
+**b) 0**
+
+c) 1.0
+
+d) 1
+
+Explanation: The above expression is evaluated as: 16%15//16, which is equal to 1//16, which results in 0.
+
+## 4. Which of the following operators has its associativity from right to left?[Який з наведених операторів має свою асоціативність справа наліво?]
+
+a) +
+
+b) //
+
+c) %
+
+**d) ****
+
+Explanation: All of the operators shown above have associativity from left to right, except exponentiation operator (**) which has its associativity from right to left.
+
+
+## 5. What will be the value of x in the following Python expression?[Яким буде значення x у наступному виразі Python?]
+
+```x = int(43.55+2/2)```
+
+a) 43
+
+**b) 44**
+
+c) 22
+
+d) 23
+
+Explanation: The expression shown above is an example of explicit conversion. It is evaluated as int(43.55+1) = int(44.55) = 44. Hence the result of this expression is 44.
+
+## 6. What is the value of the following expression?[Яке значення має наступний вираз?]
+
+```2+4.00, 2**4.0```
+
+
+**a) (6.0, 16.0)**
+
+b) (6.00, 16.00)
+
+c) (6, 16)
+
+d) (6.00, 16.0)
+
+Explanation: The result of the expression shown above is (6.0, 16.0). This is because the result is automatically rounded off to one decimal place.
+
+
+## 7. Which of the following is the truncation division operator?[Що з наведеного нижче є оператором поділу усічення?]
+
+a) /
+
+b) %
+
+**c) //**
+
+d) |
+
+Explanation: // is the operator for truncation division. It is called so because it returns only the integer part of the quotient, truncating the decimal part. For example: 20//3 = 6.
+
+## 8. What are the values of the following Python expressions?[Які значення мають наступні вирази Python?]
+
+`2**(3**2)
+ (2**3)**2
+ 2**3**2 `
+
+a) 64, 512, 64
+
+b) 64, 64, 64
+
+c) 512, 512, 512
+
+**d) 512, 64, 512**
+
+Explanation: Expression 1 is evaluated as: 2**9, which is equal to 512. Expression 2 is evaluated as 8**2, which is equal to 64. The last expression is evaluated as 2**(3**2). This is because the associativity of ** operator is from right to left. Hence the result of the third expression is 512.
+
+## 9. What is the value of the following expression?[Яке значення має наступний вираз?]
+
+```8/4/2, 8/(4/2)```
+
+**a) (1.0, 4.0)**
+
+b) (1.0, 1.0)
+
+c) (4.0. 1.0)
+
+d) (4.0, 4.0)
+
+Explanation: The above expressions are evaluated as: 2/2, 8/2, which is equal to (1.0, 4.0).
+
+## 10. What is the value of the following expression?[Яке значення має наступний вираз?]
+
+`float(22//3+3/3)`
+
+a) 8
+
+**b) 8.0**
+
+c) 8.3
+
+d) 8.33
+
+Explanation: The expression shown above is evaluated as: float( 7+1) = float(8) = 8.0. Hence the result of this expression is 8.0.
+
+## 1. What will be the output of the following Python expression?[Яким буде результат наступного виразу Python?]
+
+`print(4.00/(2.0+2.0))`
+
+a) Error
+
+**b) 1.0**
+
+c) 1.00
+
+d) 1
+
+Explanation: The result of the expression shown above is 1.0 because print rounds off digits.
+
+## 2. What will be the value of X in the following Python expression?[Яким буде значення X у наступному виразі Python?]
+
+`X = 2+9*((3*12)-8)/10`
+
+a) 30.0
+
+b) 30.8
+
+c) 28.4
+
+**d) 27.2**
+
+Explanation: The expression shown above is evaluated as: 2+9*(36-8)/10, which simplifies to give 2+9*(2.8), which is equal to 2+25.2 = 27.2. Hence the result of this expression is 27.2.
+ 
+## 3. Which of the following expressions involves coercion when evaluated in Python?[Який із наведених нижче виразів включає примус при оцінці в Python?]
+
+a) 4.7 – 1.5
+
+b) 7.9 * 6.3
+
+**c) 1.7 % 2**
+
+d) 3.4 + 4.6
+
+Explanation: Coercion is the implicit (automatic) conversion of operands to a common type. Coercion is automatically performed on mixed-type expressions. The expression 1.7 % 2 is evaluated as 1.7 % 2.0 (that is, automatic conversion of int to float).
+
+## 4. What will be the output of the following Python expression?[Яким буде результат наступного виразу Python?]
+
+`24//6%3, 24//4//2`
+
+**a) (1,3)**
+
+b) (0,3)
+
+c) (1,0)
+
+d) (3,1)
+
+Explanation: The expressions are evaluated as: 4%3 and 6//2 respectively. This results in the answer (1,3). This is because the associativity of both of the expressions shown above is left to right.
+
+## 5. Which among the following list of operators has the highest precedence?[Який із наведених нижче операторів має найвищий пріоритет?]
+
+ `+, -, **, %, /, <<, >>, |`
+
+a) <<, >>
+
+**b) ****
+
+c) |
+
+d) %
+
+Explanation: The highest precedence is that of the exponentiation operator, that is of **.
+
+## 6. What will be the value of the following Python expression?[Яким буде значення наступного виразу Python?]
+
+`float(4+int(2.39)%2)`
+
+a) 5.0
+
+b) 5
+
+**c) 4.0**
+
+d) 4
+
+Explanation: The above expression is an example of explicit conversion. It is evaluated as: float(4+int(2.39)%2) = float(4+2%2) = float(4+0) = 4.0. Hence the result of this expression is 4.0.
+
+## 7. Which of the following expressions is an example of type conversion?[Який із наведених виразів є прикладом перетворення типів?]
+
+**a) 4.0 + float(3)**
+
+b) 5.3 + 6.3
+
+c) 5.0 + 3
+
+d) 3 + 7
+
+Explanation: Type conversion is nothing but explicit conversion of operands to a specific type. Options 5.3 + 6.3 and 5.0 + 3 are examples of implicit conversion whereas option 4.0 + float(3) is an example of explicit conversion or type conversion.
+
+## 8. Which of the following expressions results in an error?[Який із наведених виразів призводить до помилки?]
+
+a) float(‘10’)
+
+b) int(‘10’)
+
+c) float(’10.8’)
+
+**d) int(’10.8’)**
+
+Explanation: All of the above examples show explicit conversion. However the expression int(’10.8’) results in an error.
+
+## 9. What will be the value of the following Python expression?[Яким буде значення наступного виразу Python?]
+
+`4+2**5//10`
+
+a) 3
+
+**b) 7**
+
+c) 77
+
+d) 0
+
+Explanation: The order of precedence is: **, //, +. The expression 4+2**5//10 is evaluated as 4+32//10, which is equal to 4+3 = 7. Hence the result of the expression shown above is 7.
+
+## 10. The expression 2**2**3 is evaluates as: (2**2)**3. [Вираз 2**2**3 обчислюється як: (2**2)**3.]
+
+a) True
+
+**b) False**
+
+Explanation: The value of the expression (2**2)**3 = 4**3 = 64. When the expression 2**2**3 is evaluated in python, we get the result as 256, because this expression is evaluated as 2**(2**3). This is because the associativity of exponentiation operator (**) is from right to left and not from left to right.
+
+## 1. What will be the output of the following Python code snippet if x=1?[Яким буде результат наступного фрагмента коду Python, якщо x=1?]
+
+`x<<2`
+
+a) 8
+
+b) 1
+
+c) 2
+
+**d) 4**
+
+Explanation: The binary form of 1 is 0001. The expression x<<2 implies we are performing bitwise left shift on x. This shift yields the value: 0100, which is the binary form of the number 4.
+
+## 2. What will be the output of the following Python expression?[Яким буде результат наступного виразу Python?]
+
+`bin(29)`
+
+a) ‘0b10111’
+
+**b) ‘0b11101’**
+
+c) ‘0b11111’
+
+d) ‘0b11011’
+
+Explanation: The binary form of the number 29 is 11101. Hence the output of this expression is ‘0b11101’.
+
+## 3. What will be the value of x in the following Python expression, if the result of that expression is 2?[Яким буде значення x у наступному виразі Python, якщо результат цього виразу дорівнює 2?]
+
+`x>>2`
+
+**a) 8**
+
+b) 4
+
+c) 2
+
+d) 1
+
+Explanation: When the value of x is equal to 8 (1000), then x>>2 (bitwise right shift) yields the value 0010, which is equal to 2. Hence the value of x is 8.
+
+## 4. What will be the output of the following Python expression?[Яким буде результат наступного виразу Python?]
+
+`int(1011)?`
+
+**a) 1011**
+
+b) 11
+
+c) 13
+
+d) 1101
+
+Explanation: The result of the expression shown will be 1011. This is because we have not specified the base in this expression. Hence it automatically takes the base as 10.
+
+## 5. To find the decimal value of 1111, that is 15, we can use the function:[Щоб знайти десяткове значення 1111, тобто 15, ми можемо скористатися функцією?]
+
+a) int(1111,10)
+
+b) int(‘1111’,10)
+
+c) int(1111,2)
+
+**d) int(‘1111’,2)**
+
+Explanation: The expression int(‘1111’,2) gives the result 15. The expression int(‘1111’, 10) will give the result 1111.
+
+## 6. What will be the output of the following Python expression if x=15 and y=12?[Яким буде результат наступного виразу Python якщо x=15 та y=12?]
+
+`x & y`
+
+a) b1101
+
+b) 0b1101
+
+**c) 12**
+
+d) 1101
+
+Explanation: The symbol ‘&’ represents bitwise AND. This gives 1 if both the bits are equal to 1, else it gives 0. The binary form of 15 is 1111 and that of 12 is 1100. Hence on performing the bitwise AND operation, we get 1100, which is equal to 12.
+
+## 7. Which of the following expressions results in an error?[Який із наведених виразів призводить до помилки?]
+
+a) int(1011)
+
+b) int(‘1011’,23)
+
+**c) int(1011,2)**
+
+d) int(‘1011’)
+
+Explanation: The expression int(1011,2) results in an error. Had we written this expression as int(‘1011’,2), then there would not be an error.
+
+## 8. Which of the following represents the bitwise XOR operator?[Що з наведеного нижче представляє порозрядний оператор XOR?]
+
+a) &
+
+**b) ^**
+
+c) |
+
+d) !
+
+Explanation: The ^ operator represent bitwise XOR operation. &: bitwise AND, | : bitwise OR and ! represents bitwise NOT.
+
+## 9. What is the value of the following Python expression?[Яке значення має наступний вираз Python?]
+
+`bin(0x8)`
+
+a) ‘0bx1000’
+
+b) 8
+
+c) 1000
+
+**d) ‘0b1000’**
+
+Explanation: The prefix 0x specifies that the value is hexadecimal in nature. When we convert this hexadecimal value to binary form, we get the result as: ‘0b1000’.
+
+## 10. What will be the output of the following Python expression?[Яким буде результат наступного виразу Python?]
+
+`0x35 | 0x75`
+
+a) 115
+
+b) 116
+
+**c) 117**
+
+d) 118
+
+Explanation: The binary value of 0x35 is 110101 and that of 0x75 is 1110101. On OR-ing these two values we get the output as: 1110101, which is equal to 117. Hence the result of the above expression is 117.
+
+## 1. It is not possible for the two’s complement value to be equal to the original value in any case.[Ні в якому разі неможливо, щоб значення доповнення до двох було рівним початковому значенню.]
+
+a) True
+
+**b) False**
+
+Explanation: In most cases the value of two’s complement is different from the original value. However, there are cases in which the two’s complement value may be equal to the original value. For example, the two’s complement of 10000000 is also equal to 10000000. Hence the statement is false.
+
+## 2. The one’s complement of 110010101 is:[Доповнення до 110010101 є]
+
+**a) 001101010**
+
+b) 110010101
+
+c) 001101011
+
+d) 110010100
+
+Explanation: The one’s complement of a value is obtained by simply changing all the 1’s to 0’s and all the 0’s to 1’s. Hence the one’s complement of 110010101 is 001101010.
+
+## 3. Bitwise _________ gives 1 if either of the bits is 1 and 0 when both of the bits are 1.[Побітово _________ дає 1, якщо один з бітів дорівнює 1, і 0, коли обидва біти дорівнюють 1]
+
+a) OR
+
+b) AND
+
+**c) XOR**
+
+d) NOT
+
+Explanation: Bitwise XOR gives 1 if either of the bits is 1 and 0 when both of the bits are 1.
+
+## 4. What will be the output of the following Python expression?[Яким буде результат наступного виразу Python?]
+
+`4^12`
+
+a) 2
+
+b) 4
+
+**c) 8**
+
+d) 12
+
+Explanation: ^ is the XOR operator. The binary form of 4 is 0100 and that of 12 is 1100. Therefore, 0100^1100 is 1000, which is equal to 8.
+
+## 5. Any odd number on being AND-ed with ________ always gives 1. Hint: Any even number on being AND-ed with this value always gives 0.[Будь-яке непарне число під час переміщення І з ________ завжди дає 1. Підказка: будь-яке парне число при переміщенні І з цим значенням завжди дає 0.]
+
+a) 10
+
+b) 2
+
+**c) 1**
+
+d) 0
+
+Explanation: Any odd number on being AND-ed with 1 always gives 1. Any even number on being AND-ed with this value always gives 0.
+
+## 6. What will be the value of the following Python expression?[Яким буде значення наступного виразу Python?]
+
+`bin(10-2)+bin(12^4)`
+
+a) 0b10000
+
+b) 0b10001000
+
+c) 0b1000b1000
+
+**d) 0b10000b1000**
+
+Explanation: The output of bin(10-2) = 0b1000 and that of bin(12^4) is ob1000. Hence the output of the above expression is: 0b10000b1000.
+
+## 7. Which of the following expressions can be used to multiply a given number ‘a’ by 4?[Який із наведених виразів можна використати, щоб помножити дане число «а» на 4?]
+
+**a) a<<2**
+
+b) a<<4
+
+c) a>>2
+
+d) a>>4
+
+
+Explanation: Let us consider an example wherein a=2. The binary form of 2 is 0010. When we left shift this value by 2, we get 1000, the value of which is 8. Hence if we want to multiply a given number ‘a’ by 4, we can use the expression: a<<2.
+
+## 8. What will be the output of the following Python code if a=10 and b =20?[Яким буде результат наступного коду Python, якщо a=10 і b =20]
+
+`a=10 b=20 a=a^b b=a^b a=a^b print(a,b)`
+
+a) 10 20
+
+b) 10 10
+
+**c) 20 10**
+
+d) 20 20
+
+Explanation: The code shown above is used to swap the contents of two memory locations using bitwise X0R operator. Hence the output of the code shown above is: 20 10.
+
+
+## 9. What is the two’s complement of -44?[Яке доповнення двох до -44]
+
+a) 1011011
+
+**b) 11010100**
+
+c) 11101011
+
+d) 10110011
+
+Explanation: The binary form of -44 is 00101100. The one’s complement of this value is 11010011. On adding one to this we get: 11010100 (two’s complement).
+
+## 10. What will be the output of the following Python expression?[Яким буде результат наступного виразу Python?]
+
+`~100?`
+
+a) 101
+
+**b) -101**
+
+c) 100
+
+d) -100
+
+Explanation: Suppose we have an expression ~A. This is evaluated as: -A – 1. Therefore, the expression ~100 is evaluated as -100 – 1, which is equal to -101.
+
 # Section 4
 
 # Section 5
