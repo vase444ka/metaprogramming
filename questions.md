@@ -724,16 +724,14 @@ _**d) \_\_str\_\_()**_
 
 ## 2. Which of the following Python code will print True?
 
-``
-a = foo(2)
-
-b = foo(3)
-
-print(a < b)``
+`
+a = foo(2) \
+b = foo(3) \
+print(a < b)`
 
 a)
 
-``class foo:
+`class foo:
 
     def __init__(self, x):
     
@@ -748,7 +746,7 @@ a)
         else:
         
             return True
-``
+`
 
 b)
 
