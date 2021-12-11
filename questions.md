@@ -724,28 +724,47 @@ _**d) \_\_str\_\_()**_
 
 ## 2. Which of the following Python code will print True?
 
-``a = foo(2)
+``
+a = foo(2)
+
 b = foo(3)
+
 print(a < b)``
 
 a)
 
 ``class foo:
+
     def __init__(self, x):
+    
         self.x = x
+        
     def __lt__(self, other):
+    
         if self.x < other.x:
+        
             return False
+            
         else:
-            return True``
+        
+            return True
+``
 
 b)
 
 `class foo:
+
     def __init__(self, x):
+    
         self.x = x
+        
     def __less__(self, other):
+    
         if self.x > other.x:
+        
             return False
+            
         else:
+        
             return True`
+            
