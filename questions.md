@@ -2639,6 +2639,8 @@ a) [0, 2, 4, 6, 8, 10]\
 c) [1, 3, 5, 7, 9]\
 d) Error
 
+>Explanation: The code shown above returns a new list containing whole numbers up to 10 (excluding 10). Hence the output of the code is: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].
+
 ### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
 
 ```
@@ -2650,6 +2652,8 @@ print(f(20), f(21))
 b) False False\
 c) True True\
 d) True False
+
+>Explanation: The code shown above will return true if the given argument is an odd number, and false if the given argument is an even number. Since the arguments are 20 and 21 respectively, the output of this code is: False True.
 
 ### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
 
@@ -2663,6 +2667,8 @@ a) Error\
 b) 10\
 **c) 24**\
 d) No output
+
+>Explanation: The code shown above returns the product of all the elements of the list. Hence the output is 1*2*3*4 = 24.
 
 ### 4. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
 
@@ -2678,6 +2684,8 @@ a) [1, 4, 5 ]\
 b) Error\
 c) [-2, -3]\
 **d) [1, -2, -3]**
+
+>Explanation: The code shown above returns only those elements from the list, which are less than 2. The functional programming tool used to achieve this operation is filter. Hence the output of the code is:[1, -2, -3].
 
 ### 5. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
 
@@ -2696,6 +2704,8 @@ d)
 -4
    16
 ```
+
+>Explanation: The code shown above returns the address of m. Had we used the statement: print(list(m)), the output would have been: [-4, 16].
 
 ### 6. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
 
@@ -3339,7 +3349,7 @@ print(len(' '.join(list(map(str, x)))))
 
 a) A package can have subfolders and modules\
 **b) Each import package need not introduce a namespace**\
-c) import folder.subfolder.mod1 imports packages\	
+c) import folder.subfolder.mod1 imports packages\
 d) from folder.subfolder.mod1 import objects imports packages
 
 >Explanation:  Packages provide a way of structuring Python namespace. Each import package introduces a namespace.
