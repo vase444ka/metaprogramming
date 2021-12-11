@@ -586,7 +586,7 @@ c) 1212abcdef
 
 ## Files - 5
 
-1. Which of the following is not a valid mode to open a file?
+## 1. Which of the following is not a valid mode to open a file?
 
 a) ab
 
@@ -599,7 +599,7 @@ d) w+
 > Need to choose either r or w
 
 
-2. What is the difference between r+ and w+ modes?
+## 2. What is the difference between r+ and w+ modes?
 
 _**a) no difference**_
 
@@ -612,7 +612,7 @@ d) depends on the operating system
 > Difference exists, for example r+ will get an error on a file that doesn't exist, and w+ creates it. But all those things are out of the scope of this question.
 
 
-3. How do you get the name of a file from a file object (fp)?
+## 3. How do you get the name of a file from a file object (fp)?
 
 _**a) fp.name**_
 
@@ -625,7 +625,7 @@ d) fp.\_\_name\_\_()
 > Name is an attribute
 
 
-4. Which of the following is not a valid attribute of a file object (fp)?
+## 4. Which of the following is not a valid attribute of a file object (fp)?
 
 a) fp.name
 
@@ -636,7 +636,7 @@ c) fp.mode
 _**d) fp.size**_
 
 
-5. How do you close a file object (fp)?
+## 5. How do you close a file object (fp)?
 
 a) close(fp)
 
@@ -647,7 +647,7 @@ _**c) fp.close()**_
 d) fp.__close__()
 
 
-6. How do you get the current position within the file?
+## 6. How do you get the current position within the file?
 
 a) fp.seek()
 
@@ -658,7 +658,7 @@ c) fp.loc
 d) fp.pos
 
 
-7. How do you rename a file?
+## 7. How do you rename a file?
 
 a) fp.name = ‘new_name.txt’
 
@@ -669,7 +669,7 @@ c) os.rename(fp, new_name)
 d) os.set_name(existing_name, new_name)
 
 
-8. How do you delete a file?
+## 8. How do you delete a file?
 
 a) del(fp)
 
@@ -680,7 +680,7 @@ _**c) os.remove(‘file’)**_
 d) os.delete(‘file’)
 
 
-9. How do you change the file position to an offset value from the start?
+## 9. How do you change the file position to an offset value from the start?
 
 _**a) fp.seek(offset, 0)**_
 
@@ -691,7 +691,7 @@ c) fp.seek(offset, 2)
 d) none of the mentioned
 
 
-10. What happens if no arguments are passed to the seek function?
+## 10. What happens if no arguments are passed to the seek function?
 
 a) file position is set to the start of file
 
