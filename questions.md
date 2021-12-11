@@ -272,7 +272,27 @@ d) 2
 a) int
 
 b) bool
+c)
 
+class foo:
+    def __init__(self, x):
+        self.x = x
+    def __lt__(self, other):
+        if self.x < other.x:
+            return True
+        else:
+            return False
+
+d)
+
+class foo:
+    def __init__(self, x):
+        self.x = x
+    def __less__(self, other):
+        if self.x < other.x:
+            return False
+        else:
+            return True
 **c) str**
 
 d) String
@@ -709,9 +729,11 @@ _**d) error**_
 ## 1. Which function is called when the following Python code is executed?
 
 `
+
 f = foo()
 
 format(f)
+
 `
 
 a) format()
@@ -726,16 +748,19 @@ _**d) \_\_str\_\_()**_
 ## 2. Which of the following Python code will print True?
 
 `
+
 a = foo(2) 
 
 b = foo(3) 
 
 print(a < b)
+
 `
 
 a)
 
 `
+
 class foo:
 
     def __init__(self, x):
@@ -773,26 +798,134 @@ class foo:
             return True
 `
             
-c)
+_**c)
 
 `
+
 class foo:
+
     def __init__(self, x):
+    
         self.x = x
+        
     def __lt__(self, other):
+    
         if self.x < other.x:
+        
             return True
+            
         else:
+        
             return False
-`
+ 
+ `**_
+
 d)
+
 `
+
 class foo:
+
     def __init__(self, x):
+    
         self.x = x
+        
     def __less__(self, other):
+    
         if self.x < other.x:
+        
             return False
+            
         else:
+        
             return True
 `
+
+> \_\_lt\_\_ overloads the < operator>.
+
+
+## 3. Which function overloads the + operator?
+
+_**a) \_\_add\_\_()**_
+
+b) \_\_plus\_\_()
+
+c) \_\_sum\_\_()
+
+d) none of the mentioned
+
+
+## 4. Which operator is overloaded by \_\_invert\_\_()?
+
+a) !
+
+_**b) ~**_
+
+c) ^
+
+d) –
+
+
+## 5. Which function overloads the == operator?
+
+_**a) \_\_eq\_\_()**_
+
+b) \_\_equ\_\_()
+
+c) \_\_isequal\_\_()
+
+d) none of the mentioned
+
+
+## 6. Which operator is overloaded by \_\_lg\_\_()?
+a) <
+b) >
+c) !=
+_**d) none of the mentioned**_
+
+> \_\_lg\_\_() is invalid
+
+
+## 7. Which function overloads the >> operator?
+
+a) \_\_more\_\_()
+
+b) \_\_gt\_\_()
+
+c) \_\_ge\_\_()
+
+_**d) none of the mentioned**_
+
+> \_\_rshift\_\_
+
+
+## 8. Let A and B be objects of class Foo. Which functions are called when print(A + B) is executed?
+
+_**a) \_\_add\_\_(), \_\_str\_\_()**_
+
+b) \_\_str\_\_(), \_\_add\_\_()
+
+c) \_\_sum\_\_(), \_\_str\_\_()
+
+d) \_\_str\_\_(), \_\_sum\_\_()
+
+
+## 9. Which operator is overloaded by the \_\_or\_\_() function?
+
+a) ||
+
+**b) |**
+
+c) //
+
+d) /
+
+## 10. Which function overloads the // operator?
+
+a) \_\_div\_\_()
+
+b) \_\_ceildiv\_\_()
+
+_**c) \_\_floordiv\_\_()**_
+
+d) \_\_truediv\_\_()
