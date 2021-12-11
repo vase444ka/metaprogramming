@@ -1682,7 +1682,514 @@ c) 1212abcdef
 **d) error**
 
 >Explanation: The fill character must be exactly one character long.
+## 1. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("xyyzxyzxzxyy".count('yy'))
+```
+**a) 2**
 
+b) 0
+
+c) error
+
+d) none of the mentioned
+
+>Explanation: Counts the number of times the substring ‘yy’ is present in the given string.
+## 2. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("xyyzxyzxzxyy".count('yy', 1))
+```
+**a) 2**
+
+b) 0
+
+c) 1
+
+d) none of the mentioned
+
+>Explanation: Counts the number of times the substring ‘yy’ is present in the given string, starting from position 1.
+## 3. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("xyyzxyzxzxyy".count('yy', 2))
+```
+a) 2
+
+b) 0
+
+**c) 1**
+
+d) none of the mentioned
+
+>Explanation: Counts the number of times the substring ‘yy’ is present in the given string, starting from position 2.
+## 4. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("xyyzxyzxzxyy".count('xyy', 0, 100))
+```
+**a) 2**
+
+b) 0
+
+c) 1
+
+d) error
+
+>Explanation: An error will not occur if the end value is greater than the length of the string itself.
+## 5. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("xyyzxyzxzxyy".count('xyy', 2, 11))
+```
+a) 2
+
+**b) 0**
+
+c) error
+
+d) none of the mentioned
+
+>Explanation: Counts the number of times the substring ‘xyy’ is present in the given string, starting from position 2 and ending at position 11.
+## 6. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("xyyzxyzxzxyy".count('xyy', -10, -1))
+```
+a) 2
+
+**b) 0**
+
+c) error
+
+d) none of the mentioned
+
+>Explanation: Counts the number of times the substring ‘xyy’ is present in the given string, starting from position 2 and ending at position 11.
+## 7. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print('abc'.encode())
+```
+a) abc
+
+b) ‘abc’
+
+**c) b’abc’**
+
+d) h’abc’
+
+>Explanation: A bytes object is returned by encode.
+## 8. What is the default value of encoding in encode()? [Яке значення кодування за замовчуванням у encode()?]
+a) ascii
+
+b) qwerty
+
+**c) utf-8**
+
+d) utf-16
+
+>Explanation: The default value of encoding is utf-8.
+## 9. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("xyyzxyzxzxyy".endswith("xyy"))
+```
+a) 1
+
+**b) True**
+
+c) 3
+
+d) 2
+
+>Explanation: The function returns True if the given string ends with the specified substring.
+## 10. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("xyyzxyzxzxyy".endswith("xyy", 0, 2))
+```
+a) 0
+
+b) 1
+
+c) True
+
+**d) False**
+
+>Explanation: The function returns False if the given string does not end with the specified substring.
+## 1. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("ab\tcd\tef".expandtabs())
+```
+**a) ab  cd  ef**
+
+b) abcdef
+
+c) ab\tcd\tef
+
+d) ab cd ef
+
+>Explanation: Each \t is converted to 8 blank spaces by default.
+## 2. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("ab\tcd\tef".expandtabs(4))
+```
+a) ab   cd   ef
+
+b) abcdef
+
+c) ab\tcd\tef
+
+**d) ab cd ef**
+
+>Explanation: Each \t is converted to 4 blank spaces.
+## 3. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("ab\tcd\tef".expandtabs('+'))
+```
+a) ab+cd+ef
+
+b) ab++++++++cd++++++++ef
+
+c) ab cd ef
+
+**d) none of the mentioned**
+
+>Explanation: TypeError, an integer should be passed as an argument.
+## 4. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("abcdef".find("cd") == "cd" in "abcdef")
+```
+a) True
+
+**b) False**
+
+c) Error
+
+d) None of the mentioned
+
+>Explanation: The function find() returns the position of the sunstring in the given string whereas the in keyword returns a value of Boolean type.
+## 5. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("abcdef".find("cd"))
+```
+a) True
+
+**b) 2**
+
+c) 3
+
+d) None of the mentioned
+
+>Explanation: The first position in the given string at which the substring can be found is returned.
+## 6. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("ccdcddcd".find("c"))
+```
+a) 4
+
+**b) 0**
+
+c) Error
+
+d) True
+
+>Explanation: The first position in the given string at which the substring can be found is returned.
+## 7. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("Hello {0} and {1}".format('foo', 'bin'))
+```
+**a) Hello foo and bin**
+
+b) Hello {0} and {1} foo bin
+
+c) Error
+
+d) Hello 0 and 1
+
+>Explanation: The numbers 0 and 1 represent the position at which the strings are present.
+## 8. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("Hello {1} and {0}".format('bin', 'foo'))
+```
+**a) Hello foo and bin**
+
+b) Hello bin and foo
+
+c) Error
+
+d) None of the mentioned
+
+>Explanation: The numbers 0 and 1 represent the position at which the strings are present.
+## 9. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("Hello {} and {}".format('foo', 'bin'))
+```
+**a) Hello foo and bin**
+
+b) Hello {} and {}
+
+c) Error
+
+d) Hello and
+
+>Explanation: It is the same as Hello {0} and {1}.
+## 10. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("Hello {name1} and {name2}".format('foo', 'bin'))
+```
+a) Hello foo and bin
+
+b) Hello {} and {}
+
+**c) Error**
+
+d) Hello and
+
+>Explanation: The arguments passed to the function format aren’t keyword arguments.
+## 1. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("Hello {name1} and {name2}".format(name1='foo', name2='bin'))
+```
+**a) Hello foo and bin**
+
+b) Hello {name1} and {name2}
+
+c) Error
+
+d) Hello and
+
+>Explanation: The arguments are accessed by their names.
+## 2. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("Hello {0!r} and {0!s}".format('foo', 'bin'))
+```
+a) Hello foo and foo
+
+**b) Hello ‘foo’ and foo**
+
+c) Hello foo and ‘bin’
+
+d) Error
+
+>Explanation: !r causes the characters ‘ or ” to be printed as well.
+## 3. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("Hello {0} and {1}".format(('foo', 'bin')))
+```
+a) Hello foo and bin
+
+b) Hello (‘foo’, ‘bin’) and (‘foo’, ‘bin’)
+
+**c) Error**
+
+d) None of the mentioned
+
+>Explanation: IndexError, the tuple index is out of range.
+## 4. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print("Hello {0[0]} and {0[1]}".format(('foo', 'bin')))
+```
+**a) Hello foo and bin**
+
+b) Hello (‘foo’, ‘bin’) and (‘foo’, ‘bin’)
+
+c) Error
+
+d) None of the mentioned
+
+>Explanation: The elements of the tuple are accessed by their indices.
+## 5. What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('The sum of {0} and {1} is {2}'.format(2, 10, 12))
+```
+**a) The sum of 2 and 10 is 12**
+
+b) Error
+
+c) The sum of 0 and 1 is 2
+
+d) None of the mentioned
+
+>Explanation: The arguments passed to the function format can be integers also.
+## 6. What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('The sum of {0:b} and {1:x} is {2:o}'.format(2, 10, 12))
+```
+a) The sum of 2 and 10 is 12
+
+**b) The sum of 10 and a is 14**
+
+c) The sum of 10 and a is c
+
+d) Error
+
+>Explanation: 2 is converted to binary, 10 to hexadecimal and 12 to octal.
+## 7. . What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('{:,}'.format(1112223334))
+```
+a) 1,112,223,334
+
+b) 111,222,333,4
+
+c) 1112223334
+
+d) Error
+
+>Explanation: A comma is added after every third digit from the right.
+## 8. What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('{:,}'.format('1112223334'))
+```
+a) 1,112,223,334
+
+b) 111,222,333,4
+
+c) 1112223334
+
+**d) Error**
+
+>Explanation: An integer is expected.
+## 9. What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('{:$}'.format(1112223334))
+```
+a) 1,112,223,334
+
+b) 111,222,333,4
+
+c) 1112223334
+
+**d) Error**
+
+>Explanation: $ is an invalid format code.
+## 10. What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('{:#}'.format(1112223334))
+```
+a) 1,112,223,334
+
+b) 111,222,333,4
+
+**c) 1112223334**
+
+d) Error
+
+>Explanation: The number is printed as it is.
+## 1. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print('{0:.2}'.format(1/3))
+```
+a) 0.333333
+
+.**b) 0.33**
+
+c) 0.333333:.2
+
+d) Error
+
+>Explanation: .2 specifies the precision.
+## 2. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print('{0:.2%}'.format(1/3))
+```
+a) 0.33
+b) 0.33%
+**c) 33.33%**
+d) 33%
+
+>Explanation: The symbol % is used to represent the result of an expression as a percentage.
+## 3. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print('ab12'.isalnum())
+```
+**a) True**
+b) False
+c) None
+d) Error
+
+>Explanation: The string has only letters and digits.
+## 4. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print('ab,12'.isalnum()
+```
+a) True
+**b) False**
+c) None
+d) Error
+
+>Explanation: The character , is not a letter or a digit.
+## 5. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print('ab'.isalpha())
+```
+**a) True**
+
+b) False
+
+c) None
+
+d) Error
+
+>Explanation: The string has only letters.
+## 6. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```
+print('a B'.isalpha())
+```
+a) True
+
+**b) False**
+
+c) None
+
+d) Error
+
+>Explanation: Space is not a letter.
+## 7. What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('0xa'.isdigit())
+```
+a) True
+
+**b) False**
+
+c) None
+
+d) Error
+
+>Explanation: Hexadecimal digits aren’t considered as digits (a-f).
+## 8. What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print(''.isdigit())
+```
+a) True
+
+**b) False**
+
+c) None
+
+d) Error
+
+>Explanation: If there are no characters then False is returned.
+## 9. What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('my_string'.isidentifier())
+```
+**a) True**
+
+b) False
+
+c) None
+
+d) Error
+
+>Explanation: It is a valid identifier.
+## 10. What will be the output of the following Python code snippet? [Яким буде результат наступного фрагмента коду Python?]
+```
+print('__foo__'.isidentifier())
+```
+**a) True**
+
+b) False
+
+c) None
+
+d) Error
+
+>Explanation: It is a valid identifier.
 # Section 8
 
 # Section 9
