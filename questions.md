@@ -1682,6 +1682,9 @@ c) 1212abcdef
 **d) error**
 
 >Explanation: The fill character must be exactly one character long.
+
+# Section 8
+
 ## 1. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
 ```
 print("xyyzxyzxzxyy".count('yy'))
@@ -2190,7 +2193,7 @@ c) None
 d) Error
 
 >Explanation: It is a valid identifier.
-# Section 8
+
 
 # Section 9
 
