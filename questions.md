@@ -582,4 +582,375 @@ c) 1212abcdef
 
 # Section 25
 
+## 1. To open a file c:\scores.txt for reading, we use _____________ [Щоб відкрити файл c:\scores.txt для читання, ми використовуємо...]
+
+a) infile = open(“c:\scores.txt”, “r”)
+
+**b) infile = open(“c:\\scores.txt”, “r”)**
+
+c) infile = open(file = “c:\scores.txt”, “r”)
+
+d) infile = open(file = “c:\\scores.txt”, “r”)
+
+> "r" for reading, \\ is needed after disk name
+
+## 2. To open a file c:\scores.txt for writing, we use ____________ [Щоб відкрити файл c:\scores.txt для запису, ми використовуємо...]
+
+a) outfile = open(“c:\scores.txt”, “w”)
+
+**b) outfile = open(“c:\\scores.txt”, “w”)**
+
+c) outfile = open(file = “c:\scores.txt”, “w”)
+
+d) outfile = open(file = “c:\\scores.txt”, “w”)
+
+> "w" is used to indicate that file is to be written to.
+
+## 3. To open a file c:\scores.txt for appending data, we use ____________ [Щоб відкрити файл c:\scores.txt для запису даних в кінець, ми використовуємо...]
+
+**a) outfile = open(“c:\\scores.txt”, “a”)**
+
+b) outfile = open(“c:\\scores.txt”, “rw”)
+
+c) outfile = open(file = “c:\scores.txt”, “w”)
+
+d) outfile = open(file = “c:\\scores.txt”, “w”)
+
+>a is used to indicate that data is to be appended.
+
+## 4. Which of the following statements are true? [Які твердження є правильними?]
+
+a) When you open a file for reading, if the file does not exist, an error occurs
+
+b) When you open a file for writing, if the file does not exist, a new file is created
+
+c) When you open a file for writing, if the file exists, the existing file is overwritten with the new file
+
+**d) All of the mentioned**
+
+## 5. To read two characters from a file object infile, we use ____________ [Для читання 2 символів з з файлового об'єкту infile ми використовуємо...]
+
+**a) infile.read(2)**
+
+b) infile.read()
+
+c) infile.readline()
+
+d) infile.readlines()
+
+## 6. To read the entire remaining contents of the file as a string from a file object infile, we use ____________ [Для читання всього продовження файлу як рядка з файлового об'єкту infile ми використовуємо...]
+
+a) infile.read(2)
+
+**b) infile.read()**
+
+c) infile.readline()
+
+d) infile.readlines()
+
+> read function is used to read all the lines (that left?) in a file.
+
+## 7. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
+```
+    f = None
+
+    for i in range (5):
+
+        with open("data.txt", "w") as f:
+
+            if i > 2:
+
+                break
+
+    print(f.closed)
+```
+
+**a) True**
+
+b) False
+
+c) None
+
+d) Error
+
+> The WITH statement when used with open file guarantees that the file object is closed when the with block exits.
+
+## 8. To read the next line of the file from a file object infile, we use ____________ [Для читання наступного рядка з файлового об'єкту infile ми використовуємо...]
+
+a) infile.read(2)
+
+b) infile.read()
+
+**c) infile.readline()**
+
+d) infile.readlines()
+
+
+## 9. To read the remaining lines of the file from a file object infile, we use ____________ [Для читання рядків, що залишилися, з файлового об'єкту infile ми використовуємо...]
+
+a) infile.read(2)
+
+b) infile.read()
+
+c) infile.readline()
+
+**d) infile.readlines()**
+
+> Content of t.txt:
+> ```
+> eerrrrrrrrrrrrrrrrrrrrrrr
+> tttttttt
+> ```
+> Code:
+> ```
+> f = open('t.txt','r')
+> f.read(2)
+> print(f.readlines())
+> f.close()
+>
+> f = open('t.txt', 'r')
+> f.read(2)
+> print(f.read())
+> f.close()
+> ```
+> Output:
+> ```
+> ['rrrrrrrrrrrrrrrrrrrrrrr\n', 'tttttttt']
+> rrrrrrrrrrrrrrrrrrrrrrr
+> tttttttt
+> ```
+> Apparently in this question they want list of lines and not just string (like in question 6)
+
+## 10. The readlines() method returns ____________ [Метод readlines() повертає ...]
+
+a) str
+
+**b) a list of lines**
+
+c) a list of single characters
+
+d) a list of integers
+
+> see the explanation of previous question
+
+
+<!-- *************************************************************************************************************************************************************************** -->
+## 1. Which are the two built-in functions to read a line of text from standard input, which by default comes from the keyboard? [Що є двома вбудованими функціями для читання рядка зі стандартного вводу, який за замовчу]
+
+**a) Raw_input & Input**
+
+b) Input & Scan
+
+c) Scan & Scanner
+
+d) Scanner
+
+> Python 2 provides two built-in functions to read a line of text from standard input, which by default comes from the keyboard. These functions are:
+raw_input and input
+>
+> In Python 3 raw_input() is just input()
+
+## 2. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
+```
+    str = raw_input("Enter your input: ");
+
+    print "Received input is : ", str
+```
+
+**a)**
+```
+Enter your input: Hello Python
+Received input is :  Hello Python
+```
+
+b)
+```
+Enter your input: Hello Python
+Received input is :  Hello 
+```
+
+c)
+```
+Enter your input: Hello Python
+Received input is :  Python
+```
+
+d) None of the mentioned
+
+> The raw_input([prompt]) function reads one line from standard input and returns it as a string. This would prompt you to enter any string and it would display same string on the screen.
+> In python 3 it changed to just input()
+
+## 3. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
+```
+    str = input("Enter your input: ");
+
+    print "Received input is : ", str
+```
+
+**a)**
+```
+Enter your input: [x*5 for x in range(2,10,2)]
+Received input is :  [x*5 for x in range(2,10,2)]
+```
+
+b)
+```
+Enter your input: [x*5 for x in range(2,10,2)]
+Received input is :  [10, 30, 20, 40]
+```
+
+c)
+```
+Enter your input: [x*5 for x in range(2,10,2)]
+Received input is :  [10, 10, 30, 40]
+```
+
+d) None of the mentioned
+
+
+> tested
+
+## 4. Which one of the following is not attributes of file? [Що не є атрибутом файлу?]
+
+a) closed
+
+b) softspace
+
+**c) rename**
+
+d) mode
+
+> rename is not the attribute of file rest all are files attributes.
+>```
+>Attribute	Description
+>file.closed	Returns true if file is closed, false otherwise.
+>file.mode	Returns access mode with which file was opened.
+>file.name	Returns name of the file.
+>file.softspace	Returns false if space explicitly required with print, true otherwise.
+>```
+
+## 5. What is the use of tell() method in python? [Навіщо метод tell() у python?]
+
+**a) tells you the current position within the file**
+
+b) tells you the end position within the file
+
+c) tells you the file is opened or not
+
+d) none of the mentioned
+
+> The tell() method tells you the current position within the file; in other words, the next read or write will occur at that many bytes from the beginning of the file.
+
+## 6. What is the current syntax of rename() a file? [Який наразі синтаксис у rename() файл?]
+
+**a) rename(current_file_name, new_file_name)**
+
+b) rename(new_file_name, current_file_name,)
+
+c) rename(()(current_file_name, new_file_name))
+
+d) none of the mentioned
+
+> This is the correct syntax which has shown below.
+>```
+>rename(current_file_name, new_file_name)
+>```
+
+## 7. What is the current syntax of remove() a file? [Який наразі синтаксис у remove() файл?]
+
+**a) remove(file_name)**
+
+b) remove(new_file_name, current_file_name,)
+
+c) remove(() , file_name))
+
+d) none of the mentioned
+
+> remove(file_name)
+
+## 8. What will be the output of the following Python code? [Яким буде вихід цього Python коду?]
+```
+    fo = open("foo.txt", "rw+")
+
+    print "Name of the file: ", fo.name
+
+     
+    # Assuming file has following 5 lines
+    # This is 1st line
+    # This is 2nd line
+    # This is 3rd line
+    # This is 4th line
+    # This is 5th line
+
+     
+    for index in range(5):
+
+       line = fo.next()
+
+       print "Line No %d - %s" % (index, line)
+
+     
+    # Close opened file
+
+    fo.close()
+```
+
+a) Compilation Error
+
+b) Syntax Error
+
+**from site c) Displays Output**
+
+**on Python 3.8 I've got runtime error d) None of the mentioned**
+
+
+> In python 2 it will work??? but I've run it in Python 3.8 and got error
+>```
+>ValueError: must have exactly one of create/read/write/append mode
+>```
+> which is runtime error?
+
+## 9. What is the use of seek() method in files? [Навіщо метод seek() для файлів?]
+
+**a) sets the file’s current position at the offset**
+
+b) sets the file’s previous position at the offset
+
+c) sets the file’s current position within the file
+
+d) none of the mentioned
+
+> Sets the file’s current position at the offset. The method seek() sets the file’s current position at the offset.
+>Following is the syntax for seek() method:
+>```
+>fileObject.seek(offset[, whence])
+>```
+>Parameters
+>
+>`offset` — This is the position of the read/write pointer within the file.
+>
+>whence — This is optional and defaults to 0 which means absolute file positioning, other values are 1 which means seek relative to the current position and 2 means seek relative to the file’s end.
+
+## 10. What is the use of truncate() method in file? [Навіщо метод truncate() для файлів?]
+
+**a) truncates the file size**
+
+b) deletes the content of the file
+
+c) deletes the file size
+
+d) none of the mentioned
+
+> The method truncate() truncates the file size. Following is the syntax for truncate() method:
+>```
+>fileObject.truncate( [ size ])
+>```
+>Parameters
+>
+>`size` — If this optional argument is present, the file is truncated to (at most) that size. 
+
+
+
+<!-- *********************************************************************************************************************************** -->
+
 # Section 26
