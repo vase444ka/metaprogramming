@@ -2626,26 +2626,26 @@ d) +++99
 
 # Section 22
  
-### Which of the following functions can help us to find the version of python that we are currently working on?
-**a) sys.version\**
+### Which of the following functions can help us to find the version of python that we are currently working on? [Яка з функцій допоможе знайте версія Python, яку ми зараз використовуємо?]
+**a) sys.version**\
 b) sys.version()\
 c) sys.version(0)\
 d) sys.version(1)
 >Explanation: The function sys.version can help us to find the version of python that we are currently working on. For example, 3.5.2, 2.7.3 etc. this function also returns the current date, time, bits etc along with the version.
 
-### Which of the following functions is not defined under the sys module?
+### Which of the following functions is not defined under the sys module? [Яка з функцій не визначена в модулі sys?]
 a) sys.platform\
 b) sys.path\
 **c) sys.readline**\
 d) sys.argv
 >Explanation: The functions sys.platform, sys.path and sys.argv are defined under the sys module. The function sys.readline is not defined. However, sys.stdin.readline is defined.
 
-### The output of the functions len(“abc”) and sys.getsizeof(“abc”) will be the same.
+### The output of the functions len(“abc”) and sys.getsizeof(“abc”) will be the same. [Вивід функцій len(“abc”) і sys.getsizeof(“abc”) буде однаковий.]
 a) True\
 **b) False**
 >Explanation: The function len returns the length of the string passed, and hence it’s output will be 3. The function getsizeof, present under the sys module returns the size of the object passed. It’s output will be a value much larger than 3. Hence the above statement is false.
  
-### What will be the output of the following Python code, if the code is run on Windows operating system?
+### What will be the output of the following Python code, if the code is run on Windows operating system? [Який буде вивід, якщо код запустити на ОС Windows?]
 ```
 import sys
 if sys.platform[:2]== 'wi':
@@ -2658,7 +2658,7 @@ c) No output\
 d) Junk value
 >Explanation: The output of the function sys.platform[:2] is equal to ‘wi’, when this code is run on windows operating system. Hence the output printed is ‘hello’.
  
-### What will be the output of the following Python code, if the sys module has already been imported?
+### What will be the output of the following Python code, if the sys module has already been imported? [Який буде вивід, якщо модуль sys вже заімпортований?]
 `sys.stdout.write("hello world")`
  
 a) helloworld\
@@ -2667,7 +2667,7 @@ b) hello world10\
 d) error
 >Explanation: The function shown above prints the given string along with the length of the string. Hence the output of the function shown above will be hello world11. (In PyChram output = "hello world", in terminal = "hello world11", think about it :))
  
-## What will be the output of the following Python code?
+## What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import sys
 sys.stdin.readline()
@@ -2680,7 +2680,7 @@ c) ‘Sanfoundry10’\
 d) Error
 >Explanation: The function shown above works just like raw_input. Hence it automatically adds a ‘\n’ character to the input string. Therefore, the output of the function shown above will be: Sanfoundry\n.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import sys
 eval(sys.stdin.readline())
@@ -2693,7 +2693,7 @@ c) ‘India\n’\
 **d) ‘India’**
 >Explanation: The function shown above evaluates the input into a string. Hence if the input entered is enclosed in double quotes, the output will be enclosed in single quotes. Therefore, the output of this code is ‘India’.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import sys
 eval(sys.stdin.readline())
@@ -2706,7 +2706,7 @@ c) Computer8\
 d) Computer
 >Explanation: The code shown above will result in an error. This is because this particular function accepts only strings enclosed in single or double inverted quotes, or numbers. Since the string entered above is not enclosed in single or double inverted quotes, an error will be thrown.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 
 ```
 import sys
@@ -2719,7 +2719,7 @@ c) No output\
 d) Error
 >Explanation: The output of the function shown above will be a blank space enclosed in single quotes. Hence the output of the code shown above is ‘ ‘.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import sys
 sys.stderr.write(“hello”)
@@ -2731,7 +2731,7 @@ c) hello\
 **d) hello5**
 >Explanation: The code shown above returns the string, followed by the length of the string. Hence the output of the code shown above is hello5.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import sys
 sys.argv
@@ -2743,7 +2743,7 @@ b) [ ]\
 d) Error
 >Explanation: The output of the code shown above is a blank space inserted in single quotes, which is enclosed by square brackets. Hence the output will be [‘ ‘].
  
-### To obtain a list of all the functions defined under sys module, which of the following functions can be used?
+### To obtain a list of all the functions defined under sys module, which of the following functions can be used? [Щоб отримати список усіх функцій, визначених у модулі sys, які з наведених нижче функцій можна використовувати]
 
 a) print(sys)\
 b) print(dir.sys)\
@@ -2751,7 +2751,7 @@ c) print(dir[sys])\
 **d) print(dir(sys))**
 >Explanation: The function print(dir(sys)) helps us to obtain a list of all the functions defined under the sys module. The function can be used to obtain the list of functions under any given module in Python.
  
-### The output of the function len(sys.argv) is ____________
+### The output of the function len(sys.argv) is [Вивід функції len(sys.argv) - це]
  
 a) Error\
 **b) 1**\
@@ -2759,77 +2759,77 @@ c) 0\
 d) Junk value
 >Explanation: The output of the function sys.argv is [‘ ‘]. When we execute the function len([‘ ‘]), the output is 1. Hence the output of the function len(sys.argv) is also 1.
  
-### What does os.name contain?
+### What does os.name contain? [Що містить в собі os.name?]
 **a) the name of the operating system dependent module imported**\
 b) the address of the module os\
 c) error, it should’ve been os.name()\
 d) none of the mentioned
 >Explanation: It contains the name of the operating system dependent module imported such as ‘posix’, ‘java’ etc.
  
-### What does print(os.geteuid()) print?
+### What does print(os.geteuid()) print? [Що виводить функція print(os.geteuid())?]
 a) the group id of the current process\
 **b) the user id of the current process**\
 c) both the group id and the user of the current process\
 d) none of the mentione
 >Explanation: os.geteuid() gives the user id while the os.getegid() gives the group id.
  
-### What does os.getlogin() return?
+### What does os.getlogin() return? [Що повертає функція os.getlogin()?]
 **a) name of the current user logged in**\
 b) name of the superuser\
 c) gets a form to login as a different user\
 d) all of the mentioned
 >Explanation: It returns the name of the user who is currently logged in and is running the script.
  
-### What does os.close(f) do?
+### What does os.close(f) do? [Що робить os.close()?]
 a) terminate the process f\
 b) terminate the process f if f is not responding\
 **c) close the file descriptor f**\
 d) return an integer telling how close the file pointer is to the end of file
 >Explanation: When a file descriptor is passed as an argument to os.close() it will be closed.
  
-### What does os.fchmod(fd, mode) do?
+### What does os.fchmod(fd, mode) do? [Що робить os.fchmod(fd, mode)?]
 **a) change permission bits of the file**\
 b) change permission bits of the directory\
 c) change permission bits of either the file or the directory\
 d) none of the mentioned\
 >Explanation: The arguments to the function are a file descriptor and the new mode.
  
-### Which of the following functions can be used to read data from a file using a file descriptor?
+### Which of the following functions can be used to read data from a file using a file descriptor? [Яку з наведених нижче функцій можна використовувати для читання даних із файлу за допомогою дескриптора файлу?]
 a) os.reader()\
 **b) os.read()**\
 c) os.quick_read()\
 d) os.scan()
 >Explanation: None of the other functions exist.
  
-### Which of the following returns a string that represents the present working directory?
+### Which of the following returns a string that represents the present working directory? [Що з наведеного нижче повертає рядок, що представляє поточний робочий каталог?]
 **a) os.getcwd()**\
 b) os.cwd()\
 c) os.getpwd()\
 d) os.pwd()
 >Explanation: The function getcwd() (get current working directory) returns a string that represents the present working directory.
  
-### What does os.link() do?
+### What does os.link() do? [Що робить os.link()?]
 a) create a symbolic link\
 **b) create a hard link**\
 c) create a soft link\
 d) none of the mentioned
 >Explanation: os.link(source, destination) will create a hard link from source to destination.
  
-### Which of the following can be used to create a directory?
+### Which of the following can be used to create a directory? [Що з наведеного нижче можна використовувати для створення каталогу?]
 **a) os.mkdir()**\
 b) os.creat_dir()\
 c) os.create_dir()\
 d) os.make_dir()
 >Explanation: The function mkdir() creates a directory in the path specified.
  
-### Which of the following can be used to create a symbolic link?
+### Which of the following can be used to create a symbolic link? [Що з наведеного нижче можна використовувати для створення символічного посилання?]
 **a) os.symlink()**\
 b) os.symb_link()\
 c) os.symblin()\
 d) os.ln()
 >Explanation: It is the function that allows you to create a symbolic link.
  
-###What will be the output shape of the following Python code?
+###What will be the output shape of the following Python code? [Який буде вигляд виводу наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -2844,7 +2844,7 @@ b) rectangle\
 d) kite
 >Explanation: According to the code shown above, 4 lines will be drawn. Three lines will be in the shape of a triangle. The fourth line will trace the base, which is already drawn. Hence the base will be slightly thicker than the rest of the lines. However there will be no change in the shape due to this extra line. Hence the output shape will be a triangle.
  
-### The number of lines drawn in each case, assuming that the turtle module has been imported:
+### The number of lines drawn in each case, assuming that the turtle module has been imported: [Кількість ліній, намальованих у кожному випадку, якщо припустити, що модуль turtle було імпортовано:]
 ```
 Case 1:
 for i in range(0,10):
@@ -2862,14 +2862,14 @@ c) 9, 9\
 d) 10, 10
 >Explanation: The number of lines drawn in the first case is 10, while that in the second case is 9.
  
-### The command which helps us to reset the pen (turtle):
+### The command which helps us to reset the pen (turtle): [Команда, яка допомагає нам скинути pen (turtle)]
 a) turtle.reset\
 b) turtle.penreset\
 c) turtle.penreset()\
 **d) turtle.reset()**
 >Explanation: The command turtle.reset() helps us to reset the pen. After the execution of this command, we get a blank page with an arrow on it. We can then perform any desired operation on this page.
  
-### Fill in the blank such that the following Python code results in the formation of an inverted, equilateral triangle.
+### Fill in the blank such that the following Python code results in the formation of an inverted, equilateral triangle. [Заповніть пропуск так, щоб наступний код Python утворив перевернутий рівносторонній трикутник.]
 ```
 import turtle
 t=turtle.Pen()
@@ -2884,7 +2884,7 @@ c) -120\
 d) 60
 >Explanation: An angle of -120 will result in the formation of an upright, equilateral triangle. An angle of 120 will result in the formation of an inverted triangle. The angles of 60 and -60 do not result in the formation of a triangle.
  
-### What will be the output shape of the following Python code?
+### What will be the output shape of the following Python code? [Який буде вигляд виводу наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -2899,7 +2899,7 @@ c) Triangle\
 **d) Square**
 >Explanation: The code shown above will result in the formation of a square, with each of side 60.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -2921,14 +2921,14 @@ c) 2 squares, at a separation of100 units, joined by a straight line\
 d) 2 squares, at a separation of 100 units, without a line joining them\
 >Explanation: The output of the code shown above will be a single square. This is because the function t.penup() is used to lift the pen after the construction of the first square. However, the function t.pendown() has not been used to put the pen back down. Hence, the output shape of this code is one square, of side 100 units.
  
-### Which of the following functions does not accept any arguments?
+### Which of the following functions does not accept any arguments? [Яка з наведених функцій не приймає жодних аргументів?]
 **a) position**\
 b) fillcolor\
 c) goto\
 d) setheading()
 >Explanation: The functions fillcolor(), goto() and setheading() accept arguments, whereas the function position() does not accept any arguments. The function position() returns the current position of the turtle.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -2942,7 +2942,7 @@ c) 300, 9\
 d) 9.00, 300.00
 >Explanation: The goto functions takes the arrow to the position specified by the user as arguments. The position function returns the current position of the arrow. Hence the output of the code shown above will be: 300.00, 9.00.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -2957,7 +2957,7 @@ c) Tetrahedron\
 **d) Star**
 >Explanation: It is clear from the above code that 5 lines will be drawn on the canvas, at an angle of 144 degrees. The only shape which fits this description is star. Hence the output of the code shown above is star.
  
-### What will be the output of the following Python functions?
+### What will be the output of the following Python functions? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -2977,7 +2977,7 @@ b) Two triangles, joined by a straight line\
 d) Two separate triangles, not connected by a line
 >Explanation: The output of the code shown above is two equilateral triangles (of side 100 units), joined at the vertex.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -2993,14 +2993,14 @@ b) A circle filled in with the colour red\
 d) A circle filled in with the colour green
 >Explanation: The function t.colour(0, 0, 1) is used to fill in the colour blue into any given shape. Hence the output of the code shown above will be a circle filled in with the colour blue.
  
-### Which of the following functions can be used to make the arrow black?
+### Which of the following functions can be used to make the arrow black? [Яку з наведених нижче функцій можна використати, щоб зробити стрілку чорною?]
 a) turtle.color(0,1,0)\
 b) turtle.color(1,0,0)\
 c) turtle.color(0,0,1)\
 **d) turtle.color(0,0,0)**
 Explanation: The function turtle.color(0,0,0) can change the colour of the arrow. The function turtle.color(0,1,0) will make the arrow green. The function turtle.color(1,0,0) will make the arrow red. The function turtle.color(0,0,1) will make the arrow blue. The function turtle.color(0,0,0) will make the arrow black.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -3018,7 +3018,7 @@ c) A triangle which is not filled in with any colour\
 d) Error
 >Explanation: The code shown above will result in a blank page. This is because the command turtle.color(1,1,1) eliminates the arrow from the page. Hence all the commands after this command are ineffective.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -3036,7 +3036,7 @@ d) Error
 >Explanation: The output shape of the code shown above is a square, outlined with the colour green, but not filled in with any colour. This is because we have not used the command t.end_fill() at the end.
 
  
-### In which direction is the turtle pointed by default?
+### In which direction is the turtle pointed by default? [У який бік за замовчуванням вказана turtle?]
 
 a) North\
 b) South\
@@ -3044,7 +3044,7 @@ b) South\
 d) West
 >Explanation: By default, the turtle is pointed towards the east direction. We can change the direction of the turtle by using certain commands. However, whenever the turtle is reset, it points towards east.
  
-###The command used to set only the x coordinate of the turtle at 45 units is:
+### The command used to set only the x coordinate of the turtle at 45 units is: [Команда, яка використовується для встановлення лише координати x turtle на 45 одиниць]
  
 a) reset(45)\
 **b) setx(45)**\
@@ -3053,7 +3053,7 @@ d) xreset(45)
 >Explanation: The command setx(45) is used to set the x coordinate of the turtle. Similarly, the command sety() is used to set the y coordinate of the turtle. The function reset() takes two values as arguments, one for the x-coordinate and the other for the y-coordinate.
 
  
-### Which of the following functions returns a value in degrees, counterclockwise from the horizontal right?
+### Which of the following functions returns a value in degrees, counterclockwise from the horizontal right? [Яка з наведених нижче функцій повертає значення в градусах проти годинникової стрілки від горизонтального праворуч?]
  
 **a) heading()**\
 b) degrees()\
@@ -3061,7 +3061,7 @@ c) position()\
 d) window_height()
 >Explanation: The function heading() returns the heading of the turtle, which is a value in degrees counterclockwise from the horizontal right. This measure will be in radians if radians() has been called.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -3076,7 +3076,7 @@ b) 90.0\
 d) 360.0
 >Explanation: The output of the code shown above will be 270.0. The function heading() returns the heading of the turtle, a value in degrees, counterclockwise from the horizontal right. The output shape of this code is a straight line pointing downwards.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
@@ -3090,7 +3090,7 @@ c) No\
 d) False
 >Explanation: The function t.clear() returns a blank canvas, without changing the position of the turtle. Since the turtle is visible on the blank canvas, the output of this code is: Yes.
  
-### What will be the output of the following Python code?
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 ```
 import turtle
 t=turtle.Pen()
