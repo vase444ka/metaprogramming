@@ -1023,7 +1023,7 @@ d) Error as display function requires additional argument
 >>> del obj
 ```
 
-a) True
+_**a) True**_
 
 b) False
 
@@ -1225,7 +1225,7 @@ _**b) False**_
 > They are called automaticly
 
 
-8. What will be the output of the following Python code?
+## 8. What will be the output of the following Python code?
 
 ```
 >>> class demo():
