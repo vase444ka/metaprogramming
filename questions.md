@@ -1243,7 +1243,7 @@ def f1():
 f1 = f(f1)
 ```
 
-a) True\
+**a) True**\
 b) False
 
 >Explanation: The @ symbol can be used as an alternate way to specify a function that needs to be decorated. The output of the codes shown above is the same. Hence they are equivalent. Therefore this statement is true.
