@@ -11287,6 +11287,342 @@ d) from folder.subfolder.mod1 import objects imports packages
 
 # Section 20
 
+####This set of Python Objective Questions & Answers focuses on “Math – 1”.
+
+### 1. What is returned by math.ceil(3.4)? [Що повертає math.ceil(3.4)?]
+   a) 3
+
+   **b) 4**
+
+   c) 4.0
+
+   d) 3.0
+
+Explanation: The ceil function returns the smallest integer that is bigger than or equal to the number itself.
+### 2. What is the value returned by math.floor(3.4)? [Яке значення повертає math.floor(3.4)?]
+   **a) 3**
+
+   b) 4
+
+   c) 4.0
+
+   d) 3.0
+
+Explanation: The floor function returns the biggest number that is smaller than or equal to the number itself.
+### 3. What will be the output of print(math.copysign(3, -1))? [Яким буде результат print(math.copysign(3, -1))?]
+   a) 1
+
+   b) 1.0
+
+   c) -3
+
+   **d) -3.0**
+
+Explanation: The copysign function returns a float whose absolute value is that of the first argument and the sign is that of the second argument.
+
+### 4. What is displayed on executing print(math.fabs(-3.4))? [Що відображається під час виконання print(math.fabs(-3.4))?]
+   a) -3.4
+
+   **b) 3.4**
+
+   c) 3
+
+   d) -3
+
+Explanation: A negative floating point number is returned as a positive floating point number.
+### 5. Is the output of the function abs() the same as that of the function math.fabs()? [Чи є результат функції abs() таким же, як і для функції math.fabs()]
+   **a) sometimes**
+
+   b) always
+
+   c) never
+
+   d) none of the mentioned
+   
+
+Explanation: math.fabs() always returns a float and does not work with complex numbers whereas the return type of abs() is determined by the type of value that is passed to it.
+### 6. What is the value returned by math.fact(6)? [Яке значення повертає math.fact(6)]
+   a) 720
+
+   b) 6
+
+   c) [1, 2, 3, 6]
+
+   **d) error**
+
+Explanation: NameError, fact() is not defined.
+### 7. What is the value of x if x = math.factorial(0)? [Яке значення x, якщо x = math.factorial(0)]
+   a) 0
+
+   **b) 1**
+
+   c) error
+
+   d) none of the mentioned
+
+Explanation: Factorial of 0 is 1.
+### 8. What is math.factorial(4.0)? [Чому дорівнює math.factorial(4.0)]
+   **a) 24**
+
+   b) 1
+
+   c) error
+
+   d) none of the mentioned
+
+
+### 9. What will be the output of print(math.factorial(4.5))? [Яким буде результат від print(math.factorial(4.5)]
+   a) 24 
+
+   b) 120
+
+   **c) error**
+
+   d) 24.0
+
+Explanation: Factorial is only defined for non-negative integers.
+### 10. What is math.floor(0o10)? [Чому дорівнює math.floor(0o10)?]
+**a) 8**
+
+Explanation: 0o10 is 8 and floor(8) is 8.
+
+
+####Python Questions and Answers – Math – 2
+
+
+###1. What does the function math.frexp(x) return? [Що повертає функція math.freexp(x)?]
+   **a) a tuple containing the mantissa and the exponent of x**
+
+   b) a list containing the mantissa and the exponent of x
+
+   c) a tuple containing the mantissa of x
+
+   d) a list containing the exponent of x
+
+
+Explanation: It returns a tuple with two elements. The first element is the mantissa and the second element is the exponent.
+###2. What is the result of math.fsum([.1 for i in range(20)])? [Який результат math.fsum([.1 for i in range(20)])?]
+   **a) 2.0**
+   
+b) 20
+   
+c) 2
+   
+d) 2.0000000000000004
+
+Explanation: The function fsum returns an accurate floating point sum of the elements of its argument.
+###3. What is the result of sum([.1 for i in range(20)])? [Який результат sum([.1 for i in range(20)])?]
+   
+a) 2.0
+   
+b) 20
+   
+c) 2
+   
+**d) 2.0000000000000004**
+
+Explanation: There is some loss of accuracy when we use sum with floating point numbers. Hence the function fsum is preferable.
+###4. What is returned by math.isfinite(float(‘inf’))? [Що повертає math.isfinite(float(‘inf’))?]
+   
+a) True
+   
+**b) False**
+   
+c) None
+   
+d) error
+
+Explanation: float(‘inf’) is not a finite number.
+
+###5. What is returned by math.isfinite(float(‘nan’))? [Що повертає math.isfinite(float(‘nan’))?]
+   
+a) True
+   
+**b) False**
+   
+c) None
+   
+d) error
+
+Explanation: float(‘nan’) is not a finite number.
+###6. What is x if x = math.isfinite(float(‘0.0’))? [Що таке x, якщо x = math.isfinite(float(‘0.0’))?]
+   
+**a) True**
+   
+b) False
+   
+c) None
+   
+d) error
+
+Explanation: float(‘0.0’) is a finite number.
+###7. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
+```python 
+>>> -float('inf') + float('inf')
+```
+
+a) inf
+
+**b) nan**
+
+c) 0
+
+d) 0.0
+
+Explanation: The result of float(‘inf’)-float(‘inf’) is undefined.
+###8. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
+```python
+ print(math.isinf(float('-inf')))
+```
+
+a) error, the minus sign shouldn’t have been inside the brackets
+
+b) error, there is no function called isinf
+
+**c) True**
+
+d) False
+
+Explanation: -float(‘inf’) is the same as float(‘-inf’).
+###9. What is the value of x if x = math.ldexp(0.5, 1)? [Яке значення x, якщо x = math.ldexp(0,5, 1)?]
+   
+a) 1
+   
+b) 2.0
+   
+c) 0.5
+   
+**d) none of the mentioned**
+
+Explanation: The value returned by ldexp(x, y) is x * (2 ** y). In the current case x is 1.0.
+###10. What is returned by math.modf(1.0)? [Що повертає math.modf(1.0)?]
+    
+**a) (0.0, 1.0)**
+    
+b) (1.0, 0.0)
+    
+c) (0.5, 1)
+    
+d) (0.5, 1.0)
+
+Explanation: The first element is the fractional part and the second element is the integral part of the argument.
+
+####Python Questions and Answers – Math – 3
+
+###1. What is the result of math.trunc(3.1)? [Який результат math.trunc(3.1)?]
+   
+a) 3.0
+   
+**b) 3**
+   
+c) 0.1
+   
+d) 1
+
+Explanation: The integral part of the floating point number is returned.
+###2. What is the output of print(math.trunc(‘3.1’))? [Який результат буде print(math.trunc(‘3.1’))?]
+   
+a) 3
+   
+b) 3.0
+   
+**c) error**
+   
+d) none of the mentioned
+
+Explanation: TypeError, a string does not have __trunc__ method.
+###3. Which of the following is the same as math.exp(p)? [Що з наведеного нижче відповідає math.exp(p)?]
+   
+a) e ** p
+   
+**b) math.e ** p**
+   
+c) p ** e
+   
+d) p ** math.e
+
+Explanation: math.e is the constant defined in the math module.
+
+###4. What is returned by math.expm1(p)? [Що повертає math.expm1(p)?]
+   
+**a) (math.e ** p) – 1**
+   
+b) math.e ** (p – 1)
+   
+c) error
+   
+d) none of the mentioned
+
+Explanation: One is subtracted from the result of math.exp(p) and returned.
+###5. What is the default base used when math.log(x) is found? [Яка база за замовчуванням використовується, коли знайдено math.log(x)?]
+   
+**a) e**
+   
+b) 10
+   
+c) 2
+   
+d) none of the mentioned
+
+Explanation: The natural log of x is returned by default.
+###6. Which of the following aren’t defined in the math module? [Що з наведеного нижче не визначено в математичному модулі?]
+   
+a) log2()
+   
+b) log10()
+   
+**c) logx()**
+   
+d) none of the mentioned
+
+Explanation: log2() and log10() are defined in the math module.
+###7. What is returned by int(math.pow(3, 2))? [Що повертає int(math.pow(3, 2))?]
+   
+a) 6
+   
+**b) 9**
+   
+c) error, third argument required
+   
+d) error, too many arguments
+
+Explanation: math.pow(a, b) returns a ** b.
+###8. What is output of print(math.pow(3, 2))? [Який вивід print(math.pow(3, 2))?]
+   
+a) 9
+   
+**b) 9.0**
+   
+c) None
+   
+d) None of the mentioned
+
+Explanation: math.pow() returns a floating point number.
+###9. What is the value of x if x = math.sqrt(4)? [Яке значення x, якщо x = math.sqrt(4)?]
+   
+a) 2
+   
+**b) 2.0**
+   
+c) (2, -2)
+   
+d) (2.0, -2.0)
+
+Explanation: The function returns one floating point number.
+###10. What does math.sqrt(X, Y) do? [Що робить math.sqrt(X, Y)?]
+    
+a) calculate the Xth root of Y
+    
+b) calculate the Yth root of X
+    
+**c) error**
+    
+d) return a tuple with the square root of X and Y
+
+Explanation: The function takes only one argument.
+
 # Section 21
 
 Python Question and Answers – Datetime Module – 1
