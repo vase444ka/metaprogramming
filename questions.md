@@ -821,7 +821,7 @@ d) none of the mentioned
 
 a) !
 
-_**b) ~ **_
+**b) ~ **
 
 c) ^
 
@@ -1094,3 +1094,239 @@ d) test
 
 
 ## Class and Objects - 2
+
+## 1. The assignment of more than one function to a particular operator is _______
+
+a) Operator over-assignment
+
+b) Operator overriding
+
+_**c) Operator overloading**_
+
+d) Operator instance
+
+
+## 2. Which of the following is not a class method?
+
+_**a) Non-static**_
+
+b) Static
+
+c) Bounded
+
+d) Unbounded
+
+
+
+## 3. What will be the output of the following Python code?
+
+```
+def add(c,k):
+    c.test=c.test+1
+    k=k+1
+class A:
+    def __init__(self):
+        self.test = 0
+def main():
+    Count=A()
+    k=0
+ 
+    for i in range(0,25):
+        add(Count,k)
+    print("Count.test=", Count.test)
+    print("k =", k)
+main()
+```
+
+a) Exception is thrown
+
+b)
+```
+Count.test=25
+k=25
+```
+
+_**c)**_
+
+```
+Count.test=25
+k=0
+```
+
+d)
+```
+Count.test=0
+k=0
+```
+
+
+## 4. Which of the following Python code creates an empty class?
+
+a)
+```
+class A:
+    return
+```
+
+_**b)**_
+```
+class A:
+    pass
+```
+
+c)
+```
+class A:
+```
+
+d) It is not possible to create an empty class
+
+
+
+## 5. Is the following Python code valid?
+
+```
+class B(object):
+  def first(self):
+    print("First method called")
+  def second():
+    print("Second method called")
+ob = B()
+B.first(ob)
+```
+
+a) It isn’t as the object declaration isn’t right
+
+b) It isn’t as there isn’t any \_\_init\_\_ method for initializing class members
+
+_**c) Yes, this method of calling is called unbounded method call**_
+
+d) Yes, this method of calling is called bounded method call
+
+
+## 6. What are the methods which begin and end with two underscore characters called?
+
+_**a) Special methods**_
+
+b) In-built methods
+
+c) User-defined methods
+
+d) Additional methods
+
+
+## 7. Special methods need to be explicitly called during object creation.
+
+a) True
+
+_**b) False**_
+
+
+> They are called automaticly
+
+
+8. What will be the output of the following Python code?
+
+```
+>>> class demo():
+	def __repr__(self):
+		return '__repr__ built-in function called'
+	def __str__(self):
+		return '__str__ built-in function called'
+>>> s=demo()
+>>> print(s)
+```
+
+a) Error
+
+b) Nothing is printed
+
+_**c) \_\_str\_\_ called**_
+
+d) \_\_repr\_\_ called
+
+
+## 9. What is hasattr(obj,name) used for?
+
+a) To access the attribute of the object
+
+b) To delete an attribute
+
+_**c) To check if an attribute exists or not**_
+
+d) To set an attribute
+
+
+## 10. What will be the output of the following Python code?
+
+```
+class stud:
+   def __init__(self, roll_no, grade):
+      self.roll_no = roll_no
+      self.grade = grade
+   def display (self):
+      print("Roll no : ", self.roll_no,  ", Grade: ", self.grade)
+stud1 = stud(34, 'S')
+stud1.age=7
+print(hasattr(stud1, 'age'))
+```
+
+a) Error as age isn’t defined
+
+_**b) True**_
+
+c) False
+
+d) 7
+
+
+## 11. What is delattr(obj,name) used for?
+
+a) To print deleted attribute
+
+_**b) To delete an attribute**_
+
+c) To check if an attribute is deleted or not
+
+d) To set an attribute
+
+
+
+## 12. \_\_del\_\_ method is used to destroy instances of a class.
+
+_**a) True**_
+
+b) False
+
+
+## 13. What will be the output of the following Python code?
+
+```
+class stud:
+   ‘Base class for all students’
+   def __init__(self, roll_no, grade):
+      self.roll_no = roll_no
+      self.grade = grade
+   def display (self):
+      print("Roll no : ", self.roll_no,  ", Grade: ", self.grade)
+print(student.__doc__)
+```
+
+a) Exception is thrown
+
+b) \_\_main\_\_
+
+c) Nothing is displayed
+
+_**d) Base class for all students**_
+
+
+## 14. What does print(Test.\_\_name\_\_) display (assuming Test is the name of the class)?
+
+a) ()
+
+b) Exception is thrown
+
+_**c) Test**_
+
+d) \_\_main\_\_
