@@ -5023,8 +5023,11 @@ def test(i,j):
 print(test(4,7))
 ```
 a) 13
+
 b) 7
+
 c) Infinite loop
+
 **d) 17**
 
 >Explanation: The test(i-1,i+j) part of the function keeps calling the function until the base condition of the function is satisfied.
@@ -5044,16 +5047,22 @@ for i in l:
     print(i,end="")
 ```
 a) 011
+
 **b) 110**
+
 c) 3
+
 d) Infinite loop
 
 >Explanation: The above code gives the binary equivalent of the number.
 
 ### 7. What is tail recursion?
 a) A recursive function that has two base cases
+
 b) A function where the recursive functions leads to an infinite loop
+
 c) A recursive function where the function doesn’t return anything and just prints the values
+
 **d) A function where the recursive call is the last thing executed by the function**
 
 >Explanation: A recursive function is tail recursive when recursive call is executed by the function in the last.
@@ -5072,16 +5081,22 @@ def b(n, tot):
         return b(n-2, tot-2)
 ```
 a) Both a() and b() aren’t tail recursive
+
 b) Both a() and b() are tail recursive
+
 **c) b() is tail recursive but a() isn’t**
+
 d) a() is tail recursive but b() isn’t
 
 >Explanation: A recursive function is tail recursive when recursive call is executed by the function in the last.
 
 ### 9. Which of the following statements is false about recursion?
 a) Every recursive function must have a base case
+
 b) Infinite recursion can occur if the base case isn’t properly mentioned
+
 c) A recursive function makes the code easier to understand
+
 **d) Every recursive function must have a return value**
 
 >Explanation: A recursive function needn’t have a return value.
@@ -5096,38 +5111,51 @@ def fun(n):
 print(fun(45))
 ```
 a) 50
+
 **b) 100**
+
 c) 74
+
 d) Infinite loop
 
 >Explanation: The fun(fun(n+11)) part of the code keeps executing until the value of n becomes greater than 100, after which n-5 is returned and printed.
 
 ### 11. Recursion and iteration are the same programming approach.
 a) True
+
 **b) False**
 
 >Explanation: In recursion, the function calls itself till the base condition is reached whereas iteration means repetition of process for example in for-loops.
 
 ### 12. What happens if the base condition isn’t defined in recursive programs?
 **a) Program gets into an infinite loop**
+
 b) Program runs once
+
 c) Program runs n number of times where n is the argument given to the function
+
 d) An exception is thrown
 
 >Explanation: The program will run until the system gets out of memory.
 
 ### 13. Which of these is not true about recursion?
 a) Making the code look clean
+
 b) A complex task can be broken into sub-problems
+
 **c) Recursive calls take up less memory**
+
 d) Sequence generation is easier than a nested iteration
 
 >Explanation: Recursive calls take up a lot of memory and time as memory is taken up each time the function is called.
 
 ### 14. Which of these is not true about recursion?
 a) It’s easier to code some real-world problems using recursion than non-recursive equivalent
+
 **b) Recursive functions are easy to debug**
+
 c) Recursive calls take up a lot of memory
+
 d) Programs using recursion take longer time than their non-recursive equivalent
 
 >Explanation: Recursive functions may be hard to debug as the logic behind recursion may be hard to follow.
@@ -5145,8 +5173,11 @@ for i in range(0,4):
     print(a(i),end=" ")
 ```
 a) 0 1 2 3
+
 b) An exception is thrown
+
 c) 0 1 1 2 3
+
 **d) 0 1 1 2**
 
 >Explanation: The above piece of code prints the Fibonacci series.
@@ -5160,8 +5191,11 @@ ls
 ```
 
 **a) Shallow copy**
+
 b) Deep copy
+
 c) memberwise
+
 d) All of the mentioned
 
 >Explanation: The code shown above depicts shallow copy. For deep copy, the command given is: l2 = l1.copy().
@@ -5178,14 +5212,17 @@ a)
 
 [88, 2, 3, [4, 5]]
 [88, 2, 3, [4, 5]]
+
 **b)**
 
 [2, 3, [4, 5]]
 [88, 2, 3, [4, 5]]
+
 c)
 
 [88, 2, 3, [4, 5]]
 [2, 3, [4, 5]]
+
 d)
 
 [2, 3, [4, 5]]
@@ -5195,8 +5232,11 @@ d)
 
 ### 3. In _______________ copy, the base address of the objects are copied. In _______________ copy, the base address of the objects are not copied.
 a) deep. shallow
+
 b) memberwise, shallow
+
 **c) shallow, deep**
+
 d) deep, memberwise
 
 >Explanation: In shallow copy, the base address of the objects are copied.
@@ -5205,6 +5245,7 @@ Note that memberwise copy is another name for shallow copy.
 
 ### 4. The nested list undergoes shallow copy even when the list as a whole undergoes deep copy.
 **a) True**
+
 b) False
 
 >Explanation: A nested list undergoes shallow copy even when the list as a whole undergoes deep copy. Hence, this statement is true.
@@ -5217,8 +5258,11 @@ l1=l2
 l2
 ```
 a) [2, 4, 6, 8], shallow copy
+
 b) [2, 4, 6, 8], deep copy
+
 **c) [1, 2, 3], shallow copy**
+
 d) [1, 2, 3], deep copy
 
 >Explanation: The code shown above depicts shallow copy and the output of the code is: [1, 2, 3].
@@ -5233,8 +5277,11 @@ l2=l1.copy()
 id(l1)==id(l2)
 ```
 a) False, False
+
 b) False, True
+
 c) True, True
+
 **d) True, False**
 
 >Explanation: The first code shown above represents shallow copy. Hence the output of the expression id(l1)==id(l2) is True. The second code depicts deep copy. Hence the output of the expression id(l1)==id(l2) in the second case is False.
@@ -5246,8 +5293,11 @@ l2=list(l1)
 id(l1)==id(l2)
 ```
 a) True
+
 **b) False**
+
 c) Error
+
 d) Address of l1
 
 >Explanation: The code shown above shows a nested list. A nested list will undergo shallow copy when the list as a whole undergoes deep copy. Hence the output of this code is False.
@@ -5264,11 +5314,14 @@ a)
 
 [10, 20, 30, [40]]
 [10, 20, 30, 90]
+
 b) Error
+
 **c)**
 
 [10, 20, 30 [90]]
 [10, 20, 30, [40]]
+
 d)
 
 [10, 20, 30, [40]]
@@ -5295,14 +5348,17 @@ a)
 
 [1, 2, 3, (4)]
 [1, 2, 3, 4]
+
 b)
 
 [1, 2, 3, 4]
 [1, 2, 3, (4)]
+
 **c)**
 
 [1, 2, 3, 4]
 [1, 2, 3, 4]
+
 d)
 
 [1, 2, 3, (4)]
@@ -5319,16 +5375,22 @@ def check(n):
 print(check(11))
 ```
 **a) False**
+
 b) True
+
 c) 1
+
 d) An exception is thrown
 
 >Explanation: The above piece of code checks recursively whether a number is even or odd.
 
 ### 12. What is the base case in the Merge Sort algorithm when it is solved recursively?
 a) n=0
+
 b) n=1
+
 **c) A list of length one**
+
 d) An empty list
 
 >Explanation: Merge Sort algorithm implements the recursive algorithm and when the recursive function receives a list of length 1 which is the base case, the list is returned.
@@ -5340,8 +5402,11 @@ b = lambda x: (b (x[1:]) + x[:1] if x else [])
 print(b (a))
 ```
 a) 1 2 3 4 5
+
 b) [5,4,3,2,1]
+
 **c) []**
+
 d) Error, lambda functions can’t be called recursively
 
 >Explanation: The above piece of code appends the first element of the list to a reversed sublist and reverses the list using recursion.
