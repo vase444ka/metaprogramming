@@ -26,13 +26,13 @@ c) functional programming
 
 ## 5. Is Python code compiled or interpreted?
 
-? **a) Python code is both compiled and interpreted**
+**a) Python code is both compiled and interpreted**
 
 b) Python code is neither compiled nor interpreted
 
 c) Python code is only compiled
 
-? **d) Python code is only interpreted**
+d) Python code is only interpreted
 
 > Explanation: Many languages have been implemented using both compilers and interpreters, including C, Pascal, and Python.
 
@@ -92,10 +92,6 @@ while True:
 **b) error**
 
 > Explanation: SyntaxError, there shouldn’t be a space between + and = in +=.
-
-## 12. Which of the following functions can help us to find the version of python that we are currently working on? [версія python]
-
-**a) sys.version(1)**
 
 ## 13. Python supports the creation of anonymous functions at runtime, using a construct called \***\*\_\_\*\*** [анонімні функції]
 
@@ -280,9 +276,9 @@ a) str()
 
 b) format()
 
-**c) \_ _ str _ \_()**
+c) \_ _ str _ \_()
 
-d) \_ _ format _ \_()
+**d) \_\_format\_\_()**
 
 ## 34. Which one of the following is not a keyword in Python language?
 
@@ -8428,9 +8424,9 @@ c) Junk value
 
 > Explanation: In the code shown above, when we call the function f, a new namespace is created. The assignment x=4 is performed in the local namespace and does not affect the global namespace. Hence the output is 1.
 
-### 8. ******\_\_****** returns a dictionary of the module namespace.
+### 8. **\*\***\_\_**\*\*** returns a dictionary of the module namespace.
 
-******\_\_\_\_****** returns a dictionary of the current namespace.
+**\*\***\_\_\_\_**\*\*** returns a dictionary of the current namespace.
 
 a)
 
@@ -8742,7 +8738,7 @@ d)
 
 > Explanation: The code shown above depicts deep copy. In deep copy, the base address of the objects is not copied. Hence the modification done on one list does not affect the other list.
 
-### 3. In ******\_\_\_****** copy, the base address of the objects are copied. In ******\_\_\_****** copy, the base address of the objects are not copied.
+### 3. In **\*\***\_\_\_**\*\*** copy, the base address of the objects are copied. In **\*\***\_\_\_**\*\*** copy, the base address of the objects are not copied.
 
 a) deep. shallow
 
@@ -8851,7 +8847,7 @@ d)
 
 > Explanation: The code shown above depicts deep copy. Hence at the end of the code, l1=[10, 20, 30, [90]] and l2=[10, 20, 30, [40]].
 
-### 9. In ********\_\_\_\_******** copy, the modification done on one list affects the other list. In ********\_\_\_\_******** copy, the modification done on one list does not affect the other list.
+### 9. In **\*\*\*\***\_\_\_\_**\*\*\*\*** copy, the modification done on one list affects the other list. In **\*\*\*\***\_\_\_\_**\*\*\*\*** copy, the modification done on one list does not affect the other list.
 
 **a) shallow, deep**
 b) memberwise, shallow
@@ -9913,7 +9909,7 @@ d) ‘2010 20 Sep 08:45:12 Sun’
 
 > The code shown above returns the given date and time in a particular format. Hence the output of the code shown above will be: ‘Sun Sep 20 08:45:12 2010’.
 
-## 8. The sleep function (under the time module) is used to ****\_\_\_**** [Функція сну (під модулем часу) використовується для ___________]
+## 8. The sleep function (under the time module) is used to \***\*\_\_\_\*\*** [Функція сну (під модулем часу) використовується для ___________]
 
 **a) Pause the code for the specified number of seconds**
 b) Return the specified number of seconds, in terms of milliseconds
@@ -10061,7 +10057,7 @@ d) 95
 
 > The function shown above will generate an output which is a multiple of 5 and is between 0 and 91. The only option which satisfies these criteria is 10. Hence the only possible output of this function is 10.
 
-## 12. Both the functions randint and uniform accept ****\_\_\_\_**** parameters. [Обидві функції randint і uniform приймають ____________ параметри.]
+## 12. Both the functions randint and uniform accept \***\*\_\_\_\_\*\*** parameters. [Обидві функції randint і uniform приймають ____________ параметри.]
 
 a) 0
 b) 1
