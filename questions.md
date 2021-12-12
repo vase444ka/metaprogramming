@@ -10757,6 +10757,345 @@ c) 100.00, 90.00\
 
 # Section 24
 
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.compile('hello', re.X)```
+
+a) [‘h’, ‘e’, ‘l’, ‘l’, ‘o’]\
+**b) re.compile(‘hello’, re.VERBOSE)**\
+c) Error\
+d) Junk value\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split('[a-c]', '0a3B6', re.I)```
+
+a) Error\
+b) [‘a’, ‘B’]\
+**c) [‘0’, ‘3B6’]**\
+d) [‘a’]\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.sub('morning', 'evening', 'good morning')```
+
+**a) ‘good evening’**\
+b) ‘good’\
+c) ‘morning’\
+d) ‘evening’\
+
+### The function re.error raises an exception if a particular string contains no match for the given pattern [Функція re.error викликає помилку, якщо рядок не відповідає заданому шаблону]
+
+a) True\
+**b) False**\
+>The function re.error raises an exception when a string passed to one of its functions here is not a valid regular expression. It does not raise an exception if a particular string does not contain a match for the given pattern.
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.escape('new**world')```
+
+a) ‘new world’\
+**b) ‘new\\*\\*world’**\
+c) ‘**’\
+d) ‘new’, ‘*’, ‘*’, ‘world’\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.fullmatch('hello', 'hello world')```
+
+**a) No output**\
+b) []\
+c) <_sre.SRE_Match object; span=(0, 5), match='hello'>\
+d) Error\
+
+### Choose the option wherein the two choices do not refer to the same option [Виберіть варіант, у якому ці два варіанти не стосуються одного параметра]
+
+a) re.I  re.IGNORECASE\
+b) re.M  re.MULTILINE\
+c) re.X  re.VERBOSE\
+**d) re.L  re.LOWERCASE**\
+>The function re.L is also written as re.LOCALE. There is no function such as re.LOWERCASE in the re module of Python.
+
+### The difference between the functions re.sub and re.subn is that re.sub returns a ___ whereas re.subn returns a __ [Різниця між функціями re.sub і re.subn полягає в тому, що re.sub повертає __, тоді як re.subn повертає __]
+
+a) string, list\
+b) list, tuple\
+**c) string, tuple**\
+d) tuple, list\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split('mum', 'mumbai*', 1)```
+
+a) Error\
+**b) [”, ‘bai*’]*\
+c) [”, ‘bai’]\
+d) [‘bai*’]\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.findall('good', 'good is good') ```
+```re.findall('good', 'bad is good')```
+
+**a) ```[‘good’, ‘good’]**
+**[‘good’]```**\
+b) ```(‘good’, ‘good’)
+(good)```\
+c) ```(‘good’)
+(‘good’)```\
+d) ```[‘good’]
+[‘good’]```\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split(r'(n\d)=', 'n1=3.1, n2=5, n3=4.565')```
+
+a) Error\
+**b) [”, ‘n1’, ‘3.1, ‘, ‘n2’, ‘5, ‘, ‘n3’, ‘4.565’]**\
+c) [‘n1’, ‘3.1, ‘, ‘n2’, ‘5, ‘, ‘n3’, ‘4.565’]\
+d) [‘3.1, ‘, ‘5, ‘, ‘4.565’]\
+
+### The function of re.search is ___ [Функція re.search це __]
+
+a) Matches a pattern at the start of the string\
+b) Matches a pattern at the end of the string\
+**c) Matches a pattern from any part of a string**\
+d) Such a function does not exist\
+
+### Which of the following functions creates a Python object? [Яка з наведених нижче функцій створює об’єкт Python?]
+
+**a) re.compile(str)**\
+b) re.assemble(str)\
+c) re.regex(str)\
+d) re.create(str)\
+
+### Which of the following pattern matching modifiers permits whitespace and comments inside the regular expression? [Які з наведених нижче модифікаторів відповідності шаблону допускають пробіли та коментарі всередині регулярного виразу?]
+
+a) re.L\
+b) re.S\
+c) re.U\
+**d) re.X**\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```s = 'welcome home'
+m = re.match(r'(.*)(.*?)', s)
+print(m.group())
+```
+
+a) (‘welcome’, ‘home’)\
+b) [‘welcome’, ‘home’]\
+**c) welcome home**\
+d) [‘welcome’ // ‘home’ ]\
+
+### The function of re.match is __ [Функція re.match це __]
+
+a) Error\
+b) Matches a pattern anywhere in the string\
+c) Matches a pattern at the end of the string\
+**d) Matches a pattern at the start of the string**\
+
+### The special character \B matches the empty string, but only when it is __ [Спеціальний символ \B відповідає порожньому рядку, але лише тоді, коли це __]
+
+a) at the beginning or end of a word\
+**b) not at the beginning or end of a word**\
+c) at the beginning of the word\
+d) at the end of the word\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```import re
+s = "A new day"
+m = re.match(r'(.*)(.*?)', s)
+print(m.group(2))
+print(m.group(0))
+```
+
+**a)No output**
+**A new day**\
+b)No output
+No output\
+c)[‘A’, ‘new’, ‘day’]
+(‘A’, ‘new’, ‘day’)\
+d)Error
+[‘A’, ‘new’, ‘day’]\
+
+### Which of the following special characters matches a pattern only at the end of the string? [Який із наступних спеціальних символів відповідає шаблону лише в кінці рядка?]
+
+a) \B\
+b) \X\
+**c) \Z**\
+d) \A\
+
+### The output of the following two Python codes are the same [Вихідні дані двох наступних кодів Python однакові]
+```p = re.compile('hello')
+r = p.match('hello everyone')
+print(r.group(0))
+ 
+r = re.match('hello', 'hello everyone')
+print(r.group(0))
+```
+
+**a) True**\
+b) False\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.match('sp(.*)am', 'spam')```
+
+a) <_sre.SRE_Match object; span=(1, 4), match=’spam’>\
+**b) <_sre.SRE_Match object; span=(0, 4), match=’spam’>**\
+c) No output\
+d) Error\
+
+### Which of the following special characters represents a comment (that is, the contents of the parenthesis are simply ignores)? [Який із наступних спеціальних символів позначає коментар (тобто вміст дужок просто ігнорується)?]
+
+a) (?:…)\
+b) (?=…)\
+c) (?!…)\
+**d) (?#…)**\
+
+### Which of the codes shown below results in a match? [Який із кодів, показаних нижче, збігається?]
+
+a) re.match(‘George(?=Washington)’, ‘George Washington’)\
+b) re.match(‘George(?=Washington)’, ‘George’)\
+**c) re.match(‘George(?=Washington)’, ‘GeorgeWashington’)**\
+d) re.match(‘George(?=Washington)’, ‘Georgewashington’)\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split(r'(a)(t)', 'Maths is a difficult subject')```
+
+a) [‘M a t h s i s a d i f f i c u l t s u b j e c t’]\
+b) [‘Maths’, ‘is’, ‘a’, ‘difficult’, ‘subject’]\
+c) ‘Maths is a difficult subject’\
+**d) [‘M’, ‘a’, ‘t’, ‘hs is a difficult subject’]**\
+
+### The output of the following two Python codes are the same. [Вихідні дані двох наступних кодів Python однакові]
+```CODE 1
+>>> re.split(r'(a)(t)', 'The night sky')
+CODE 2
+>>> re.split(r'\s+', 'The night sky')
+```
+
+a) True\
+**b) False**\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```import re
+s = 'abc123 xyz666 lmn-11 def77'
+re.sub(r'\b([a-z]+)(\d+)', r'\2\1:', s)
+```
+
+**a) ‘123abc: 666xyz: lmn-11 77def:’**\
+b) ‘77def: lmn-11: 666xyz: 123abc’\
+c) ‘abc123:’, ‘xyz666:’, ‘lmn-11:’, ‘def77:’\
+d) ‘abc123: xyz666: lmn-11: def77’\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.subn('A', 'X', 'AAAAAA', count=4)```
+
+a) ‘XXXXAA, 4’\
+b) (‘AAAAAA’, 4)\
+**c) (‘XXXXAA’, 4)**\
+d) ‘AAAAAA, 4’]\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```n = re.sub(r'\w+', 'Hello', 'Cats and dogs')```
+
+a) Hello Hello Hello\
+**b) ‘Hello Hello Hello**\
+c) [‘Hello’, ‘Hello’, ‘Hello’]\
+d) (‘Hello’, ‘Hello’, ‘Hello’)\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```w = re.compile('[A-Za-z]+')
+w.findall('It will rain today')
+```
+
+a) ‘It will rain today’\
+b) (‘It will rain today’)\
+c) [‘It will rain today’]\
+**d) [‘It’, ‘will’, ‘rain’, ‘today’]**\
+
+### In the functions re.search.start(group) and re.search.end(group), if the argument groups not specified, it defaults to __ [У функціях re.search.start(group) і re.search.end(group), якщо групи аргументів не вказані, за замовчуванням це __]
+
+**a) Zero**\
+b) None\
+c) One\
+d) Error\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split(r'\s+', 'Chrome is better than explorer', maxspilt=3)```
+
+a) [‘Chrome’, ‘is’, ‘better’, ‘than’, ‘explorer’]\
+**b) [‘Chrome’, ‘is’, ‘better’, ‘than explorer’]**\
+c) (‘Chrome’, ‘is’, ‘better’, ‘than explorer’)\
+d) ‘Chrome is better’ ‘than explorer’\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```a=re.compile('[0-9]+')
+a.findall('7 apples and 3 mangoes')
+```
+
+a) [‘apples’ ‘and’ ‘mangoes’]\
+b) (7, 4)\
+**c) [‘7’, ‘4’]**\
+d) Error\
+
+### Which of the following functions returns a dictionary mapping group names to group numbers? [Яка з наведених нижче функцій повертає словник зіставлення назв груп із номерами груп?]
+
+a) re.compile.group\
+**b) re.compile.groupindex**\
+c) re.compile.index\
+d) re.compile.indexgroup\
+
+### Which of the following statements regarding the output of the function re.match is incorrect? [Яке з наведених нижче тверджень щодо виведення функції re.match є неправильним?]
+
+a) ‘pq*’ will match ‘pq’\
+b) ‘pq?’ matches ‘p’\
+c) ‘p{4}, q’ does not match ‘pppq’\
+**d) ‘pq+’ matches ‘p’**\
+
+### The following Python code snippet results in an error [Наступний фрагмент коду Python призводить до помилки]
+```c=re.compile(r'(\d+)(\[A-Z]+)([a-z]+)')
+c.groupindex
+```
+
+a) True\
+**b) False**\
+
+### Which of the following functions does not accept any argument? [Яка з наведених функцій не приймає жодного аргументу?]
+
+**a) re.purge**\
+b) re.compile\
+c) re.findall\
+d) re.match\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```a = re.compile('0-9')
+a.findall('3 trees')
+```
+
+**a) []**\
+b) [‘3’]\
+c) Error\
+d) [‘trees’]\
+
+### Which of the following lines of code will not show a match? [Який із наведених нижче рядків коду не покаже збіг?]
+
+a) >>> re.match(‘ab*’, ‘a’)\
+b) >>> re.match(‘ab*’, ‘ab’)\
+c) >>> re.match(‘ab*’, ‘abb’)\
+**d) >>> re.match(‘ab*’, ‘ba’)**\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```m = re.search('a', 'The blue umbrella')
+m.re.pattern
+```
+
+a) {}\
+b) ‘The blue umbrella’\
+**c) ‘a’**\
+d) No output\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.sub('Y', 'X', 'AAAAAA', count=2)```
+
+a) ‘YXAAAA’\
+b) (‘YXAAAA’)\
+c) (‘AAAAAA’)\
+**d) ‘AAAAAA’**\
+
+
 # Section 25
 
 ## Python Files – 1
