@@ -2646,7 +2646,7 @@ a) True\
 >Explanation: The function len returns the length of the string passed, and hence it’s output will be 3. The function getsizeof, present under the sys module returns the size of the object passed. It’s output will be a value much larger than 3. Hence the above statement is false.
  
 ### What will be the output of the following Python code, if the code is run on Windows operating system? [Який буде вивід, якщо код запустити на ОС Windows?]
-```
+```python
 import sys
 if sys.platform[:2]== 'wi':
 	 print("Hello")
@@ -2668,7 +2668,7 @@ d) error
 >Explanation: The function shown above prints the given string along with the length of the string. Hence the output of the function shown above will be hello world11. (In PyChram output = "hello world", in terminal = "hello world11", think about it :))
  
 ## What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import sys
 sys.stdin.readline()
 Sanfoundry
@@ -2681,7 +2681,7 @@ d) Error
 >Explanation: The function shown above works just like raw_input. Hence it automatically adds a ‘\n’ character to the input string. Therefore, the output of the function shown above will be: Sanfoundry\n.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import sys
 eval(sys.stdin.readline())
 "India"
@@ -2694,7 +2694,7 @@ c) ‘India\n’\
 >Explanation: The function shown above evaluates the input into a string. Hence if the input entered is enclosed in double quotes, the output will be enclosed in single quotes. Therefore, the output of this code is ‘India’.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import sys
 eval(sys.stdin.readline())
 Computer
@@ -2708,7 +2708,7 @@ d) Computer
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 
-```
+```python
 import sys
 sys.argv[0]
 ```
@@ -2720,7 +2720,7 @@ d) Error
 >Explanation: The output of the function shown above will be a blank space enclosed in single quotes. Hence the output of the code shown above is ‘ ‘.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import sys
 sys.stderr.write(“hello”)
 ```
@@ -2732,7 +2732,7 @@ c) hello\
 >Explanation: The code shown above returns the string, followed by the length of the string. Hence the output of the code shown above is hello5.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import sys
 sys.argv
 ```
@@ -2830,7 +2830,7 @@ d) os.ln()
 >Explanation: It is the function that allows you to create a symbolic link.
  
 ### What will be the output shape of the following Python code? [Який буде вигляд виводу наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 for i in range(0,4):
@@ -2845,7 +2845,7 @@ d) kite
 >Explanation: According to the code shown above, 4 lines will be drawn. Three lines will be in the shape of a triangle. The fourth line will trace the base, which is already drawn. Hence the base will be slightly thicker than the rest of the lines. However there will be no change in the shape due to this extra line. Hence the output shape will be a triangle.
  
 ### The number of lines drawn in each case, assuming that the turtle module has been imported: [Кількість ліній, намальованих у кожному випадку, якщо припустити, що модуль turtle було імпортовано:]
-```
+```python
 Case 1:
 for i in range(0,10):
 	turtle.forward(100)
@@ -2870,7 +2870,7 @@ c) turtle.penreset()\
 >Explanation: The command turtle.reset() helps us to reset the pen. After the execution of this command, we get a blank page with an arrow on it. We can then perform any desired operation on this page.
  
 ### Fill in the blank such that the following Python code results in the formation of an inverted, equilateral triangle. [Заповніть пропуск так, щоб наступний код Python утворив перевернутий рівносторонній трикутник.]
-```
+```python
 import turtle
 t=turtle.Pen()
 for i in range(0,3):
@@ -2885,7 +2885,7 @@ d) 60
 >Explanation: An angle of -120 will result in the formation of an upright, equilateral triangle. An angle of 120 will result in the formation of an inverted triangle. The angles of 60 and -60 do not result in the formation of a triangle.
  
 ### What will be the output shape of the following Python code? [Який буде вигляд виводу наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 for i in range(1,4):
@@ -2900,7 +2900,7 @@ c) Triangle\
 >Explanation: The code shown above will result in the formation of a square, with each of side 60.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 for i in range(0,4):
@@ -2929,7 +2929,7 @@ d) setheading()
 >Explanation: The functions fillcolor(), goto() and setheading() accept arguments, whereas the function position() does not accept any arguments. The function position() returns the current position of the turtle.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 t.goto(300,9)
@@ -2943,7 +2943,7 @@ d) 9.00, 300.00
 >Explanation: The goto functions takes the arrow to the position specified by the user as arguments. The position function returns the current position of the arrow. Hence the output of the code shown above will be: 300.00, 9.00.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 for i in range(0,5):
@@ -2958,7 +2958,7 @@ c) Tetrahedron\
 >Explanation: It is clear from the above code that 5 lines will be drawn on the canvas, at an angle of 144 degrees. The only shape which fits this description is star. Hence the output of the code shown above is star.
  
 ### What will be the output of the following Python functions? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 for i in range(0,3):
@@ -2978,7 +2978,7 @@ d) Two separate triangles, not connected by a line
 >Explanation: The output of the code shown above is two equilateral triangles (of side 100 units), joined at the vertex.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 t.color(0,0,1)
@@ -3001,7 +3001,7 @@ c) turtle.color(0,0,1)\
 >Explanation: The function turtle.color(0,0,0) can change the colour of the arrow. The function turtle.color(0,1,0) will make the arrow green. The function turtle.color(1,0,0) will make the arrow red. The function turtle.color(0,0,1) will make the arrow blue. The function turtle.color(0,0,0) will make the arrow black.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 t.color(1,1,1)
@@ -3019,7 +3019,7 @@ d) Error
 >Explanation: The code shown above will result in a blank page. This is because the command turtle.color(1,1,1) eliminates the arrow from the page. Hence all the commands after this command are ineffective.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 t.color(0,1,0)
@@ -3062,7 +3062,7 @@ d) window_height()
 >Explanation: The function heading() returns the heading of the turtle, which is a value in degrees counterclockwise from the horizontal right. This measure will be in radians if radians() has been called.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 t.right(90)
@@ -3077,7 +3077,7 @@ d) 360.0
 >Explanation: The output of the code shown above will be 270.0. The function heading() returns the heading of the turtle, a value in degrees, counterclockwise from the horizontal right. The output shape of this code is a straight line pointing downwards.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 t.clear()
@@ -3091,7 +3091,7 @@ d) False
 >Explanation: The function t.clear() returns a blank canvas, without changing the position of the turtle. Since the turtle is visible on the blank canvas, the output of this code is: Yes.
  
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
-```
+```python
 import turtle
 t=turtle.Pen()
 t.forward(100)
