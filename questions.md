@@ -6174,6 +6174,957 @@ d) error
 
 # Section 12
 
+### Python Questions and Answers – List Comprehension – 1
+
+## 1. What will be the output of the following Python code?
+```python
+l=[1,2,3,4,5]
+[x&1 for x in l]
+```
+
+a) [1, 1, 1, 1, 1]
+
+**b) [1, 0, 1, 0, 1]**
+
+c) [1, 0, 0, 0, 0]
+
+d) [0, 1, 0, 1, 0]
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: In the code shown above, each of the numbers of the list, that is, 1, 2, 3, 4 and 5 are AND-ed with 1 and the result is printed in the form of a list. Hence the output is [1, 0, 1, 0, 1].
+</details>
+
+## 2. What will be the output of the following Python code?
+```python
+l1=[1,2,3]
+l2=[4,5,6]
+[x*y for x in l1 for y in l2]
+```
+
+a) [4, 8, 12, 5, 10, 15, 6, 12, 18]
+
+b) [4, 10, 18]
+
+**c) [4, 5, 6, 8, 10, 12, 12, 15, 18]**
+
+d) [18, 12, 6, 15, 10, 5, 12, 8, 4]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The code shown above returns x*y, where x belongs to the list l1 and y belongs to the list l2. Therefore, the output is: [4, 5, 6, 8, 10, 12, 12, 15, 18].
+</details>
+
+## 3. Write the list comprehension to pick out only negative integers from a given list ‘l’.
+
+a) [x<0 in l]
+
+b) [x for x<0 in l]
+
+c) [x in l for x<0]
+
+**d) [x for x in l if x<0]**
+
+<details>
+<summary>detailed</summary>
+Explanation: To pick out only the negative numbers from a given list ‘l’, the correct list comprehension statement would be: [x for x in l if x<0].
+
+For example if we have a list l=[-65, 2, 7, -99, -4, 3]
+>>> [x for x in l if x<0]
+The output would be: [-65, -99, -4].
+</details>
+
+## 4. What will be the output of the following Python code?
+```python
+s=["pune", "mumbai", "delhi"]
+[(w.upper(), len(w)) for w in s]
+```
+
+a) Error
+
+b) [‘PUNE’, 4, ‘MUMBAI’, 6, ‘DELHI’, 5]
+
+c) [PUNE, 4, MUMBAI, 6, DELHI, 5]
+
+**d) [(‘PUNE’, 4), (‘MUMBAI’, 6), (‘DELHI’, 5)]**
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: If we need to generate two results, we need to put it in the form of a tuple. The code shown above returns each word of list in uppercase, along with the length of the word. Hence the output of the code is: [(‘PUNE’, 4), (‘MUMBAI’, 6), (‘DELHI’, 5)].
+</details>
+
+## 5. What will be the output of the following Python code?
+```python
+l1=[2,4,6]
+l2=[-2,-4,-6]
+for i in zip(l1, l2):
+	print(i)
+```
+
+a)
+```shell
+2, -2
+4, -4
+6, -6
+```
+
+b) [(2, -2), (4, -4), (6, -6)]
+
+**c)**
+```shell
+(2, -2)
+(4, -4)
+(6, -6)
+```
+
+d) [-4, -16, -36]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The output of the code shown will be:
+(2, -2)
+(4, -4)
+(6, -6)
+This format is due to the statement print(i).
+</details>
+
+## 6. What will be the output of the following Python code?
+```python
+l1=[10, 20, 30]
+l2=[-10, -20, -30]
+l3=[x+y for x, y in zip(l1, l2)]
+l3
+```
+
+a) Error
+
+b) 0
+
+c) [-20, -60, -80]
+
+**d) [0, 0, 0]**
+
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: The code shown above returns x+y, for x belonging to the list l1 and y belonging to the list l2. That is, l3=[10-10, 20-20, 30-20], which is, [0, 0, 0].
+</details>
+
+## 7. Write a list comprehension for number and its cube for l=[1, 2, 3, 4, 5, 6, 7, 8, 9].
+
+**a) [x**3 for x in l]**
+
+b) [x^3 for x in l]
+
+c) [x**3 in l]
+
+d) [x^3 in l]
+
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The list comprehension to print a list of cube of the numbers for the given list is: [x**3 for x in l].
+</details>
+
+## 8. What will be the output of the following Python code?
+```python
+l=[[1 ,2, 3], [4, 5, 6], [7, 8, 9]]
+[[row[i] for row in l] for i in range(3)]
+```
+
+a) Error
+
+**b) [[1, 4, 7], [2, 5, 8], [3, 6, 9]]**
+
+c)
+```shell
+1 4 7
+2 5 8
+3 6 9
+```
+
+d)
+```shell
+(1 4 7)
+(2 5 8)
+(3 6 9)
+```
+
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: In the code shown above, ‘3’ is the index of the list. Had we used a number greater than 3, it would result in an error. The output of this code is: [[1, 4, 7], [2, 5, 8], [3, 6, 9]].
+</details>
+
+## 9. What will be the output of the following Python code?
+```python
+import math
+[str(round(math.pi)) for i in range (1, 6)]
+```
+
+a) [‘3’, ‘3’, ‘3’, ‘3’, ‘3’, ‘3’]
+
+b) [‘3.1’, ‘3.14’, ‘3.142’, ‘3.1416’, ‘3.14159’, ‘3.141582’]
+
+**c) [‘3’, ‘3’, ‘3’, ‘3’, ‘3’]**
+
+d) [‘3.1’, ‘3.14’, ‘3.142’, ‘3.1416’, ‘3.14159’]
+
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The list comprehension shown above rounds off pi(3.141) and returns its value, that is 3. This is done 5 times. Hence the output is: [‘3’, ‘3’, ‘3’, ‘3’, ‘3’].
+</details>
+
+## 10. What will be the output of the following Python code?
+```python
+l1=[1,2,3]
+l2=[4,5,6]
+l3=[7,8,9]
+for x, y, z in zip(l1, l2, l3):
+	print(x, y, z)
+```
+
+**a)**
+```shell    
+1 4 7
+2 5 8
+3 6 9
+```
+
+
+b)
+```shell
+(1 4 7)
+(2 5 8)
+(3 6 9)
+```
+
+c) [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+d) Error
+
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The output of the code shown above is:
+1 4 7
+2 5 8
+3 6 9
+This is due to the statement: print(x, y,z).
+</details>
+
+### Python Questions and Answers – List Comprehension – 2
+
+## 1. Read the information given below carefully and write a list comprehension such that the output is: [‘e’, ‘o’]
+```python
+w="hello"
+v=('a', 'e', 'i', 'o', 'u')
+```
+
+a) [x for w in v if x in v]
+
+**b) [x for x in w if x in v]**
+
+c) [x for x in v if w in v]
+
+d) [x for v in w for x in w]
+
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The tuple ‘v’ is used to generate a list containing only vowels in the string ‘w’. The result is a list containing only vowels present in the string “hello”. Hence the required list comprehension is: [x for x in w if x in v].
+</details>
+
+## 2. What will be the output of the following Python code?
+```python
+[ord(ch) for ch in 'abc']
+```
+
+**a) [97, 98, 99]**
+
+b) [‘97’, ‘98’, ‘99’]
+
+c) [65, 66, 67]
+
+d) Error
+
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The list comprehension shown above returns the ASCII value of each alphabet of the string ‘abc’. Hence the output is: [97, 98, 99]. Had the string been ‘ABC’, the output would be: [65, 66, 67].
+</details>
+
+## 3. What will be the output of the following Python code?
+```python
+t=32.00
+[round((x-32)*5/9) for x in t]
+```
+
+a) [0]
+
+b) 0
+
+c) [0.00]
+
+**d) Error**
+
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: The value of t in the code shown above is equal to 32.00, which is a floating point value. ‘Float’ objects are not iterable. Hence the code results in an error.
+</details>
+
+## 4. Write a list comprehension for producing a list of numbers between 1 and 1000 that are divisible by 3.
+
+a) [x in range(1, 1000) if x%3==0]
+
+**b) [x for x in range(1000) if x%3==0]**
+
+c) [x%3 for x in range(1, 1000)]
+
+d) [x%3=0 for x in range(1, 1000)]
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The list comprehension [x for x in range(1000) if x%3==0] produces a list of numbers between 1 and 1000 that are divisible by 3.
+</details>
+
+## 5. Write a list comprehension equivalent for the Python code shown below.
+```python
+for i in range(1, 101):
+	if int(i*0.5)==i*0.5:
+		print(i)
+```
+
+a) [i for i in range(1, 100) if int(i*0.5)==(i*0.5)]
+
+**b) [i for i in range(1, 101) if int(i*0.5)==(i*0.5)]**
+
+c) [i for i in range(1, 101) if int(i*0.5)=(i*0.5)]
+
+d) [i for i in range(1, 100) if int(i*0.5)=(i*0.5)]
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The code shown above prints the value ‘i’ only if it satisfies the condition: int(i*0.5) is equal to (i*0.5). Hence the required list comprehension is: [i for i in range(1, 101) if int(i*0.5)==(i*0.5)].
+</details>
+
+## 6. What is the list comprehension equivalent for: list(map(lambda x:x**-1, [1, 2, 3]))?
+
+a) [1|x for x in [1, 2, 3]]
+
+b) [-1**x for x in [1, 2, 3]]
+
+**c) [x**-1 for x in [1, 2, 3]]**
+
+d) [x^-1 for x in range(4)]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The output of the function list(map(lambda x:x**-1, [1, 2, 3])) is [1.0, 0.5, 0.3333333333333333] and that of the list comprehension [x**-1 for x in [1, 2, 3]] is [1.0, 0.5, 0.3333333333333333]. Hence the answer is: [x**-1 for x in [1, 2, 3]].
+</details>
+
+## 7. Write a list comprehension to produce the list: [1, 2, 4, 8, 16……212].
+
+**a) [(2**x) for x in range(0, 13)]**
+
+b) [(x**2) for x in range(1, 13)]
+
+c) [(2**x) for x in range(1, 13)]
+
+d) [(x**2) for x in range(0, 13)]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The required list comprehension will print the numbers from 1 to 12, each raised to 2. The required answer is thus, [(2**x) for x in range(0, 13)].
+</details>
+
+## 8. What is the list comprehension equivalent for?
+```python
+{x : x is a whole number less than 20, x is even}    (including zero)
+```
+
+a) [x for x in range(1, 20) if (x%2==0)]
+
+b) [x for x in range(0, 20) if (x//2==0)]
+
+c) [x for x in range(1, 20) if (x//2==0)]
+
+**d) [x for x in range(0, 20) if (x%2==0)]**
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: The required list comprehension will print a whole number, less than 20, provided that the number is even. Since the output list should contain zero as well, the answer to this question is: [x for x in range(0, 20) if (x%2==0)].
+</details>
+
+## 9. What will be the output of the following Python list comprehension?
+```python
+[j for i in range(2,8) for j in range(i*2, 50, i)]
+```
+
+a) A list of prime numbers up to 50
+
+b) A list of numbers divisible by 2, up to 50
+
+**c) A list of non prime numbers, up to 50**
+
+d) Error
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The list comprehension shown above returns a list of non-prime numbers up to 50. The logic behind this is that the square root of 50 is almost equal to 7. Hence all the multiples of 2-7 are not prime in this range.
+</details>
+
+## 10. What will be the output of the following Python code?
+```python
+l=["good", "oh!", "excellent!", "#450"]
+[n for n in l if n.isalpha() or n.isdigit()]
+```
+
+a) [‘good’, ‘oh’, ‘excellent’, ‘450’ ]
+
+**b) [‘good’]**
+
+c) [‘good’, ‘#450’]
+
+d) [‘oh!’, ‘excellent!’, ‘#450’]
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The code shown above returns a new list containing only strings which do not have any punctuation in them. The only string from the list which does not contain any punctuation is ‘good’. Hence the output of the code shown above is [‘good’].
+</details>
+
+### Python Questions and Answers – Matrix List Comprehension
+
+## 1. Which of the following matrices will throw an error in Python?
+a)
+```python
+        A = [[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]]
+```
+
+**b)**
+```shell
+        B = [[3, 3, 3]
+        [4, 4, 4]
+        [5, 5, 5]]
+```
+
+c)
+```shell
+        C = [(1, 2, 4),
+        (5, 6, 7),
+        (8, 9, 10)]
+```
+
+d)
+```shell
+        D = [2, 3, 4,
+        3, 3, 3,
+        4, 5, 6]
+```
+
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: In matrix B will result in an error because in the absence of a comma at the end of each row, it behaves like three separate lists. The error thrown states that the list integers must be integers or slices, not tuples.
+</details>
+
+## 2. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]
+A[1]
+```
+
+**a) [4, 5, 6]**
+
+b) [3, 6, 9]
+
+c) [1, 4, 7]
+
+d) [1, 2, 3]
+
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: We can index the rows and columns using normal index operations. The statement A[1] represents the second row, that is, the middle row. Hence the output of the code will be: [4, 5, 6].
+</details>
+
+## 3. Which of the following Python statements will result in the output: 6?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+```
+
+a) A[2][3]
+
+b) A[2][1]
+
+**c) A[1][2]**
+
+d) A[3][2]
+
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The output that is required is 6, that is, row 2, item 3. This position is represented by the statement: A[1][2].
+</details>
+
+## 4. What will be the output of the following Python code?
+```shell
+A = [[1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]]
+[A[row][1] for row in (0, 1, 2)]
+```
+
+a) [7, 8, 9]
+
+b) [4, 5, 6]
+
+**c) [2, 5, 8]**
+
+d) [1, 4, 7]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: To get a particular column as output, we can simple iterate across the rows and pull out the desired column, or iterate through positions in rows and index as we go. Hence the output of the code shown above is: [2, 5, 8].
+</details>
+
+## 5. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+[A[i][i] for i in range(len(A))]
+```
+
+**a) [1, 5, 9]**
+
+b) [3, 5, 7]
+
+c) [4, 5, 6]
+
+d) [2, 5, 8]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: We can also perform tasks like pulling out a diagonal. The expression shown above uses range to generate the list of offsets and the indices with the row and column the same, picking out A[0][0], then A[1][1] and so on. Hence the output of the code is: [1, 5, 9].
+</details>
+
+## 6. What will be the output of the following Python code?
+```shell
+l=[[1, 2, 3], [4, 5, 6]]
+for i in range(len(l)):
+	for j in range(len(l[i])):
+		l[i][j]+=10
+l
+```
+
+a) No output
+
+b) Error
+
+c) [[1, 2, 3], [4, 5, 6]]
+
+**d) [[11, 12, 13], [14, 15, 16]]**
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: We use range twice if the shapes differ. Each element of list l is increased by 10. Hence the output is: [[11, 12, 13], [14, 15, 16]]
+</details>
+
+## 7. What will be the output of the following Python code?
+```shell
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+ 
+[[col + 10 for col in row] for row in A]
+```
+
+**a) [[11, 12, 13], [14, 15, 16], [17, 18, 19]]**
+
+b) Error
+
+c) [11, 12, 13], [14, 15, 16], [17, 18, 19]
+
+d) [11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The code shown above shows a list comprehension which adds 10 to each element of the matrix A and prints it row-wise. Hence the output of the code is: [[11, 12, 13], [14, 15, 16], [17, 18, 19]]
+</details>
+
+## 8. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+[A[i][len(A)-1-i] for i in range(len(A))]
+```
+
+a) [1, 5, 9]
+
+b) [4, 5, 6]
+
+**c) [3, 5, 7]**
+
+d) [2, 5, 8]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: This expression scales the common index to fetch A[0][2], A[1][1], etc. We assume the matrix has the same number of rows and columns.
+</details>
+
+## 9. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+B = [[3, 3, 3],
+     [4, 4, 4],
+     [5, 5, 5]]
+[B[row][col]*A[row][col] for row in range(3) for col in range(3)]
+```
+
+**a) [3, 6, 9, 16, 20, 24, 35, 40, 45]**
+
+b) Error
+
+c) [0, 30, 60, 120, 160, 200, 300, 350, 400]
+
+d) 0
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: In the code shown above, we have used list comprehension to combine values of multiple matrices. We have multiplied the elements of the matrix B with that of the matrix A, in the range(3). Hence the output of this code is: [3, 6, 9, 16, 20, 24, 35, 40, 45].
+</details>
+
+## 10. What will be the output of the following Python code?
+```python
+r = [11, 12, 13, 14, 15, 16, 17, 18, 19]
+A = [[0, 10, 20],
+               [30, 40, 50],
+               [60, 70, 80]]
+for row in A:
+	for col in row:
+		r.append(col+10)
+r
+```
+
+**a) [11, 12, 13, 14, 15, 16, 17, 18, 19, 10, 20, 30, 40, 50, 60, 70, 80, 90]**
+
+b) [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+c) [11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+d) [0, 10, 20, 30, 40, 50, 60, 70, 80]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The code shown above adds 10 to each element of the matrix and prints the output row-wise. Since the list l already contains some elements, the new elements are appended to it. Hence the output of this code is: [11, 12, 13, 14, 15, 16, 17, 18, 19, 10, 20, 30, 40, 50, 60, 70, 80, 90].
+</details>
+
+## 11. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+B = [[3, 3, 3],
+     [4, 4, 4],
+     [5, 5, 5]]
+[[col1 * col2 for (col1, col2) in zip(row1, row2)] for (row1, row2) in zip(A, B)]
+```
+
+a) [0, 30, 60, 120, 160, 200, 300, 350, 400]
+
+**b) [[3, 6, 9], [16, 20, 24], [35, 40, 45]]**
+
+c) No output
+
+d) Error
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The list comprehension shown above results in the output: [[3, 6, 9], [16, 20, 24], [35, 40, 45]].
+</details>
+
+## 12. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+B = [[3, 3, 3],
+     [4, 4, 4],
+     [5, 5, 5]]
+zip(A, B)
+```
+
+**a) Address of the zip object**
+
+b) Address of the matrices A and B
+
+c) No output
+
+d) [3, 6, 9, 16, 20, 24, 35, 40, 45]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The output of the code shown above returns the address of the zip object. If we print it in the form of a list, we get:
+>>> list(zip(A, B))
+[([1, 2, 3], [3, 3, 3]), ([4, 5, 6], [4, 4, 4]), ([7, 8, 9], [5, 5, 5])]
+</details>
+
+### Python Questions and Answers – Tuples – 1
+
+## 1. Which of the following is a Python tuple?
+
+a) [1, 2, 3]
+
+**b) (1, 2, 3)**
+
+c) {1, 2, 3}
+
+d) {}
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: Tuples are represented with round brackets.
+</details>
+
+## 2. Suppose t = (1, 2, 4, 3), which of the following is incorrect?
+
+a) print(t[3])
+
+**b) t[3] = 45**
+
+c) print(max(t))
+
+d) print(len(t))
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: Values cannot be modified in the case of tuple, that is, tuple is immutable. 
+</details>
+
+## 3. What will be the output of the following Python code?
+```python
+    >>>t=(1,2,4,3)
+
+    >>>t[1:3]
+```
+
+a) (1, 2)
+
+b) (1, 2, 4)
+
+**c) (2, 4)**
+
+d) (2, 4, 3)
+
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: Slicing in tuples takes place just as it does in strings. 
+</details>
+
+## 4. What will be the output of the following Python code?
+```shell
+    >>>t=(1,2,4,3)
+
+    >>>t[1:-1]
+```
+
+a) (1, 2)
+
+b) (1, 2, 4)
+
+**c) (2, 4)**
+
+d) (2, 4, 3)
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: Slicing in tuples takes place just as it does in strings.
+</details>
+
+## 5. What will be the output of the following Python code?
+```python
+    >>>t = (1, 2, 4, 3, 8, 9)
+
+    >>>[t[i] for i in range(0, len(t), 2)]
+```
+
+a) [2, 3, 9]
+
+b) [1, 2, 4, 3, 8, 9]
+
+**c) [1, 4, 8]**
+
+d) (1, 4, 8)
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: Execute in the shell to verify.
+</details>
+
+## 6. What will be the output of the following Python code?
+```shell
+    d = {"john":40, "peter":45}
+
+    d["john"]
+```
+
+**a) 40**
+
+b) 45
+
+c) “john”
+
+d) “peter”
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: Execute in the shell to verify. 
+</details>
+
+## 7. What will be the output of the following Python code?
+```shell
+    >>>t = (1, 2)
+
+    >>>2 * t
+```
+
+**a) (1, 2, 1, 2)**
+
+b) [1, 2, 1, 2]
+
+c) (1, 1, 2, 2)
+
+d) [1, 1, 2, 2]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: * operator concatenates tuple.
+</details>
+
+## 8. What will be the output of the following Python code?
+```python
+    >>>t1 = (1, 2, 4, 3)
+
+    >>>t2 = (1, 2, 3, 4)
+
+    >>>t1 < t2
+```
+
+a) True
+
+**b) False**
+
+c) Error
+
+d) None
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: Elements are compared one by one in this case.
+</details>
+
+## 9. What will be the output of the following Python code?
+```python
+    >>>my_tuple = (1, 2, 3, 4)
+
+    >>>my_tuple.append( (5, 6, 7) )
+
+    >>>print len(my_tuple)
+```
+
+a) 1
+
+b) 2
+
+c) 5
+
+**d) Error**
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: Tuples are immutable and don’t have an append method. An exception is thrown in this case.
+</details>
+
+## 10. What will be the output of the following Python code?
+```python
+    numberGames = {}
+    numberGames[(1,2,4)] = 8
+    numberGames[(4,2,1)] = 10
+    numberGames[(1,2)] = 12
+    sum = 0
+    
+    for k in numberGames:
+        sum += numberGames[k]
+        
+    print len(numberGames) + sum
+```
+
+a) 30
+
+b) 24
+
+**c) 33**
+
+d) 12
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: Tuples can be used for keys into dictionary. The tuples can have mixed length and the order of the items in the tuple is considered when comparing the equality of the keys.
+</details>
+
 # Section 13
 
 ## 1. What is the data type of (1)? [Який тип даних у (1)?]
