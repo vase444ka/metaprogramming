@@ -10181,7 +10181,7 @@ d) from folder.subfolder.mod1 import objects imports packages
 
 # Section 20
 
-This set of Python Objective Questions & Answers focuses on “Math – 1”.
+####This set of Python Objective Questions & Answers focuses on “Math – 1”.
 
 ### 1. What is returned by math.ceil(3.4)? [Що повертає math.ceil(3.4)?]
    a) 3
@@ -10279,6 +10279,130 @@ Explanation: Factorial is only defined for non-negative integers.
 **a) 8**
 
 Explanation: 0o10 is 8 and floor(8) is 8.
+
+
+####Python Questions and Answers – Math – 2
+
+
+###1. What does the function math.frexp(x) return? [Що повертає функція math.freexp(x)?]
+   **a) a tuple containing the mantissa and the exponent of x**
+
+   b) a list containing the mantissa and the exponent of x
+
+   c) a tuple containing the mantissa of x
+
+   d) a list containing the exponent of x
+
+
+Explanation: It returns a tuple with two elements. The first element is the mantissa and the second element is the exponent.
+###2. What is the result of math.fsum([.1 for i in range(20)])? [Який результат math.fsum([.1 for i in range(20)])?]
+   **a) 2.0**
+   
+b) 20
+   
+c) 2
+   
+d) 2.0000000000000004
+
+Explanation: The function fsum returns an accurate floating point sum of the elements of its argument.
+###3. What is the result of sum([.1 for i in range(20)])? [Який результат sum([.1 for i in range(20)])?]
+   
+a) 2.0
+   
+b) 20
+   
+c) 2
+   
+**d) 2.0000000000000004**
+
+Explanation: There is some loss of accuracy when we use sum with floating point numbers. Hence the function fsum is preferable.
+###4. What is returned by math.isfinite(float(‘inf’))? [Що повертає math.isfinite(float(‘inf’))?]
+   
+a) True
+   
+**b) False**
+   
+c) None
+   
+d) error
+
+Explanation: float(‘inf’) is not a finite number.
+
+###5. What is returned by math.isfinite(float(‘nan’))? [Що повертає math.isfinite(float(‘nan’))?]
+   
+a) True
+   
+**b) False**
+   
+c) None
+   
+d) error
+
+Explanation: float(‘nan’) is not a finite number.
+###6. What is x if x = math.isfinite(float(‘0.0’))? [Що таке x, якщо x = math.isfinite(float(‘0.0’))?]
+   
+**a) True**
+   
+b) False
+   
+c) None
+   
+d) error
+
+Explanation: float(‘0.0’) is a finite number.
+###7. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
+```python 
+>>> -float('inf') + float('inf')
+```
+
+a) inf
+
+**b) nan**
+
+c) 0
+
+d) 0.0
+
+Explanation: The result of float(‘inf’)-float(‘inf’) is undefined.
+###8. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
+```python
+ print(math.isinf(float('-inf')))
+```
+
+a) error, the minus sign shouldn’t have been inside the brackets
+
+b) error, there is no function called isinf
+
+**c) True**
+
+d) False
+
+Explanation: -float(‘inf’) is the same as float(‘-inf’).
+###9. What is the value of x if x = math.ldexp(0.5, 1)? [Яке значення x, якщо x = math.ldexp(0,5, 1)?]
+   
+a) 1
+   
+b) 2.0
+   
+c) 0.5
+   
+**d) none of the mentioned**
+
+Explanation: The value returned by ldexp(x, y) is x * (2 ** y). In the current case x is 1.0.
+###10. What is returned by math.modf(1.0)? [Що повертає math.modf(1.0)?]
+    
+**a) (0.0, 1.0)**
+    
+b) (1.0, 0.0)
+    
+c) (0.5, 1)
+    
+d) (0.5, 1.0)
+
+Explanation: The first element is the fractional part and the second element is the integral part of the argument.
+
 # Section 21
 
 Python Question and Answers – Datetime Module – 1
