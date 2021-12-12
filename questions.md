@@ -2552,6 +2552,161 @@ c) a a a a\
 
 > Explanation: abcd a a a is the output as x is modified only after ‘abcd’ has been printed once.
 
+## Which of these definitions correctly describes a module? [Яке з цих визначень вірно описує модуль?]
+
+a) Denoted by triple quotes for providing the specification of certain program elements\
+**b) Design and implementation of specific functionality to be incorporated into a program**\
+c) Defines the specification of how it is to be used\
+d) Any program that reuses code
+
+> Explanation: The term “module” refers to the implementation of specific functionality to be incorporated into a program.
+
+## Which of the following is not an advantage of using modules? [Що з перерахованого не є перевагами використання модулів?]
+
+a) Provides a means of reuse of program code\
+b) Provides a means of dividing up tasks\
+**c) Provides a means of reducing the size of the program**\
+d) Provides a means of testing individual parts of the program
+
+> Explanation: The total size of the program remains the same regardless of whether modules are used or not. Modules simply divide the program.
+
+## Program code making use of a given module is called a ______ of the module. [Програмний код, що використовує певний можуль, називається _____ модуля]
+
+**a) Client**\
+b) Docstring\
+c) Interface\
+d) Modularity
+
+> Explanation: Program code making use of a given module is called the client of the module. There may be multiple clients for a module.
+
+## ______ is a string literal denoted by triple quotes for providing the specifications of certain program elements. [_____ - рядковий літерал, обмежений потрійними лапками, для впровадження специфікацій певних програмних елементів]
+
+a) Interface\
+b) Modularity\
+c) Client\
+**d) Docstring**
+
+>Explanation: Docstring used for providing the specifications of program elements.
+
+## Which of the following is true about top-down design process? [Що з наведеного є правдивим про процес дизайнування зверху-вниз]
+
+a) The details of a program design are addressed before the overall design\
+b) Only the details of the program are addressed\
+**c) The overall design of the program is addressed before the details**\
+d) Only the design of the program is addressed
+
+> Explanation: Top-down design is an approach for deriving a modular design in which the overall design.
+
+## In top-down design every module is broken into same number of submodules. [У дизайні зверху-вниз кожен модуль розбитий на однакову кількість підмодулів]
+
+a) True\
+**b) False**
+
+>Explanation: In top-down design every module can even be broken down into different number of submodules.
+
+## All modular designs are because of a top-down design process. [Всі модульні дизайни породжені процесом дизайнування зверху-вниз]
+
+a) True\
+**b) False**
+
+>Explanation: The details of the program can be addressed before the overall design too. Hence, all modular designs are not because of a top-down design process.
+
+## What will be the output of the following Python code?
+
+```python
+#mod1
+def change(a):
+    b=[x*2 for x in a]
+    print(b)
+#mod2
+def change(a):
+    b=[x*x for x in a]
+    print(b)
+from mod1 import change
+from mod2 import change
+#main
+s=[1,2,3]
+change(s)
+```
+
+a) [2,4,6]
+
+b) [1,4,9]
+
+c)\
+[2,4,6]\
+[1,4,9]
+
+**d) There is a name clash**
+
+>Explanation: A name clash is when two different entities with the same identifier become part of the same scope. Since both the modules have the same function name, there is a name clash. (code snippet is idiotic, main should begin with imports, not after)
+
+## Which of the following isn’t true about main modules? [Що з наведеного не є правдивим про модулі]
+
+a) When a python file is directly executed, it is considered main module of a program\
+b) Main modules may import any number of modules\
+c) Special name given to main modules is: \_\_main\_\_\
+**d) Other main modules can import main modules**
+
+> Explanation: Main modules are not meant to be imported into other modules.
+
+## Which of the following is not a valid namespace? [Що з наведеного не є коректним простором імен]
+
+a) Global namespace\
+**b) Public namespace**\
+c) Built-in namespace\
+d) Local namespace
+
+>Explanation: During a Python program execution, there are as many as three namespaces – built-in namespace, global namespace and local namespace.
+
+## Which of the following is false about “import modulename” form of import? [Що з неведеного невірно про форму імпорту “import modulename”]
+
+**a) The namespace of imported module becomes part of importing module**\
+b) This form of import prevents name clash\
+c) The namespace of imported module becomes available to importing module\
+d) The identifiers in module are accessed as: modulename.identifier
+
+> Explanation: In the “import modulename” form of import, the namespace of imported module becomes available to, but not part of, the importing module.
+
+## Which of the following is false about “from-import” form of import? [Що з неведеного невірно про форму імпорту “from-import”]
+
+a) The syntax is: from modulename import identifier\
+**b) This form of import prevents name clash**\
+c) The namespace of imported module becomes part of importing module\
+d) The identifiers in module are accessed directly as: identifier
+
+> Explanation: In the “from-import” form of import, there may be name clashes because names of the imported identifiers aren’t specified along with the module name.
+
+##  Which of the statements about modules is false? [Що з наведеного про модулі невірно]
+
+a) In the “from-import” form of import, identifiers beginning with two underscores are private and aren’t imported\
+b) dir() built-in function monitors the items in the namespace of the main module\
+**c) In the “from-import” form of import, all identifiers regardless of whether they are private or public are imported**\
+d) When a module is loaded, a compiled version of the module with file extension .pyc is automatically produced
+
+> Explanation: In the “from-import” form of import, identifiers beginning with two underscores are private and aren’t imported.
+
+## What will be the output of the following Python code?
+
+```python
+from math import factorial
+print(math.factorial(5))
+```
+
+a) 120\
+b) Nothing is printed\
+c) Error, method factorial doesn’t exist in math module\
+**d) Error, the statement should be: print(factorial(5))**
+
+>Explanation: In the “from-import” form of import, the imported identifiers (in this case factorial()) aren’t specified along with the module name.
+
+## What is the order of namespaces in which Python looks for an identifier?
+
+a) Python first searches the global namespace, then the local namespace and finally the built-in namespace\
+**b) Python first searches the local namespace, then the global namespace and finally the built-in namespace**\
+c) Python first searches the built-in namespace, then the global namespace and finally the local namespace\
+d) Python first searches the built-in namespace, then the local namespace and finally the global namespace
+
 # Section 6
 
 ## Topic 18. While and For Loops – 4
