@@ -26,13 +26,13 @@ c) functional programming
 
 ## 5. Is Python code compiled or interpreted?
 
-? **a) Python code is both compiled and interpreted**
+**a) Python code is both compiled and interpreted**
 
 b) Python code is neither compiled nor interpreted
 
 c) Python code is only compiled
 
-? **d) Python code is only interpreted**
+d) Python code is only interpreted
 
 > Explanation: Many languages have been implemented using both compilers and interpreters, including C, Pascal, and Python.
 
@@ -93,9 +93,6 @@ while True:
 
 > Explanation: SyntaxError, there shouldn’t be a space between + and = in +=.
 
-## 12. Which of the following functions can help us to find the version of python that we are currently working on? [версія python]
-
-**a) sys.version(1)**
 
 ## 13. Python supports the creation of anonymous functions at runtime, using a construct called \***\*\_\_\*\*** [анонімні функції]
 
@@ -280,9 +277,10 @@ a) str()
 
 b) format()
 
-**c) \_ _ str _ \_()**
 
-d) \_ _ format _ \_()
+c) \_ _ str _ \_()
+
+**d) \_ _ format _ \_()**
 
 ## 34. Which one of the following is not a keyword in Python language?
 
@@ -6329,6 +6327,957 @@ d) error
 
 # Section 12
 
+### Python Questions and Answers – List Comprehension – 1
+
+## 1. What will be the output of the following Python code?
+```python
+l=[1,2,3,4,5]
+[x&1 for x in l]
+```
+
+a) [1, 1, 1, 1, 1]
+
+**b) [1, 0, 1, 0, 1]**
+
+c) [1, 0, 0, 0, 0]
+
+d) [0, 1, 0, 1, 0]
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: In the code shown above, each of the numbers of the list, that is, 1, 2, 3, 4 and 5 are AND-ed with 1 and the result is printed in the form of a list. Hence the output is [1, 0, 1, 0, 1].
+</details>
+
+## 2. What will be the output of the following Python code?
+```python
+l1=[1,2,3]
+l2=[4,5,6]
+[x*y for x in l1 for y in l2]
+```
+
+a) [4, 8, 12, 5, 10, 15, 6, 12, 18]
+
+b) [4, 10, 18]
+
+**c) [4, 5, 6, 8, 10, 12, 12, 15, 18]**
+
+d) [18, 12, 6, 15, 10, 5, 12, 8, 4]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The code shown above returns x*y, where x belongs to the list l1 and y belongs to the list l2. Therefore, the output is: [4, 5, 6, 8, 10, 12, 12, 15, 18].
+</details>
+
+## 3. Write the list comprehension to pick out only negative integers from a given list ‘l’.
+
+a) [x<0 in l]
+
+b) [x for x<0 in l]
+
+c) [x in l for x<0]
+
+**d) [x for x in l if x<0]**
+
+<details>
+<summary>detailed</summary>
+Explanation: To pick out only the negative numbers from a given list ‘l’, the correct list comprehension statement would be: [x for x in l if x<0].
+
+For example if we have a list l=[-65, 2, 7, -99, -4, 3]
+>>> [x for x in l if x<0]
+The output would be: [-65, -99, -4].
+</details>
+
+## 4. What will be the output of the following Python code?
+```python
+s=["pune", "mumbai", "delhi"]
+[(w.upper(), len(w)) for w in s]
+```
+
+a) Error
+
+b) [‘PUNE’, 4, ‘MUMBAI’, 6, ‘DELHI’, 5]
+
+c) [PUNE, 4, MUMBAI, 6, DELHI, 5]
+
+**d) [(‘PUNE’, 4), (‘MUMBAI’, 6), (‘DELHI’, 5)]**
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: If we need to generate two results, we need to put it in the form of a tuple. The code shown above returns each word of list in uppercase, along with the length of the word. Hence the output of the code is: [(‘PUNE’, 4), (‘MUMBAI’, 6), (‘DELHI’, 5)].
+</details>
+
+## 5. What will be the output of the following Python code?
+```python
+l1=[2,4,6]
+l2=[-2,-4,-6]
+for i in zip(l1, l2):
+	print(i)
+```
+
+a)
+```shell
+2, -2
+4, -4
+6, -6
+```
+
+b) [(2, -2), (4, -4), (6, -6)]
+
+**c)**
+```shell
+(2, -2)
+(4, -4)
+(6, -6)
+```
+
+d) [-4, -16, -36]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The output of the code shown will be:
+(2, -2)
+(4, -4)
+(6, -6)
+This format is due to the statement print(i).
+</details>
+
+## 6. What will be the output of the following Python code?
+```python
+l1=[10, 20, 30]
+l2=[-10, -20, -30]
+l3=[x+y for x, y in zip(l1, l2)]
+l3
+```
+
+a) Error
+
+b) 0
+
+c) [-20, -60, -80]
+
+**d) [0, 0, 0]**
+
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: The code shown above returns x+y, for x belonging to the list l1 and y belonging to the list l2. That is, l3=[10-10, 20-20, 30-20], which is, [0, 0, 0].
+</details>
+
+## 7. Write a list comprehension for number and its cube for l=[1, 2, 3, 4, 5, 6, 7, 8, 9].
+
+**a) [x**3 for x in l]**
+
+b) [x^3 for x in l]
+
+c) [x**3 in l]
+
+d) [x^3 in l]
+
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The list comprehension to print a list of cube of the numbers for the given list is: [x**3 for x in l].
+</details>
+
+## 8. What will be the output of the following Python code?
+```python
+l=[[1 ,2, 3], [4, 5, 6], [7, 8, 9]]
+[[row[i] for row in l] for i in range(3)]
+```
+
+a) Error
+
+**b) [[1, 4, 7], [2, 5, 8], [3, 6, 9]]**
+
+c)
+```shell
+1 4 7
+2 5 8
+3 6 9
+```
+
+d)
+```shell
+(1 4 7)
+(2 5 8)
+(3 6 9)
+```
+
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: In the code shown above, ‘3’ is the index of the list. Had we used a number greater than 3, it would result in an error. The output of this code is: [[1, 4, 7], [2, 5, 8], [3, 6, 9]].
+</details>
+
+## 9. What will be the output of the following Python code?
+```python
+import math
+[str(round(math.pi)) for i in range (1, 6)]
+```
+
+a) [‘3’, ‘3’, ‘3’, ‘3’, ‘3’, ‘3’]
+
+b) [‘3.1’, ‘3.14’, ‘3.142’, ‘3.1416’, ‘3.14159’, ‘3.141582’]
+
+**c) [‘3’, ‘3’, ‘3’, ‘3’, ‘3’]**
+
+d) [‘3.1’, ‘3.14’, ‘3.142’, ‘3.1416’, ‘3.14159’]
+
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The list comprehension shown above rounds off pi(3.141) and returns its value, that is 3. This is done 5 times. Hence the output is: [‘3’, ‘3’, ‘3’, ‘3’, ‘3’].
+</details>
+
+## 10. What will be the output of the following Python code?
+```python
+l1=[1,2,3]
+l2=[4,5,6]
+l3=[7,8,9]
+for x, y, z in zip(l1, l2, l3):
+	print(x, y, z)
+```
+
+**a)**
+```shell    
+1 4 7
+2 5 8
+3 6 9
+```
+
+
+b)
+```shell
+(1 4 7)
+(2 5 8)
+(3 6 9)
+```
+
+c) [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+d) Error
+
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The output of the code shown above is:
+1 4 7
+2 5 8
+3 6 9
+This is due to the statement: print(x, y,z).
+</details>
+
+### Python Questions and Answers – List Comprehension – 2
+
+## 1. Read the information given below carefully and write a list comprehension such that the output is: [‘e’, ‘o’]
+```python
+w="hello"
+v=('a', 'e', 'i', 'o', 'u')
+```
+
+a) [x for w in v if x in v]
+
+**b) [x for x in w if x in v]**
+
+c) [x for x in v if w in v]
+
+d) [x for v in w for x in w]
+
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The tuple ‘v’ is used to generate a list containing only vowels in the string ‘w’. The result is a list containing only vowels present in the string “hello”. Hence the required list comprehension is: [x for x in w if x in v].
+</details>
+
+## 2. What will be the output of the following Python code?
+```python
+[ord(ch) for ch in 'abc']
+```
+
+**a) [97, 98, 99]**
+
+b) [‘97’, ‘98’, ‘99’]
+
+c) [65, 66, 67]
+
+d) Error
+
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The list comprehension shown above returns the ASCII value of each alphabet of the string ‘abc’. Hence the output is: [97, 98, 99]. Had the string been ‘ABC’, the output would be: [65, 66, 67].
+</details>
+
+## 3. What will be the output of the following Python code?
+```python
+t=32.00
+[round((x-32)*5/9) for x in t]
+```
+
+a) [0]
+
+b) 0
+
+c) [0.00]
+
+**d) Error**
+
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: The value of t in the code shown above is equal to 32.00, which is a floating point value. ‘Float’ objects are not iterable. Hence the code results in an error.
+</details>
+
+## 4. Write a list comprehension for producing a list of numbers between 1 and 1000 that are divisible by 3.
+
+a) [x in range(1, 1000) if x%3==0]
+
+**b) [x for x in range(1000) if x%3==0]**
+
+c) [x%3 for x in range(1, 1000)]
+
+d) [x%3=0 for x in range(1, 1000)]
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The list comprehension [x for x in range(1000) if x%3==0] produces a list of numbers between 1 and 1000 that are divisible by 3.
+</details>
+
+## 5. Write a list comprehension equivalent for the Python code shown below.
+```python
+for i in range(1, 101):
+	if int(i*0.5)==i*0.5:
+		print(i)
+```
+
+a) [i for i in range(1, 100) if int(i*0.5)==(i*0.5)]
+
+**b) [i for i in range(1, 101) if int(i*0.5)==(i*0.5)]**
+
+c) [i for i in range(1, 101) if int(i*0.5)=(i*0.5)]
+
+d) [i for i in range(1, 100) if int(i*0.5)=(i*0.5)]
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The code shown above prints the value ‘i’ only if it satisfies the condition: int(i*0.5) is equal to (i*0.5). Hence the required list comprehension is: [i for i in range(1, 101) if int(i*0.5)==(i*0.5)].
+</details>
+
+## 6. What is the list comprehension equivalent for: list(map(lambda x:x**-1, [1, 2, 3]))?
+
+a) [1|x for x in [1, 2, 3]]
+
+b) [-1**x for x in [1, 2, 3]]
+
+**c) [x**-1 for x in [1, 2, 3]]**
+
+d) [x^-1 for x in range(4)]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The output of the function list(map(lambda x:x**-1, [1, 2, 3])) is [1.0, 0.5, 0.3333333333333333] and that of the list comprehension [x**-1 for x in [1, 2, 3]] is [1.0, 0.5, 0.3333333333333333]. Hence the answer is: [x**-1 for x in [1, 2, 3]].
+</details>
+
+## 7. Write a list comprehension to produce the list: [1, 2, 4, 8, 16……212].
+
+**a) [(2**x) for x in range(0, 13)]**
+
+b) [(x**2) for x in range(1, 13)]
+
+c) [(2**x) for x in range(1, 13)]
+
+d) [(x**2) for x in range(0, 13)]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The required list comprehension will print the numbers from 1 to 12, each raised to 2. The required answer is thus, [(2**x) for x in range(0, 13)].
+</details>
+
+## 8. What is the list comprehension equivalent for?
+```python
+{x : x is a whole number less than 20, x is even}    (including zero)
+```
+
+a) [x for x in range(1, 20) if (x%2==0)]
+
+b) [x for x in range(0, 20) if (x//2==0)]
+
+c) [x for x in range(1, 20) if (x//2==0)]
+
+**d) [x for x in range(0, 20) if (x%2==0)]**
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: The required list comprehension will print a whole number, less than 20, provided that the number is even. Since the output list should contain zero as well, the answer to this question is: [x for x in range(0, 20) if (x%2==0)].
+</details>
+
+## 9. What will be the output of the following Python list comprehension?
+```python
+[j for i in range(2,8) for j in range(i*2, 50, i)]
+```
+
+a) A list of prime numbers up to 50
+
+b) A list of numbers divisible by 2, up to 50
+
+**c) A list of non prime numbers, up to 50**
+
+d) Error
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The list comprehension shown above returns a list of non-prime numbers up to 50. The logic behind this is that the square root of 50 is almost equal to 7. Hence all the multiples of 2-7 are not prime in this range.
+</details>
+
+## 10. What will be the output of the following Python code?
+```python
+l=["good", "oh!", "excellent!", "#450"]
+[n for n in l if n.isalpha() or n.isdigit()]
+```
+
+a) [‘good’, ‘oh’, ‘excellent’, ‘450’ ]
+
+**b) [‘good’]**
+
+c) [‘good’, ‘#450’]
+
+d) [‘oh!’, ‘excellent!’, ‘#450’]
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The code shown above returns a new list containing only strings which do not have any punctuation in them. The only string from the list which does not contain any punctuation is ‘good’. Hence the output of the code shown above is [‘good’].
+</details>
+
+### Python Questions and Answers – Matrix List Comprehension
+
+## 1. Which of the following matrices will throw an error in Python?
+a)
+```python
+        A = [[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]]
+```
+
+**b)**
+```shell
+        B = [[3, 3, 3]
+        [4, 4, 4]
+        [5, 5, 5]]
+```
+
+c)
+```shell
+        C = [(1, 2, 4),
+        (5, 6, 7),
+        (8, 9, 10)]
+```
+
+d)
+```shell
+        D = [2, 3, 4,
+        3, 3, 3,
+        4, 5, 6]
+```
+
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: In matrix B will result in an error because in the absence of a comma at the end of each row, it behaves like three separate lists. The error thrown states that the list integers must be integers or slices, not tuples.
+</details>
+
+## 2. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]
+A[1]
+```
+
+**a) [4, 5, 6]**
+
+b) [3, 6, 9]
+
+c) [1, 4, 7]
+
+d) [1, 2, 3]
+
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: We can index the rows and columns using normal index operations. The statement A[1] represents the second row, that is, the middle row. Hence the output of the code will be: [4, 5, 6].
+</details>
+
+## 3. Which of the following Python statements will result in the output: 6?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+```
+
+a) A[2][3]
+
+b) A[2][1]
+
+**c) A[1][2]**
+
+d) A[3][2]
+
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: The output that is required is 6, that is, row 2, item 3. This position is represented by the statement: A[1][2].
+</details>
+
+## 4. What will be the output of the following Python code?
+```shell
+A = [[1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]]
+[A[row][1] for row in (0, 1, 2)]
+```
+
+a) [7, 8, 9]
+
+b) [4, 5, 6]
+
+**c) [2, 5, 8]**
+
+d) [1, 4, 7]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: To get a particular column as output, we can simple iterate across the rows and pull out the desired column, or iterate through positions in rows and index as we go. Hence the output of the code shown above is: [2, 5, 8].
+</details>
+
+## 5. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+[A[i][i] for i in range(len(A))]
+```
+
+**a) [1, 5, 9]**
+
+b) [3, 5, 7]
+
+c) [4, 5, 6]
+
+d) [2, 5, 8]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: We can also perform tasks like pulling out a diagonal. The expression shown above uses range to generate the list of offsets and the indices with the row and column the same, picking out A[0][0], then A[1][1] and so on. Hence the output of the code is: [1, 5, 9].
+</details>
+
+## 6. What will be the output of the following Python code?
+```shell
+l=[[1, 2, 3], [4, 5, 6]]
+for i in range(len(l)):
+	for j in range(len(l[i])):
+		l[i][j]+=10
+l
+```
+
+a) No output
+
+b) Error
+
+c) [[1, 2, 3], [4, 5, 6]]
+
+**d) [[11, 12, 13], [14, 15, 16]]**
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: We use range twice if the shapes differ. Each element of list l is increased by 10. Hence the output is: [[11, 12, 13], [14, 15, 16]]
+</details>
+
+## 7. What will be the output of the following Python code?
+```shell
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+ 
+[[col + 10 for col in row] for row in A]
+```
+
+**a) [[11, 12, 13], [14, 15, 16], [17, 18, 19]]**
+
+b) Error
+
+c) [11, 12, 13], [14, 15, 16], [17, 18, 19]
+
+d) [11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The code shown above shows a list comprehension which adds 10 to each element of the matrix A and prints it row-wise. Hence the output of the code is: [[11, 12, 13], [14, 15, 16], [17, 18, 19]]
+</details>
+
+## 8. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+[A[i][len(A)-1-i] for i in range(len(A))]
+```
+
+a) [1, 5, 9]
+
+b) [4, 5, 6]
+
+**c) [3, 5, 7]**
+
+d) [2, 5, 8]
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: This expression scales the common index to fetch A[0][2], A[1][1], etc. We assume the matrix has the same number of rows and columns.
+</details>
+
+## 9. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+B = [[3, 3, 3],
+     [4, 4, 4],
+     [5, 5, 5]]
+[B[row][col]*A[row][col] for row in range(3) for col in range(3)]
+```
+
+**a) [3, 6, 9, 16, 20, 24, 35, 40, 45]**
+
+b) Error
+
+c) [0, 30, 60, 120, 160, 200, 300, 350, 400]
+
+d) 0
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: In the code shown above, we have used list comprehension to combine values of multiple matrices. We have multiplied the elements of the matrix B with that of the matrix A, in the range(3). Hence the output of this code is: [3, 6, 9, 16, 20, 24, 35, 40, 45].
+</details>
+
+## 10. What will be the output of the following Python code?
+```python
+r = [11, 12, 13, 14, 15, 16, 17, 18, 19]
+A = [[0, 10, 20],
+               [30, 40, 50],
+               [60, 70, 80]]
+for row in A:
+	for col in row:
+		r.append(col+10)
+r
+```
+
+**a) [11, 12, 13, 14, 15, 16, 17, 18, 19, 10, 20, 30, 40, 50, 60, 70, 80, 90]**
+
+b) [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+c) [11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+d) [0, 10, 20, 30, 40, 50, 60, 70, 80]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The code shown above adds 10 to each element of the matrix and prints the output row-wise. Since the list l already contains some elements, the new elements are appended to it. Hence the output of this code is: [11, 12, 13, 14, 15, 16, 17, 18, 19, 10, 20, 30, 40, 50, 60, 70, 80, 90].
+</details>
+
+## 11. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+B = [[3, 3, 3],
+     [4, 4, 4],
+     [5, 5, 5]]
+[[col1 * col2 for (col1, col2) in zip(row1, row2)] for (row1, row2) in zip(A, B)]
+```
+
+a) [0, 30, 60, 120, 160, 200, 300, 350, 400]
+
+**b) [[3, 6, 9], [16, 20, 24], [35, 40, 45]]**
+
+c) No output
+
+d) Error
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: The list comprehension shown above results in the output: [[3, 6, 9], [16, 20, 24], [35, 40, 45]].
+</details>
+
+## 12. What will be the output of the following Python code?
+```python
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+B = [[3, 3, 3],
+     [4, 4, 4],
+     [5, 5, 5]]
+zip(A, B)
+```
+
+**a) Address of the zip object**
+
+b) Address of the matrices A and B
+
+c) No output
+
+d) [3, 6, 9, 16, 20, 24, 35, 40, 45]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: The output of the code shown above returns the address of the zip object. If we print it in the form of a list, we get:
+>>> list(zip(A, B))
+[([1, 2, 3], [3, 3, 3]), ([4, 5, 6], [4, 4, 4]), ([7, 8, 9], [5, 5, 5])]
+</details>
+
+### Python Questions and Answers – Tuples – 1
+
+## 1. Which of the following is a Python tuple?
+
+a) [1, 2, 3]
+
+**b) (1, 2, 3)**
+
+c) {1, 2, 3}
+
+d) {}
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: Tuples are represented with round brackets.
+</details>
+
+## 2. Suppose t = (1, 2, 4, 3), which of the following is incorrect?
+
+a) print(t[3])
+
+**b) t[3] = 45**
+
+c) print(max(t))
+
+d) print(len(t))
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: Values cannot be modified in the case of tuple, that is, tuple is immutable. 
+</details>
+
+## 3. What will be the output of the following Python code?
+```python
+    >>>t=(1,2,4,3)
+
+    >>>t[1:3]
+```
+
+a) (1, 2)
+
+b) (1, 2, 4)
+
+**c) (2, 4)**
+
+d) (2, 4, 3)
+
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: Slicing in tuples takes place just as it does in strings. 
+</details>
+
+## 4. What will be the output of the following Python code?
+```shell
+    >>>t=(1,2,4,3)
+
+    >>>t[1:-1]
+```
+
+a) (1, 2)
+
+b) (1, 2, 4)
+
+**c) (2, 4)**
+
+d) (2, 4, 3)
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: Slicing in tuples takes place just as it does in strings.
+</details>
+
+## 5. What will be the output of the following Python code?
+```python
+    >>>t = (1, 2, 4, 3, 8, 9)
+
+    >>>[t[i] for i in range(0, len(t), 2)]
+```
+
+a) [2, 3, 9]
+
+b) [1, 2, 4, 3, 8, 9]
+
+**c) [1, 4, 8]**
+
+d) (1, 4, 8)
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: Execute in the shell to verify.
+</details>
+
+## 6. What will be the output of the following Python code?
+```shell
+    d = {"john":40, "peter":45}
+
+    d["john"]
+```
+
+**a) 40**
+
+b) 45
+
+c) “john”
+
+d) “peter”
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: Execute in the shell to verify. 
+</details>
+
+## 7. What will be the output of the following Python code?
+```shell
+    >>>t = (1, 2)
+
+    >>>2 * t
+```
+
+**a) (1, 2, 1, 2)**
+
+b) [1, 2, 1, 2]
+
+c) (1, 1, 2, 2)
+
+d) [1, 1, 2, 2]
+
+<details>
+<summary>detailed</summary>
+Answer: a
+Explanation: * operator concatenates tuple.
+</details>
+
+## 8. What will be the output of the following Python code?
+```python
+    >>>t1 = (1, 2, 4, 3)
+
+    >>>t2 = (1, 2, 3, 4)
+
+    >>>t1 < t2
+```
+
+a) True
+
+**b) False**
+
+c) Error
+
+d) None
+
+<details>
+<summary>detailed</summary>
+Answer: b
+Explanation: Elements are compared one by one in this case.
+</details>
+
+## 9. What will be the output of the following Python code?
+```python
+    >>>my_tuple = (1, 2, 3, 4)
+
+    >>>my_tuple.append( (5, 6, 7) )
+
+    >>>print len(my_tuple)
+```
+
+a) 1
+
+b) 2
+
+c) 5
+
+**d) Error**
+
+<details>
+<summary>detailed</summary>
+Answer: d
+Explanation: Tuples are immutable and don’t have an append method. An exception is thrown in this case.
+</details>
+
+## 10. What will be the output of the following Python code?
+```python
+    numberGames = {}
+    numberGames[(1,2,4)] = 8
+    numberGames[(4,2,1)] = 10
+    numberGames[(1,2)] = 12
+    sum = 0
+    
+    for k in numberGames:
+        sum += numberGames[k]
+        
+    print len(numberGames) + sum
+```
+
+a) 30
+
+b) 24
+
+**c) 33**
+
+d) 12
+
+<details>
+<summary>detailed</summary>
+Answer: c
+Explanation: Tuples can be used for keys into dictionary. The tuples can have mixed length and the order of the items in the tuple is considered when comparing the equality of the keys.
+</details>
+
 # Section 13
 
 ## 1. What is the data type of (1)? [Який тип даних у (1)?]
@@ -8155,6 +9104,513 @@ Explanation: The function max() is being used to find the maximum value from amo
 
 # Section 17
 
+## Function – 3
+
+### 1. Python supports the creation of anonymous functions at runtime, using a construct called __________ [Python підтримує створення анонімних функцій під час виконання, використовуючи конструкцію __________]
+**a) lambda**\
+b) pi\
+c) anonymous\
+d) none of the mentioned
+
+> Explanation: Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called lambda. Lambda functions are restricted to a single expression. They can be used wherever normal functions can be used.
+
+### 2. What will be the output of the following Python code?
+```python
+y = 6
+z = lambda x: x * y
+print z(8)
+```
+
+**a) 48**\
+b) 14\
+c) 64\
+d) None of the mentioned
+
+> Explanation: The lambda keyword creates an anonymous function. The x is a parameter, that is passed to the lambda function. The parameter is followed by a colon character. The code next to the colon is the expression that is executed, when the lambda function is called. The lambda function is assigned to the z variable. The lambda function is executed. The number 8 is passed to the anonymous function and it returns 48 as the result. Note that z is not a name for this function. It is only a variable to which the anonymous function was assigned.
+
+### 3. What will be the output of the following Python code?
+```python
+lamb = lambda x: x ** 3
+print(lamb(5))
+```
+
+a) 15\
+b) 555\
+**c) 125**\
+d) None of the mentioned
+
+### 4. Does Lambda contains return statements?
+a) True\
+**b) False**
+
+> Explanation: lambda definition does not include a return statement. it always contains an expression which is returned. Also note that we can put a lambda definition anywhere a function is expected. We don’t have to assign it to a variable at all.
+
+### 5. Lambda is a statement.
+a) True\
+**b) False**
+
+> Explanation: lambda is an anonymous function in Python. Hence this statement is false.
+
+### 6. Lambda contains block of statements.
+a) True\
+**b) False**
+
+### 7. What will be the output of the following Python code?
+```python
+def f(x, y, z): return x + y + z
+f(2, 30, 400)
+```
+
+**a) 432**\
+b) 24000\
+c) 430\
+d) No output
+
+### 8. What will be the output of the following Python code?
+```python
+def writer():
+	title = 'Sir'
+	name = (lambda x:title + ' ' + x)
+	return name
+ 
+who = writer()
+who('Arthur')
+```
+
+a) Arthur Sir\
+**b) Sir Arthur**\
+c) Arthur\
+d) None of the mentioned
+
+### 9. What will be the output of the following Python code?
+```python
+L = [lambda x: x ** 2,
+         lambda x: x ** 3,
+         lambda x: x ** 4]
+ 
+for f in L:
+	print(f(3))
+```
+
+a)
+```python
+27
+81
+343
+```
+b)
+```python
+6
+9
+12
+```
+**c)**
+```python
+9
+27
+81
+```
+d) None of the mentioned
+
+### 10. What will be the output of the following Python code?
+```python
+min = (lambda x, y: x if x < y else y)
+min(101*99, 102*98)
+```
+
+a) 9997\
+b) 9999\
+**c) 9996**\
+d) None of the mentioned
+
+## Function – 4
+
+### 1. What is a variable defined outside a function referred to as?
+a) A static variable\
+**b) A global variable**\
+c) A local variable\
+d) An automatic variable
+
+> Explanation: The value of a variable defined outside all function definitions is referred to as a global variable and can be used by multiple functions of the program.
+
+### 2. What is a variable defined inside a function referred to as?
+a) A global variable\
+b) A volatile variable\
+**c) A local variable**\
+d) An automatic variable
+
+> Explanation: The variable inside a function is called as local variable and the variable definition is confined only to that function.
+
+### 3. What will be the output of the following Python code?
+```python
+i=0
+def change(i):
+   i=i+1
+   return i
+change(1)
+print(i)
+```
+
+a) 1\
+b) Nothing is displayed\
+**c) 0**\
+d) An exception is thrown
+
+> Explanation: Any change made in to an immutable data type in a function isn’t reflected outside the function.
+
+### 4. [broken] What will be the output of the following Python code?
+```python
+def a(b):
+    b = b + [5]
+ 
+c = [1, 2, 3, 4]
+a(c)
+print(len(c))
+```
+
+**a) 4**\
+b) 5\
+c) 1\
+d) An exception is thrown
+
+> Site Explanation ~~b)~~: Since a list is mutable, any change made in the list in the function is reflected outside the function.\
+> Note: It's correct but we've changed the reference to list, so it doesn't work
+ 
+### 5. What will be the output of the following Python code?
+```python
+a=10
+b=20
+def change():
+    global b
+    a=45
+    b=56
+change()
+print(a)
+print(b)
+```
+
+**a)**
+```python
+10
+56
+```
+b)
+```python
+45
+56
+```
+c)
+```python
+10
+20
+```
+d) Syntax Error
+
+> Explanation: The statement “global b” allows the global value of b to be accessed and changed. Whereas the variable a is local and hence the change isn’t reflected outside the function.
+
+### 6. What will be the output of the following Python code?
+```python
+def change(i = 1, j = 2):
+    i = i + j
+    j = j + 1
+    print(i, j)
+change(j = 1, i = 2)
+```
+
+a) An exception is thrown because of conflicting values\
+b) 1 2\
+c) 3 3\
+**d) 3 2**
+
+> Explanation: The values given during function call is taken into consideration, that is, i=2 and j=1.
+
+### 7. What will be the output of the following Python code?
+```python
+def change(one, *two):
+   print(type(two))
+change(1,2,3,4)
+```
+
+a) Integer\
+**b) Tuple**\
+c) Dictionary\
+d) An exception is thrown
+
+> Explanation: The parameter two is a variable parameter and consists of (2,3,4). Hence the data type is tuple.
+
+### 8. If a function doesn’t have a return statement, which of the following does the function return?
+a) int\
+b) null\
+**c) None**\
+d) An exception is thrown without the return statement
+
+> Explanation: A function can exist without a return statement and returns None if the function doesn’t have a return statement.
+
+### 9. What will be the output of the following Python code?
+```python
+def display(b, n):
+    while n > 0:
+        print(b,end="")
+        n=n-1
+display('z',3)
+```
+
+**a) zzz**\
+b) zz\
+c) An exception is executed\
+d) Infinite loop
+
+> Explanation: The loop runs three times and ‘z’ is printed each time.
+
+### 10. What will be the output of the following Python code?
+```python
+def find(a, **b):
+   print(type(b))
+find('letters',A='1',B='2')
+```
+a) String\
+b) Tuple\
+**c) Dictionary**\
+d) An exception is thrown
+
+> Explanation: b combines the remaining parameters into a dictionary.
+
+## Argument Parsing 1
+
+### 1. What is the type of each element in sys.argv?
+a) set\
+b) list\
+c) tuple\
+**d) string**
+
+> Explanation: It is a list of strings.
+
+### 2. What is the length of sys.argv?
+a) number of arguments\
+**b) number of arguments + 1**\
+c) number of arguments – 1\
+d) none of the mentioned
+
+> Explanation: The first argument is the name of the program itself. Therefore the length of sys.argv is one more than the number arguments.
+
+### 3. What will be the output of the following Python code?
+```python
+def foo(k):
+    k[0] = 1
+q = [0]
+foo(q)
+print(q)
+```
+
+a) [0]\
+**b) [1]**\
+c) [1, 0]\
+d) [0, 1]
+
+> Explanation: Lists are mutable.
+
+### 4. How are keyword arguments specified in the function heading?
+a) one-star followed by a valid identifier\
+b) one underscore followed by a valid identifier\
+**c) two stars followed by a valid identifier**\
+d) two underscores followed by a valid identifier
+
+> Explanation: Refer documentation.
+
+### 5. How many keyword arguments can be passed to a function in a single function call?
+a) zero\
+b) one\
+**c) zero or more**\
+d) one or more
+
+> Explanation: Zero keyword arguments may be passed if all the arguments have default values.
+
+### 6. What will be the output of the following Python code?
+```python
+def foo(fname, val):
+    print(fname(val))
+foo(max, [1, 2, 3])
+foo(min, [1, 2, 3])
+```
+
+**a) 3 1**\
+b) 1 3\
+c) error\
+d) none of the mentioned
+
+> Explanation: It is possible to pass function names as arguments to other functions.
+
+### 7. What will be the output of the following Python code?
+```python
+def foo():
+    return total + 1
+total = 0
+print(foo())
+```
+
+a) 0\
+**b) 1**\
+c) error\
+d) none of the mentioned
+
+> Explanation: It is possible to read the value of a global variable directly.
+
+### 8. What will be the output of the following Python code?
+```python
+def foo():
+    total += 1
+    return total
+total = 0
+print(foo())
+```
+
+a) 0\
+b) 1\
+**c) error**\
+d) none of the mentioned
+
+> Explanation: It is not possible to change the value of a global variable without explicitly specifying it.
+
+### 9. What will be the output of the following Python code?
+```python
+def foo(x):
+    x = ['def', 'abc']
+    return id(x)
+q = ['abc', 'def']
+print(id(q) == foo(q))
+```
+
+a) True\
+**b) False**\
+c) None\
+d) Error
+
+> Explanation: A new object is created in the function.
+
+### 10. What will be the output of the following Python code?
+```python
+def foo(i, x=[]):
+    x.append(i)
+    return x
+for i in range(3):
+    print(foo(i))
+```
+
+a) [0] [1] [2]\
+**b) [0] [0, 1] [0, 1, 2]**\
+c) [1] [2] [3]\
+d) [1] [1, 2] [1, 2, 3]
+
+> Explanation: When a list is a default value, the same list will be reused.
+
+## Argument Parsing 2
+
+### 1. What will be the output of the following Python code?
+```python
+def foo(k):
+    k = [1]
+q = [0]
+foo(q)
+print(q)
+```
+
+**a) [0]**\
+b) [1]\
+c) [1, 0]\
+d) [0, 1]
+
+> Explanation: A new list object is created in the function and the reference is lost. This can be checked by comparing the id of k before and after k = [1].
+
+### 2. How are variable length arguments specified in the function heading?
+**a) one star followed by a valid identifier**\
+b) one underscore followed by a valid identifier\
+c) two stars followed by a valid identifier\
+d) two underscores followed by a valid identifier
+
+> Explanation: Refer documentation.
+
+### 3. Which module in the python standard library parses options received from the command line?
+**a) getopt**\
+b) os\
+c) getarg\
+d) main
+
+> Explanation: getopt parses options received from the command line.
+
+### 4. What is the type of sys.argv?
+a) set\
+**b) list**\
+c) tuple\
+d) string
+
+> Explanation: It is a list of elements.
+
+### 5. What is the value stored in sys.argv[0]?
+a) null\
+b) you cannot access it\
+**c) the program’s name**\
+d) the first argument
+
+> Explanation: Refer documentation.
+
+### 6. How are default arguments specified in the function heading?
+**a) identifier followed by an equal to sign and the default value**\
+b) identifier followed by the default value within backticks (“)\
+c) identifier followed by the default value within square brackets ([])\
+d) identifier
+
+> Explanation: Refer documentation.
+
+### 7. How are required arguments specified in the function heading?
+a) identifier followed by an equal to sign and the default value\
+b) identifier followed by the default value within backticks (“)\
+c) identifier followed by the default value within square brackets ([])\
+**d) identifier**
+
+> Explanation: Refer documentation.
+
+### 8. What will be the output of the following Python code?
+```python
+def foo(x):
+    x[0] = ['def']
+    x[1] = ['abc']
+    return id(x)
+q = ['abc', 'def']
+print(id(q) == foo(q))
+```
+
+**a) True**\
+b) False\
+c) None\
+d) Error
+
+> Explanation: The same object is modified in the function.
+
+### 9. Where are the arguments received from the command line stored?
+**a) sys.argv**\
+b) os.argv\
+c) argv\
+d) none of the mentioned
+
+> Explanation: Refer documentation.
+
+### 10. What will be the output of the following Python code?
+```python
+def foo(i, x=[]):
+    x.append(x.append(i))
+    return x
+for i in range(3):
+    y = foo(i)
+print(y)
+```
+
+a) [[[0]], [[[0]], [1]], [[[0]], [[[0]], [1]], [2]]]\
+b) [[0], [[0], 1], [[0], [[0], 1], 2]]\
+**c) [0, None, 1, None, 2, None]**\
+d) [[[0]], [[[0]], [1]], [[[0]], [[[0]], [1]], [2]]]
+
+> Explanation: append() returns None.
+
 # Section 18
 
 ### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
@@ -8583,9 +10039,9 @@ c) Junk value
 
 > Explanation: In the code shown above, when we call the function f, a new namespace is created. The assignment x=4 is performed in the local namespace and does not affect the global namespace. Hence the output is 1.
 
-### 8. ******\_\_****** returns a dictionary of the module namespace.
+### 8. **\*\***\_\_**\*\*** returns a dictionary of the module namespace.
 
-******\_\_\_\_****** returns a dictionary of the current namespace.
+**\*\***\_\_\_\_**\*\*** returns a dictionary of the current namespace.
 
 a)
 
@@ -8824,6 +10280,7 @@ d) Programs using recursion take longer time than their non-recursive equivalent
 
 ### 15. What will be the output of the following Python code?
 
+
 ```
 def a(n):
     if n == 0:
@@ -8897,7 +10354,7 @@ d)
 
 > Explanation: The code shown above depicts deep copy. In deep copy, the base address of the objects is not copied. Hence the modification done on one list does not affect the other list.
 
-### 3. In ******\_\_\_****** copy, the base address of the objects are copied. In ******\_\_\_****** copy, the base address of the objects are not copied.
+### 3. In **\*\***\_\_\_**\*\*** copy, the base address of the objects are copied. In **\*\***\_\_\_**\*\*** copy, the base address of the objects are not copied.
 
 a) deep. shallow
 
@@ -9006,7 +10463,7 @@ d)
 
 > Explanation: The code shown above depicts deep copy. Hence at the end of the code, l1=[10, 20, 30, [90]] and l2=[10, 20, 30, [40]].
 
-### 9. In ********\_\_\_\_******** copy, the modification done on one list affects the other list. In ********\_\_\_\_******** copy, the modification done on one list does not affect the other list.
+### 9. In **\*\*\*\***\_\_\_\_**\*\*\*\*** copy, the modification done on one list affects the other list. In **\*\*\*\***\_\_\_\_**\*\*\*\*** copy, the modification done on one list does not affect the other list.
 
 **a) shallow, deep**
 b) memberwise, shallow
@@ -10068,7 +11525,7 @@ d) ‘2010 20 Sep 08:45:12 Sun’
 
 > The code shown above returns the given date and time in a particular format. Hence the output of the code shown above will be: ‘Sun Sep 20 08:45:12 2010’.
 
-## 8. The sleep function (under the time module) is used to ****\_\_\_**** [Функція сну (під модулем часу) використовується для ___________]
+## 8. The sleep function (under the time module) is used to \***\*\_\_\_\*\*** [Функція сну (під модулем часу) використовується для ___________]
 
 **a) Pause the code for the specified number of seconds**
 b) Return the specified number of seconds, in terms of milliseconds
@@ -10216,7 +11673,7 @@ d) 95
 
 > The function shown above will generate an output which is a multiple of 5 and is between 0 and 91. The only option which satisfies these criteria is 10. Hence the only possible output of this function is 10.
 
-## 12. Both the functions randint and uniform accept ****\_\_\_\_**** parameters. [Обидві функції randint і uniform приймають ____________ параметри.]
+## 12. Both the functions randint and uniform accept \***\*\_\_\_\_\*\*** parameters. [Обидві функції randint і uniform приймають ____________ параметри.]
 
 a) 0
 b) 1
@@ -10913,6 +12370,345 @@ c) 100.00, 90.00\
 
 # Section 24
 
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.compile('hello', re.X)```
+
+a) [‘h’, ‘e’, ‘l’, ‘l’, ‘o’]\
+**b) re.compile(‘hello’, re.VERBOSE)**\
+c) Error\
+d) Junk value\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split('[a-c]', '0a3B6', re.I)```
+
+a) Error\
+b) [‘a’, ‘B’]\
+**c) [‘0’, ‘3B6’]**\
+d) [‘a’]\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.sub('morning', 'evening', 'good morning')```
+
+**a) ‘good evening’**\
+b) ‘good’\
+c) ‘morning’\
+d) ‘evening’\
+
+### The function re.error raises an exception if a particular string contains no match for the given pattern [Функція re.error викликає помилку, якщо рядок не відповідає заданому шаблону]
+
+a) True\
+**b) False**\
+>The function re.error raises an exception when a string passed to one of its functions here is not a valid regular expression. It does not raise an exception if a particular string does not contain a match for the given pattern.
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.escape('new**world')```
+
+a) ‘new world’\
+**b) ‘new\\*\\*world’**\
+c) ‘**’\
+d) ‘new’, ‘*’, ‘*’, ‘world’\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.fullmatch('hello', 'hello world')```
+
+**a) No output**\
+b) []\
+c) <_sre.SRE_Match object; span=(0, 5), match='hello'>\
+d) Error\
+
+### Choose the option wherein the two choices do not refer to the same option [Виберіть варіант, у якому ці два варіанти не стосуються одного параметра]
+
+a) re.I  re.IGNORECASE\
+b) re.M  re.MULTILINE\
+c) re.X  re.VERBOSE\
+**d) re.L  re.LOWERCASE**\
+>The function re.L is also written as re.LOCALE. There is no function such as re.LOWERCASE in the re module of Python.
+
+### The difference between the functions re.sub and re.subn is that re.sub returns a ___ whereas re.subn returns a __ [Різниця між функціями re.sub і re.subn полягає в тому, що re.sub повертає __, тоді як re.subn повертає __]
+
+a) string, list\
+b) list, tuple\
+**c) string, tuple**\
+d) tuple, list\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split('mum', 'mumbai*', 1)```
+
+a) Error\
+**b) [”, ‘bai*’]*\
+c) [”, ‘bai’]\
+d) [‘bai*’]\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.findall('good', 'good is good') ```
+```re.findall('good', 'bad is good')```
+
+**a) ```[‘good’, ‘good’]**
+**[‘good’]```**\
+b) ```(‘good’, ‘good’)
+(good)```\
+c) ```(‘good’)
+(‘good’)```\
+d) ```[‘good’]
+[‘good’]```\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split(r'(n\d)=', 'n1=3.1, n2=5, n3=4.565')```
+
+a) Error\
+**b) [”, ‘n1’, ‘3.1, ‘, ‘n2’, ‘5, ‘, ‘n3’, ‘4.565’]**\
+c) [‘n1’, ‘3.1, ‘, ‘n2’, ‘5, ‘, ‘n3’, ‘4.565’]\
+d) [‘3.1, ‘, ‘5, ‘, ‘4.565’]\
+
+### The function of re.search is ___ [Функція re.search це __]
+
+a) Matches a pattern at the start of the string\
+b) Matches a pattern at the end of the string\
+**c) Matches a pattern from any part of a string**\
+d) Such a function does not exist\
+
+### Which of the following functions creates a Python object? [Яка з наведених нижче функцій створює об’єкт Python?]
+
+**a) re.compile(str)**\
+b) re.assemble(str)\
+c) re.regex(str)\
+d) re.create(str)\
+
+### Which of the following pattern matching modifiers permits whitespace and comments inside the regular expression? [Які з наведених нижче модифікаторів відповідності шаблону допускають пробіли та коментарі всередині регулярного виразу?]
+
+a) re.L\
+b) re.S\
+c) re.U\
+**d) re.X**\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```s = 'welcome home'
+m = re.match(r'(.*)(.*?)', s)
+print(m.group())
+```
+
+a) (‘welcome’, ‘home’)\
+b) [‘welcome’, ‘home’]\
+**c) welcome home**\
+d) [‘welcome’ // ‘home’ ]\
+
+### The function of re.match is __ [Функція re.match це __]
+
+a) Error\
+b) Matches a pattern anywhere in the string\
+c) Matches a pattern at the end of the string\
+**d) Matches a pattern at the start of the string**\
+
+### The special character \B matches the empty string, but only when it is __ [Спеціальний символ \B відповідає порожньому рядку, але лише тоді, коли це __]
+
+a) at the beginning or end of a word\
+**b) not at the beginning or end of a word**\
+c) at the beginning of the word\
+d) at the end of the word\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```import re
+s = "A new day"
+m = re.match(r'(.*)(.*?)', s)
+print(m.group(2))
+print(m.group(0))
+```
+
+**a)No output**
+**A new day**\
+b)No output
+No output\
+c)[‘A’, ‘new’, ‘day’]
+(‘A’, ‘new’, ‘day’)\
+d)Error
+[‘A’, ‘new’, ‘day’]\
+
+### Which of the following special characters matches a pattern only at the end of the string? [Який із наступних спеціальних символів відповідає шаблону лише в кінці рядка?]
+
+a) \B\
+b) \X\
+**c) \Z**\
+d) \A\
+
+### The output of the following two Python codes are the same [Вихідні дані двох наступних кодів Python однакові]
+```p = re.compile('hello')
+r = p.match('hello everyone')
+print(r.group(0))
+ 
+r = re.match('hello', 'hello everyone')
+print(r.group(0))
+```
+
+**a) True**\
+b) False\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.match('sp(.*)am', 'spam')```
+
+a) <_sre.SRE_Match object; span=(1, 4), match=’spam’>\
+**b) <_sre.SRE_Match object; span=(0, 4), match=’spam’>**\
+c) No output\
+d) Error\
+
+### Which of the following special characters represents a comment (that is, the contents of the parenthesis are simply ignores)? [Який із наступних спеціальних символів позначає коментар (тобто вміст дужок просто ігнорується)?]
+
+a) (?:…)\
+b) (?=…)\
+c) (?!…)\
+**d) (?#…)**\
+
+### Which of the codes shown below results in a match? [Який із кодів, показаних нижче, збігається?]
+
+a) re.match(‘George(?=Washington)’, ‘George Washington’)\
+b) re.match(‘George(?=Washington)’, ‘George’)\
+**c) re.match(‘George(?=Washington)’, ‘GeorgeWashington’)**\
+d) re.match(‘George(?=Washington)’, ‘Georgewashington’)\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split(r'(a)(t)', 'Maths is a difficult subject')```
+
+a) [‘M a t h s i s a d i f f i c u l t s u b j e c t’]\
+b) [‘Maths’, ‘is’, ‘a’, ‘difficult’, ‘subject’]\
+c) ‘Maths is a difficult subject’\
+**d) [‘M’, ‘a’, ‘t’, ‘hs is a difficult subject’]**\
+
+### The output of the following two Python codes are the same. [Вихідні дані двох наступних кодів Python однакові]
+```CODE 1
+>>> re.split(r'(a)(t)', 'The night sky')
+CODE 2
+>>> re.split(r'\s+', 'The night sky')
+```
+
+a) True\
+**b) False**\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```import re
+s = 'abc123 xyz666 lmn-11 def77'
+re.sub(r'\b([a-z]+)(\d+)', r'\2\1:', s)
+```
+
+**a) ‘123abc: 666xyz: lmn-11 77def:’**\
+b) ‘77def: lmn-11: 666xyz: 123abc’\
+c) ‘abc123:’, ‘xyz666:’, ‘lmn-11:’, ‘def77:’\
+d) ‘abc123: xyz666: lmn-11: def77’\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.subn('A', 'X', 'AAAAAA', count=4)```
+
+a) ‘XXXXAA, 4’\
+b) (‘AAAAAA’, 4)\
+**c) (‘XXXXAA’, 4)**\
+d) ‘AAAAAA, 4’]\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```n = re.sub(r'\w+', 'Hello', 'Cats and dogs')```
+
+a) Hello Hello Hello\
+**b) ‘Hello Hello Hello**\
+c) [‘Hello’, ‘Hello’, ‘Hello’]\
+d) (‘Hello’, ‘Hello’, ‘Hello’)\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```w = re.compile('[A-Za-z]+')
+w.findall('It will rain today')
+```
+
+a) ‘It will rain today’\
+b) (‘It will rain today’)\
+c) [‘It will rain today’]\
+**d) [‘It’, ‘will’, ‘rain’, ‘today’]**\
+
+### In the functions re.search.start(group) and re.search.end(group), if the argument groups not specified, it defaults to __ [У функціях re.search.start(group) і re.search.end(group), якщо групи аргументів не вказані, за замовчуванням це __]
+
+**a) Zero**\
+b) None\
+c) One\
+d) Error\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.split(r'\s+', 'Chrome is better than explorer', maxspilt=3)```
+
+a) [‘Chrome’, ‘is’, ‘better’, ‘than’, ‘explorer’]\
+**b) [‘Chrome’, ‘is’, ‘better’, ‘than explorer’]**\
+c) (‘Chrome’, ‘is’, ‘better’, ‘than explorer’)\
+d) ‘Chrome is better’ ‘than explorer’\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```a=re.compile('[0-9]+')
+a.findall('7 apples and 3 mangoes')
+```
+
+a) [‘apples’ ‘and’ ‘mangoes’]\
+b) (7, 4)\
+**c) [‘7’, ‘4’]**\
+d) Error\
+
+### Which of the following functions returns a dictionary mapping group names to group numbers? [Яка з наведених нижче функцій повертає словник зіставлення назв груп із номерами груп?]
+
+a) re.compile.group\
+**b) re.compile.groupindex**\
+c) re.compile.index\
+d) re.compile.indexgroup\
+
+### Which of the following statements regarding the output of the function re.match is incorrect? [Яке з наведених нижче тверджень щодо виведення функції re.match є неправильним?]
+
+a) ‘pq*’ will match ‘pq’\
+b) ‘pq?’ matches ‘p’\
+c) ‘p{4}, q’ does not match ‘pppq’\
+**d) ‘pq+’ matches ‘p’**\
+
+### The following Python code snippet results in an error [Наступний фрагмент коду Python призводить до помилки]
+```c=re.compile(r'(\d+)(\[A-Z]+)([a-z]+)')
+c.groupindex
+```
+
+a) True\
+**b) False**\
+
+### Which of the following functions does not accept any argument? [Яка з наведених функцій не приймає жодного аргументу?]
+
+**a) re.purge**\
+b) re.compile\
+c) re.findall\
+d) re.match\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```a = re.compile('0-9')
+a.findall('3 trees')
+```
+
+**a) []**\
+b) [‘3’]\
+c) Error\
+d) [‘trees’]\
+
+### Which of the following lines of code will not show a match? [Який із наведених нижче рядків коду не покаже збіг?]
+
+a) >>> re.match(‘ab*’, ‘a’)\
+b) >>> re.match(‘ab*’, ‘ab’)\
+c) >>> re.match(‘ab*’, ‘abb’)\
+**d) >>> re.match(‘ab*’, ‘ba’)**\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```m = re.search('a', 'The blue umbrella')
+m.re.pattern
+```
+
+a) {}\
+b) ‘The blue umbrella’\
+**c) ‘a’**\
+d) No output\
+
+### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+```re.sub('Y', 'X', 'AAAAAA', count=2)```
+
+a) ‘YXAAAA’\
+b) (‘YXAAAA’)\
+c) (‘AAAAAA’)\
+**d) ‘AAAAAA’**\
+
+
 # Section 25
 
 ## Python Files – 1
@@ -11341,8 +13137,6 @@ c) Standard Errors
           break
 
        name = name + c
-
-
 
     print 'Your name is:', name
 ```
@@ -11910,3 +13704,1582 @@ d) Error because the member shape is a private member
 > Protected members begin with one underscore and they can only be accessed within a class or by subclasses.
 
 # Section 26
+
+## Files - 5
+
+## 1. Which of the following is not a valid mode to open a file?
+
+a) ab
+
+_**b) rw**_
+
+c) r+
+
+d) w+
+
+> Need to choose either r or w
+
+
+## 2. What is the difference between r+ and w+ modes?
+
+_**a) no difference**_
+
+b) in r+ the pointer is initially placed at the beginning of the file and the pointer is at the end for w+
+
+c) in w+ the pointer is initially placed at the beginning of the file and the pointer is at the end for r+
+
+d) depends on the operating system
+
+> Difference exists, for example r+ will get an error on a file that doesn't exist, and w+ creates it. But all those things are out of the scope of this question.
+
+
+## 3. How do you get the name of a file from a file object (fp)?
+
+_**a) fp.name**_
+
+b) fp.file(name)
+
+c) self.\_\_name\_\_(fp)
+
+d) fp.\_\_name\_\_()
+
+> Name is an attribute
+
+
+## 4. Which of the following is not a valid attribute of a file object (fp)?
+
+a) fp.name
+
+b) fp.closed
+
+c) fp.mode
+
+_**d) fp.size**_
+
+
+## 5. How do you close a file object (fp)?
+
+a) close(fp)
+
+b) fclose(fp)
+
+_**c) fp.close()**_
+
+d) fp.__close__()
+
+
+## 6. How do you get the current position within the file?
+
+a) fp.seek()
+
+_**b) fp.tell()**_
+
+c) fp.loc
+
+d) fp.pos
+
+
+## 7. How do you rename a file?
+
+a) fp.name = ‘new_name.txt’
+
+_**b) os.rename(existing_name, new_name)**_
+
+c) os.rename(fp, new_name)
+
+d) os.set_name(existing_name, new_name)
+
+
+## 8. How do you delete a file?
+
+a) del(fp)
+
+b) fp.delete()
+
+_**c) os.remove(‘file’)**_
+
+d) os.delete(‘file’)
+
+
+## 9. How do you change the file position to an offset value from the start?
+
+_**a) fp.seek(offset, 0)**_
+
+b) fp.seek(offset, 1)
+
+c) fp.seek(offset, 2)
+
+d) none of the mentioned
+
+
+## 10. What happens if no arguments are passed to the seek function?
+
+a) file position is set to the start of file
+
+b) file position is set to the end of file
+
+c) file position remains unchanged
+
+_**d) error**_
+
+> Need to set offset
+
+
+## Operators overload
+
+## 1. Which function is called when the following Python code is executed?
+
+```
+f = foo()
+format(f)
+```
+
+a) format()
+
+b) \_\_format\_\_()
+
+c) str()
+
+_**d) \_\_str\_\_()**_
+
+
+## 2. Which of the following Python code will print True?
+
+```
+a = foo(2) 
+b = foo(3) 
+print(a < b)
+```
+
+a)
+
+```
+class foo:
+    def __init__(self, x):    
+        self.x = x        
+    def __lt__(self, other):    
+        if self.x < other.x:        
+            return False           
+        else:       
+            return True
+```
+
+b)
+
+```
+class foo:
+    def __init__(self, x):   
+        self.x = x        
+    def __less__(self, other):    
+        if self.x > other.x:
+            return False            
+        else:
+            return True
+```
+            
+_**c)**_
+
+```
+class foo:
+    def __init__(self, x):
+        self.x = x
+    def __lt__(self, other):
+        if self.x < other.x:
+            return True
+        else:
+            return False
+ 
+```
+d)
+
+```
+
+class foo:
+    def __init__(self, x):
+        self.x = x
+    def __less__(self, other):
+        if self.x < other.x:
+            return False
+        else:
+            return True
+```
+
+> \_\_lt\_\_ overloads the < operator>.
+
+
+## 3. Which function overloads the + operator?
+
+_**a) \_\_add\_\_()**_
+
+b) \_\_plus\_\_()
+
+c) \_\_sum\_\_()
+
+d) none of the mentioned
+
+
+## 4. Which operator is overloaded by \_\_invert\_\_()?
+
+a) !
+
+**b) ~ **
+
+c) ^
+
+d) –
+
+
+## 5. Which function overloads the == operator?
+
+_**a) \_\_eq\_\_()**_
+
+b) \_\_equ\_\_()
+
+c) \_\_isequal\_\_()
+
+d) none of the mentioned
+
+
+## 6. Which operator is overloaded by \_\_lg\_\_()?
+
+a) <
+
+b) >
+
+c) !=
+
+_**d) none of the mentioned**_
+
+
+> \_\_lg\_\_() is invalid
+
+
+## 7. Which function overloads the >> operator?
+
+a) \_\_more\_\_()
+
+b) \_\_gt\_\_()
+
+c) \_\_ge\_\_()
+
+_**d) none of the mentioned**_
+
+> \_\_rshift\_\_
+
+
+## 8. Let A and B be objects of class Foo. Which functions are called when print(A + B) is executed?
+
+_**a) \_\_add\_\_(), \_\_str\_\_()**_
+
+b) \_\_str\_\_(), \_\_add\_\_()
+
+c) \_\_sum\_\_(), \_\_str\_\_()
+
+d) \_\_str\_\_(), \_\_sum\_\_()
+
+
+## 9. Which operator is overloaded by the \_\_or\_\_() function?
+
+a) ||
+
+**b) |**
+
+c) //
+
+d) /
+
+## 10. Which function overloads the // operator?
+
+a) \_\_div\_\_()
+
+b) \_\_ceildiv\_\_()
+
+_**c) \_\_floordiv\_\_()**_
+
+d) \_\_truediv\_\_()
+
+
+## Class and objects - 1
+
+
+## 1. _____ represents an entity in the real world with its identity and behaviour.
+
+a) A method
+
+_**b) An object**_
+
+c) A class
+
+d) An operator
+
+
+## 2. _____ is used to create an object.
+
+a) class
+
+_**b) constructor**_
+
+c) User-defined functions
+
+d) In-built functions
+
+
+
+## **3. What will be the output of the following Python code?**
+
+```
+class test:
+     def __init__(self,a="Hello World"):
+         self.a=a
+ 
+     def display(self):
+         print(self.a)
+obj=test()
+obj.display()
+```
+
+a) The program has an error because constructor can’t have default arguments
+
+b) Nothing is displayed
+
+_**c) “Hello World” is displayed**_
+
+d) The program has an error display function doesn’t have parameters
+
+
+## 4. What is setattr() used for?
+
+a) To access the attribute of the object
+
+_**b) To set an attribute**_
+
+c) To check if an attribute exists or not
+
+d) To delete an attribute
+
+
+## 5. What is getattr() used for?
+
+_**a) To access the attribute of the object**_
+
+b) To delete an attribute
+
+c) To check if an attribute exists or not
+
+d) To set an attribute
+
+
+## 6. What will be the output of the following Python code?
+```
+class change:
+    def __init__(self, x, y, z):
+        self.a = x + y + z
+ 
+x = change(1,2,3)
+y = getattr(x, 'a')
+setattr(x, 'a', y+1)
+print(x.a)
+```
+
+a) 6
+
+**b) 7**
+
+c) Error
+
+d) 0First, a=1+2+3=6. Then, after setattr() is invoked, x.a=6+1=7.
+
+> First, a=1+2+3=6. Then, after setattr() is invoked, x.a=6+1=7.
+
+
+## 7. What will be the output of the following Python code?
+```
+ class test:
+     def __init__(self,a):
+         self.a=a
+ 
+     def display(self):
+         print(self.a)
+obj=test()
+obj.display()
+```
+
+a) Runs normally, doesn’t display anything
+
+b) Displays 0, which is the automatic default value
+
+_**c) Error as one argument is required while creating the object**_
+
+d) Error as display function requires additional argument
+
+
+##  8. Is the following Python code correct?
+```
+>>> class A:
+	def __init__(self,b):
+		self.b=b
+	def display(self):
+		print(self.b)
+>>> obj=A("Hello")
+>>> del obj
+```
+
+_**a) True**_
+
+b) False
+
+
+## 9. What will be the output of the following Python code?
+```
+class test:
+    def __init__(self):
+        self.variable = 'Old'
+        self.Change(self.variable)
+    def Change(self, var):
+        var = 'New'
+obj=test()
+print(obj.variable)
+```
+
+a) Error because function change can’t be called in the __init__ function
+
+b) ‘New’ is printed
+
+_**c) ‘Old’ is printed**_
+
+d) Nothing is printed
+
+
+## 10. What is Instantiation in terms of OOP terminology?
+
+a) Deleting an instance of class
+
+b) Modifying an instance of class
+
+c) Copying an instance of class
+
+_**d) Creating an instance of class**_
+
+
+## 11. What will be the output of the following Python code?
+
+a) 12
+
+b) 52
+
+_**c) 13**_
+
+d) 60
+
+
+## 12. What will be the output of the following Python code?
+```
+ class Demo:
+    def __init__(self):
+        pass
+ 
+    def test(self):
+        print(__name__)
+ 
+obj = Demo()
+obj.test()
+```
+
+a) Exception is thrown
+
+_**b) __main__**_
+
+c) Demo
+
+d) test
+
+
+## Class and Objects - 2
+
+## 1. The assignment of more than one function to a particular operator is _______
+
+a) Operator over-assignment
+
+b) Operator overriding
+
+_**c) Operator overloading**_
+
+d) Operator instance
+
+
+## 2. Which of the following is not a class method?
+
+_**a) Non-static**_
+
+b) Static
+
+c) Bounded
+
+d) Unbounded
+
+
+
+## 3. What will be the output of the following Python code?
+
+```
+def add(c,k):
+    c.test=c.test+1
+    k=k+1
+class A:
+    def __init__(self):
+        self.test = 0
+def main():
+    Count=A()
+    k=0
+ 
+    for i in range(0,25):
+        add(Count,k)
+    print("Count.test=", Count.test)
+    print("k =", k)
+main()
+```
+
+a) Exception is thrown
+
+b)
+```
+Count.test=25
+k=25
+```
+
+_**c)**_
+
+```
+Count.test=25
+k=0
+```
+
+d)
+```
+Count.test=0
+k=0
+```
+
+
+## 4. Which of the following Python code creates an empty class?
+
+a)
+```
+class A:
+    return
+```
+
+_**b)**_
+```
+class A:
+    pass
+```
+
+c)
+```
+class A:
+```
+
+d) It is not possible to create an empty class
+
+
+
+## 5. Is the following Python code valid?
+
+```
+class B(object):
+  def first(self):
+    print("First method called")
+  def second():
+    print("Second method called")
+ob = B()
+B.first(ob)
+```
+
+a) It isn’t as the object declaration isn’t right
+
+b) It isn’t as there isn’t any \_\_init\_\_ method for initializing class members
+
+_**c) Yes, this method of calling is called unbounded method call**_
+
+d) Yes, this method of calling is called bounded method call
+
+
+## 6. What are the methods which begin and end with two underscore characters called?
+
+_**a) Special methods**_
+
+b) In-built methods
+
+c) User-defined methods
+
+d) Additional methods
+
+
+## 7. Special methods need to be explicitly called during object creation.
+
+a) True
+
+_**b) False**_
+
+
+> They are called automaticly
+
+
+## 8. What will be the output of the following Python code?
+
+```
+>>> class demo():
+	def __repr__(self):
+		return '__repr__ built-in function called'
+	def __str__(self):
+		return '__str__ built-in function called'
+>>> s=demo()
+>>> print(s)
+```
+
+a) Error
+
+b) Nothing is printed
+
+_**c) \_\_str\_\_ called**_
+
+d) \_\_repr\_\_ called
+
+
+## 9. What is hasattr(obj,name) used for?
+
+a) To access the attribute of the object
+
+b) To delete an attribute
+
+_**c) To check if an attribute exists or not**_
+
+d) To set an attribute
+
+
+## 10. What will be the output of the following Python code?
+
+```
+class stud:
+   def __init__(self, roll_no, grade):
+      self.roll_no = roll_no
+      self.grade = grade
+   def display (self):
+      print("Roll no : ", self.roll_no,  ", Grade: ", self.grade)
+stud1 = stud(34, 'S')
+stud1.age=7
+print(hasattr(stud1, 'age'))
+```
+
+a) Error as age isn’t defined
+
+_**b) True**_
+
+c) False
+
+d) 7
+
+
+## 11. What is delattr(obj,name) used for?
+
+a) To print deleted attribute
+
+_**b) To delete an attribute**_
+
+c) To check if an attribute is deleted or not
+
+d) To set an attribute
+
+
+
+## 12. \_\_del\_\_ method is used to destroy instances of a class.
+
+_**a) True**_
+
+b) False
+
+
+## 13. What will be the output of the following Python code?
+
+```
+class stud:
+   ‘Base class for all students’
+   def __init__(self, roll_no, grade):
+      self.roll_no = roll_no
+      self.grade = grade
+   def display (self):
+      print("Roll no : ", self.roll_no,  ", Grade: ", self.grade)
+print(student.__doc__)
+```
+
+a) Exception is thrown
+
+b) \_\_main\_\_
+
+c) Nothing is displayed
+
+_**d) Base class for all students**_
+
+
+## 14. What does print(Test.\_\_name\_\_) display (assuming Test is the name of the class)?
+
+a) ()
+
+b) Exception is thrown
+
+_**c) Test**_
+
+d) \_\_main\_\_
+
+
+# Additional topics
+
+## Topic 102. Inheritance – 1
+
+### 1. Which of the following best describes inheritance? [Що з цього найкраще описує поняття успадкування]
+* **a) Ability of a class to derive members of another class as a part of its own definition**
+* b) Means of bundling instance variables and methods in order to restrict access to certain class members
+* c) Focuses on variables and passing of variables to functions
+* d) Allows for implementation of elegant software that is well designed and easily modified
+
+> If the class definition is class B(A): then class B inherits the methods of class A. This is called inheritance.
+
+
+### 2. Which of the following statements is wrong about inheritance? [Яке з нижче наведених тверджень щодо успадкування невірне?]
+* a) Protected members of a class can be inherited
+* b) The inheriting class is called a subclass
+* **c) Private members of a class can be inherited and accessed**
+* d) Inheritance is one of the features of OOP
+
+> Any changes made to the private members of the class in the subclass aren’t reflected in the original members.
+
+
+### 3. What will be the output of the following Python code?
+
+```python
+class Demo:
+    def __new__(self):
+        self.__init__(self)
+        print("Demo's __new__() invoked")
+    def __init__(self):
+        print("Demo's __init__() invoked")
+class Derived_Demo(Demo):
+    def __new__(self):
+        print("Derived_Demo's __new__() invoked")
+    def __init__(self):
+        print("Derived_Demo's __init__() invoked")
+def main():
+    obj1 = Derived_Demo()
+    obj2 = Demo()
+main()
+```
+
+* a)
+
+```
+Derived_Demo’s __init__() invoked
+Derived_Demo's __new__() invoked
+Demo's __init__() invoked
+Demo's __new__() invoked
+```
+
+* **b)**
+
+```
+Derived_Demo's __new__() invoked
+Demo's __init__() invoked
+Demo's __new__() invoked
+```
+
+* c)
+
+```
+Derived_Demo's __new__() invoked
+Demo's __new__() invoked
+```
+
+* d)
+
+```
+Derived_Demo’s __init__() invoked
+Demo's __init__() invoked
+```
+
+Answer: b
+
+Since the object for the derived class is declared first, \_\_new__() method of the derived class is invoked first, followed by the constructor and the \_\_new__() method of main class.
+
+
+### 4. What will be the output of the following Python code?
+
+```python
+class Test:
+    def __init__(self):
+        self.x = 0
+class Derived_Test(Test):
+    def __init__(self):
+        self.y = 1
+def main():
+    b = Derived_Test()
+    print(b.x,b.y)
+main()
+```
+
+* a) 0 1
+* b) 0 0
+* **c) Error because class B inherits A but variable x isn’t inherited**
+* d) Error because when object is created, argument must be passed like Derived_Test(1)
+
+Since the invoking method, Test.\_\_init\_\_(self), isn’t present in the derived class, variable x can’t be inherited.
+
+
+### 5. What will be the output of the following Python code?
+
+```python
+class A():
+    def disp(self):
+        print("A disp()")
+class B(A):
+    pass
+obj = B()
+obj.disp()
+```
+
+* a) Invalid syntax for inheritance
+* b) Error because when object is created, argument must be passed
+* c) Nothing is printed
+* **d) A disp()**
+
+> Class B inherits class A hence the function disp() becomes part of class B’s definition. Hence disp() method is properly executed and the line is printed.
+
+
+### 6. All subclasses are a subtype in object-oriented programming. [Всі підкласи є підтипами в ООП]
+* a) True
+* **b) False**
+
+> A subtype is something that be substituted for and behave as its parent type. A subclass may not be a subtype in object-oriented programming.
+
+https://softwareengineering.stackexchange.com/questions/362316/whats-the-difference-between-a-subclass-and-a-subtype
+
+
+### 7. When defining a subclass in Python that is meant to serve as a subtype, the subtype Python keyword is used. [Щоб визначити підклас Python, який вестиме себе як підтип, використовується ключове слово Python subtype.]
+* a) True
+* **b) False**
+
+> B is a subtype of B if instances of type B can substitute for instances of type A without affecting semantics.
+
+
+### 8. Suppose B is a subclass of A, to invoke the `__init__` method in A from B, what is the line of code you should write? [Припустимо, що B є підкласом A, щоб викликати метод `__init__` A в класі B, яку лінію коду ви маєте написати?]
+* **a) A.__init__(self)**
+* b) B.__init__(self)
+* c) A.__init__(B)
+* d) B.__init__(A)
+
+> To invoke the `__init__` method in A from B, either of the following should be written: `A.__init__(self)` or `super().__init__(self)`.
+
+
+### 9. What will be the output of the following Python code?
+
+```python
+class Test:
+    def __init__(self):
+        self.x = 0
+class Derived_Test(Test):
+    def __init__(self):
+        Test.__init__(self)
+        self.y = 1
+def main():
+    b = Derived_Test()
+    print(b.x,b.y)
+main()
+```
+
+* a) Error because class B inherits A but variable x isn’t inherited
+* b) 0 0
+* **c) 0 1**
+* d) Error, the syntax of the invoking method is wrong
+
+> Since the invoking method has been properly invoked, variable x from the main class has been properly inherited and it can also be accessed.
+
+
+### 10. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self, x= 1):
+        self.x = x
+class der(A):
+    def __init__(self,y = 2):
+        super().__init__()
+        self.y = y
+def main():
+    obj = der()
+    print(obj.x, obj.y)
+main()
+```
+
+* a) Error, the syntax of the invoking method is wrong
+* b) The program runs fine but nothing is printed
+* c) 1 0
+* **d) 1 2**
+
+> In the above piece of code, the invoking method has been properly implemented and hence x=1 and y=2. 
+
+
+### 11. What does built-in function type do in context of classes? [Що робить вбудована функція type в контексті класів?]
+* a) Determines the object name of any value
+* **b) Determines the class name of any value**
+* c) Determines class description of any value
+* d) Determines the file name of any value
+
+> For example: >>> type((1,)) gives <class ‘tuple’>.
+
+
+### 12. Which of the following is not a type of inheritance? [Що з нижчу наведеного не є типом наслідування?]
+* **a) Double-level**
+* b) Multi-level
+* c) Single-level
+* d) Multiple
+
+> Multiple, multi-level, single-level and hierarchical inheritance are all types of inheritance.
+
+
+### 13. What does built-in function help do in context of classes? [Що робить вбудована функція help в контексті класів?]
+* a) Determines the object name of any value
+* b) Determines the class identifiers of any value
+* **c) Determines class description of any built-in type**
+* d) Determines class description of any user-defined built-in type
+
+> help() usually gives information of the class on any built-in type or function.
+
+(як тип може бути 'user-defined built-in'???)
+
+
+### 14. What will be the output of the following Python code?
+
+```python
+class A:
+    def one(self):
+        return self.two()
+ 
+    def two(self):
+        return 'A'
+ 
+class B(A):
+    def two(self):
+        return 'B'
+obj1=A()
+obj2=B()
+print(obj1.two(),obj2.two())
+```
+
+* a) A A
+* **b) A B**
+* c) B B
+* d) An exception is thrown
+
+> obj1.two() invokes the method two() in class A which returns ‘A’ and obj2.two() invokes the method two() in class B which returns ‘B’.
+
+
+### 15. What type of inheritance is illustrated in the following Python code? [Який тип успадкування ілюструє наведений код Python?]
+
+```python
+class A():
+    pass
+class B():
+    pass
+class C(A,B):
+    pass
+```
+
+* a) Multi-level inheritance
+* **b) Multiple inheritance**
+* c) Hierarchical inheritance
+* d) Single-level inheritance
+
+> In multiple inheritance, two or more subclasses are derived from the superclass as shown in the above piece of code.
+
+
+## Topic 103. Inheritance – 2
+
+### 1. What type of inheritance is illustrated in the following Python code? [Який тип успадкування ілюструє наведений код Python?]
+
+```python
+class A():
+    pass
+class B(A):
+    pass
+class C(B):
+    pass
+```
+
+* **a) Multi-level inheritance**
+* b) Multiple inheritance
+* c) Hierarchical inheritance
+* d) Single-level inheritance
+
+> In multi-level inheritance, a subclass derives from another class which itself is derived from another class.
+
+
+### 2. What does single-level inheritance mean? [Що значить просте успадкування?]
+
+* a) A subclass derives from a class which in turn derives from another class
+* b) A single superclass inherits from multiple subclasses
+* **c) A single subclass derives from a single superclass**
+* d) Multiple base classes inherit a single derived class
+
+> In single-level inheritance, there is a single subclass which inherits from a single superclass. So the class definition of the subclass will be: class B(A): where A is the superclass.
+
+
+### 3. What will be the output of the following Python code?
+
+```python
+class A:
+     def __init__(self):
+         self.__i = 1
+         self.j = 5
+ 
+     def display(self):
+         print(self.__i, self.j)
+class B(A):
+     def __init__(self):
+         super().__init__()
+         self.__i = 2
+         self.j = 7  
+c = B()
+c.display()
+```
+
+* a) 2 7
+* b) 1 5
+* **c) 1 7**
+* d) 2 5
+
+> Any change made in variable i isn’t reflected as it is the private member of the superclass.
+
+
+### 4. Which of the following statements isn’t true? [Яке з нижче наведених тверджень є хибним?]
+* a) A non-private method in a superclass can be overridden
+* b) A derived class is a subset of superclass
+* **c) The value of a private variable in the superclass can be changed in the subclass**
+* d) When invoking the constructor from a subclass, the constructor of superclass is automatically invoked
+
+> If the value of a private variable in a superclass is changed in the subclass, the change isn’t reflected.
+
+d) ніби теж неправильно, бо в пітоні для цього треба викликати `super.__init__(self)`, але хз. b) трохи нехрозуміле.
+
+
+### 5. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self,x):
+        self.x = x
+    def count(self,x):
+        self.x = self.x+1
+class B(A):
+    def __init__(self, y=0):
+        A.__init__(self, 3)
+        self.y = y
+    def count(self):
+        self.y += 1     
+def main():
+    obj = B()
+    obj.count()
+    print(obj.x, obj.y)
+main()
+```
+
+* a) 3 0
+* **b) 3 1**
+* c) 0 1
+* d) An exception in thrown
+
+> Initially x=3 and y=0. When obj.count() is called, y=1.
+
+
+### 6. What will be the output of the following Python code?
+
+```
+>>> class A:
+	pass
+>>> class B(A):
+	pass
+>>> obj=B()
+>>> isinstance(obj,A)
+```
+
+* **a) True**
+* b) False
+* c) Wrong syntax for isinstance() method
+* d) Invalid method for classes
+
+> isinstance(obj,class) returns True if obj is an object class.
+
+
+### 7. Which of the following statements is true? [Яке з нижче наведених тверджень є правдивим?]
+* a) `The __new__() method automatically invokes the __init__ method`
+* b) `The __init__ method is defined in the object class`
+* **c) The \_\_eq(other) method is defined in the object class**
+* d) `The __repr__() method is defined in the object class`
+
+The \_\_eq(other) method is called if any comparison takes place and it is defined in the object class.
+
+тільки він називається \_\_eq\_\_ а не \_\_eq ну да ладно
+
+
+### 8. Method issubclass() checks if a class is a subclass of another class. [Метод issubclass() перевіряє чи клас є клас підкласом іншого класу.]
+* **a) True**
+* b) False
+
+> Method issubclass() returns True if a class is a subclass of another class and False otherwise.
+
+
+### 9. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self):
+        self.__x = 1
+class B(A):
+    def display(self):
+        print(self.__x)
+def main():
+    obj = B()
+    obj.display()
+main()
+```
+
+* a) 1
+* b) 0
+* c) Error, invalid syntax for object declaration
+* **d) Error, private class member can’t be accessed in a subclass**
+
+> Private class members in the superclass can’t be accessed in the subclass.
+
+
+### 10. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self):
+        self._x = 5       
+class B(A):
+    def display(self):
+        print(self._x)
+def main():
+    obj = B()
+    obj.display()
+main()
+```
+
+* a) Error, invalid syntax for object declaration
+* b) Nothing is printed
+* **c) 5**
+* d) Error, private class member can’t be accessed in a subclass
+
+> The class member x is protected, not private and hence can be accessed by subclasses.
+
+
+### 11. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self,x=3):
+        self._x = x        
+class B(A):
+    def __init__(self):
+        super().__init__(5)
+    def display(self):
+        print(self._x)
+def main():
+    obj = B()
+    obj.display()
+ 
+main()
+```
+
+* **a) 5**
+* b) Error, class member x has two values
+* c) 3
+* d) Error, protected class member can’t be accessed in a subclass
+
+> The super() method re-assigns the variable x with value 5. Hence 5 is printed.
+
+
+### 12. What will be the output of the following Python code?
+
+```python
+class A:
+    def test1(self):
+        print(" test of A called ")
+class B(A):
+    def test(self):
+        print(" test of B called ")
+class C(A):
+    def test(self):
+        print(" test of C called ")
+class D(B,C):
+    def test2(self):
+        print(" test of D called ")        
+obj=D()
+obj.test()
+```
+
+* a)
+
+```
+test of B called
+test of C called
+```
+
+* b)
+
+```
+test of C called
+test of B called
+```
+
+* **c) test of B called**
+* d) Error, both the classes from which D derives has same method test()
+
+> Execute in Python shell to verify. If class D(B,C): is switched is class D(C,B): test of C is called.
+
+
+### 13. What will be the output of the following Python code?
+
+```python
+class A:
+    def test(self):
+        print("test of A called")
+class B(A):
+    def test(self):
+        print("test of B called")
+        super().test()  
+class C(A):
+    def test(self):
+        print("test of C called")
+        super().test()
+class D(B,C):
+    def test2(self):
+        print("test of D called")      
+obj=D()
+obj.test()
+```
+
+* **a)**
+
+```
+test of B called
+test of C called
+test of A called
+```
+
+* b)
+
+```
+test of C called
+test of B called
+```
+
+* c)
+
+```
+test of B called
+test of C called
+```
+
+* d) Error, all the three classes from which D derives has same method test()
+
+Answer: a
+> Since the invoking method, super().test() is called in the subclasses, all the three methods of test() in three different classes is called.
+
+
+## Topic 104. Polymorphism
+
+### 1. Which of the following best describes polymorphism? [Що з цього найкраще описує поліморфізм?]
+* a) Ability of a class to derive members of another class as a part of its own definition
+* b) Means of bundling instance variables and methods in order to restrict access to certain class members
+* c) Focuses on variables and passing of variables to functions
+* **d) Allows for objects of different types and behaviour to be treated as the same general type**
+
+> Polymorphism is a feature of object-oriented programming languages. It allows for the implementation of elegant software that is well designed and easily modified.
+
+
+### 2. What is the biggest reason for the use of polymorphism? [Яка найголовніша причина використання поліморфізму?]
+* a) It allows the programmer to think at a more abstract level
+* b) There is less program code to write
+* **c) The program will have a more elegant design and will be easier to maintain and update**
+* d) Program code takes up less space
+
+> Explanation: Polymorphism allows for the implementation of elegant software.
+
+🤡🤡🤡
+
+
+### 3. What is the use of duck typing? [Навіщо застосовується duck typing (качина типізація)?]
+- [ ] a) More restriction on the type values that can be passed to a given method
+- [ ] b) No restriction on the type values that can be passed to a given method
+- [x] **c) Less restriction on the type values that can be passed to a given method**
+- [ ] d) Makes the program code smaller
+
+> In Python, any set of classes with a common set of methods can be treated similarly. This is called duck typing. Hence duck typing imposes less restrictions.
+
+https://uk.wikipedia.org/wiki/%D0%9A%D0%B0%D1%87%D0%B8%D0%BD%D0%B0_%D1%82%D0%B8%D0%BF%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%8F
+🦆🦆🦆🇺🇦🇺🇦🇺🇦
+
+
+### 4. What will be the output of the following Python code?
+
+```python
+class A:
+    def __str__(self):
+        return '1'
+class B(A):
+    def __init__(self):
+        super().__init__()
+class C(B):
+    def __init__(self):
+        super().__init__()
+def main():
+    obj1 = B()
+    obj2 = A()
+    obj3 = C()
+    print(obj1, obj2,obj3)
+main()
+```
+
+- [x] **a) 1 1 1**
+- [ ] b) 1 2 3
+- [ ] c) ‘1’ ‘1’ ‘1’
+- [ ] d) An exception is thrown
+
+    The super().__init__() in the subclasses has been properly invoked and none of other subclasses return any other value. Hence 1 is returned each time the object is created and printed.
+
+
+### 5. What will be the output of the following Python code?
+
+```python
+class Demo:
+    def __init__(self):
+        self.x = 1
+    def change(self):
+        self.x = 10
+class Demo_derived(Demo):
+    def change(self):
+        self.x=self.x+1
+        return self.x
+def main():
+    obj = Demo_derived()
+    print(obj.change())
+ 
+main()
+```
+
+- [ ] a) 11
+- [x] **b) 2**
+- [ ] c) 1
+- [ ] d) An exception is thrown
+
+> The derived class method change() overrides the base class method.
+
+
+### 6. A class in which one or more methods are only implemented to raise an exception is called an abstract class. [Клас, у якому імплементація одного чи більше методів лише видає exception, називається абстрактним класом.]
+- [x] **a) True**
+- [ ] b) False
+
+> A class in which one or more methods are unimplemented or implemented for the methods throw an exception is called an abstract class.
+
+
+### 7. Overriding means changing behaviour of methods of derived class methods in the base class. [Заміщення - зміна поведінки методів дочірніх класів у базовому класі]
+- [ ] a) True
+- [x] **b) False**
+
+> Overriding means if there are two same methods present in the superclass and the subclass, the contents of the subclass method are executed.
+
+
+### 8. What will be the output of the following Python code?
+
+```python
+class A:
+    def __repr__(self):
+        return "1"
+class B(A):
+    def __repr__(self):
+        return "2"
+class C(B):
+    def __repr__(self):
+        return "3"
+o1 = A()
+o2 = B()
+o3 = C()
+print(obj1, obj2, obj3)
+```
+
+- [ ] a) 1 1 1
+- [x] **b) 1 2 3**
+- [ ] c) ‘1’ ‘1’ ‘1’
+- [ ] d) An exception is thrown
+
+> When different objects are invoked, each of the individual classes return their individual values and hence it is printed.
+
+Насправді програма скрашнеться, бо автор дебіл (name 'obj1' is not defined)
+
+
+### 9. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self):
+        self.multiply(15)
+        print(self.i)
+ 
+    def multiply(self, i):
+        self.i = 4 * i;
+class B(A):
+    def __init__(self):
+        super().__init__()
+ 
+    def multiply(self, i):
+        self.i = 2 * i;
+obj = B()
+```
+
+- [ ] a) 15
+- [ ] b) 60
+- [ ] c) An exception is thrown
+- [x] **d) 30**
+
+> The derived class B overrides base class A.
+
+
+### 10. What will be the output of the following Python code?
+
+```python
+class Demo:
+    def check(self):
+        return " Demo's check "  
+    def display(self):
+        print(self.check())
+class Demo_Derived(Demo):
+    def check(self):
+        return " Derived's check "
+Demo().display()
+Demo_Derived().display()
+```
+
+- [x] **a) Demo’s check Derived’s check**
+- [ ] b) Demo’s check Demo’s check
+- [ ] c) Derived’s check Demo’s check
+- [ ] d) Syntax error
+
+> Demo().display() invokes the display() method in class Demo and Demo_Derived().display() invokes the display() method in class Demo_Derived. 
+
+
+### 11. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self):
+        self.multiply(15)
+    def multiply(self, i):
+        self.i = 4 * i;
+class B(A):
+    def __init__(self):
+        super().__init__()
+        print(self.i)
+ 
+    def multiply(self, i):
+        self.i = 2 * i;
+obj = B()
+```
+
+- [ ] a) 15
+- [x] **b) 30**
+- [ ] c) An exception is thrown
+- [ ] d) 60
+
+> The derived class B overrides base class A.
+
+
+### 12. What will be the output of the following Python code?
+
+```python
+class Demo:
+    def __check(self):
+        return " Demo's check "
+    def display(self):
+        print(self.check())
+class Demo_Derived(Demo):
+    def __check(self):
+        return " Derived's check "
+Demo().display()
+Demo_Derived().display()
+```
+
+- [ ] a) Demo’s check Derived’s check
+- [x] **b) Demo’s check Demo’s check**
+- [ ] c) Derived’s check Demo’s check
+- [ ] d) Syntax error
+
+> The method check is private so it can’t be accessed by the derived class. Execute the code in the Python shell. 
+
+(только надо поменять self.check() на self.\_\_check())
+
+
+### 13. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def __str__(self):
+        return 1
+    def __eq__(self, other):
+        return self.x * self.y == other.x * other.y
+obj1 = A(5, 2)
+obj2 = A(2, 5)
+print(obj1 == obj2)
+```
+
+- [ ] a) False
+- [ ] b) 1
+- [x] **c) True**
+- [ ] d) An exception is thrown
+
+> Since 5\*2==2\*5, True is printed. Execute it in the Python shell to verify.
+
+
+### 14. What will be the output of the following Python code?
+
+```python
+class A:
+    def one(self):
+        return self.two()    	
+    def two(self):
+        return 'A'   
+class B(A):
+    def two(self):
+        return 'B'
+obj2=B()
+print(obj2.two())
+```
+
+- [ ] a) A
+- [ ] b) An exception is thrown
+- [ ] c) A B
+- [x] **d) B**
+
+> The derived class method two() overrides the method two() in the base class A. 
+
+
+### 15. Which of the following statements is true? [Яке з цих тверджень є вірним?]
+- [x] **a) A non-private method in a superclass can be overridden**
+- [ ] b) A subclass method can be overridden by the superclass
+- [ ] c) A private method in a superclass can be overridden
+- [ ] d) Overriding isn’t possible in Python
+
+> A public method in the base class can be overridden by the same named method in the subclass.
+
