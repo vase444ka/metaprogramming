@@ -4535,6 +4535,993 @@ d) Error, no method called issuperset() exists
 
 # Section 15
 
+## 1. Which of these about a dictionary is false?[Що з наведеного вище неправильно]
+
+
+a) The values of a dictionary can be accessed using keys
+
+**b) The keys of a dictionary can be accessed using values**
+
+c) Dictionaries aren’t ordered
+
+d) Dictionaries are mutable
+
+Explanation: The values of a dictionary can be accessed using keys but the keys of a dictionary can’t be accessed using values.
+
+## 2.  Which of the following is not a declaration of the dictionary?[Що не є визначенням словника]
+
+a) {1: ‘A’, 2: ‘B’}
+
+b) dict([[1,”A”],[2,”B”]])
+
+**c) {1,”A”,2”B”}**
+
+d) { }
+
+Explanation: Option c is a set, not a dictionary.
+
+## 3. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>a={1:"A",2:"B",3:"C"}
+>
+>for i,j in a.items():
+>
+>    print(i,j,end=" ")
+
+**a) 1 A 2 B 3 C**
+
+b) 1 2 3
+
+c) A B C
+
+d) 1:”A” 2:”B” 3:”C”
+
+
+Explanation: In the above code, variables i and j iterate over the keys and values of the dictionary respectively.**
+
+## 4. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>a={1:"A",2:"B",3:"C"}
+>
+>print(a.get(1,4))
+
+a) 1
+
+**b) A**
+
+c) 4
+
+d) Invalid syntax for get method
+
+
+Explanation: The get() method returns the value of the key if the key is present in the dictionary and the default value(second parameter) if the key isn’t present in the dictionary.
+
+## 5. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>a={1:"A",2:"B",3:"C"}
+>
+>print(a.get(5,4))
+
+a) Error, invalid syntax
+
+b) A
+
+c) 5
+
+**d) 4**
+
+
+Explanation: The get() method returns the default value(second parameter) if the key isn’t present in the dictionary.
+
+## 6. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>a={1:"A",2:"B",3:"C"}
+>
+>print(a.setdefault(3))
+
+a) {1: ‘A’, 2: ‘B’, 3: ‘C’}
+
+**b) C**
+
+c) {1: 3, 2: 3, 3: 3}
+
+d) No method called setdefault() exists for dictionary
+
+Explanation: setdefault() is similar to get() but will set dict[key]=default if key is not already in the dictionary.
+
+## 7. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>a={1:"A",2:"B",3:"C"}
+>
+>a.setdefault(4,"D")
+>
+>print(a)
+
+**a) {1: ‘A’, 2: ‘B’, 3: ‘C’, 4: ‘D’}**
+
+b) None
+
+c) Error
+
+d) [1,3,6,10]
+
+Explanation: setdefault() will set dict[key]=default if key is not already in the dictionary.
+
+## 8. What will be the output of the following Python code?[Яким буде вивід]
+
+>a={1:"A",2:"B",3:"C"}
+>
+>b={4:"D",5:"E"}
+>
+>a.update(b)
+>
+>print(a)
+
+a) {1: ‘A’, 2: ‘B’, 3: ‘C’}
+
+b) Method update() doesn’t exist for dictionaries
+
+**c) {1: ‘A’, 2: ‘B’, 3: ‘C’, 4: ‘D’, 5: ‘E’}**
+
+d) {4: ‘D’, 5: ‘E’}
+
+Explanation: update() method adds dictionary b’s key-value pairs to dictionary a. Execute in python shell to verify.
+
+## 9. What will be the output of the following Python code?[Яким буде вивід]
+
+>a={1:"A",2:"B",3:"C"}
+>
+>b=a.copy()
+>
+>b[2]="D"
+>
+>print(a)
+
+a) Error, copy() method doesn’t exist for dictionaries
+
+**b) {1: ‘A’, 2: ‘B’, 3: ‘C’}**
+
+c) {1: ‘A’, 2: ‘D’, 3: ‘C’}
+
+d) “None” is printed
+
+Explanation: Changes made in the copy of the dictionary isn’t reflected in the original one.
+
+## 10. What will be the output of the following Python code?[Яким буде вивід]
+
+>a={1:"A",2:"B",3:"C"}
+>
+>a.clear()
+>
+>print(a)
+
+a) None
+
+b) { None:None, None:None, None:None}
+
+c) {1:None, 2:None, 3:None}
+
+**d) { }**
+
+Explanation: The clear() method clears all the key-value pairs in the dictionary.
+
+## 11. Which of the following isn’t true about dictionary keys?[Що з наведеного не правдиво для ключів словника]
+
+a) More than one key isn’t allowed
+
+b) Keys must be immutable
+
+**c) Keys must be integers**
+
+d) When duplicate keys encountered, the last assignment wins
+
+
+Explanation: Keys of a dictionary may be any data type that is immutable.
+
+## 12. What will be the output of the following Python code?[Яким буде вивід]
+
+>a={1:5,2:3,3:4}
+>
+>a.pop(3)
+>
+>print(a)
+
+a) {1: 5}
+
+**b) {1: 5, 2: 3}**
+
+c) Error, syntax error for pop() method
+
+d) {1: 5, 3: 4}
+
+Explanation: pop() method removes the key-value pair for the key mentioned in the pop() method.
+
+## 13. What will be the output of the following Python code?[Яким буде вивід]
+
+>a={1:5,2:3,3:4}
+>
+>print(a.pop(4,9))
+
+**a) 9**
+
+b) 3
+
+c) Too many arguments for pop() method
+
+d) 4
+
+Explanation: pop() method returns the value when the key is passed as an argument and otherwise returns the default value(second argument) if the key isn’t present in the dictionary.
+
+## 14. What will be the output of the following Python code?[Яким буде вивід]
+
+>a={1:"A",2:"B",3:"C"}
+>
+>for i in a:
+>
+>    print(i,end=" ")
+
+**a) 1 2 3**
+
+b) ‘A’ ‘B’ ‘C’
+
+c) 1 ‘A’ 2 ‘B’ 3 ‘C’
+
+d) Error, it should be: for i in a.items():
+
+Explanation: The variable i iterates over the keys of the dictionary and hence the keys are printed.
+
+## 15. What will be the output of the following Python code?[Яким буде вивід]
+
+
+> a={1:"A",2:"B",3:"C"}
+> 
+> a.items()
+
+a) Syntax error
+
+b) dict_items([(‘A’), (‘B’), (‘C’)])
+
+c) dict_items([(1,2,3)])
+
+**d) dict_items([(1, ‘A’), (2, ‘B’), (3, ‘C’)])**
+
+
+Explanation: The method items() returns list of tuples with each tuple having a key-value pair.
+
+## 1. Which of the statements about dictionary values if false?[Що з наведеного вище неправильно для значень словника]
+
+a) More than one key can have the same value
+
+b) The values of the dictionary can be accessed as dict[key]
+
+**c) Values of a dictionary must be unique**
+
+d) Values of a dictionary can be a mixture of letters and numbers
+
+
+Explanation: More than one key can have the same value.
+
+## 2. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+> a={1:"A",2:"B",3:"C"}
+>
+> del a
+
+
+a) method del doesn’t exist for the dictionary
+
+b) del deletes the values in the dictionary
+
+**c) del deletes the entire dictionary**
+
+d) del deletes the keys in the dictionary
+
+Explanation: del deletes the entire dictionary and any further attempt to access it will throw an error.
+advertisement
+
+## 3. If a is a dictionary with some key-value pairs, what does a.popitem() do?[Якщо a це словник, що a.popitem() робить?]
+
+**a) Removes an arbitrary element**
+
+b) Removes all the key-value pairs
+
+c) Removes the key-value pair for the key given as an argument
+
+d) Invalid method for dictionary
+
+Explanation: The method popitem() removes a random key-value pair.
+
+## 4. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>total={}
+>
+>def insert(items):
+>
+>    if items in total:
+>
+>       total[items] += 1
+>
+>    else:
+>
+>        total[items] = 1
+>
+>insert('Apple')
+>
+>insert('Ball')
+>
+>insert('Apple')
+>
+>print (len(total))
+
+a) 3
+
+b) 1
+
+**c) 2**
+
+d) 0
+
+Explanation: The insert() function counts the number of occurrences of the item being inserted into the dictionary. There are only 2 keys present since the key ‘Apple’ is repeated. Thus, the length of the dictionary is 2.
+
+## 5. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>a = {}
+>
+>a[1] = 1
+>
+>a['1'] = 2
+>
+>a[1]=a[1]+1
+>
+>count = 0
+>
+>for i in a:
+>
+>    count += a[i]
+> 
+>print(count)
+
+a) 1
+
+b) 2
+
+**c) 4**
+
+d) Error, the keys can’t be a mixture of letters and numbers
+
+Explanation: The above piece of code basically finds the sum of the values of keys.
+
+## 6. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>numbers = {}
+>
+>letters = {}
+>
+>comb = {}
+>
+>numbers[1] = 56
+>
+>numbers[3] = 7
+>
+>letters[4] = 'B'
+>
+>comb['Numbers'] = numbers
+>
+>comb['Letters'] = letters
+>
+>print(comb)
+
+a) Error, dictionary in a dictionary can’t exist
+
+b) ‘Numbers’: {1: 56, 3: 7}
+
+c) {‘Numbers’: {1: 56}, ‘Letters’: {4: ‘B’}}
+
+**d) {‘Numbers’: {1: 56, 3: 7}, ‘Letters’: {4: ‘B’}}**
+
+Explanation: Dictionary in a dictionary can exist.
+
+## 7. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>test = {1:'A', 2:'B', 3:'C'}
+>
+>test = {}
+>
+>print(len(test))
+
+**a) 0**
+
+b) None
+
+c) 3
+
+d) An exception is thrown
+
+Explanation: In the second line of code, the dictionary becomes an empty dictionary. Thus, length=0.
+
+## 8. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>test = {1:'A', 2:'B', 3:'C'}
+>
+>del test[1]
+>
+>test[1] = 'D'
+>
+>del test[2]
+>
+>print(len(test))
+
+a) 0
+
+**b) 2**
+
+c) Error as the key-value pair of 1:’A’ is already deleted
+
+d) 1
+
+Explanation: After the key-value pair of 1:’A’ is deleted, the key-value pair of 1:’D’ is added.
+
+## 9. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>a = {}
+>
+>a[1] = 1
+>
+>a['1'] = 2
+>
+>a[1.0]=4
+>
+>count = 0
+>
+>for i in a:
+>
+>    count += a[i]
+> 
+>print(count)
+
+a) An exception is thrown
+
+b) 3
+
+**c) 6**
+
+d) 2
+
+Explanation: The value of key 1 is 4 since 1 and 1.0 are the same. Then, the function count() gives the sum of all the values of the keys (2+4).
+
+## 10. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>a={}
+>
+>a['a']=1
+>
+>a['b']=[2,3,4]
+>
+>print(a)
+
+a) Exception is thrown
+
+b) {‘b’: [2], ‘a’: 1}
+
+c) {‘b’: [2], ‘a’: [3]}
+
+**d) {‘b’: [2, 3, 4], ‘a’: 1}**
+
+Explanation: Mutable members can be used as the values of the dictionary but they cannot be used as the keys of the dictionary.
+
+## 11. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>import collections
+>
+> a=collections.Counter([1,1,2,3,3,4,4,4])
+> 
+>a
+
+a) {1,2,3,4}
+
+b) Counter({4, 1, 3, 2})
+
+**c) Counter({4: 3, 1: 2, 3: 2, 2: 1})**
+
+d) {4: 3, 1: 2, 3: 2, 2: 1}
+
+
+Explanation: The statement a=collections.OrderedDict() generates a dictionary with the number as the key and the count of times the number appears as the value.
+
+## 12. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>import collections
+>
+> b=collections.Counter([2,2,3,4,4,4])
+> 
+> b.most_common(1)
+
+a) Counter({4: 3, 2: 2, 3: 1})
+
+b) {3:1}
+
+c) {4:3}
+
+**d) [(4, 3)]**
+
+Explanation: The most_common() method returns the n number key-value pairs where the value is the most recurring.
+
+## 13. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+>import collections
+>
+> b=collections.Counter([2,2,3,4,4,4])
+> 
+> b.most_common(1)
+
+a) Counter({4: 3, 2: 2, 3: 1})
+
+b) {3:1}
+
+c) {4:3}
+
+**d) [(4, 3)]**
+
+Explanation: The most_common() method returns the n number key-value pairs where the value is the most recurring.
+
+## 14. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+> import collections
+> 
+> a=collections.Counter([2,2,3,3,3,4])
+> 
+> b=collections.Counter([2,2,3,4,4])
+> 
+> a|b
+
+**a) Counter({3: 3, 2: 2, 4: 2})**
+
+b) Counter({2: 2, 3: 1, 4: 1})
+
+c) Counter({3: 2})
+
+d) Counter({4: 1})
+
+Explanation: a|b returns the pair of keys and the highest recurring value.
+
+## 15. What will be the output of the following Python code snippet?[Яким буде вивід]
+
+> import collections
+> 
+> a=collections.Counter([3,3,4,5])
+> 
+> b=collections.Counter([3,4,4,5,5,5])
+> 
+> a&b
+
+a) Counter({3: 12, 4: 1, 5: 1})
+
+**b) Counter({3: 1, 4: 1, 5: 1})**
+
+c) Counter({4: 2})
+
+d) Counter({5: 1})
+
+Explanation: a&b returns the pair of keys and the lowest recurring value.
+
+## 1. The following Python code is invalid.[Чи правильний наведений код?]
+
+> class demo(dict):
+> 
+>  def __test__(self,key):
+> 
+>    return []
+> 
+> a = demo()
+> 
+> a['test'] = 7
+> 
+> print(a)
+
+a) True
+
+**b) False**
+
+Explanation: The output of the code is: {‘test’:7}.
+
+## 2. What will be the output of the following Python code ?[Яким буде вивід]
+
+> count={}
+> 
+> count[(1,2,4)] = 5
+> 
+> count[(4,2,1)] = 7
+> 
+> count[(1,2)] = 6
+> 
+> count[(4,2,1)] = 2
+> 
+> tot = 0
+> 
+> for i in count:
+> 
+>     tot=tot+count[i]
+> 
+> print(len(count)+tot)
+
+
+a) 25
+
+b) 17
+
+**c) 16**
+
+d) Tuples can’t be made keys of a dictionary
+
+Explanation: Tuples can be made keys of a dictionary. Length of the dictionary is 3 as the value of the key (4,2,1) is modified to 2. The value of the variable tot is 5+6+2=13.
+
+## 3. What will be the output of the following Python code ?[Яким буде вивід]
+
+> a={}
+> 
+> a[2]=1
+> 
+> a[1]=[2,3,4]
+> 
+> print(a[1][1])
+
+a) [2,3,4]
+
+**b) 3**
+
+c) 2
+
+d) An exception is thrown
+
+Explanation: Now, a={1:[2,3,4],2:1} . a[1][1] refers to second element having key 1.
+
+## 4. What will be the output of the following Python code ?[Яким буде вивід]
+
+> a={'B':5,'A':9,'C':7}
+> 
+> sorted(a)
+
+**a) [‘A’,’B’,’C’]**
+
+b) [‘B’,’C’,’A’]
+
+c) [5,7,9]
+
+d) [9,5,7]
+
+Explanation: Return a new sorted list of keys in the dictionary.
+
+## 5. What will be the output of the following Python code ?[Яким буде вивід]
+
+> a={i: i*i for i in range(6)}
+> 
+> a
+
+a) Dictionary comprehension doesn’t exist
+
+b) {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6:36}
+
+c) {0: 0, 1: 1, 4: 4, 9: 9, 16: 16, 25: 25}
+
+**d) {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}**
+
+Explanation: Dictionary comprehension is implemented in the above piece of code.
+
+## 6. What will be the output of the following Python code ?[Яким буде вивід]
+
+> a={}
+> 
+> a.fromkeys([1,2,3],"check")
+
+a) Syntax error
+
+**b) {1:”check”,2:”check”,3:”check”}**
+
+c) “check”
+
+d) {1:None,2:None,3:None}
+
+Explanation: The dictionary takes values of keys from the list and initializes it to the default value (value given in the second parameter). Execute in Python shell to verify.
+
+## 7. What will be the output of the following Python code?[Яким буде вивід]
+
+> b={}
+> 
+> all(b)
+
+a) { }
+
+b) False
+
+**c) True**
+
+d) An exception is thrown
+
+Explanation: Function all() returns True if all keys of the dictionary are true or if the dictionary is empty.
+
+## 8. If b is a dictionary, what does any(b) do?[Якщо b це словник, що any(b) робить?]
+
+**a) Returns True if any key of the dictionary is true**
+
+b) Returns False if dictionary is empty
+
+c) Returns True if all keys of the dictionary are true
+
+d) Method any() doesn’t exist for dictionary
+
+Explanation: Method any() returns True if any key of the dictionary is true and False if the dictionary is empty.
+
+## 9. What will be the output of the following Python code?[Яким буде вивід]
+
+> a={"a":1,"b":2,"c":3}
+> 
+> b=dict(zip(a.values(),a.keys()))
+> 
+> b
+
+a) {‘a’: 1, ‘b’: 2, ‘c’: 3}
+
+b) An exception is thrown
+
+c) {‘a’: ‘b’: ‘c’: }
+
+**d) {1: ‘a’, 2: ‘b’, 3: ‘c’}**
+
+Explanation: The above piece of code inverts the key-value pairs in the dictionary.
+
+## 10. What will be the output of the following Python code?[Яким буде вивід]
+
+> a={i: 'A' + str(i) for i in range(5)}
+> 
+> a
+
+a) An exception is thrown
+
+**b) {0: ‘A0’, 1: ‘A1’, 2: ‘A2’, 3: ‘A3’, 4: ‘A4’}**
+
+c) {0: ‘A’, 1: ‘A’, 2: ‘A’, 3: ‘A’, 4: ‘A’}
+
+d) {0: ‘0’, 1: ‘1’, 2: ‘2’, 3: ‘3’, 4: ‘4’}
+
+Explanation: Dictionary comprehension and string concatenation is implemented in the above piece of code.
+
+## 11. What will be the output of the following Python code?[Яким буде вивід]
+
+> a=dict()
+> 
+> a[1]
+
+**a) An exception is thrown since the dictionary is empty**
+
+b) ‘ ‘
+
+c) 1
+
+d) 0
+
+
+Explanation: The values of a dictionary can be accessed through the keys only if the keys exist in the dictionary.
+
+## 12. What will be the output of the following Python code?[Яким буде вивід]
+
+> import collections
+> 
+> a=dict()
+> 
+> a=collections.defaultdict(int)
+> 
+> a[1]
+
+a) 1
+
+**b) 0**
+
+c) An exception is thrown
+
+d) ‘ ‘
+
+Explanation: The statement a=collections.defaultdict(int) gives the default value of 0
+(since int data type is given within the parenthesis) even if the keys don’t exist in the dictionary.
+
+## 13. What will be the output of the following Python code?[Яким буде вивід]
+
+> import collections
+> 
+> a=dict()
+> 
+> a=collections.defaultdict(str)
+> 
+> a['A']
+
+a) An exception is thrown since the dictionary is empty
+
+**b) ‘ ‘**
+
+c) ‘A’
+
+d) 0
+
+Explanation: The statement a=collections.defaultdict(str) gives the default value of ‘ ‘ even if the keys don’t exist in the dictionary.
+
+## 14. What will be the output of the following Python code?[Яким буде вивід]
+
+> import collections
+> 
+> b=dict()
+> 
+> b=collections.defaultdict(lambda: 7)
+> 
+> b[4]
+
+a) 4
+
+b) 0
+
+c) An exception is thrown
+
+**d) 7**
+
+Explanation: The statement a=collections.defaultdict(lambda: x) gives the default value of x even if the keys don’t exist in the dictionary.
+
+## 15. What will be the output of the following Python code?[Яким буде вивід]
+
+> import collections
+> 
+> a=collections.OrderedDict((str(x),x) for x in range(3))
+> 
+> a
+
+a) {‘2’:2, ‘0’:0, ‘1’:1}
+
+**b) OrderedDict([(‘0’, 0), (‘1’, 1), (‘2’, 2)])**
+
+c) An exception is thrown
+
+d) ‘ ‘
+
+Explanation: The line of code a=collections.OrderedDict() generates a dictionary satisfying the conditions given within the parenthesis and in an ascending order of the keys.
+
+## 1. Which of the following functions is a built-in function in python?[Яка з функцій вбудована в пітон?]
+
+a) seed()
+
+b) sqrt()
+
+c) factorial()
+
+**d) print()**
+
+Explanation: The function seed is a function which is present in the random module. The functions sqrt and factorial are a part of the math module. The print function is a built-in function which prints a value directly to the system output.
+
+## 2. What will be the output of the following Python expression?[Яким буде результат функції]
+
+> round(4.576)
+
+
+a) 4.5
+
+**b) 5**
+
+c) 4
+
+d) 4.6
+
+Explanation: This is a built-in function which rounds a number to give precision in decimal digits. In the above case, since the number of decimal places has not been specified, the decimal number is rounded off to a whole number. Hence the output will be 5.
+
+## 3. The function pow(x,y,z) is evaluated as:[Фугкція pow(x,y,z) обчислюється як:]
+
+a) (x**y) ** z
+
+b) (x**y) / z
+
+**c) (x ** y) % z**
+
+d) (x**y)*z
+
+Explanation: The built-in function pow() can accept two or three arguments. When it takes in two arguments, they are evaluated as x ** y. When it takes in three arguments, they are evaluated as (x ** y)%z.
+
+## 4. What will be the output of the following Python function?[Яким буде результат даної функції]
+
+> all([2,4,0,6])
+
+a) Error
+
+b) True
+
+**c) False**
+
+d) 0
+
+Explanation: The function all returns false if any one of the elements of the iterable is zero and true if all the elements of the iterable are non zero. Hence the output of this function will be false.
+
+## 5. What will be the output of the following Python expression?[Яким буде результат виразу]
+
+> round(4.5676,2)?
+
+a) 4.5
+
+b) 4.6
+
+**c) 4.57**
+
+d) 4.56
+
+Explanation: The function round is used to round off the given decimal number to the specified decimal places. In this case, the number should be rounded off to two decimal places. Hence the output will be 4.57.
+
+## 6. What will be the output of the following Python function?[Яким буде результат функції]
+
+> any([2>8, 4>2, 1>2])
+
+a) Error
+
+**b) True**
+
+c) False
+
+d) 4>2
+
+Explanation: The built-in function any() returns true if any or more of the elements of the iterable is true (non zero), If all the elements are zero, it returns false.
+
+## 7. What will be the output of the following Python function?[Яким буде результат функції]
+
+> import math
+> 
+> abs(math.sqrt(25))
+
+a) Error
+
+b) -5
+
+c) 5
+
+**d) 5.0**
+
+Explanation: The abs() function prints the absolute value of the argument passed. For example: abs(-5)=5. Hence, in this case we get abs(5.0)=5.0.
+
+## 8. What will be the output of the following Python function?[Яким буде результат функції]
+
+> sum(2,4,6)
+> 
+> sum([1,2,3])
+
+**a) Error, 6**
+
+b) 12, Error
+
+c) 12, 6
+
+d) Error, Error
+
+Explanation: The first function will result in an error because the function sum() is used to find the sum of iterable numbers. Hence the outcomes will be Error and 6 respectively.
+
+## 9. What will be the output of the following Python function?[Яким буде результат функції]
+
+> all(3,0,4.2)
+
+a) True
+
+b) False
+
+**c) Error**
+
+d) 0
+
+Explanation: The function all() returns ‘True’ if any one or more of the elements of the iterable are non zero. In the above case, the values are not iterable, hence an error is thrown.
+
+## 10. What will be the output of the following Python function?[Яким буде результат функції]
+
+> min(max(False,-3,-4), 2,7)
+
+a) 2
+
+**b) False**
+
+c) -3
+
+d) -4
+
+Explanation: The function max() is being used to find the maximum value from among -3, -4 and false. Since false amounts to the value zero, hence we are left with min(0, 2, 7) Hence the output is 0 (false).
+
 # Section 16
 
 # Section 17
