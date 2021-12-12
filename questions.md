@@ -4541,6 +4541,876 @@ d) Error, no method called issuperset() exists
 
 # Section 18
 
+### 1. What will be the output of the following Python code?  [Яким буде результат наступного фрагмента коду Python?]
+```
+def f1():
+    x=15
+    print(x)
+x=12
+f1()
+```
+a) Error
+
+b) 12
+
+**c) 15**
+
+d) 1512
+
+>Explanation: In the code shown above, x=15 is a local variable whereas x=12 is a global variable. Preference is given to local variable over global variable. Hence the output of the code shown above is 15.
+
+### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+def f1():
+    x=100
+    print(x)
+x=+1
+f1()
+```
+a) Error
+
+**b) 100**
+
+c) 101
+
+d) 99
+
+>Explanation: The variable x is a local variable. It is first printed and then modified. Hence the output of this code is 100.
+
+### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+def san(x):
+    print(x+1)
+x=-2
+x=4
+san(12)
+```
+**a) 13**
+
+b) 10
+
+c) 2
+
+d) 5
+
+>Explanation: The value passed to the function san() is 12. This value is incremented by one and printed. Hence the output of the code shown above is 13.
+
+### 4. What will be the output of the following Python code?
+```
+def f1():
+    global x
+    x+=1
+    print(x)
+x=12
+print("x")
+```
+a) Error
+
+b) 13
+
+c)
+13
+x
+
+**d) x**
+
+>Explanation: In the code shown above, the variable ‘x’ is declared as global within the function. Hence the output is ‘x’. Had the variable ‘x’ been a local variable, the output would have been:
+
+### 5. What will be the output of the following Python code?
+```
+def f1(x):
+    global x
+    x+=1
+    print(x)
+f1(15)
+print("hello")
+```
+
+**a) error**
+
+b) hello
+
+c) 16
+
+d)
+
+16
+hello
+
+>Explanation: The code shown above will result in an error because ‘x’ is a global variable. Had it been a local variable, the output would be: 16
+hello
+
+### 6. What will be the output of the following Python code?
+```
+def f1(x):
+    global x
+    x+=1
+    print(x)
+f1(15)
+print("hello")
+```
+
+a) Error
+
+b) 12 4
+
+**c) 4 12**
+
+d) 4 15
+
+>Explanation: At the time of leader processing, the value of ‘x’ is 12. It is not modified later. The value passed to the function f1 is 4. Hence the output of the code shown above is 4 12.
+
+
+### 7. What will be the output of the following Python code?
+```
+def f():
+    global a
+    print(a)
+    a = "hello"
+    print(a) 
+a = "world" 
+f()
+print(a)
+```
+
+a)
+
+    hello
+    hello 
+    world
+
+**b)**
+
+    world 
+    hello
+    hello
+
+c)
+
+    hello
+    world
+    world
+
+d)
+
+    world
+    hello
+    world
+
+>Explanation: Since the variable ‘a’ has been explicitly specified as a global variable, the value of a passed to the function is ‘world’. Hence the output of this code is:
+world
+hello
+hello
+
+### 8. What will be the output of the following Python code?
+```
+def f1(a,b=[]):
+    b.append(a)
+    return b
+print(f1(2,[3,4]))
+```
+
+a) [3,2,4]
+
+b) [2,3,4]
+
+c) Error
+
+**d) [3,4,2]**
+
+>Explanation: In the code shown above, the integer 2 is appended to the list [3,4]. Hence the output of the code is [3,4,2]. Both the variables a and b are local variables.
+
+### 9. What will be the output of the following Python code?
+```
+def f(p, q, r):
+    global s
+    p = 10
+    q = 20
+    r = 30
+    s = 40
+    print(p,q,r,s)
+p,q,r,s = 1,2,3,4
+f(5,10,15)
+```
+
+a) 1 2 3 4
+
+b) 5 10 15 4
+
+**c) 10 20 30 40**
+
+d) 5 10 15 40
+
+>Explanation: The above code shows a combination of local and global variables. The output of this code is: 10 20 30 40
+
+### 10. What will be the output of the following Python code?
+```
+def f(x):
+    print("outer")
+    def f1(a):
+        print("inner")
+        print(a,x)
+f(3)
+f1(1)
+```
+
+**a)**
+
+outer
+error
+
+b)
+
+inner 
+error 
+
+c)
+
+outer
+inner
+
+d) error
+
+>Explanation: The error will be caused due to the statement f1(1) because the function is nested. If f1(1) had been called inside the function, the output would have been different and there would be no error.
+
+### 11. What will be the output of the following Python code?
+```
+x = 5 
+def f1():
+    global x
+    x = 4
+def f2(a,b):
+    global x
+    return a+b+x
+f1()
+total = f2(1,2)
+print(total)
+```
+
+a) Error
+
+**b) 7**
+
+c) 8
+
+d) 15
+
+>Explanation: In the code shown above, the variable ‘x’ has been declared as a global variable under both the functions f1 and f2. The value returned is a+b+x = 1+2+4 = 7.
+
+### 12. What will be the output of the following Python code?
+```
+x=100
+def f1():
+    global x
+    x=90
+def f2():
+    global x
+    x=80
+print(x)
+```
+
+**a) 100**
+
+b) 90
+
+c) 80
+
+d) Error
+
+>Explanation: The output of the code shown above is 100. This is because the variable ‘x’ has been declared as global within the functions f1 and f2.
+
+### 13. Read the following Python code carefully and point out the global variables?
+```
+y, z = 1, 2
+def f():
+    global x
+    x = y+z
+```
+
+a) x
+
+b) y and z
+
+**c) x, y and z**
+
+d) Neither x, nor y, nor z
+
+>Explanation: In the code shown above, x, y and z are global variables inside the function f. y and z are global because they are not assigned in the function. x is a global variable because it is explicitly specified so in the code. Hence, x, y and z are global variables.
+
+### 1. Which of the following data structures is returned by the functions globals() and locals()?
+a) list
+
+b) set
+
+**c) dictionary**
+
+d) tuple
+
+>Explanation: Both the functions, that is, globals() and locals() return value of the data structure dictionary.
+
+### 2. What will be the output of the following Python code?
+```
+x=1
+def cg():
+    global x
+    x=x+1   
+cg()
+x
+```
+**a) 2**
+
+b) 1
+
+c) 0
+
+d) Error
+
+>Explanation: Since ‘x’ has been declared a global variable, it can be modified very easily within the function. Hence the output is 2.
+
+### 3. On assigning a value to a variable inside a function, it automatically becomes a global variable.
+a) True
+
+**b) False**
+
+>Explanation: On assigning a value to a variable inside a function, t automatically becomes a local variable. Hence the above statement is false.
+
+### 4. What will be the output of the following Python code?
+```
+e="butter"
+def f(a): print(a)+e
+f("bitter")
+```
+a) error
+
+b)
+
+    butter
+    error
+
+**c)**
+
+    bitter
+    error
+
+d) bitterbutter
+
+>Explanation: The output of the code shown above will be ‘bitter’, followed by an error. The error is because the operand ‘+’ is unsupported on the types used above.
+
+### 5. What happens if a local variable exists with the same name as the global variable you want to access?
+a) Error
+
+b) The local variable is shadowed
+
+c) Undefined behavior
+
+**d) The global variable is shadowed**
+
+>Explanation: If a local variable exists with the same name as the local variable that you want to access, then the global variable is shadowed. That is, preference is given to the local variable.
+
+### 6. What will be the output of the following Python code?
+```
+a=10
+globals()['a']=25
+print(a)
+```
+a) 10
+
+**b) 25**
+
+c) Junk value
+
+d) Error
+
+>Explanation: In the code shown above, the value of ‘a’ can be changed by using globals() function. The dictionary returned is accessed using key of the variable ‘a’ and modified to 25.
+
+
+### 7. What will be the output of the following Python code?
+```
+def f(): x=4
+x=1
+f()
+x
+```
+a) Error
+
+b) 4
+
+c) Junk value
+
+**d) 1**
+
+>Explanation: In the code shown above, when we call the function f, a new namespace is created. The assignment x=4 is performed in the local namespace and does not affect the global namespace. Hence the output is 1.
+
+### 8. ______________ returns a dictionary of the module namespace.
+________________ returns a dictionary of the current namespace.
+
+a)
+
+locals()
+globals()
+
+**b)**
+
+locals()
+locals()
+
+c)
+
+globals()
+locals()
+
+d)
+
+globals()
+globals()
+
+>Explanation: The function globals() returns a dictionary of the module namespace, whereas the function locals() returns a dictionary of the current namespace.
+
+### 1. Which is the most appropriate definition for recursion?
+a) A function that calls itself
+
+**b) A function execution instance that calls another execution instance of the same function**
+
+c) A class method that calls another class method
+
+d) An in-built method that is automatically called
+
+>Explanation: The appropriate definition for a recursive function is a function execution instance that calls another execution instance of the same function either directly or indirectly.
+
+### 2. Only problems that are recursively defined can be solved using recursion.
+a) True
+
+**b) False**
+
+>Explanation: There are many other problems can also be solved using recursion.
+
+### 3. Which of these is false about recursion?
+a) Recursive function can be replaced by a non-recursive function
+
+b) Recursive functions usually take more memory space than non-recursive function
+
+**c) Recursive functions run faster than non-recursive function**
+
+d) Recursion makes programs easier to understand
+
+>Explanation: The speed of a program using recursion is slower than the speed of its non-recursive equivalent.
+
+### 4. Fill in the line of the following Python code for calculating the factorial of a number.
+```
+def fact(num):
+    if num == 0: 
+        return 1
+    else:
+        return _____________________
+```
+**a) num\*fact(num-1)**
+
+b) (num-1)\*(num-2)
+
+c) num\*(num-1)
+
+d) fact(num)\*fact(num-1)
+
+>Explanation: Suppose n=5 then, 5*4*3*2*1 is returned which is the factorial of 5.
+
+### 5. What will be the output of the following Python code?
+```
+def test(i,j):
+    if(i==0):
+        return j
+    else:
+        return test(i-1,i+j)
+print(test(4,7))
+```
+a) 13
+
+b) 7
+
+c) Infinite loop
+
+**d) 17**
+
+>Explanation: The test(i-1,i+j) part of the function keeps calling the function until the base condition of the function is satisfied.
+
+### 6. What will be the output of the following Python code?
+```
+l=[]
+def convert(b):
+    if(b==0):
+        return l
+    dig=b%2
+    l.append(dig)
+    convert(b//2)
+convert(6)
+l.reverse()
+for i in l:
+    print(i,end="")
+```
+a) 011
+
+**b) 110**
+
+c) 3
+
+d) Infinite loop
+
+>Explanation: The above code gives the binary equivalent of the number.
+
+### 7. What is tail recursion?
+a) A recursive function that has two base cases
+
+b) A function where the recursive functions leads to an infinite loop
+
+c) A recursive function where the function doesn’t return anything and just prints the values
+
+**d) A function where the recursive call is the last thing executed by the function**
+
+>Explanation: A recursive function is tail recursive when recursive call is executed by the function in the last.
+
+### 8. Observe the following Python code?
+```
+def a(n):
+    if n == 0:
+        return 0
+    else:
+        return n*a(n - 1)
+def b(n, tot):
+    if n == 0:
+        return tot
+    else:
+        return b(n-2, tot-2)
+```
+a) Both a() and b() aren’t tail recursive
+
+b) Both a() and b() are tail recursive
+
+**c) b() is tail recursive but a() isn’t**
+
+d) a() is tail recursive but b() isn’t
+
+>Explanation: A recursive function is tail recursive when recursive call is executed by the function in the last.
+
+### 9. Which of the following statements is false about recursion?
+a) Every recursive function must have a base case
+
+b) Infinite recursion can occur if the base case isn’t properly mentioned
+
+c) A recursive function makes the code easier to understand
+
+**d) Every recursive function must have a return value**
+
+>Explanation: A recursive function needn’t have a return value.
+
+### 10. What will be the output of the following Python code?
+```
+def fun(n):
+    if (n > 100):
+        return n - 5
+    return fun(fun(n+11));
+ 
+print(fun(45))
+```
+a) 50
+
+**b) 100**
+
+c) 74
+
+d) Infinite loop
+
+>Explanation: The fun(fun(n+11)) part of the code keeps executing until the value of n becomes greater than 100, after which n-5 is returned and printed.
+
+### 11. Recursion and iteration are the same programming approach.
+a) True
+
+**b) False**
+
+>Explanation: In recursion, the function calls itself till the base condition is reached whereas iteration means repetition of process for example in for-loops.
+
+### 12. What happens if the base condition isn’t defined in recursive programs?
+**a) Program gets into an infinite loop**
+
+b) Program runs once
+
+c) Program runs n number of times where n is the argument given to the function
+
+d) An exception is thrown
+
+>Explanation: The program will run until the system gets out of memory.
+
+### 13. Which of these is not true about recursion?
+a) Making the code look clean
+
+b) A complex task can be broken into sub-problems
+
+**c) Recursive calls take up less memory**
+
+d) Sequence generation is easier than a nested iteration
+
+>Explanation: Recursive calls take up a lot of memory and time as memory is taken up each time the function is called.
+
+### 14. Which of these is not true about recursion?
+a) It’s easier to code some real-world problems using recursion than non-recursive equivalent
+
+**b) Recursive functions are easy to debug**
+
+c) Recursive calls take up a lot of memory
+
+d) Programs using recursion take longer time than their non-recursive equivalent
+
+>Explanation: Recursive functions may be hard to debug as the logic behind recursion may be hard to follow.
+
+### 15. What will be the output of the following Python code?
+```
+def a(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return a(n-1)+a(n-2)
+for i in range(0,4):
+    print(a(i),end=" ")
+```
+a) 0 1 2 3
+
+b) An exception is thrown
+
+c) 0 1 1 2 3
+
+**d) 0 1 1 2**
+
+>Explanation: The above piece of code prints the Fibonacci series.
+
+### 1. Which type of copy is shown in the following python code?
+```
+l1=[[10, 20], [30, 40], [50, 60]]
+ls=list(l1)
+ls
+[[10, 20], [30, 40], [50, 60]]
+```
+
+**a) Shallow copy**
+
+b) Deep copy
+
+c) memberwise
+
+d) All of the mentioned
+
+>Explanation: The code shown above depicts shallow copy. For deep copy, the command given is: l2 = l1.copy().
+
+### 2. What will be the output of the following Python code?
+```
+l=[2, 3, [4, 5]]
+l2=l.copy()
+l2[0]=88
+l
+l2
+```
+a)
+
+[88, 2, 3, [4, 5]]
+[88, 2, 3, [4, 5]]
+
+**b)**
+
+[2, 3, [4, 5]]
+[88, 2, 3, [4, 5]]
+
+c)
+
+[88, 2, 3, [4, 5]]
+[2, 3, [4, 5]]
+
+d)
+
+[2, 3, [4, 5]]
+[2, 3, [4, 5]]
+
+>Explanation: The code shown above depicts deep copy. In deep copy, the base address of the objects is not copied. Hence the modification done on one list does not affect the other list.
+
+### 3. In _______________ copy, the base address of the objects are copied. In _______________ copy, the base address of the objects are not copied.
+a) deep. shallow
+
+b) memberwise, shallow
+
+**c) shallow, deep**
+
+d) deep, memberwise
+
+>Explanation: In shallow copy, the base address of the objects are copied.
+In deep copy, the base address of the objects are not copied.
+Note that memberwise copy is another name for shallow copy.
+
+### 4. The nested list undergoes shallow copy even when the list as a whole undergoes deep copy.
+**a) True**
+
+b) False
+
+>Explanation: A nested list undergoes shallow copy even when the list as a whole undergoes deep copy. Hence, this statement is true.
+
+### 5. What will be the output of the following Python code and state the type of copy that is depicted?
+```
+l1=[2, 4, 6, 8]
+l2=[1, 2, 3]
+l1=l2
+l2
+```
+a) [2, 4, 6, 8], shallow copy
+
+b) [2, 4, 6, 8], deep copy
+
+**c) [1, 2, 3], shallow copy**
+
+d) [1, 2, 3], deep copy
+
+>Explanation: The code shown above depicts shallow copy and the output of the code is: [1, 2, 3].
+
+### 6. What will be the output of the following Python code?
+```
+l1=[10, 20, 30]
+l2=l1
+id(l1)==id(l2)
+ 
+l2=l1.copy()
+id(l1)==id(l2)
+```
+a) False, False
+
+b) False, True
+
+c) True, True
+
+**d) True, False**
+
+>Explanation: The first code shown above represents shallow copy. Hence the output of the expression id(l1)==id(l2) is True. The second code depicts deep copy. Hence the output of the expression id(l1)==id(l2) in the second case is False.
+
+### 7. What will be the output of the following Python code?
+```
+l1=[1, 2, 3, [4]]
+l2=list(l1)
+id(l1)==id(l2)
+```
+a) True
+
+**b) False**
+
+c) Error
+
+d) Address of l1
+
+>Explanation: The code shown above shows a nested list. A nested list will undergo shallow copy when the list as a whole undergoes deep copy. Hence the output of this code is False.
+
+### 8. What will be the output of the following Python code?
+```
+l1=[10, 20, 30, [40]]
+l2=copy.deepcopy(l1)
+l1[3][0]=90
+l1
+l2
+```
+a)
+
+[10, 20, 30, [40]]
+[10, 20, 30, 90]
+
+b) Error
+
+**c)**
+
+[10, 20, 30 [90]]
+[10, 20, 30, [40]]
+
+d)
+
+[10, 20, 30, [40]]
+[10, 20, 30, [90]]
+
+>Explanation: The code shown above depicts deep copy. Hence at the end of the code, l1=[10, 20, 30, [90]] and l2=[10, 20, 30, [40]].
+
+### 9. In ____________________ copy, the modification done on one list affects the other list. In ____________________ copy, the modification done on one list does not affect the other list.
+**a) shallow, deep**
+b) memberwise, shallow
+c) deep, shallow
+d) deep, memberwise
+
+>Explanation: In shallow copy, the modification done on one list affects the other list. In deep copy, the modification done on one list does not affect the other list.
+
+### 10. What will be the output of the following Python code?
+```
+l1=[1, 2, 3, (4)]
+l2=l1.copy()
+l2
+l1
+```
+a)
+
+[1, 2, 3, (4)]
+[1, 2, 3, 4]
+
+b)
+
+[1, 2, 3, 4]
+[1, 2, 3, (4)]
+
+**c)**
+
+[1, 2, 3, 4]
+[1, 2, 3, 4]
+
+d)
+
+[1, 2, 3, (4)]
+[1, 2, 3, (4)]
+
+>Explanation: In the code shown above, the list l1 is enclosed in a tuple. When we print this list, it is printed as [1, 2, 3, 4]. Note the absence of the tuple. The code shown depicts deep copy. Hence the output of this program is: l1=[1, 2, 3, 4] and l2=[1, 2, 3, 4].
+
+### 11. What will be the output of the following Python code?
+```
+def check(n):
+    if n < 2:
+        return n % 2 == 0
+    return check(n - 2)
+print(check(11))
+```
+**a) False**
+
+b) True
+
+c) 1
+
+d) An exception is thrown
+
+>Explanation: The above piece of code checks recursively whether a number is even or odd.
+
+### 12. What is the base case in the Merge Sort algorithm when it is solved recursively?
+a) n=0
+
+b) n=1
+
+**c) A list of length one**
+
+d) An empty list
+
+>Explanation: Merge Sort algorithm implements the recursive algorithm and when the recursive function receives a list of length 1 which is the base case, the list is returned.
+
+### 13. What will be the output of the following Python code?
+```
+a = [1, 2, 3, 4, 5]
+b = lambda x: (b (x[1:]) + x[:1] if x else []) 
+print(b (a))
+```
+a) 1 2 3 4 5
+
+b) [5,4,3,2,1]
+
+**c) []**
+
+d) Error, lambda functions can’t be called recursively
+
+>Explanation: The above piece of code appends the first element of the list to a reversed sublist and reverses the list using recursion.
+
 # Section 19
 
 ### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
