@@ -3087,7 +3087,7 @@ for i in ' '.join(string.split()):
 - **c) -**
 - d) All of the mentioned
 
-> '+' is used to concatenate and \* is used to multiply strings.
+> `+` is used to concatenate and `*` is used to multiply strings.
 
 ### 6. What will be the output of the following Python code?
 
@@ -7994,6 +7994,836 @@ Explanation: The function max() is being used to find the maximum value from amo
 
 # Section 16
 
+## 1. What will be the output of the following Python functions? [Яким буде результат роботи наступних функцій Python?]
+```python
+chr(‘97’)
+chr(97)
+```
+
+a)
+```
+a
+Error
+```
+
+b)
+```
+‘a’
+a
+```
+
+***c)***
+```
+Error
+a
+```
+
+d)
+```
+Error
+Error
+```
+
+> Explanation: The built-in function chr() returns the alphabet corresponding to the value given as an argument. This function accepts only integer type values. In the first function, we have passed a string. Hence the first function throws an error.
+
+## 2. What will be the output of the following Python function? [Яким буде результат наступної функції Python?]
+```python
+complex(1+2j)
+```
+
+a) Error
+
+b) 1
+
+c) 2j
+
+***d) 1+2j***
+
+> Explanation: The built-in function complex() returns the argument in a complex form. Hence the output of the function shown above will be 1+2j.
+
+## 3. What is the output of the function complex()? [Який результат має функція complex()?]
+
+***a) 0j***
+
+b) 0+0j
+
+c) 0
+
+d) Error
+
+> Explanation: The complex function returns 0j if both of the arguments are omitted, that is, if the function is in the form of complex() or complex(0), then the output will be 0j.
+
+## 4. The function divmod(a,b), where both ‘a’ and ‘b’ are integers is evaluated as: [Функція divmod(a,b), де і «a», і «b» є цілими числами, оцінюється як:]
+
+a) (a%b, a//b)
+
+***b) (a//b, a%b)***
+
+c) (a//b, a*b)
+
+d) (a/b, a%b)
+
+> Explanation: The function divmod(a,b) is evaluated as a//b, a%b, if both ‘a’ and ‘b’ are integers.
+
+## 5. What will be the output of the following Python function? [Яким буде результат наступної функції Python?]
+```python
+divmod(10.5,5)
+divmod(2.4,1.2)
+```
+
+a)
+```
+(2.00, 0.50)
+(2.00, 0.00)
+```
+
+b)
+```
+(2, 0.5)
+(2, 0)
+```
+
+***c)***
+```
+(2.0, 0.5)
+(2.0, 0.0)
+```
+
+d)
+```
+(2, 0.5)
+(2)
+```
+
+> Explanation: See python documentation for the function divmod.
+
+## 6. The function complex(‘2-3j’) is valid but the function complex(‘2 – 3j’) is invalid. [Функція complex(‘2-3j’) валідна, але функція complex(‘2 – 3j’) невалідна.]
+
+***a) True***
+
+b) False
+
+> Explanation: When converting from a string, the string must not contain any blank spaces around the + or – operator. Hence the function complex(‘2 – 3j’) will result in an error.
+
+## 7. What will be the output of the following Python function? [Яким буде результат наступної функції Python?]
+```python
+list(enumerate([2, 3]))
+```
+
+a) Error
+
+b) [(1, 2), (2, 3)]
+
+***c) [(0, 2), (1, 3)]***
+
+d) [(2, 3)]
+
+> Explanation: The built-in function enumerate() accepts an iterable as an argument. The function shown in the above case returns containing pairs of the numbers given, starting from 0. Hence the output will be: [(0, 2), (1,3)].
+
+## 8. What will be the output of the following Python functions? [Яким буде результат роботи наступних функцій Python?]
+```python
+x=3
+eval('x^2')
+```
+
+a) Error
+
+***b) 1***
+
+c) 9
+
+d) 6
+
+> Explanation: The function eval is use to evaluate the expression that it takes as an argument. In the above case, the eval() function is used to perform XOR operation between 3 and 2. Hence the output is 1.
+
+## 9. What will be the output of the following Python functions? [Яким буде результат роботи наступних функцій Python?]
+```python
+float('1e-003')
+float('2e+003')
+```
+
+a)
+```
+3.00
+300
+```
+
+***b)***
+```
+0.001
+2000.0
+```
+
+c)
+```
+0.001
+200
+```
+
+d)
+```
+Error
+2003
+```
+
+> Explanation: The output of the first function will be 0.001 and that of the second function will be 2000.0. The first function created a floating point number up to 3 decimal places and the second function adds 3 zeros after the given number.
+
+## 10. Which of the following functions does not necessarily accept only iterables as arguments? [Яка з наведених нижче функцій не обов’язково приймає в якості аргументів лише iterables?]
+
+a) enumerate()
+
+b) all()
+
+***c) chr()***
+
+d) max()
+
+> Explanation: The functions enumerate(), all() and max() accept iterables as arguments whereas the function chr() throws an error on receiving an iterable as an argument. Also note that the function chr() accepts only integer values.
+
+## 1. Which of the following functions accepts only integers as arguments? [Яка з наведених функцій приймає в якості аргументів лише цілі числа?]
+
+a) ord()
+
+b) min()
+
+***c) chr()***
+
+d) any()
+
+> Explanation: The function chr() accepts only integers as arguments. The function ord() accepts only strings. The functions min() and max() can accept floating point as well as integer arguments.
+
+## 2. Suppose there is a list such that: l=[2,3,4]. If we want to print this list in reverse order, which of the following methods should be used? [Припустимо, що існує такий список, що: l=[2,3,4]. Якщо ми хочемо надрукувати цей список у зворотному порядку, який із наведених нижче методів слід використати?]
+
+a) reverse(l)
+
+b) list(reverse[(l)])
+
+c) reversed(l)
+
+***d) list(reversed(l))***
+
+> Explanation: The built-in function reversed() can be used to reverse the elements of a list. This function accepts only an iterable as an argument. To print the output in the form of a list, we use: list(reversed(l)). The output will be: [4,3,2].
+
+## 3. What will be the output of the following Python function? (Note that the number of blank spaces before the number is 5) [Яким буде результат наступної функції Python? (Зверніть увагу, що кількість пробілів перед числом дорівнює 5)]
+```python
+float('   -12345\n')
+```
+
+a)   -12345.0 (5 blank spaces before the number)
+
+***b) -12345.0***
+
+c) Error
+
+d) -12345.000000000…. (infinite decimal places)
+
+> Explanation: The function float() will remove all the blank spaces and convert the integer to a floating point number. Hence the output will be: -12345.0.
+
+## 4. What will be the output of the following Python function? [Яким буде результат наступної функції Python?]
+```python
+ord(65)
+ord(‘A’)
+```
+
+a)
+```
+A
+65
+```
+
+***b)***
+```
+Error
+65
+```
+
+c)
+```
+A
+Error
+```
+
+d)
+```
+Error
+Error
+```
+
+> Explanation: The built-in function ord() is used to return the ASCII value of the alphabet passed to it as an argument. Hence the first function results in an error and the output of the second function is 65.
+ 
+## 5. What will be the output of the following Python function? [Яким буде результат наступної функції Python?]
+```python
+float(‘-infinity’)
+float(‘inf’)
+```
+
+***a)***
+```
+–inf
+inf
+```
+
+b)
+```
+–infinity
+inf
+```
+
+c)
+```
+Error
+Error
+```
+
+d)
+```
+Error
+Junk value
+```
+
+> Explanation: The output of the first function will be –inf and that of the second function will be inf.
+
+## 6. Which of the following functions will not result in an error when no arguments are passed to it? [Яка з наведених нижче функцій не призведе до помилки, якщо до неї не передані аргументи?]
+
+a) min()
+
+b) divmod()
+
+c) all()
+
+***d) float()***
+
+> Explanation: The built-in functions min(), max(), divmod(), ord(), any(), all() etc throw an error when no arguments are passed to them. However there are some built-in functions like float(), complex() etc which do not throw an error when no arguments are passed to them. The output of float() is 0.0.
+
+## 7. What will be the output of the following Python function? [Яким буде результат наступної функції Python?]
+```python
+hex(15)
+```
+
+a) f
+
+b) 0xF
+
+c) 0Xf
+
+***d) 0xf***
+
+> Explanation: The function hex() is used to convert the given argument into its hexadecimal representation, in lower case. Hence the output of the function hex(15) is 0xf.
+
+## 8. Which of the following functions does not throw an error? [Яка з наведених функцій не видає помилку?]
+
+a) ord()
+
+***b) ord(‘ ‘)***
+
+c) ord(”)
+
+d) ord(“”)
+
+> Explanation: The function ord() accepts a character. Hence ord(), ord(”) and ord(“”) throw errors. However the function ord(‘ ‘) does not throw an error because in this case, we are actually passing a blank space as an argument. The output of ord(‘ ‘) is 32 (ASCII value corresponding to blank space).
+
+## 9. What will be the output of the following Python function? [Яким буде результат наступної функції Python?]
+```python
+len(["hello",2, 4, 6])
+```
+
+***a) 4***
+
+b) 3
+
+c) Error
+
+d) 6
+
+> Explanation: The function len() returns the length of the number of elements in the iterable. Therefore the output of the function shown above is 4.
+
+## 10. What will be the output of the following Python function? [Яким буде результат наступної функції Python?]
+```python
+oct(7)
+oct(‘7’)
+```
+
+a)
+```
+Error
+07
+```
+
+b)
+```
+0o7
+Error
+```
+
+***c)***
+```
+0o7
+Error
+```
+
+d)
+```
+07
+0o7
+```
+
+> Explanation: The function oct() is used to convert its argument into octal form. This function does not accept strings. Hence the second function results in an error while the output of the first function is 0o7.
+
+## 1. Which of the following is the use of function in python? [Що з наведеного нижче є використанням функції в python?]
+
+***a) Functions are reusable pieces of programs***
+
+b) Functions don’t provide better modularity for your application
+
+c) you can’t also create your own functions
+
+d) All of the mentioned
+
+> Explanation: Functions are reusable pieces of programs. They allow you to give a name to a block of statements, allowing you to run that block using the specified name anywhere in your program and any number of times.
+
+## 2. Which keyword is used for function?
+
+a) Fun
+
+b) Define
+
+***c) Def***
+
+d) Function
+
+> Explanation: None.
+
+## 3. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
+```python
+1. def sayHello():
+2.    print('Hello World!') 
+3. sayHello() 
+4. sayHello()
+```
+
+***a)***
+```
+Hello World!
+Hello World!
+```
+
+b)
+```
+'Hello World!'
+'Hello World!'
+```
+
+c)
+```
+Hello
+Hello
+```
+
+d) None of the mentioned
+
+> Explanation: Functions are defined using the def keyword. After this keyword comes an identifier name for the function, followed by a pair of parentheses which may enclose some names of variables, and by the final colon that ends the line. Next follows the block of statements that are part of this function. 
+```python
+1. def sayHello():
+2.     print('Hello World!') # block belonging to the function
+3. # End of function #
+4.  
+5. sayHello() # call the function
+6. sayHello() # call the function again
+```
+
+## 4. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1. def printMax(a, b):
+2.     if a > b:
+3.         print(a, 'is maximum')
+4.     elif a == b:
+5.         print(a, 'is equal to', b)
+6.     else:
+7.         print(b, 'is maximum')
+8. printMax(3, 4)
+```
+
+a) 3
+
+b) 4
+
+***c) 4 is maximum***
+
+d) None of the mentioned
+
+> Explanation: Here, we define a function called printMax that uses two parameters called a and b. We find out the greater number using a simple if..else statement and then print the bigger number.
+
+## 5. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1. x = 50
+2. def func(x):
+3.     print('x is', x)
+4.     x = 2
+5.     print('Changed local x to', x)
+6. func(x)
+7. print('x is now', x)
+```
+
+***a)***
+```
+x is 50
+Changed local x to 2
+x is now 50
+```
+
+b)
+```
+x is 50
+Changed local x to 2
+x is now 2
+```
+
+c)
+```
+x is 50
+Changed local x to 2
+x is now 100
+```
+
+d) None of the mentioned
+
+> Explanation: The first time that we print the value of the name x with the first line in the function’s body, Python uses the value of the parameter declared in the main block, above the function definition.
+Next, we assign the value 2 to x. The name x is local to our function. So, when we change the value of x in the function, the x defined in the main block remains unaffected.
+With the last print function call, we display the value of x as defined in the main block, thereby confirming that it is actually unaffected by the local assignment within the previously called function.
+
+## 6. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1. x = 50
+2. def func():
+3.     global x
+4.     print('x is', x)
+5.     x = 2
+6.     print('Changed global x to', x)
+7. func()
+8. print('Value of x is', x)
+```
+
+a)
+```
+x is 50
+Changed global x to 2
+Value of x is 50
+```
+
+***b)***
+```
+x is 50
+Changed global x to 2
+Value of x is 2
+```
+  
+c)
+```
+x is 50
+Changed global x to 50
+Value of x is 50
+```
+
+d) None of the mentioned
+
+> Explanation: The global statement is used to declare that x is a global variable – hence, when we assign a value to x inside the function, that change is reflected when we use the value of x in the main block.
+
+## 7. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1. def say(message, times = 1):
+2.     print(message * times)
+3. say('Hello')
+4. say('World', 5)
+```
+
+***a)***
+```
+Hello
+WorldWorldWorldWorldWorld
+```
+
+b)
+```
+Hello
+World 5
+```
+
+c)
+```
+Hello
+World,World,World,World,World
+```
+
+d)
+```
+Hello
+HelloHelloHelloHelloHello
+```
+
+> Explanation: For some functions, you may want to make some parameters optional and use default values in case the user does not want to provide values for them. This is done with the help of default argument values. You can specify default argument values for parameters by appending to the parameter name in the function definition the assignment operator (=) followed by the default value.
+The function named say is used to print a string as many times as specified. If we don’t supply a value, then by default, the string is printed just once. We achieve this by specifying a default argument value of 1 to the parameter times.
+In the first usage of say, we supply only the string and it prints the string once. In the second usage of say, we supply both the string and an argument 5 stating that we want to say the string message 5 times.
+
+## 8. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1. def func(a, b=5, c=10):
+2.     print('a is', a, 'and b is', b, 'and c is', c)
+ 
+3. func(3, 7)
+4. func(25, c = 24)
+5. func(c = 50, a = 100)
+```
+
+a)
+```
+a is 7 and b is 3 and c is 10
+a is 25 and b is 5 and c is 24
+a is 5 and b is 100 and c is 50
+```
+
+b)
+```
+a is 3 and b is 7 and c is 10
+a is 5 and b is 25 and c is 24
+a is 50 and b is 100 and c is 5
+```
+
+***c)***
+```
+a is 3 and b is 7 and c is 10
+a is 25 and b is 5 and c is 24
+a is 100 and b is 5 and c is 50
+```
+
+d) None of the mentioned
+
+> Explanation: If you have some functions with many parameters and you want to specify only some of them, then you can give values for such parameters by naming them – this is called keyword arguments – we use the name (keyword) instead of the position (which we have been using all along) to specify the arguments to the function. <br> The function named func has one parameter without a default argument value, followed by two parameters with default argument values. In the first usage, func(3, 7), the parameter a gets the value 3, the parameter b gets the value 7 and c gets the default value of 10. <br> In the second usage func(25, c=24), the variable a gets the value of 25 due to the position of the argument. Then, the parameter c gets the value of 24 due to naming i.e. keyword arguments. The variable b gets the default value of 5. <br> In the third usage func(c=50, a=100), we use keyword arguments for all specified values. Notice that we are specifying the value for parameter c before that for a even though a is defined before c in the function definition.
+
+## 9. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1. def maximum(x, y):
+2.     if x > y:
+3.         return x
+4.     elif x == y:
+5.         return 'The numbers are equal'
+6.     else:
+7.         return y
+8.  
+9. print(maximum(2, 3))
+```
+
+a) 2
+
+***b) 3***
+
+c) The numbers are equal
+
+d) None of the mentioned
+
+> Explanation: The maximum function returns the maximum of the parameters, in this case the numbers supplied to the function. It uses a simple if..else statement to find the greater value and then returns that value.
+
+## 10. Which of the following is a feature of DocString? [Що з переліченого є характеристикою DocString?]
+
+a) Provide a convenient way of associating documentation with Python modules, functions, classes, and methods
+
+b) All functions should have a docstring
+
+c) Docstrings can be accessed by the \_\_doc\_\_ attribute on objects
+
+***d) All of the mentioned***
+
+> Explanation: Python has a nifty feature called documentation strings, usually referred to by its shorter name docstrings. DocStrings are an important tool that you should make use of since it helps to document the program better and makes it easier to understand.
+
+## 1. Which are the advantages of functions in python? [Які переваги функцій у python?]
+
+a) Reducing duplication of code
+
+b) Decomposing complex problems into simpler pieces
+
+c) Improving clarity of the code
+
+***d) All of the mentioned***
+
+> Explanation: None.
+
+## 2. What are the two main types of functions? [Які два основні типи функцій?]
+
+a) Custom function
+
+***b) Built-in function & User defined function***
+
+c) User function
+
+d) System function
+
+> Explanation: Built-in functions and user defined ones. The built-in functions are part of the Python language. Examples are: dir(), len() or abs(). The user defined functions are functions created with the def keyword.
+
+## 3. Where is function defined? [Де визначається функція?]
+
+a) Module
+
+b) Class
+
+c) Another function
+
+***d) All of the mentioned***
+
+> Explanation: Functions can be defined inside a module, a class or another function.
+
+## 4. What is called when a function is defined inside a class? [Що викликається, коли функція визначена всередині класу?]
+
+a) Module
+
+b) Class
+
+c) Another function
+
+***d) Method***
+
+> Explanation: None.
+
+## 5. Which of the following is the use of id() function in python? [Що з наведеного нижче є використанням функції id() у python?]
+
+***a) Id returns the identity of the object***
+
+b) Every object doesn’t have a unique id
+
+c) All of the mentioned
+
+d) None of the mentioned
+
+> Explanation: Each object in Python has a unique id. The id() function returns the object’s id.
+
+## 6. Which of the following refers to mathematical function? [Що з перерахованого відноситься до математичної функції?]
+
+***a) sqrt***
+
+b) rhombus
+
+c) add
+
+d) rhombus
+
+> Explanation: Functions that are always available for usage, functions that are contained within external modules, which must be imported and functions defined by a programmer with the def keyword. <br> Eg: math import sqrt <br> A sqrt() function is imported from the math module.
+
+## 7. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1. def cube(x):
+2.     return x * x * x      
+3. x = cube(3)    
+4. print x
+```
+
+a) 9
+
+b) 3
+
+***c) 27***
+
+d) 30
+
+> Explanation: A function is created to do a specific task. Often there is a result from such a task. The return keyword is used to return values from a function. A function may or may not return a value. If a function does not have a return keyword, it will send a none value.
+
+## 8. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1. def C2F(c):
+2.     return c * 9/5 + 32
+3. print C2F(100)
+4. print C2F(0)
+```
+
+***a)***
+```
+212
+32
+```
+
+b)
+```
+314
+24
+```
+
+c)
+```
+567
+98
+```
+
+d) None of the mentioned
+
+> Explanation: The code shown above is used to convert a temperature in degree celsius to fahrenheit.
+
+## 9. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1. def power(x, y=2):
+2.     r = 1
+3.     for i in range(y):
+4.        r = r * x
+5.     return r
+6. print power(3)
+7. print power(3, 3)
+```
+
+a)
+```
+212
+32
+```
+
+***b)***
+```
+9
+27
+```
+
+c)
+```
+567
+98
+```
+
+d) None of the mentioned
+
+> Explanation: The arguments in Python functions may have implicit values. An implicit value is used, if no value is provided. Here we created a power function. The function has one argument with an implicit value. We can call the function with one or two arguments.
+
+## 10. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+```python
+1.  def sum(*args):
+2.     '''Function returns the sum 
+3.     of all values'''
+4.     r = 0
+5.     for i in args:
+6.        r += i
+7.     return r
+8.  print sum.__doc__
+9.  print sum(1, 2, 3)
+10. print sum(1, 2, 3, 4, 5)
+```
+
+***a)***
+```
+6
+15
+```
+
+b)
+```
+6
+100
+```
+
+c)
+```
+123
+12345
+```
+
+d) None of the mentioned
+
+> Explanation: We use the * operator to indicate, that the function will accept arbitrary number of arguments. The sum() function will return the sum of all arguments. The first string in the function body is called the function documentation string. It is used to document the function. The string must be in triple quotes.
+
 # Section 17
 
 # Section 18
@@ -8082,6 +8912,7 @@ x
 > Explanation: In the code shown above, the variable ‘x’ is declared as global within the function. Hence the output is ‘x’. Had the variable ‘x’ been a local variable, the output would have been:
 
 ### 5. What will be the output of the following Python code?
+
 
 ```
 def f1(x):
@@ -8424,9 +9255,9 @@ c) Junk value
 
 > Explanation: In the code shown above, when we call the function f, a new namespace is created. The assignment x=4 is performed in the local namespace and does not affect the global namespace. Hence the output is 1.
 
-### 8. **\*\***\_\_**\*\*** returns a dictionary of the module namespace.
+### 8. ******\_\_****** returns a dictionary of the module namespace.
 
-**\*\***\_\_\_\_**\*\*** returns a dictionary of the current namespace.
+******\_\_\_\_****** returns a dictionary of the current namespace.
 
 a)
 
@@ -8738,7 +9569,7 @@ d)
 
 > Explanation: The code shown above depicts deep copy. In deep copy, the base address of the objects is not copied. Hence the modification done on one list does not affect the other list.
 
-### 3. In **\*\***\_\_\_**\*\*** copy, the base address of the objects are copied. In **\*\***\_\_\_**\*\*** copy, the base address of the objects are not copied.
+### 3. In ******\_\_\_****** copy, the base address of the objects are copied. In ******\_\_\_****** copy, the base address of the objects are not copied.
 
 a) deep. shallow
 
@@ -8847,7 +9678,7 @@ d)
 
 > Explanation: The code shown above depicts deep copy. Hence at the end of the code, l1=[10, 20, 30, [90]] and l2=[10, 20, 30, [40]].
 
-### 9. In **\*\*\*\***\_\_\_\_**\*\*\*\*** copy, the modification done on one list affects the other list. In **\*\*\*\***\_\_\_\_**\*\*\*\*** copy, the modification done on one list does not affect the other list.
+### 9. In ********\_\_\_\_******** copy, the modification done on one list affects the other list. In ********\_\_\_\_******** copy, the modification done on one list does not affect the other list.
 
 **a) shallow, deep**
 b) memberwise, shallow
@@ -9909,7 +10740,7 @@ d) ‘2010 20 Sep 08:45:12 Sun’
 
 > The code shown above returns the given date and time in a particular format. Hence the output of the code shown above will be: ‘Sun Sep 20 08:45:12 2010’.
 
-## 8. The sleep function (under the time module) is used to \***\*\_\_\_\*\*** [Функція сну (під модулем часу) використовується для ___________]
+## 8. The sleep function (under the time module) is used to ****\_\_\_**** [Функція сну (під модулем часу) використовується для ___________]
 
 **a) Pause the code for the specified number of seconds**
 b) Return the specified number of seconds, in terms of milliseconds
@@ -10057,7 +10888,7 @@ d) 95
 
 > The function shown above will generate an output which is a multiple of 5 and is between 0 and 91. The only option which satisfies these criteria is 10. Hence the only possible output of this function is 10.
 
-## 12. Both the functions randint and uniform accept \***\*\_\_\_\_\*\*** parameters. [Обидві функції randint і uniform приймають ____________ параметри.]
+## 12. Both the functions randint and uniform accept ****\_\_\_\_**** parameters. [Обидві функції randint і uniform приймають ____________ параметри.]
 
 a) 0
 b) 1
@@ -11750,4 +12581,855 @@ d) Error because the member shape is a private member
 
 > Protected members begin with one underscore and they can only be accessed within a class or by subclasses.
 
+
 # Section 26
+
+# Additional topics
+
+## Topic 102. Inheritance – 1
+
+### 1. Which of the following best describes inheritance? [Що з цього найкраще описує поняття успадкування]
+* **a) Ability of a class to derive members of another class as a part of its own definition**
+* b) Means of bundling instance variables and methods in order to restrict access to certain class members
+* c) Focuses on variables and passing of variables to functions
+* d) Allows for implementation of elegant software that is well designed and easily modified
+
+> If the class definition is class B(A): then class B inherits the methods of class A. This is called inheritance.
+
+
+### 2. Which of the following statements is wrong about inheritance? [Яке з нижче наведених тверджень щодо успадкування невірне?]
+* a) Protected members of a class can be inherited
+* b) The inheriting class is called a subclass
+* **c) Private members of a class can be inherited and accessed**
+* d) Inheritance is one of the features of OOP
+
+> Any changes made to the private members of the class in the subclass aren’t reflected in the original members.
+
+
+### 3. What will be the output of the following Python code?
+
+```python
+class Demo:
+    def __new__(self):
+        self.__init__(self)
+        print("Demo's __new__() invoked")
+    def __init__(self):
+        print("Demo's __init__() invoked")
+class Derived_Demo(Demo):
+    def __new__(self):
+        print("Derived_Demo's __new__() invoked")
+    def __init__(self):
+        print("Derived_Demo's __init__() invoked")
+def main():
+    obj1 = Derived_Demo()
+    obj2 = Demo()
+main()
+```
+
+* a)
+
+```
+Derived_Demo’s __init__() invoked
+Derived_Demo's __new__() invoked
+Demo's __init__() invoked
+Demo's __new__() invoked
+```
+
+* **b)**
+
+```
+Derived_Demo's __new__() invoked
+Demo's __init__() invoked
+Demo's __new__() invoked
+```
+
+* c)
+
+```
+Derived_Demo's __new__() invoked
+Demo's __new__() invoked
+```
+
+* d)
+
+```
+Derived_Demo’s __init__() invoked
+Demo's __init__() invoked
+```
+
+Answer: b
+
+Since the object for the derived class is declared first, \_\_new__() method of the derived class is invoked first, followed by the constructor and the \_\_new__() method of main class.
+
+
+### 4. What will be the output of the following Python code?
+
+```python
+class Test:
+    def __init__(self):
+        self.x = 0
+class Derived_Test(Test):
+    def __init__(self):
+        self.y = 1
+def main():
+    b = Derived_Test()
+    print(b.x,b.y)
+main()
+```
+
+* a) 0 1
+* b) 0 0
+* **c) Error because class B inherits A but variable x isn’t inherited**
+* d) Error because when object is created, argument must be passed like Derived_Test(1)
+
+Since the invoking method, Test.\_\_init\_\_(self), isn’t present in the derived class, variable x can’t be inherited.
+
+
+### 5. What will be the output of the following Python code?
+
+```python
+class A():
+    def disp(self):
+        print("A disp()")
+class B(A):
+    pass
+obj = B()
+obj.disp()
+```
+
+* a) Invalid syntax for inheritance
+* b) Error because when object is created, argument must be passed
+* c) Nothing is printed
+* **d) A disp()**
+
+> Class B inherits class A hence the function disp() becomes part of class B’s definition. Hence disp() method is properly executed and the line is printed.
+
+
+### 6. All subclasses are a subtype in object-oriented programming. [Всі підкласи є підтипами в ООП]
+* a) True
+* **b) False**
+
+> A subtype is something that be substituted for and behave as its parent type. A subclass may not be a subtype in object-oriented programming.
+
+https://softwareengineering.stackexchange.com/questions/362316/whats-the-difference-between-a-subclass-and-a-subtype
+
+
+### 7. When defining a subclass in Python that is meant to serve as a subtype, the subtype Python keyword is used. [Щоб визначити підклас Python, який вестиме себе як підтип, використовується ключове слово Python subtype.]
+* a) True
+* **b) False**
+
+> B is a subtype of B if instances of type B can substitute for instances of type A without affecting semantics.
+
+
+### 8. Suppose B is a subclass of A, to invoke the `__init__` method in A from B, what is the line of code you should write? [Припустимо, що B є підкласом A, щоб викликати метод `__init__` A в класі B, яку лінію коду ви маєте написати?]
+* **a) A.__init__(self)**
+* b) B.__init__(self)
+* c) A.__init__(B)
+* d) B.__init__(A)
+
+> To invoke the `__init__` method in A from B, either of the following should be written: `A.__init__(self)` or `super().__init__(self)`.
+
+
+### 9. What will be the output of the following Python code?
+
+```python
+class Test:
+    def __init__(self):
+        self.x = 0
+class Derived_Test(Test):
+    def __init__(self):
+        Test.__init__(self)
+        self.y = 1
+def main():
+    b = Derived_Test()
+    print(b.x,b.y)
+main()
+```
+
+* a) Error because class B inherits A but variable x isn’t inherited
+* b) 0 0
+* **c) 0 1**
+* d) Error, the syntax of the invoking method is wrong
+
+> Since the invoking method has been properly invoked, variable x from the main class has been properly inherited and it can also be accessed.
+
+
+### 10. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self, x= 1):
+        self.x = x
+class der(A):
+    def __init__(self,y = 2):
+        super().__init__()
+        self.y = y
+def main():
+    obj = der()
+    print(obj.x, obj.y)
+main()
+```
+
+* a) Error, the syntax of the invoking method is wrong
+* b) The program runs fine but nothing is printed
+* c) 1 0
+* **d) 1 2**
+
+> In the above piece of code, the invoking method has been properly implemented and hence x=1 and y=2. 
+
+
+### 11. What does built-in function type do in context of classes? [Що робить вбудована функція type в контексті класів?]
+* a) Determines the object name of any value
+* **b) Determines the class name of any value**
+* c) Determines class description of any value
+* d) Determines the file name of any value
+
+> For example: >>> type((1,)) gives <class ‘tuple’>.
+
+
+### 12. Which of the following is not a type of inheritance? [Що з нижчу наведеного не є типом наслідування?]
+* **a) Double-level**
+* b) Multi-level
+* c) Single-level
+* d) Multiple
+
+> Multiple, multi-level, single-level and hierarchical inheritance are all types of inheritance.
+
+
+### 13. What does built-in function help do in context of classes? [Що робить вбудована функція help в контексті класів?]
+* a) Determines the object name of any value
+* b) Determines the class identifiers of any value
+* **c) Determines class description of any built-in type**
+* d) Determines class description of any user-defined built-in type
+
+> help() usually gives information of the class on any built-in type or function.
+
+(як тип може бути 'user-defined built-in'???)
+
+
+### 14. What will be the output of the following Python code?
+
+```python
+class A:
+    def one(self):
+        return self.two()
+ 
+    def two(self):
+        return 'A'
+ 
+class B(A):
+    def two(self):
+        return 'B'
+obj1=A()
+obj2=B()
+print(obj1.two(),obj2.two())
+```
+
+* a) A A
+* **b) A B**
+* c) B B
+* d) An exception is thrown
+
+> obj1.two() invokes the method two() in class A which returns ‘A’ and obj2.two() invokes the method two() in class B which returns ‘B’.
+
+
+### 15. What type of inheritance is illustrated in the following Python code? [Який тип успадкування ілюструє наведений код Python?]
+
+```python
+class A():
+    pass
+class B():
+    pass
+class C(A,B):
+    pass
+```
+
+* a) Multi-level inheritance
+* **b) Multiple inheritance**
+* c) Hierarchical inheritance
+* d) Single-level inheritance
+
+> In multiple inheritance, two or more subclasses are derived from the superclass as shown in the above piece of code.
+
+
+## Topic 103. Inheritance – 2
+
+### 1. What type of inheritance is illustrated in the following Python code? [Який тип успадкування ілюструє наведений код Python?]
+
+```python
+class A():
+    pass
+class B(A):
+    pass
+class C(B):
+    pass
+```
+
+* **a) Multi-level inheritance**
+* b) Multiple inheritance
+* c) Hierarchical inheritance
+* d) Single-level inheritance
+
+> In multi-level inheritance, a subclass derives from another class which itself is derived from another class.
+
+
+### 2. What does single-level inheritance mean? [Що значить просте успадкування?]
+
+* a) A subclass derives from a class which in turn derives from another class
+* b) A single superclass inherits from multiple subclasses
+* **c) A single subclass derives from a single superclass**
+* d) Multiple base classes inherit a single derived class
+
+> In single-level inheritance, there is a single subclass which inherits from a single superclass. So the class definition of the subclass will be: class B(A): where A is the superclass.
+
+
+### 3. What will be the output of the following Python code?
+
+```python
+class A:
+     def __init__(self):
+         self.__i = 1
+         self.j = 5
+ 
+     def display(self):
+         print(self.__i, self.j)
+class B(A):
+     def __init__(self):
+         super().__init__()
+         self.__i = 2
+         self.j = 7  
+c = B()
+c.display()
+```
+
+* a) 2 7
+* b) 1 5
+* **c) 1 7**
+* d) 2 5
+
+> Any change made in variable i isn’t reflected as it is the private member of the superclass.
+
+
+### 4. Which of the following statements isn’t true? [Яке з нижче наведених тверджень є хибним?]
+* a) A non-private method in a superclass can be overridden
+* b) A derived class is a subset of superclass
+* **c) The value of a private variable in the superclass can be changed in the subclass**
+* d) When invoking the constructor from a subclass, the constructor of superclass is automatically invoked
+
+> If the value of a private variable in a superclass is changed in the subclass, the change isn’t reflected.
+
+d) ніби теж неправильно, бо в пітоні для цього треба викликати `super.__init__(self)`, але хз. b) трохи нехрозуміле.
+
+
+### 5. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self,x):
+        self.x = x
+    def count(self,x):
+        self.x = self.x+1
+class B(A):
+    def __init__(self, y=0):
+        A.__init__(self, 3)
+        self.y = y
+    def count(self):
+        self.y += 1     
+def main():
+    obj = B()
+    obj.count()
+    print(obj.x, obj.y)
+main()
+```
+
+* a) 3 0
+* **b) 3 1**
+* c) 0 1
+* d) An exception in thrown
+
+> Initially x=3 and y=0. When obj.count() is called, y=1.
+
+
+### 6. What will be the output of the following Python code?
+
+```
+>>> class A:
+	pass
+>>> class B(A):
+	pass
+>>> obj=B()
+>>> isinstance(obj,A)
+```
+
+* **a) True**
+* b) False
+* c) Wrong syntax for isinstance() method
+* d) Invalid method for classes
+
+> isinstance(obj,class) returns True if obj is an object class.
+
+
+### 7. Which of the following statements is true? [Яке з нижче наведених тверджень є правдивим?]
+* a) `The __new__() method automatically invokes the __init__ method`
+* b) `The __init__ method is defined in the object class`
+* **c) The \_\_eq(other) method is defined in the object class**
+* d) `The __repr__() method is defined in the object class`
+
+The \_\_eq(other) method is called if any comparison takes place and it is defined in the object class.
+
+тільки він називається \_\_eq\_\_ а не \_\_eq ну да ладно
+
+
+### 8. Method issubclass() checks if a class is a subclass of another class. [Метод issubclass() перевіряє чи клас є клас підкласом іншого класу.]
+* **a) True**
+* b) False
+
+> Method issubclass() returns True if a class is a subclass of another class and False otherwise.
+
+
+### 9. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self):
+        self.__x = 1
+class B(A):
+    def display(self):
+        print(self.__x)
+def main():
+    obj = B()
+    obj.display()
+main()
+```
+
+* a) 1
+* b) 0
+* c) Error, invalid syntax for object declaration
+* **d) Error, private class member can’t be accessed in a subclass**
+
+> Private class members in the superclass can’t be accessed in the subclass.
+
+
+### 10. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self):
+        self._x = 5       
+class B(A):
+    def display(self):
+        print(self._x)
+def main():
+    obj = B()
+    obj.display()
+main()
+```
+
+* a) Error, invalid syntax for object declaration
+* b) Nothing is printed
+* **c) 5**
+* d) Error, private class member can’t be accessed in a subclass
+
+> The class member x is protected, not private and hence can be accessed by subclasses.
+
+
+### 11. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self,x=3):
+        self._x = x        
+class B(A):
+    def __init__(self):
+        super().__init__(5)
+    def display(self):
+        print(self._x)
+def main():
+    obj = B()
+    obj.display()
+ 
+main()
+```
+
+* **a) 5**
+* b) Error, class member x has two values
+* c) 3
+* d) Error, protected class member can’t be accessed in a subclass
+
+> The super() method re-assigns the variable x with value 5. Hence 5 is printed.
+
+
+### 12. What will be the output of the following Python code?
+
+```python
+class A:
+    def test1(self):
+        print(" test of A called ")
+class B(A):
+    def test(self):
+        print(" test of B called ")
+class C(A):
+    def test(self):
+        print(" test of C called ")
+class D(B,C):
+    def test2(self):
+        print(" test of D called ")        
+obj=D()
+obj.test()
+```
+
+* a)
+
+```
+test of B called
+test of C called
+```
+
+* b)
+
+```
+test of C called
+test of B called
+```
+
+* **c) test of B called**
+* d) Error, both the classes from which D derives has same method test()
+
+> Execute in Python shell to verify. If class D(B,C): is switched is class D(C,B): test of C is called.
+
+
+### 13. What will be the output of the following Python code?
+
+```python
+class A:
+    def test(self):
+        print("test of A called")
+class B(A):
+    def test(self):
+        print("test of B called")
+        super().test()  
+class C(A):
+    def test(self):
+        print("test of C called")
+        super().test()
+class D(B,C):
+    def test2(self):
+        print("test of D called")      
+obj=D()
+obj.test()
+```
+
+* **a)**
+
+```
+test of B called
+test of C called
+test of A called
+```
+
+* b)
+
+```
+test of C called
+test of B called
+```
+
+* c)
+
+```
+test of B called
+test of C called
+```
+
+* d) Error, all the three classes from which D derives has same method test()
+
+Answer: a
+> Since the invoking method, super().test() is called in the subclasses, all the three methods of test() in three different classes is called.
+
+
+## Topic 104. Polymorphism
+
+### 1. Which of the following best describes polymorphism? [Що з цього найкраще описує поліморфізм?]
+* a) Ability of a class to derive members of another class as a part of its own definition
+* b) Means of bundling instance variables and methods in order to restrict access to certain class members
+* c) Focuses on variables and passing of variables to functions
+* **d) Allows for objects of different types and behaviour to be treated as the same general type**
+
+> Polymorphism is a feature of object-oriented programming languages. It allows for the implementation of elegant software that is well designed and easily modified.
+
+
+### 2. What is the biggest reason for the use of polymorphism? [Яка найголовніша причина використання поліморфізму?]
+* a) It allows the programmer to think at a more abstract level
+* b) There is less program code to write
+* **c) The program will have a more elegant design and will be easier to maintain and update**
+* d) Program code takes up less space
+
+> Explanation: Polymorphism allows for the implementation of elegant software.
+
+🤡🤡🤡
+
+
+### 3. What is the use of duck typing? [Навіщо застосовується duck typing (качина типізація)?]
+- [ ] a) More restriction on the type values that can be passed to a given method
+- [ ] b) No restriction on the type values that can be passed to a given method
+- [x] **c) Less restriction on the type values that can be passed to a given method**
+- [ ] d) Makes the program code smaller
+
+> In Python, any set of classes with a common set of methods can be treated similarly. This is called duck typing. Hence duck typing imposes less restrictions.
+
+https://uk.wikipedia.org/wiki/%D0%9A%D0%B0%D1%87%D0%B8%D0%BD%D0%B0_%D1%82%D0%B8%D0%BF%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%8F
+🦆🦆🦆🇺🇦🇺🇦🇺🇦
+
+
+### 4. What will be the output of the following Python code?
+
+```python
+class A:
+    def __str__(self):
+        return '1'
+class B(A):
+    def __init__(self):
+        super().__init__()
+class C(B):
+    def __init__(self):
+        super().__init__()
+def main():
+    obj1 = B()
+    obj2 = A()
+    obj3 = C()
+    print(obj1, obj2,obj3)
+main()
+```
+
+- [x] **a) 1 1 1**
+- [ ] b) 1 2 3
+- [ ] c) ‘1’ ‘1’ ‘1’
+- [ ] d) An exception is thrown
+
+    The super().__init__() in the subclasses has been properly invoked and none of other subclasses return any other value. Hence 1 is returned each time the object is created and printed.
+
+
+### 5. What will be the output of the following Python code?
+
+```python
+class Demo:
+    def __init__(self):
+        self.x = 1
+    def change(self):
+        self.x = 10
+class Demo_derived(Demo):
+    def change(self):
+        self.x=self.x+1
+        return self.x
+def main():
+    obj = Demo_derived()
+    print(obj.change())
+ 
+main()
+```
+
+- [ ] a) 11
+- [x] **b) 2**
+- [ ] c) 1
+- [ ] d) An exception is thrown
+
+> The derived class method change() overrides the base class method.
+
+
+### 6. A class in which one or more methods are only implemented to raise an exception is called an abstract class. [Клас, у якому імплементація одного чи більше методів лише видає exception, називається абстрактним класом.]
+- [x] **a) True**
+- [ ] b) False
+
+> A class in which one or more methods are unimplemented or implemented for the methods throw an exception is called an abstract class.
+
+
+### 7. Overriding means changing behaviour of methods of derived class methods in the base class. [Заміщення - зміна поведінки методів дочірніх класів у базовому класі]
+- [ ] a) True
+- [x] **b) False**
+
+> Overriding means if there are two same methods present in the superclass and the subclass, the contents of the subclass method are executed.
+
+
+### 8. What will be the output of the following Python code?
+
+```python
+class A:
+    def __repr__(self):
+        return "1"
+class B(A):
+    def __repr__(self):
+        return "2"
+class C(B):
+    def __repr__(self):
+        return "3"
+o1 = A()
+o2 = B()
+o3 = C()
+print(obj1, obj2, obj3)
+```
+
+- [ ] a) 1 1 1
+- [x] **b) 1 2 3**
+- [ ] c) ‘1’ ‘1’ ‘1’
+- [ ] d) An exception is thrown
+
+> When different objects are invoked, each of the individual classes return their individual values and hence it is printed.
+
+Насправді програма скрашнеться, бо автор дебіл (name 'obj1' is not defined)
+
+
+### 9. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self):
+        self.multiply(15)
+        print(self.i)
+ 
+    def multiply(self, i):
+        self.i = 4 * i;
+class B(A):
+    def __init__(self):
+        super().__init__()
+ 
+    def multiply(self, i):
+        self.i = 2 * i;
+obj = B()
+```
+
+- [ ] a) 15
+- [ ] b) 60
+- [ ] c) An exception is thrown
+- [x] **d) 30**
+
+> The derived class B overrides base class A.
+
+
+### 10. What will be the output of the following Python code?
+
+```python
+class Demo:
+    def check(self):
+        return " Demo's check "  
+    def display(self):
+        print(self.check())
+class Demo_Derived(Demo):
+    def check(self):
+        return " Derived's check "
+Demo().display()
+Demo_Derived().display()
+```
+
+- [x] **a) Demo’s check Derived’s check**
+- [ ] b) Demo’s check Demo’s check
+- [ ] c) Derived’s check Demo’s check
+- [ ] d) Syntax error
+
+> Demo().display() invokes the display() method in class Demo and Demo_Derived().display() invokes the display() method in class Demo_Derived. 
+
+
+### 11. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self):
+        self.multiply(15)
+    def multiply(self, i):
+        self.i = 4 * i;
+class B(A):
+    def __init__(self):
+        super().__init__()
+        print(self.i)
+ 
+    def multiply(self, i):
+        self.i = 2 * i;
+obj = B()
+```
+
+- [ ] a) 15
+- [x] **b) 30**
+- [ ] c) An exception is thrown
+- [ ] d) 60
+
+> The derived class B overrides base class A.
+
+
+### 12. What will be the output of the following Python code?
+
+```python
+class Demo:
+    def __check(self):
+        return " Demo's check "
+    def display(self):
+        print(self.check())
+class Demo_Derived(Demo):
+    def __check(self):
+        return " Derived's check "
+Demo().display()
+Demo_Derived().display()
+```
+
+- [ ] a) Demo’s check Derived’s check
+- [x] **b) Demo’s check Demo’s check**
+- [ ] c) Derived’s check Demo’s check
+- [ ] d) Syntax error
+
+> The method check is private so it can’t be accessed by the derived class. Execute the code in the Python shell. 
+
+(только надо поменять self.check() на self.\_\_check())
+
+
+### 13. What will be the output of the following Python code?
+
+```python
+class A:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def __str__(self):
+        return 1
+    def __eq__(self, other):
+        return self.x * self.y == other.x * other.y
+obj1 = A(5, 2)
+obj2 = A(2, 5)
+print(obj1 == obj2)
+```
+
+- [ ] a) False
+- [ ] b) 1
+- [x] **c) True**
+- [ ] d) An exception is thrown
+
+> Since 5\*2==2\*5, True is printed. Execute it in the Python shell to verify.
+
+
+### 14. What will be the output of the following Python code?
+
+```python
+class A:
+    def one(self):
+        return self.two()    	
+    def two(self):
+        return 'A'   
+class B(A):
+    def two(self):
+        return 'B'
+obj2=B()
+print(obj2.two())
+```
+
+- [ ] a) A
+- [ ] b) An exception is thrown
+- [ ] c) A B
+- [x] **d) B**
+
+> The derived class method two() overrides the method two() in the base class A. 
+
+
+### 15. Which of the following statements is true? [Яке з цих тверджень є вірним?]
+- [x] **a) A non-private method in a superclass can be overridden**
+- [ ] b) A subclass method can be overridden by the superclass
+- [ ] c) A private method in a superclass can be overridden
+- [ ] d) Overriding isn’t possible in Python
+
+> A public method in the base class can be overridden by the same named method in the subclass.
