@@ -3685,6 +3685,740 @@ d) +++99
 
 # Section 11
 
+## 1. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+>>>m = [[x, x + 1, x + 2] for x in range(0, 3)]
+```
+
+a) `[[1, 2, 3], [4, 5, 6], [7, 8, 9]]`\
+**b) `[[0, 1, 2], [1, 2, 3], [2, 3, 4]]`**\
+c) `[1, 2, 3, 4, 5, 6, 7, 8, 9]`\
+d) `[0, 1, 2, 1, 2, 3, 2, 3, 4]`
+
+## 2. How many elements are in m? [Скільки елементів в m?]
+
+```python
+m = [[x, y] for x in range(0, 4) for y in range(0, 4)]
+```
+
+a) 8\
+b) 12\
+**c) 16**\
+d) 32
+
+## 3. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+values = [[3, 4, 5, 1], [33, 6, 1, 2]]
+ 
+v = values[0][0]
+for row in range(0, len(values)):
+    for column in range(0, len(values[row])):
+        if v < values[row][column]:
+            v = values[row][column]
+ 
+print(v)
+```
+
+a) 3\
+b) 5\
+c) 6\
+**d) 33**
+
+## 4. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+values = [[3, 4, 5, 1], [33, 6, 1, 2]]
+ 
+v = values[0][0]
+for lst in values:
+    for element in lst:
+        if v > element:
+            v = element
+ 
+print(v)
+```
+
+**a) 1**\
+b) 3\
+c) 5\
+d) 6
+
+## 5. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+values = [[3, 4, 5, 1 ], [33, 6, 1, 2]]
+
+for row in values:
+    row.sort()
+    for element in row:
+        print(element, end = " ")
+    print()
+```
+
+a) The program prints two rows 3 4 5 1 followed by 33 6 1 2\
+b) The program prints on row 3 4 5 1 33 6 1 2\
+c) The program prints two rows 3 4 5 1 followed by 33 6 1 2\
+**d) The program prints two rows 1 3 4 5 followed by 1 2 6 33**
+
+## 6. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+matrix = [[1, 2, 3, 4],
+       [4, 5, 6, 7],
+       [8, 9, 10, 11],
+       [12, 13, 14, 15]]
+ 
+for i in range(0, 4):
+    print(matrix[i][1], end = " ")
+```
+
+a) 1 2 3 4\
+b) 4 5 6 7\
+c) 1 3 8 12\
+**d) 2 5 9 13**
+
+## 7. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+def m(list):
+    v = list[0]
+    for e in list:
+      if v < e: v = e
+    return v
+
+values = [[3, 4, 5, 1], [33, 6, 1, 2]]
+
+for row in values: 
+    print(m(row), end = " ")
+```
+
+a) 3 33\
+b) 1 1\
+c) 5 6\
+**d) 5 33**
+
+## 8. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+data = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+ 
+print(data[1][0][0])
+```
+
+a) 1\
+b) 2\
+c) 4\
+**d) 5**
+
+## 9. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+data = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+
+def ttt(m):
+    v = m[0][0]
+ 
+    for row in m:
+        for element in row:
+           if v < element: v = element
+ 
+    return v
+
+print(ttt(data[0]))
+```
+
+a) 1\
+b) 2\
+**c) 4**\
+d) 5
+
+## 10. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+points = [[1, 2], [3, 1.5], [0.5, 0.5]]
+points.sort()
+print(points)
+```
+
+a) `[[1, 2], [3, 1.5], [0.5, 0.5]]`
+b) `[[3, 1.5], [1, 2], [0.5, 0.5]]`
+**c) `[[0.5, 0.5], [1, 2], [3, 1.5]]`**
+d) `[[0.5, 0.5], [3, 1.5], [1, 2]]`
+
+## 1. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a=[10,23,56,[78]]
+b=list(a)
+a[3][0]=95
+a[1]=34
+print(b)
+```
+
+a) `[10,34,56,[95]]`\
+b) `[10,23,56,[78]]`\
+**c) `[10,23,56,[95]]`**\
+d) `[10,34,56,[78]]`
+
+## 2. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+print(list(zip((1,2,3),('a'),('xxx','yyy'))))
+print(list(zip((2,4),('b','c'),('yy','xx'))))
+```
+
+a)
+```python
+[(1, 2, 3), ('a'), ('xxx', 'yyy')]
+[(2, 4), ('b', 'c'), ('yy', 'xx')]
+```
+
+b)
+```python
+[(1, 'a', 'xxx'), (2, ' ', 'yyy'), (3, ' ', ' ')]
+[(2, 'b', 'yy'), (4, 'c', 'xx')]
+```
+
+c) Syntax error
+**d)**
+```python
+[(1, 'a', 'xxx')]
+[(2, 'b', 'yy'), (4, 'c', 'xx')]
+```
+
+> The zip function combines the individual attributes of the lists into a list of tuples.
+
+## 3. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+import copy
+a=[10,23,56,[78]]
+b=copy.deepcopy(a)
+a[3][0]=95
+a[1]=34
+print(b)
+```
+
+a) `[10,34,56,[95]]`\
+**b) `[10,23,56,[78]]`**\
+c) `[10,23,56,[95]]`\
+d) `[10,34,56,[78]]`
+
+## 4. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+s="a@b@c@d"
+a=list(s.partition("@"))
+print(a)
+b=list(s.split("@",3))
+print(b)
+```
+
+a)
+```python
+['a','b','c','d']
+['a','b','c','d']
+```
+
+b)
+```python
+['a','@','b','@','c','@','d']
+['a','b','c','d']
+```
+
+**c)**
+```python
+['a','@','b@c@d']
+['a','b','c','d']
+```
+d)
+```python
+['a','@','b@c@d']
+['a','@','b','@','c','@','d']
+```
+
+## 5. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a=[1,2,3,4]
+b=[sum(a[0:x+1]) for x in range(0,len(a))]
+print(b)
+```
+
+a) `10`\
+b) `[1,3,5,7]`\
+c) `4`\
+**d) `[1,3,6,10]`**
+
+## 6. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a="hello"
+b=list((x.upper(),len(x)) for x in a)
+print(b)
+```
+
+**a) `[('H', 1), ('E', 1), ('L', 1), ('L', 1), ('O', 1)]`**\
+b) `[('HELLO', 5)]`\
+c) `[('H', 5), ('E', 5), ('L', 5), ('L', 5), ('O', 5)]`\
+d) Syntax error
+
+## 7. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a=[1,2,3,4]
+b=[sum(a[0:x+1]) for x in range(0,len(a))]
+print(b)
+```
+
+a) `10`\
+b) `[1,3,5,7]`\
+c) `4`\
+**d) `[1,3,6,10]`**
+
+## 8. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a=[[]]*3
+a[1].append(7)
+print(a)
+```
+
+a) Syntax error\
+**b) `[[7], [7], [7]]`**\
+c) `[[7], [], []]`\
+d) `[[],7, [], []]`
+
+## 9. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+b=[2,3,4,5]
+a=list(filter(lambda x:x%2,b))
+print(a)
+```
+
+a) `[2,4]`\
+b) `[ ]`\
+**c) `[3,5]`**\
+d) Invalid arguments for filter function
+
+## 10. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+lst=[3,4,6,1,2]
+lst[1:2]=[7,8]
+print(lst)
+```
+
+**a) `[3, 7, 8, 6, 1, 2]`**\
+b) Syntax error\
+c) `[3,[7,8],6,1,2]`\
+d) `[3,4,6,7,8]`
+
+## 1. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a=[1,2,3]
+b=a.append(4)
+print(a)
+print(b)
+```
+
+a)
+```python
+[1,2,3,4]
+[1,2,3,4]
+```
+
+**b)**
+```python
+[1, 2, 3, 4]
+None
+```
+
+c) Syntax error
+d)
+```python
+[1,2,3]
+[1,2,3,4]
+```
+
+## 2. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+>>> a=[14,52,7]
+>>> b=a.copy()
+>>> b is a
+```
+
+a) True
+**b) False**
+
+## 3. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a=[13,56,17]
+a.append([87])
+a.extend([45,67])
+print(a)
+```
+
+**a) `[13, 56, 17, [87], 45, 67]`**
+b) `[13, 56, 17, 87, 45, 67]`
+c) `[13, 56, 17, 87,[ 45, 67]]`
+d) `[13, 56, 17, [87], [45, 67]]`
+
+## 4. What is the output of the following piece of code? [Який буде результат виконання наступного уривку коду?]
+
+```python
+a=list((45,)*4)
+print((45)*4)
+print(a)
+```
+
+**a)**
+```python
+180
+[(45),(45),(45),(45)]
+```
+
+b)
+```python
+(45,45,45,45)
+[45,45,45,45]
+```
+
+c)
+```python
+180
+[45,45,45,45]
+```
+
+d) Syntax error
+
+## 5. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+lst=[[1,2],[3,4]]
+print(sum(lst,[]))
+```
+
+a) `[[3],[7]]`
+**b) `[1,2,3,4]`**
+c) Error
+d) `[10]`
+
+## 6. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+word1="Apple"
+word2="Apple"
+list1=[1,2,3]
+list2=[1,2,3]
+print(word1 is word2)
+print(list1 is list2)
+```
+
+a)
+```python
+True
+True
+```
+
+b)
+```python
+False
+True
+```
+
+c)
+```python
+False
+False
+```
+
+**d)**
+```python
+True
+False
+```
+
+## 7. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+def unpack(a,b,c,d):
+    print(a+d)
+x = [1,2,3,4]
+unpack(*x)
+```
+
+a) Error
+b) `[1,4]`
+c) `[5]`
+**d) `5`**
+
+## 8. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+places = ['Bangalore', 'Mumbai', 'Delhi']
+places1 = places
+places2 = places[:]
+places1[1]="Pune"
+places2[2]="Hyderabad"
+print(places)
+```
+a) `['Bangalore', 'Pune', 'Hyderabad']`
+**b) `['Bangalore', 'Pune', 'Delhi']`**
+c) `['Bangalore', 'Mumbai', 'Delhi']`
+d) `['Bangalore', 'Mumbai', 'Hyderabad']`
+
+## 9. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+x=[[1],[2]]
+print(" ".join(list(map(str,x))))
+```
+
+**a) `[1] [2]`**
+b) `[49] [50]`
+c) Syntax error
+d) `[[1]] [[2]]`
+
+## 10. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a=165
+b=sum(list(map(int,str(a))))
+print(b)
+```
+
+a) 561\
+b) 5\
+**c) 12**\
+d) Syntax error
+
+## 11. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a= [1, 2, 3, 4, 5]
+for i in range(1, 5):
+    a[i-1] = a[i]
+for i in range(0, 5): 
+    print(a[i],end = " ")
+```
+
+a) 5 5 1 2 3\
+b) 5 1 2 3 4\
+c) 2 3 4 5 1\
+**d) 2 3 4 5 5**
+
+## 12. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+def change(var, lst):
+    var = 1
+    lst[0] = 44
+k = 3
+a = [1, 2, 3]
+change(k, a)
+print(k)
+print(a)
+```
+
+**a)**
+```python
+3
+[44, 2, 3]
+```
+
+b)
+```python
+1
+[1,2,3]
+```
+
+c)
+```python
+3
+[1,2,3]
+```
+
+d)
+```python
+1
+[44,2,3]
+```
+
+## 13. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a = [1, 5, 7, 9, 9, 1]
+b=a[0]
+x= 0
+for x in range(1, len(a)):
+    if a[x] > b:
+        b = a[x]
+        b= x
+print(b)
+```
+
+a) 5\
+b) 3\
+**c) 4**\
+d) 0
+
+## 14. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+a=["Apple","Ball","Cobra"]
+a.sort(key=len)
+print(a)
+```
+
+a) `['Apple', 'Ball', 'Cobra']`
+**b) `['Ball', 'Apple', 'Cobra']`**
+c) `['Cobra', 'Apple', 'Ball']`
+d) Invalid syntax for sort()
+
+## 15. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
+
+```python
+num = ['One', 'Two', 'Three']
+for i, x in enumerate(num):
+    print('{}: {}'.format(i, x),end=" ")
+```
+
+a) 1: 2: 3:\
+b) Exception is thrown\
+c) One Two Three\
+**d) 0: One 1: Two 2: Three**
+
+## 1. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
+
+```python
+k = [print(i) for i in my_string if i not in "aeiou"]
+```
+
+a) prints all the vowels in my_string\
+b) prints all the consonants in my_string\
+**c) prints all characters of my_string that aren’t vowels**\
+d) prints only on executing print(k)
+
+## 2. What is the output of `print(k)` in the following Python code snippet? [Що буде результатом виконання `print(k)` в наступному уривку Python-коду?]
+
+```python
+k = [print(i) for i in my_string if i not in "aeiou"]
+print(k)
+```
+
+a) all characters of my_string that aren’t vowels\
+**b) a list of Nones**\
+c) list of Trues\
+d) list of Falses\
+
+## 3. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
+
+```python
+my_string = "hello world"
+k = [(i.upper(), len(i)) for i in my_string]
+print(k)
+```
+
+a) `[('HELLO', 5), ('WORLD', 5)]`
+**b) `[('H, 1), ('E, 1), ('L, 1), ('L', 1), ('O', 1), (' ', 1), ('W', 1), ('O', 1), ('R', 1), ('L', 1), ('D', 1)]`**
+c) `[('HELLO WORLD', 11)]`
+d) none of the mentioned
+
+## 4. Which of the following is the correct expansion of `list_1 = [expr(i) for i in list_0 if func(i)]`? [Які з наступних уривків є коректним розкриттям `list_1 = [expr(i) for i in list_0 if func(i)]`?]
+a)
+```python
+list_1 = []
+for i in list_0:
+    if func(i):
+        list_1.append(i)
+```
+
+b)
+```python
+for i in list_0:
+    if func(i):
+        list_1.append(expr(i))
+```
+
+**c)**
+```python
+list_1 = []
+for i in list_0:
+    if func(i):
+        list_1.append(expr(i))
+```
+
+d) none of the mentioned
+
+## 5. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
+
+```python
+x = [i**+1 for i in range(3)]; print(x);
+```
+
+**a) `[0, 1, 2]`**\
+b) `[1, 2, 5]`\
+c) error, **+ is not a valid operator\
+d) error, ‘;’ is not allowed
+
+## 6. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
+
+```python
+print([i.lower() for i in "HELLO"])
+```
+
+**a) `['h', 'e', 'l', 'l', 'o']`**
+b) `'hello'`
+c) `['hello']`
+d) `hello`
+
+## 7. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
+
+```python
+print([i+j for i in "abc" for j in "def"])
+```
+
+a) `[‘da’, ‘ea’, ‘fa’, ‘db’, ‘eb’, ‘fb’, ‘dc’, ‘ec’, ‘fc’]`
+b) `[[‘ad’, ‘bd’, ‘cd’], [‘ae’, ‘be’, ‘ce’], [‘af’, ‘bf’, ‘cf’]]`
+c) `[[‘da’, ‘db’, ‘dc’], [‘ea’, ‘eb’, ‘ec’], [‘fa’, ‘fb’, ‘fc’]]`
+**d) `[‘ad’, ‘ae’, ‘af’, ‘bd’, ‘be’, ‘bf’, ‘cd’, ‘ce’, ‘cf’]`**
+
+## 8. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
+
+```python
+print([[i+j for i in "abc"] for j in "def"])
+```
+
+a) `[‘da’, ‘ea’, ‘fa’, ‘db’, ‘eb’, ‘fb’, ‘dc’, ‘ec’, ‘fc’]`
+**b) `[[‘ad’, ‘bd’, ‘cd’], [‘ae’, ‘be’, ‘ce’], [‘af’, ‘bf’, ‘cf’]]`**
+c) `[[‘da’, ‘db’, ‘dc’], [‘ea’, ‘eb’, ‘ec’], [‘fa’, ‘fb’, ‘fc’]]`
+d) `[‘ad’, ‘ae’, ‘af’, ‘bd’, ‘be’, ‘bf’, ‘cd’, ‘ce’, ‘cf’]`
+
+## 9. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
+
+```python
+print([if i%2==0: i; else: i+1; for i in range(4)])
+```
+
+a) `[0, 2, 2, 4]`\
+b) `[1, 1, 3, 3]`\
+**c) error**\
+d) none of the mentioned
+
+## 10. Which of the following is the same as `list(map(lambda x: x**-1, [1, 2, 3]))`? [Що з переліченого є еквівалентом `list(map(lambda x: x**-1, [1, 2, 3]))`?]
+
+a) `[x**-1 for x in [(1, 2, 3)]]`\
+b) `[1/x for x in [(1, 2, 3)]]`\
+**c) `[1/x for x in (1, 2, 3)]`**\
+d) error
+
 # Section 12
 
 # Section 13
