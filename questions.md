@@ -7418,6 +7418,513 @@ Explanation: The function max() is being used to find the maximum value from amo
 
 # Section 17
 
+## Function – 3
+
+### 1. Python supports the creation of anonymous functions at runtime, using a construct called __________ [Python підтримує створення анонімних функцій під час виконання, використовуючи конструкцію __________]
+**a) lambda**\
+b) pi\
+c) anonymous\
+d) none of the mentioned
+
+> Explanation: Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called lambda. Lambda functions are restricted to a single expression. They can be used wherever normal functions can be used.
+
+### 2. What will be the output of the following Python code?
+```python
+y = 6
+z = lambda x: x * y
+print z(8)
+```
+
+**a) 48**\
+b) 14\
+c) 64\
+d) None of the mentioned
+
+> Explanation: The lambda keyword creates an anonymous function. The x is a parameter, that is passed to the lambda function. The parameter is followed by a colon character. The code next to the colon is the expression that is executed, when the lambda function is called. The lambda function is assigned to the z variable. The lambda function is executed. The number 8 is passed to the anonymous function and it returns 48 as the result. Note that z is not a name for this function. It is only a variable to which the anonymous function was assigned.
+
+### 3. What will be the output of the following Python code?
+```python
+lamb = lambda x: x ** 3
+print(lamb(5))
+```
+
+a) 15\
+b) 555\
+**c) 125**\
+d) None of the mentioned
+
+### 4. Does Lambda contains return statements?
+a) True\
+**b) False**
+
+> Explanation: lambda definition does not include a return statement. it always contains an expression which is returned. Also note that we can put a lambda definition anywhere a function is expected. We don’t have to assign it to a variable at all.
+
+### 5. Lambda is a statement.
+a) True\
+**b) False**
+
+> Explanation: lambda is an anonymous function in Python. Hence this statement is false.
+
+### 6. Lambda contains block of statements.
+a) True\
+**b) False**
+
+### 7. What will be the output of the following Python code?
+```python
+def f(x, y, z): return x + y + z
+f(2, 30, 400)
+```
+
+**a) 432**\
+b) 24000\
+c) 430\
+d) No output
+
+### 8. What will be the output of the following Python code?
+```python
+def writer():
+	title = 'Sir'
+	name = (lambda x:title + ' ' + x)
+	return name
+ 
+who = writer()
+who('Arthur')
+```
+
+a) Arthur Sir\
+**b) Sir Arthur**\
+c) Arthur\
+d) None of the mentioned
+
+### 9. What will be the output of the following Python code?
+```python
+L = [lambda x: x ** 2,
+         lambda x: x ** 3,
+         lambda x: x ** 4]
+ 
+for f in L:
+	print(f(3))
+```
+
+a)
+```python
+27
+81
+343
+```
+b)
+```python
+6
+9
+12
+```
+**c)**
+```python
+9
+27
+81
+```
+d) None of the mentioned
+
+### 10. What will be the output of the following Python code?
+```python
+min = (lambda x, y: x if x < y else y)
+min(101*99, 102*98)
+```
+
+a) 9997\
+b) 9999\
+**c) 9996**\
+d) None of the mentioned
+
+## Function – 4
+
+### 1. What is a variable defined outside a function referred to as?
+a) A static variable\
+**b) A global variable**\
+c) A local variable\
+d) An automatic variable
+
+> Explanation: The value of a variable defined outside all function definitions is referred to as a global variable and can be used by multiple functions of the program.
+
+### 2. What is a variable defined inside a function referred to as?
+a) A global variable\
+b) A volatile variable\
+**c) A local variable**\
+d) An automatic variable
+
+> Explanation: The variable inside a function is called as local variable and the variable definition is confined only to that function.
+
+### 3. What will be the output of the following Python code?
+```python
+i=0
+def change(i):
+   i=i+1
+   return i
+change(1)
+print(i)
+```
+
+a) 1\
+b) Nothing is displayed\
+**c) 0**\
+d) An exception is thrown
+
+> Explanation: Any change made in to an immutable data type in a function isn’t reflected outside the function.
+
+### 4. [broken] What will be the output of the following Python code?
+```python
+def a(b):
+    b = b + [5]
+ 
+c = [1, 2, 3, 4]
+a(c)
+print(len(c))
+```
+
+**a) 4**\
+b) 5\
+c) 1\
+d) An exception is thrown
+
+> Site Explanation ~~b)~~: Since a list is mutable, any change made in the list in the function is reflected outside the function.\
+> Note: It's correct but we've changed the reference to list, so it doesn't work
+ 
+### 5. What will be the output of the following Python code?
+```python
+a=10
+b=20
+def change():
+    global b
+    a=45
+    b=56
+change()
+print(a)
+print(b)
+```
+
+**a)**
+```python
+10
+56
+```
+b)
+```python
+45
+56
+```
+c)
+```python
+10
+20
+```
+d) Syntax Error
+
+> Explanation: The statement “global b” allows the global value of b to be accessed and changed. Whereas the variable a is local and hence the change isn’t reflected outside the function.
+
+### 6. What will be the output of the following Python code?
+```python
+def change(i = 1, j = 2):
+    i = i + j
+    j = j + 1
+    print(i, j)
+change(j = 1, i = 2)
+```
+
+a) An exception is thrown because of conflicting values\
+b) 1 2\
+c) 3 3\
+**d) 3 2**
+
+> Explanation: The values given during function call is taken into consideration, that is, i=2 and j=1.
+
+### 7. What will be the output of the following Python code?
+```python
+def change(one, *two):
+   print(type(two))
+change(1,2,3,4)
+```
+
+a) Integer\
+**b) Tuple**\
+c) Dictionary\
+d) An exception is thrown
+
+> Explanation: The parameter two is a variable parameter and consists of (2,3,4). Hence the data type is tuple.
+
+### 8. If a function doesn’t have a return statement, which of the following does the function return?
+a) int\
+b) null\
+**c) None**\
+d) An exception is thrown without the return statement
+
+> Explanation: A function can exist without a return statement and returns None if the function doesn’t have a return statement.
+
+### 9. What will be the output of the following Python code?
+```python
+def display(b, n):
+    while n > 0:
+        print(b,end="")
+        n=n-1
+display('z',3)
+```
+
+**a) zzz**\
+b) zz\
+c) An exception is executed\
+d) Infinite loop
+
+> Explanation: The loop runs three times and ‘z’ is printed each time.
+
+### 10. What will be the output of the following Python code?
+```python
+def find(a, **b):
+   print(type(b))
+find('letters',A='1',B='2')
+```
+a) String\
+b) Tuple\
+**c) Dictionary**\
+d) An exception is thrown
+
+> Explanation: b combines the remaining parameters into a dictionary.
+
+## Argument Parsing 1
+
+### 1. What is the type of each element in sys.argv?
+a) set\
+b) list\
+c) tuple\
+**d) string**
+
+> Explanation: It is a list of strings.
+
+### 2. What is the length of sys.argv?
+a) number of arguments\
+**b) number of arguments + 1**\
+c) number of arguments – 1\
+d) none of the mentioned
+
+> Explanation: The first argument is the name of the program itself. Therefore the length of sys.argv is one more than the number arguments.
+
+### 3. What will be the output of the following Python code?
+```python
+def foo(k):
+    k[0] = 1
+q = [0]
+foo(q)
+print(q)
+```
+
+a) [0]\
+**b) [1]**\
+c) [1, 0]\
+d) [0, 1]
+
+> Explanation: Lists are mutable.
+
+### 4. How are keyword arguments specified in the function heading?
+a) one-star followed by a valid identifier\
+b) one underscore followed by a valid identifier\
+**c) two stars followed by a valid identifier**\
+d) two underscores followed by a valid identifier
+
+> Explanation: Refer documentation.
+
+### 5. How many keyword arguments can be passed to a function in a single function call?
+a) zero\
+b) one\
+**c) zero or more**\
+d) one or more
+
+> Explanation: Zero keyword arguments may be passed if all the arguments have default values.
+
+### 6. What will be the output of the following Python code?
+```python
+def foo(fname, val):
+    print(fname(val))
+foo(max, [1, 2, 3])
+foo(min, [1, 2, 3])
+```
+
+**a) 3 1**\
+b) 1 3\
+c) error\
+d) none of the mentioned
+
+> Explanation: It is possible to pass function names as arguments to other functions.
+
+### 7. What will be the output of the following Python code?
+```python
+def foo():
+    return total + 1
+total = 0
+print(foo())
+```
+
+a) 0\
+**b) 1**\
+c) error\
+d) none of the mentioned
+
+> Explanation: It is possible to read the value of a global variable directly.
+
+### 8. What will be the output of the following Python code?
+```python
+def foo():
+    total += 1
+    return total
+total = 0
+print(foo())
+```
+
+a) 0\
+b) 1\
+**c) error**\
+d) none of the mentioned
+
+> Explanation: It is not possible to change the value of a global variable without explicitly specifying it.
+
+### 9. What will be the output of the following Python code?
+```python
+def foo(x):
+    x = ['def', 'abc']
+    return id(x)
+q = ['abc', 'def']
+print(id(q) == foo(q))
+```
+
+a) True\
+**b) False**\
+c) None\
+d) Error
+
+> Explanation: A new object is created in the function.
+
+### 10. What will be the output of the following Python code?
+```python
+def foo(i, x=[]):
+    x.append(i)
+    return x
+for i in range(3):
+    print(foo(i))
+```
+
+a) [0] [1] [2]\
+**b) [0] [0, 1] [0, 1, 2]**\
+c) [1] [2] [3]\
+d) [1] [1, 2] [1, 2, 3]
+
+> Explanation: When a list is a default value, the same list will be reused.
+
+## Argument Parsing 2
+
+### 1. What will be the output of the following Python code?
+```python
+def foo(k):
+    k = [1]
+q = [0]
+foo(q)
+print(q)
+```
+
+**a) [0]**\
+b) [1]\
+c) [1, 0]\
+d) [0, 1]
+
+> Explanation: A new list object is created in the function and the reference is lost. This can be checked by comparing the id of k before and after k = [1].
+
+### 2. How are variable length arguments specified in the function heading?
+**a) one star followed by a valid identifier**\
+b) one underscore followed by a valid identifier\
+c) two stars followed by a valid identifier\
+d) two underscores followed by a valid identifier
+
+> Explanation: Refer documentation.
+
+### 3. Which module in the python standard library parses options received from the command line?
+**a) getopt**\
+b) os\
+c) getarg\
+d) main
+
+> Explanation: getopt parses options received from the command line.
+
+### 4. What is the type of sys.argv?
+a) set\
+**b) list**\
+c) tuple\
+d) string
+
+> Explanation: It is a list of elements.
+
+### 5. What is the value stored in sys.argv[0]?
+a) null\
+b) you cannot access it\
+**c) the program’s name**\
+d) the first argument
+
+> Explanation: Refer documentation.
+
+### 6. How are default arguments specified in the function heading?
+**a) identifier followed by an equal to sign and the default value**\
+b) identifier followed by the default value within backticks (“)\
+c) identifier followed by the default value within square brackets ([])\
+d) identifier
+
+> Explanation: Refer documentation.
+
+### 7. How are required arguments specified in the function heading?
+a) identifier followed by an equal to sign and the default value\
+b) identifier followed by the default value within backticks (“)\
+c) identifier followed by the default value within square brackets ([])\
+**d) identifier**
+
+> Explanation: Refer documentation.
+
+### 8. What will be the output of the following Python code?
+```python
+def foo(x):
+    x[0] = ['def']
+    x[1] = ['abc']
+    return id(x)
+q = ['abc', 'def']
+print(id(q) == foo(q))
+```
+
+**a) True**\
+b) False\
+c) None\
+d) Error
+
+> Explanation: The same object is modified in the function.
+
+### 9. Where are the arguments received from the command line stored?
+**a) sys.argv**\
+b) os.argv\
+c) argv\
+d) none of the mentioned
+
+> Explanation: Refer documentation.
+
+### 10. What will be the output of the following Python code?
+```python
+def foo(i, x=[]):
+    x.append(x.append(i))
+    return x
+for i in range(3):
+    y = foo(i)
+print(y)
+```
+
+a) [[[0]], [[[0]], [1]], [[[0]], [[[0]], [1]], [2]]]\
+b) [[0], [[0], 1], [[0], [[0], 1], 2]]\
+**c) [0, None, 1, None, 2, None]**\
+d) [[[0]], [[[0]], [1]], [[[0]], [[[0]], [1]], [2]]]
+
+> Explanation: append() returns None.
+
 # Section 18
 
 ### 1. What will be the output of the following Python code?  [Яким буде результат наступного фрагмента коду Python?]
