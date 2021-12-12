@@ -1,3 +1,571 @@
+# Section 0 [Questions from first page]
+
+## 1. Who developed Python Programming Language?
+
+**c) Guido van Rossum**
+
+## 2. Which type of Programming does Python support? [тип програмування]
+
+a) object-oriented programming
+
+b) structured programming
+
+c) functional programming
+
+**d) all of the mentioned**
+
+> Explanation: Python is an interpreted programming language.
+
+## 3. Is Python case sensitive when dealing with identifiers? [чутливий до регістру під час роботи з ідентифікаторами]
+
+**b) yes**
+
+## 4. Which of the following is the correct extension of the Python file?
+
+**c) .py**
+
+## 5. Is Python code compiled or interpreted?
+
+? **a) Python code is both compiled and interpreted**
+
+b) Python code is neither compiled nor interpreted
+
+c) Python code is only compiled
+
+? **d) Python code is only interpreted**
+
+> Explanation: Many languages have been implemented using both compilers and interpreters, including C, Pascal, and Python.
+
+## 6. All keywords in Python are in \***\*\_\*\***
+
+a) Capitalized
+
+b) lower case
+
+c) UPPER CASE
+
+**d) None of the mentioned**
+
+> Explanation: True, False and None are capitalized while the others are in lower case.
+
+## 7. What will be the value of the following Python expression?
+
+`4 + 3 % 5`
+
+**a) 7**
+
+## 8. Which of the following is used to define a block of code in Python language?
+
+**a) Indentation**
+
+b) Key
+
+c) Brackets
+
+d) All of the mentioned
+
+> Explanation: In Python, to define a block of code we use indentation. Indentation refers to whitespaces at the beginning of the line.
+
+## 9. Which keyword is used for function in Python language?
+
+**b) Def**
+
+## 10. Which of the following character is used to give single-line comments in Python?
+
+**b) #**
+
+> Explanation: To write single-line comments in Python use the Numero sign (#) at the beginning of the line. To write multi-line comments, close the text between triple quotes.
+> Example: “”” comment
+> text “””
+
+## 11. What will be the output of the following Python code?
+
+```i = 1
+while True:
+    if i%3 == 0:
+        break
+    print(i)
+
+    i + = 1
+```
+
+**b) error**
+
+> Explanation: SyntaxError, there shouldn’t be a space between + and = in +=.
+
+## 12. Which of the following functions can help us to find the version of python that we are currently working on? [версія python]
+
+**a) sys.version(1)**
+
+## 13. Python supports the creation of anonymous functions at runtime, using a construct called \***\*\_\_\*\*** [анонімні функції]
+
+**c) lambda**
+
+> Explanation: Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called lambda. Lambda functions are restricted to a single expression. They can be used wherever normal functions can be used.
+
+## 14. What is the order of precedence in python? [порядок пріоритету]
+
+**d) Parentheses, Exponential, Multiplication, Division, Addition, Subtraction**
+
+> Explanation: For order of precedence, just remember this PEMDAS (similar to BODMAS).
+
+## 15. What will be the output of the following Python code snippet if x=1?
+
+`x<<2`
+
+**a) 4**
+
+> Explanation: The binary form of 1 is 0001. The expression x<<2 implies we are performing bitwise left shift on x. This shift yields the value: 0100, which is the binary form of the number 4.
+
+## 16. What does pip stand for python?
+
+**c) Preferred Installer Program**
+
+## 17. Which of the following is true for variable names in Python?
+
+a) underscore and ampersand are the only two special characters allowed
+
+**b) unlimited length**
+
+c) all private members must have leading and trailing underscores
+
+d) none of the mentioned
+
+## 18. What are the values of the following Python expressions?
+
+```
+ 2**(3**2)
+ (2**3)**2
+ 2**3**2
+```
+
+**a) 512, 64, 512**
+
+## 19. Which of the following is the truncation division operator in Python?
+
+**b) //**
+
+> Explanation: // is the operator for truncation division. It is called so because it returns only the integer part of the quotient, truncating the decimal part. For example: 20//3 = 6.
+
+## 20. What will be the output of the following Python code?
+
+```
+l=[1, 0, 2, 0, 'hello', '', []]
+list(filter(bool, l))
+```
+
+a) [1, 0, 2, ‘hello’, ”, []]
+
+b) Error
+
+**c) [1, 2, ‘hello’]**
+
+d) [1, 0, 2, 0, ‘hello’, ”, []]
+
+> Explanation: The code shown above returns a new list containing only those elements of the list l which do not amount to zero. Hence the output is: [1, 2, ‘hello’].
+
+## 21. Which of the following functions is a built-in function in python?
+
+a) factorial()
+
+**b) print()**
+
+c) seed()
+
+d) sqrt()
+
+## 22. Which of the following is the use of id() function in python?
+
+a) Every object doesn’t have a unique id
+
+**b) Id returns the identity of the object**
+
+c) All of the mentioned
+
+d) None of the mentioned
+
+## 23. The following python program can work with \_\_\_\_ parameters.
+
+```
+def f(x):
+    def f1(*args, **kwargs):
+           print("Sanfoundry")
+           return x(*args, **kwargs)
+    return f1
+```
+
+**a) any number of**
+
+> Explanation: The code shown above shows a general decorator which can work with any number of arguments.
+
+## 24. What will be the output of the following Python function?
+
+min(max(False,-3,-4), 2,7)
+
+**d) False**
+
+> Explanation: The function max() is being used to find the maximum value from among -3, -4 and false. Since false amounts to the value zero, hence we are left with min(0, 2, 7) Hence the output is 0 (false).
+
+## 25. Which of the following is not a core data type in Python programming?
+
+a) Tuples
+
+b) Lists
+
+**c) Class**
+
+d) Dictionary
+
+## 26. What will be the output of the following Python expression if x=56.236?
+
+`print("%.2f"%x)`
+
+**d) 56.24**
+
+## 27. Which of these is the definition for packages in Python?
+
+a) A set of main modules
+
+**b) A folder of python modules**
+
+c) A number of files containing Python definitions and statements
+
+d) A set of programs making use of Python modules
+
+## 28. What will be the output of the following Python function?
+
+`len(["hello",2, 4, 6])`
+
+**c) 4**
+
+## 29. What will be the output of the following Python code?
+
+```
+x = 'abcd'
+for i in x:
+    print(i.upper())
+```
+
+**d) A B C D**
+
+## 30. What is the order of namespaces in which Python looks for an identifier?
+
+**c) Python first searches the local namespace, then the global namespace and finally the built-in namespace**
+
+## 31. What will be the output of the following Python code snippet?
+
+```
+for i in [1, 2, 3, 4][::-1]:
+print (i)
+```
+
+**a) 4 3 2 1**
+
+## 32. What will be the output of the following Python statement?
+
+```
+"a"+"bc"
+```
+
+**b) abc**
+
+## 33. Which function is called when the following Python program is executed?
+
+```
+f = foo()
+format(f)
+```
+
+a) str()
+
+b) format()
+
+**c) \_ _ str _ \_()**
+
+d) \_ _ format _ \_()
+
+## 34. Which one of the following is not a keyword in Python language?
+
+a) pass
+
+**b) eval**
+
+c) assert
+
+d) nonlocal
+
+## 35. What will be the output of the following Python code?
+
+```
+class tester:
+    def __init__(self, id):
+        self.id = str(id)
+        id="224"
+
+>>>temp = tester(12)
+>>>print(temp.id)
+```
+
+**a) 12**
+
+> Explanation: Id in this case will be the attribute of the class.
+
+## 36. What will be the output of the following Python program?
+
+```
+def foo(x):
+    x[0] = ['def']
+    x[1] = ['abc']
+    return id(x)
+q = ['abc', 'def']
+print(id(q) == foo(q))
+```
+
+**d) True**
+
+> Explanation: The same object is modified in the function.
+
+## 37. Which module in the python standard library parses options received from the command line?
+
+a) getarg
+
+**b) getopt**
+
+c) main
+
+d) os
+
+## 38. What will be the output of the following Python program?
+
+```
+z=set('abc')
+z.add('san')
+z.update(set(['p', 'q']))
+z
+```
+
+**c) {‘a’, ‘b’, ‘c’, ‘p’, ‘q’, ‘san’}**
+
+> Explanation: The code shown first adds the element ‘san’ to the set z. The set z is then updated and two more elements, namely, ‘p’ and ‘q’ are added to it. Hence the output is: {‘a’, ‘b’, ‘c’, ‘p’, ‘q’, ‘san’}
+
+## 39. What arithmetic operators cannot be used with strings in Python?
+
+**b) –**
+
+## 40. What will be the output of the following Python code?
+
+`print("abc. DEF".capitalize())`
+
+**a) Abc. def**
+
+## 41. Which of the following statements is used to create an empty set in Python?
+
+**d) set()**
+
+> Explanation: { } creates a dictionary not a set. Only set() creates an empty set.
+
+## 42. What will be the value of ‘result’ in following Python program?
+
+```
+list1 = [1,2,3,4]
+list2 = [2,4,5,6]
+list3 = [2,6,7,8]
+result = list()
+result.extend(i for i in list1 if i not in (list2+list3) and i not in result)
+result.extend(i for i in list2 if i not in (list1+list3) and i not in result)
+result.extend(i for i in list3 if i not in (list1+list2) and i not in result)
+```
+
+**a) [1, 3, 5, 7, 8]**
+
+> Explanation: Here, ‘result’ is a list which is extending three times. When first time ‘extend’ function is called for ‘result’, the inner code generates a generator object, which is further used in ‘extend’ function. This generator object contains the values which are in ‘list1’ only (not in ‘list2’ and ‘list3’).
+> Same is happening in second and third call of ‘extend’ function in these generator object contains values only in ‘list2’ and ‘list3’ respectively.
+> So, ‘result’ variable will contain elements which are only in one list (not more than 1 list).
+
+## 43. To add a new element to a list we use which Python command?
+
+**c) list1.append(5)**
+
+## 44. What will be the output of the following Python code?
+
+`print('*', "abcde".center(6), '*', sep='')`
+
+b) _abcde _
+
+## 45. What will be the output of the following Python code?
+
+```
+list1 = [1, 3]
+list2 = list1
+list1[0] = 4
+print(list2)
+```
+
+**c) [4, 3]**
+
+> Explanation: Lists should be copied by executing [:] operation.
+
+## 46. Which one of the following is the use of function in python?
+
+a) Functions don’t provide better modularity for your application
+
+b) you can’t also create your own functions
+
+**c) Functions are reusable pieces of programs**
+
+d) All of the mentioned
+
+> Explanation: Functions are reusable pieces of programs. They allow you to give a name to a block of statements, allowing you to run that block using the specified name anywhere in your program and any number of times.
+
+## 47. Which of the following Python statements will result in the output: 6?
+
+```
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+
+```
+
+**b) A[1][2]**
+
+## 48. What is the maximum possible length of an identifier in Python?
+
+**d) Identifiers can be of any length**
+
+## 49. What will be the output of the following Python program?
+
+```
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+else:
+    print(0)
+```
+
+**c) 0 1 2**
+
+## 50. What will be the output of the following Python code?
+
+```
+x = 'abcd'
+for i in range(len(x)):
+    print(i)
+```
+
+**d) 0 1 2 3**
+
+## 51. What are the two main types of functions in Python?
+
+**c) Built-in function & User defined function**
+
+## 52. What will be the output of the following Python program?
+
+```
+def addItem(listParam):
+    listParam += [1]
+
+mylist = [1, 2, 3, 4]
+addItem(mylist)
+print(len(mylist))
+```
+
+**a) 5**
+
+## 53. Which of the following is a Python tuple?
+
+a) {1, 2, 3}
+
+b) {}
+
+c) [1, 2, 3]
+
+**d) (1, 2, 3)**
+
+## 54. What will be the output of the following Python code snippet?
+
+```
+z=set('abc$de')
+'a' in z
+```
+
+b) True
+
+> Explanation: The code shown above is used to check whether a particular item is a part of a given set or not. Since ‘a’ is a part of the set z, the output is true. Note that this code would result in an error in the absence of the quotes.
+
+## 55. What will be the output of the following Python expression?
+
+`round(4.576)`
+
+**c) 5**
+
+## 56. Which of the following is a feature of Python DocString?
+
+a) In Python all functions should have a docstring
+
+b) Docstrings can be accessed by the \_ _ doc _ \_ attribute on objects
+
+c) It provides a convenient way of associating documentation with Python modules, functions, classes, and methods
+
+**d) All of the mentioned**
+
+## 57. What will be the output of the following Python code?
+
+`print("Hello {0[0]} and {0[1]}".format(('foo', 'bin')))`
+
+**c) Hello foo and bin**
+
+## 58. What is output of print(math.pow(3, 2))?
+
+**a) 9.0**
+
+## 59. Which of the following is the use of id() function in python?
+
+a) Every object in Python doesn’t have a unique id
+
+**b) In Python Id function returns the identity of the object**
+
+c) None of the mentioned
+
+d) All of the mentioned
+
+## 60. What will be the output of the following Python code?
+
+```
+x = [[0], [1]]
+print((' '.join(list(map(str, x))),))
+```
+
+**d) (‘[0] [1]’,)**
+
+> Explanation: (element,) is not the same as element. It is a tuple with one item.
+
+## 61. The process of pickling in Python includes \***\*\_\_\_\_\*\***
+
+**a) conversion of a Python object hierarchy into byte stream**
+
+b) conversion of a datatable into a list
+
+c) conversion of a byte stream into Python object hierarchy
+
+d) conversion of a list into a datatable
+
+## 62. What will be the output of the following Python code?
+
+```
+def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)
+```
+
+**c) 2**
+
 # Section 1
 
 # Section 2
@@ -1145,6 +1713,7 @@ d) assert
 # Section 5
 
 ## What will be the output of the following Python code? [Який буде вивід наступного коду]
+
 ```python
 def mk(x):
     def mk1():
@@ -1158,22 +1727,23 @@ p()
 ```
 
 a)\
-    Decorated\
-    Decorated
+ Decorated\
+ Decorated
 
 b)\
-    Ordinary\
-    Ordinary
+ Ordinary\
+ Ordinary
 
 c)\
-    Ordinary\
-    Decorated
+ Ordinary\
+ Decorated
 
 **d)**\
-    **Decorated**\
-    **Ordinary**
+ **Decorated**\
+ **Ordinary**
 
 ## In the following Python code, which function is the decorator?
+
 ```python
 def mk(x):
     def mk1():
@@ -1191,16 +1761,16 @@ a) p()\
 c) mk1()\
 d) mk2()
 
->Explanation: In the code shown above, the function mk() is the decorator. The function which is getting decorated is mk2(). The return function is given the name p().
+> Explanation: In the code shown above, the function mk() is the decorator. The function which is getting decorated is mk2(). The return function is given the name p().
 
-## The ______ symbol along with the name of the decorator function can be placed above the definition of the function to be decorated works as an alternate way for decorating a function.
+## The **\_\_** symbol along with the name of the decorator function can be placed above the definition of the function to be decorated works as an alternate way for decorating a function.
 
 a) #\
 b) $\
 **c) @**\
 d) &
 
->Explanation: The @ symbol along with the name of the decorator function can be placed above the definition of the function to be decorated works as an alternate way for decorating a function.
+> Explanation: The @ symbol along with the name of the decorator function can be placed above the definition of the function to be decorated works as an alternate way for decorating a function.
 
 ## What will be the output of the following Python code?
 
@@ -1212,22 +1782,22 @@ ordi()
 ```
 
 **a)**\
-    **Address**\
-    **Ordinary**
+ **Address**\
+ **Ordinary**
 
 b)\
-    Error\
-    Address
+ Error\
+ Address
 
 c)\
-    Ordinary\
-    Ordinary
+ Ordinary\
+ Ordinary
 
 d)\
-    Ordinary\
-     Address
+ Ordinary\
+ Address
 
->Explanation: The code shown above returns the address on the function ordi first, after which the word “Ordinary” is printed.
+> Explanation: The code shown above returns the address on the function ordi first, after which the word “Ordinary” is printed.
 
 ## The two snippets of the following Python codes are equivalent.
 
@@ -1245,7 +1815,7 @@ f1 = f(f1)
 **a) True**\
 b) False
 
->Explanation: The @ symbol can be used as an alternate way to specify a function that needs to be decorated. The output of the codes shown above is the same. Hence they are equivalent. Therefore this statement is true.
+> Explanation: The @ symbol can be used as an alternate way to specify a function that needs to be decorated. The output of the codes shown above is the same. Hence they are equivalent. Therefore this statement is true.
 
 ## What will be the output of the following Python function?
 
@@ -1255,23 +1825,24 @@ def f(p, q):
 f(0, 2)
 f(2, 0)
 ```
+
 a)\
-    0\
-    0
+ 0\
+ 0
 
 b)\
-    Zero Division Error\
-    Zero Division Error
+ Zero Division Error\
+ Zero Division Error
 
 **c)**\
-    **0**\
-    **Zero Division Error**
+ **0**\
+ **Zero Division Error**
 
 d)\
-    Zero Division Error\
-    0
+ Zero Division Error\
+ 0
 
->Explanation: The output of f(0, 2) is 0, since o%2 is equal to 0. The output of the f(2, 0) is a Zero Division Error. We can make use of decorators (Ого як притягнуто, шикарні питання, нічо не скажеш 👍🏻) in order to avoid this error.
+> Explanation: The output of f(0, 2) is 0, since o%2 is equal to 0. The output of the f(2, 0) is a Zero Division Error. We can make use of decorators (Ого як притягнуто, шикарні питання, нічо не скажеш 👍🏻) in order to avoid this error.
 
 ## What will be the output of the following Python code?
 
@@ -1291,12 +1862,12 @@ f(4,0)
 ```
 
 **a)**\
-    **hello**\
-    **NO**
+ **hello**\
+ **NO**
 
 b)\
-    hello\
-    Zero Division Error
+ hello\
+ Zero Division Error
 
 c)\
 NO
@@ -1304,7 +1875,7 @@ NO
 d)\
 hello
 
->Explanation: In the code shown above, we have used a decorator in order to avoid the Zero Division Error.
+> Explanation: In the code shown above, we have used a decorator in order to avoid the Zero Division Error.
 
 ## What will be the output of the following Python code?
 
@@ -1329,11 +1900,11 @@ p("hello")
 ```
 
 **a)**\
-    **\*\*\*\*\***\
-    **%%%%%**\
-    **hello**\
-    **%%%%%**\
-    **\*\*\*\*\***
+ **\*\*\*\*\***\
+ **%%%%%**\
+ **hello**\
+ **%%%%%**\
+ **\*\*\*\*\***
 
 b)\
 Error
@@ -1346,7 +1917,7 @@ hello
 
 > Explanation: The code shown above uses multiple decorators.
 
-## The following python code can work with ____ parameters.
+## The following python code can work with \_\_\_\_ parameters.
 
 ```python
 def f(x):
@@ -1361,7 +1932,7 @@ b) 1\
 **c) any number of**\
 d) 0
 
->Explanation: The code shown above shows a general decorator which can work with any number of arguments.
+> Explanation: The code shown above shows a general decorator which can work with any number of arguments.
 
 ## What will be the output of the following Python code?
 
@@ -1379,13 +1950,13 @@ print("hello")
 ```
 
 a)\
-    *****\
-    hello
+ **\***\
+ hello
 
 b)\
-    *****\
-    *****\
-    hello
+ **\***\
+ **\***\
+ hello
 
 c)\
 \*\*\*\*\*
@@ -1393,16 +1964,16 @@ c)\
 **d)**\
 **hello**
 
->Explanation: In the code shown above, we have not passed any parameter to the function p. Hence the output of this code is: hello.
+> Explanation: In the code shown above, we have not passed any parameter to the function p. Hence the output of this code is: hello.
 
 ## A function with parameters cannot be decorated.
 
 a) True\
 **b) False**
 
->Explanation: Any function, irrespective of whether or not it has parameters can be decorated. Hence the statement is false.
+> Explanation: Any function, irrespective of whether or not it has parameters can be decorated. Hence the statement is false.
 
-##  Identify the decorator in the snippet of code shown below.
+## Identify the decorator in the snippet of code shown below.
 
 ```python
 def sf():
@@ -1412,12 +1983,13 @@ sf = mk(sf)
 def sf():
      return
 ```
+
 a) @f\
 b) f\
 c) sf()\
 **d) mk**
 
->Explanation: In the code shown above, @sf is not a decorator but only a decorator line. The ‘@’ symbol represents the application of a decorator. The decorator here is the function mk.
+> Explanation: In the code shown above, @sf is not a decorator but only a decorator line. The ‘@’ symbol represents the application of a decorator. The decorator here is the function mk.
 
 ## What will be the output of the following Python code?
 
@@ -1434,7 +2006,7 @@ b) Warning\
 **c) 100**\
 d) No output
 
->Explanation: The code shown above demonstrates rebinding using a static method. This can be done with or without a decorator. The output of this code will be 100.
+> Explanation: The code shown above demonstrates rebinding using a static method. This can be done with or without a decorator. The output of this code will be 100.
 
 ## What will be the output of the following Python code?
 
@@ -1445,7 +2017,7 @@ def d(f):
     return n
 @d
 def p(a, t):
-    return a + a*t 
+    return a + a*t
 print(p(100,0))
 ```
 
@@ -1454,7 +2026,7 @@ a) 100\
 c) $0\
 d) 0
 
->Explanation: In the code shown above, the decorator helps us to prefix the dollar sign along with the value. Since the second argument is zero, the output of the code is: $100.
+> Explanation: In the code shown above, the decorator helps us to prefix the dollar sign along with the value. Since the second argument is zero, the output of the code is: $100.
 
 ## What will be the output of the following Python code?
 
@@ -1480,7 +2052,7 @@ a) 4\
 c) 0\
 d) 1
 
->Explanation: The code shown above returns the number of times a given function has been called. Hence the output of this code is: 3
+> Explanation: The code shown above returns the number of times a given function has been called. Hence the output of this code is: 3
 
 ## What will be the output of the following Python code?
 
@@ -1496,7 +2068,7 @@ b) [‘AB’, ‘CD’]\
 c) [None, None]\
 d) none of the mentioned
 
->Explanation: The function upper() does not modify a string in place, it returns a new string which isn’t being stored anywhere.
+> Explanation: The function upper() does not modify a string in place, it returns a new string which isn’t being stored anywhere.
 
 ## What will be the output of the following Python code?
 
@@ -1512,7 +2084,7 @@ b) [‘ab’, ‘cd’, ‘AB’, ‘CD’]\
 c) [‘ab’, ‘cd’]\
 **d) none of the mentioned**
 
->Explanation: The loop does not terminate as new elements are being added to the list in each iteration.
+> Explanation: The loop does not terminate as new elements are being added to the list in each iteration.
 
 ## What will be the output of the following Python code?
 
@@ -1522,7 +2094,7 @@ while True:
     if i%3 == 0:
         break
     print(i)
- 
+
     i + = 1
 ```
 
@@ -1531,9 +2103,9 @@ b) 1 2 3\
 **c) error**\
 d) none of the mentioned
 
->Explanation: SyntaxError, there shouldn’t be a space between + and = in +=.
+> Explanation: SyntaxError, there shouldn’t be a space between + and = in +=.
 
-##  What will be the output of the following Python code?
+## What will be the output of the following Python code?
 
 ```python
 i = 1
@@ -1549,7 +2121,7 @@ b) 1 2 3 4 5 6 7\
 c) error\
 d) none of the mentioned
 
->Explanation: Control exits the loop when i becomes 7.
+> Explanation: Control exits the loop when i becomes 7.
 
 ## What will be the output of the following Python code?
 
@@ -1567,7 +2139,7 @@ a) 5 6 7 8 9 10\
 c) 5 6\
 d) error
 
->Explanation: 0O11 is an octal number.
+> Explanation: 0O11 is an octal number.
 
 ## What will be the output of the following Python code?
 
@@ -1585,7 +2157,7 @@ b) 5 6 7 8 9\
 c) 5 6 7 8 9 10 11 12 13 14 15 ….\
 **d) error**
 
->Explanation: 9 isn’t allowed in an octal number.
+> Explanation: 9 isn’t allowed in an octal number.
 
 ## What will be the output of the following Python code?
 
@@ -1603,7 +2175,7 @@ b) 1 2\
 c) 1 2 3 4 5 6 …\
 **d) 1 3 5 7 9 11 …**
 
->Explanation: The loop does not terminate since i is never an even number.
+> Explanation: The loop does not terminate since i is never an even number.
 
 ## What will be the output of the following Python code?
 
@@ -1621,7 +2193,7 @@ a) 2 4 6 8 10 …\
 c) 2 3\
 d) error
 
->Explanation: The numbers 2 and 4 are printed. The next value of i is 6 which is divisible by 3 and hence control exits the loop.
+> Explanation: The numbers 2 and 4 are printed. The next value of i is 6 which is divisible by 3 and hence control exits the loop.
 
 ## What will be the output of the following Python code?
 
@@ -1639,7 +2211,7 @@ b) 1 3 5 7 …\
 c) 1 2 3 4 …\
 **d) none of the mentioned**
 
->Explanation: Control does not enter the loop because of False.
+> Explanation: Control does not enter the loop because of False.
 
 ## What will be the output of the following Python code?
 
@@ -1655,7 +2227,7 @@ b) False\
 c) None\
 **d) none of the mentioned**
 
->Explanation: SyntaxError, True is a keyword and it’s value cannot be changed.
+> Explanation: SyntaxError, True is a keyword and it’s value cannot be changed.
 
 ## What will be the output of the following Python code?
 
@@ -1675,7 +2247,7 @@ a) 0 1 2 0\
 c) error\
 d) none of the mentioned
 
->Explanation: The else part is not executed if control breaks out of the loop.
+> Explanation: The else part is not executed if control breaks out of the loop.
 
 ## What will be the output of the following Python code?
 
@@ -1693,7 +2265,7 @@ a) 0 1 2 3 0\
 c) 0 1 2\
 d) error
 
->Explanation: The else part is executed when the condition in the while statement is false.
+> Explanation: The else part is executed when the condition in the while statement is false.
 
 ## What will be the output of the following Python code?
 
@@ -1708,7 +2280,7 @@ b) abcdef\
 c) i i i i i i …\
 **d) error**
 
->Explanation: NameError, i is not defined.
+> Explanation: NameError, i is not defined.
 
 ## What will be the output of the following Python code?
 
@@ -1724,7 +2296,7 @@ b) i i i i i i …\
 c) a a a a a a …\
 d) a b c d e f
 
->Explanation: “i” is not in “abcdef”.
+> Explanation: “i” is not in “abcdef”.
 
 ## What will be the output of the following Python code?
 
@@ -1740,7 +2312,7 @@ b) i i i i i i …\
 **c) a a a a a a …**\
 d) a b c d e f
 
->Explanation: As the value of i or x isn’t changing, the condition will always evaluate to True.
+> Explanation: As the value of i or x isn’t changing, the condition will always evaluate to True.
 
 ## What will be the output of the following Python code?
 
@@ -1756,7 +2328,7 @@ a) no output\
 c) a a a a a a …\
 d) a b c d e f
 
->Explanation: Here i i i i i … printed continuously because as the value of i or x isn’t changing, the condition will always evaluate to True. But also here we use a citation marks on “i”, so, here i treated as a string, not like a variable.
+> Explanation: Here i i i i i … printed continuously because as the value of i or x isn’t changing, the condition will always evaluate to True. But also here we use a citation marks on “i”, so, here i treated as a string, not like a variable.
 
 ## What will be the output of the following Python code?
 
@@ -1773,7 +2345,7 @@ a) i i i i i i\
 c) a a a a a\
 d) none of the mentioned
 
->Explanation: The string x is being shortened by one character in each iteration.
+> Explanation: The string x is being shortened by one character in each iteration.
 
 ## What will be the output of the following Python code?
 
@@ -1789,7 +2361,7 @@ b) a a a a a a\
 **c) a a a a a a …**\
 d) a
 
->Explanation: String x is not being altered and i is in x[:-1].
+> Explanation: String x is not being altered and i is in x[:-1].
 
 ## What will be the output of the following Python code?
 
@@ -1806,7 +2378,7 @@ a) a a a a a a\
 c) no output\
 d) error
 
->Explanation: The string x is being shortened by one character in each iteration.
+> Explanation: The string x is being shortened by one character in each iteration.
 
 ## What will be the output of the following Python code?
 
@@ -1822,7 +2394,7 @@ b) a\
 **c) no output**\
 d) error
 
->Explanation: i is not in x[1:].
+> Explanation: i is not in x[1:].
 
 ## What will be the output of the following Python code?
 
@@ -1838,7 +2410,7 @@ a) a B C D\
 c) A B C D\
 d) error
 
->Explanation: Changes do not happen in-place, rather a new instance of the string is returned.
+> Explanation: Changes do not happen in-place, rather a new instance of the string is returned.
 
 ## What will be the output of the following Python code?
 
@@ -1853,7 +2425,7 @@ a) a b c d\
 c) a B C D\
 d) error
 
->Explanation: The instance of the string returned by upper() is being printed.
+> Explanation: The instance of the string returned by upper() is being printed.
 
 ## What will be the output of the following Python code?
 
@@ -1868,7 +2440,7 @@ b) 0 1 2 3\
 **c) error**\
 d) none of the mentioned
 
->Explanation: range(str) is not allowed.
+> Explanation: range(str) is not allowed.
 
 ## What will be the output of the following Python code?
 
@@ -1883,7 +2455,7 @@ a) a b c d\
 c) error\
 d) 1 2 3 4
 
->Explanation: i takes values 0, 1, 2 and 3.
+> Explanation: i takes values 0, 1, 2 and 3.
 
 ## What will be the output of the following Python code?
 
@@ -1898,7 +2470,7 @@ b) 0 1 2 3\
 **c) error**\
 d) 1 2 3 4
 
->Explanation: Objects of type int have no attribute upper().
+> Explanation: Objects of type int have no attribute upper().
 
 ## What will be the output of the following Python code?
 
@@ -1914,7 +2486,7 @@ b) 0 1 2 3\
 **c) error**\
 d) none of the mentioned
 
->Explanation: Objects of type int have no attribute upper().
+> Explanation: Objects of type int have no attribute upper().
 
 ## What will be the output of the following Python code?
 
@@ -1930,7 +2502,7 @@ b) ABCD\
 c) error\
 d) none of the mentioned
 
->Explanation: Changes do not happen in-place, rather a new instance of the string is returned.
+> Explanation: Changes do not happen in-place, rather a new instance of the string is returned.
 
 ## What will be the output of the following Python code?
 
@@ -1946,7 +2518,7 @@ b) ABCD\
 **c) error**\
 d) none of the mentioned
 
->Explanation: Objects of type int aren’t subscriptable. However, if the statement was x[i], an error would not have been thrown.
+> Explanation: Objects of type int aren’t subscriptable. However, if the statement was x[i], an error would not have been thrown.
 
 ## What will be the output of the following Python code?
 
@@ -1962,7 +2534,7 @@ b) abcd abcd abcd\
 **c) a a a a**\
 d) none of the mentioned
 
->Explanation: range() is computed only at the time of entering the loop.
+> Explanation: range() is computed only at the time of entering the loop.
 
 ## What will be the output of the following Python code?
 
@@ -1978,8 +2550,7 @@ b) abcd abcd abcd abcd\
 c) a a a a\
 **d) none of the mentioned**
 
->Explanation: abcd a a a is the output as x is modified only after ‘abcd’ has been printed once.
-
+> Explanation: abcd a a a is the output as x is modified only after ‘abcd’ has been printed once.
 
 # Section 6
 
@@ -1993,13 +2564,12 @@ for i in x:
     print(i)
 ```
 
-* a) 1 2 3
-* b) 123
-* **c) error**
-* d) none of the mentioned
+- a) 1 2 3
+- b) 123
+- **c) error**
+- d) none of the mentioned
 
 > Objects of type int are not iterable.
-
 
 ### 2. What will be the output of the following Python code?
 
@@ -2009,13 +2579,12 @@ for i in d:
     print(i)
 ```
 
-* **a) 0 1 2**
-* b) a b c
-* c) 0 a 1 b 2 c
-* d) none of the mentioned
+- **a) 0 1 2**
+- b) a b c
+- c) 0 a 1 b 2 c
+- d) none of the mentioned
 
 > Loops over the keys of the dictionary.
-
 
 ### 3. What will be the output of the following Python code?
 
@@ -2025,13 +2594,12 @@ for x, y in d:
     print(x, y)
 ```
 
-* a) 0 1 2
-* b) a b c
-* c) 0 a 1 b 2 c
-* **d) none of the mentioned**
+- a) 0 1 2
+- b) a b c
+- c) 0 a 1 b 2 c
+- **d) none of the mentioned**
 
->  Error, objects of type int aren’t iterable.
-
+> Error, objects of type int aren’t iterable.
 
 ### 4. What will be the output of the following Python code?
 
@@ -2041,13 +2609,12 @@ for x, y in d.items():
     print(x, y)
 ```
 
-* a) 0 1 2
-* b) a b c
-* **c) 0 a 1 b 2 c**
-* d) none of the mentioned
+- a) 0 1 2
+- b) a b c
+- **c) 0 a 1 b 2 c**
+- d) none of the mentioned
 
 > Loops over key, value pairs.
-
 
 ### 5. What will be the output of the following Python code?
 
@@ -2057,13 +2624,12 @@ for x in d.keys():
     print(d[x])
 ```
 
-* a) 0 1 2
-* **b) a b c**
-* c) 0 a 1 b 2 c
-* d) none of the mentioned
+- a) 0 1 2
+- **b) a b c**
+- c) 0 a 1 b 2 c
+- d) none of the mentioned
 
 > Loops over the keys and prints the values.
-
 
 ### 6. What will be the output of the following Python code?
 
@@ -2073,13 +2639,12 @@ for x in d.values():
     print(x)
 ```
 
-* a) 0 1 2
-* **b) a b c**
-* c) 0 a 1 b 2 c
-* d) none of the mentioned
+- a) 0 1 2
+- **b) a b c**
+- c) 0 a 1 b 2 c
+- d) none of the mentioned
 
 > Loops over the values.
-
 
 ### 7. What will be the output of the following Python code?
 
@@ -2089,13 +2654,12 @@ for x in d.values():
     print(d[x])
 ```
 
-* a) 0 1 2
-* b) a b c
-* c) 0 a 1 b 2 c
-* **d) none of the mentioned**
+- a) 0 1 2
+- b) a b c
+- c) 0 a 1 b 2 c
+- **d) none of the mentioned**
 
 > Causes a KeyError.
-
 
 ### 8. What will be the output of the following Python code?
 
@@ -2105,13 +2669,12 @@ for x in d.values():
     print(x)
 ```
 
-* a) 0 1 2
-* b) None None None
-* **c) error**
-* d) none of the mentioned
+- a) 0 1 2
+- b) None None None
+- **c) error**
+- d) none of the mentioned
 
 > Objects of type set have no attribute values.
-
 
 ### 9. What will be the output of the following Python code?
 
@@ -2121,13 +2684,12 @@ for x in d:
     print(x)
 ```
 
-* **a) 0 1 2**
-* b) {0, 1, 2} {0, 1, 2} {0, 1, 2}
-* c) error
-* d) none of the mentioned
+- **a) 0 1 2**
+- b) {0, 1, 2} {0, 1, 2} {0, 1, 2}
+- c) error
+- d) none of the mentioned
 
 > Loops over the elements of the set and prints them.
-
 
 ### 10. What will be the output of the following Python code?
 
@@ -2137,13 +2699,12 @@ for x in d:
     print(d.add(x))
 ```
 
-* a) 0 1 2
-* b) 0 1 2 0 1 2 0 1 2 …
-* **c) None None None**
-* d) None of the mentioned
+- a) 0 1 2
+- b) 0 1 2 0 1 2 0 1 2 …
+- **c) None None None**
+- d) None of the mentioned
 
 > Variable x takes the values 0, 1 and 2. set.add() returns None which is printed.
-
 
 ### 11. What will be the output of the following Python code?
 
@@ -2152,13 +2713,12 @@ for i in range(0):
     print(i)
 ```
 
-* a) 0
-* **b) no output**
-* c) error
-* d) none of the mentioned
+- a) 0
+- **b) no output**
+- c) error
+- d) none of the mentioned
 
 > range(0) is empty.
-
 
 ## Topic 19. While and For Loops – 5
 
@@ -2169,13 +2729,12 @@ for i in range(2.0):
     print(i)
 ```
 
-* a) 0.0 1.0
-* b) 0 1
-* **c) error**
-* d) none of the mentioned
+- a) 0.0 1.0
+- b) 0 1
+- **c) error**
+- d) none of the mentioned
 
 > Object of type float cannot be interpreted as an integer.
-
 
 ### 2. What will be the output of the following Python code?
 
@@ -2184,13 +2743,12 @@ for i in range(int(2.0)):
     print(i)
 ```
 
-* a) 0.0 1.0
-* **b) 0 1**
-* c) error
-* d) none of the mentioned
+- a) 0.0 1.0
+- **b) 0 1**
+- c) error
+- d) none of the mentioned
 
 > range(int(2.0)) is the same as range(2).
-
 
 ### 3. What will be the output of the following Python code?
 
@@ -2199,13 +2757,12 @@ for i in range(float('inf')):
     print (i)
 ```
 
-* a) 0.0 0.1 0.2 0.3 …
-* b) 0 1 2 3 …
-* c) 0.0 1.0 2.0 3.0 …
-* **d) none of the mentioned**
+- a) 0.0 0.1 0.2 0.3 …
+- b) 0 1 2 3 …
+- c) 0.0 1.0 2.0 3.0 …
+- **d) none of the mentioned**
 
 > Error, objects of type float cannot be interpreted as an integer.
-
 
 ### 4. What will be the output of the following Python code?
 
@@ -2214,13 +2771,12 @@ for i in range(int(float('inf'))):
     print (i)
 ```
 
-* a) 0.0 0.1 0.2 0.3 …
-* b) 0 1 2 3 …
-* c) 0.0 1.0 2.0 3.0 …
-* **d) none of the mentioned**
+- a) 0.0 0.1 0.2 0.3 …
+- b) 0 1 2 3 …
+- c) 0.0 1.0 2.0 3.0 …
+- **d) none of the mentioned**
 
 > OverflowError, cannot convert float infinity to integer.
-
 
 ### 5. What will be the output of the following Python code snippet?
 
@@ -2229,13 +2785,12 @@ for i in [1, 2, 3, 4][::-1]:
     print (i)
 ```
 
-* a) 1 2 3 4
-* **b) 4 3 2 1**
-* c) error
-* d) none of the mentioned
+- a) 1 2 3 4
+- **b) 4 3 2 1**
+- c) error
+- d) none of the mentioned
 
 > [::-1] reverses the list.
-
 
 ### 6. What will be the output of the following Python code snippet?
 
@@ -2244,13 +2799,12 @@ for i in ''.join(reversed(list('abcd'))):
     print (i)
 ```
 
-* a) a b c d
-* **b) d c b a**
-* c) error
-* d) none of the mentioned
+- a) a b c d
+- **b) d c b a**
+- c) error
+- d) none of the mentioned
 
 > ‘‘.join(reversed(list(‘abcd’))) reverses a string.
-
 
 ### 7. What will be the output of the following Python code snippet?
 
@@ -2259,13 +2813,12 @@ for i in 'abcd'[::-1]:
     print (i)
 ```
 
-* a) a b c d
-* **b) d c b a**
-* c) error
-* d) none of the mentioned
+- a) a b c d
+- **b) d c b a**
+- c) error
+- d) none of the mentioned
 
 > [::-1] reverses the string.
-
 
 ### 8. What will be the output of the following Python code snippet?
 
@@ -2274,13 +2827,12 @@ for i in '':
     print (i)
 ```
 
-* a) None
-* **b) (nothing is printed)**
-* c) error
-* d) none of the mentioned
+- a) None
+- **b) (nothing is printed)**
+- c) error
+- d) none of the mentioned
 
 > The string does not have any character to loop over.
-
 
 ### 9. What will be the output of the following Python code snippet?
 
@@ -2291,13 +2843,12 @@ for i in range(x):
     print (x)
 ```
 
-* a) 0 1 2 3 4 …
-* b) 0 1
-* **c) 3 4**
-* d) 0 1 2 3
+- a) 0 1 2 3 4 …
+- b) 0 1
+- **c) 3 4**
+- d) 0 1 2 3
 
 > Variable x is incremented and printed twice.
-
 
 ### 10. What will be the output of the following Python code snippet?
 
@@ -2308,13 +2859,12 @@ for i in range(x):
     print (x)
 ```
 
-* a) 0 1 2 3 4 …
-* **b) 0 -2**
-* c) 0
-* d) error
+- a) 0 1 2 3 4 …
+- **b) 0 -2**
+- c) 0
+- d) error
 
 > The loop is entered twice.
-
 
 ## Topic 20. While and For Loops – 6
 
@@ -2330,13 +2880,12 @@ else:
     print("Here")
 ```
 
-* a) 0 1 2 3 4 Here
-* b) 0 1 2 3 4 5 Here
-* **c) 0 1 2 3 4**
-* d) 1 2 3 4 5
+- a) 0 1 2 3 4 Here
+- b) 0 1 2 3 4 5 Here
+- **c) 0 1 2 3 4**
+- d) 1 2 3 4 5
 
 > The else part is executed if control doesn’t break out of the loop.
-
 
 ### 2. What will be the output of the following Python code?
 
@@ -2350,13 +2899,12 @@ else:
     print("Here")
 ```
 
-* **a) 0 1 2 3 4 Here**
-* b) 0 1 2 3 4 5 Here
-* c) 0 1 2 3 4
-* d) 1 2 3 4 5
+- **a) 0 1 2 3 4 Here**
+- b) 0 1 2 3 4 5 Here
+- c) 0 1 2 3 4
+- d) 1 2 3 4 5
 
 > The else part is executed if control doesn’t break out of the loop.
-
 
 ### 3. What will be the output of the following Python code?
 
@@ -2366,13 +2914,12 @@ for i in x:
     print(i)
 ```
 
-* **a) 0 1 2**
-* b) error
-* c) 0 1 2 0 1 2
-* d) none of the mentioned
+- **a) 0 1 2**
+- b) error
+- c) 0 1 2 0 1 2
+- d) none of the mentioned
 
 > The first statement creates a generator object.
-
 
 ### 4. What will be the output of the following Python code?
 
@@ -2384,13 +2931,12 @@ for i in x:
     print(i)
 ```
 
-* **a) 0 1 2**
-* b) error
-* c) 0 1 2 0 1 2
-* d) none of the mentioned
+- **a) 0 1 2**
+- b) error
+- c) 0 1 2 0 1 2
+- d) none of the mentioned
 
 > We can loop over a generator object only once.
-
 
 ### 5. What will be the output of the following Python code?
 
@@ -2400,13 +2946,12 @@ for i in string:
     print (i, end=", ")
 ```
 
-* **a) m, y, , n, a, m, e, , i, s, , x,**
-* b) m, y, , n, a, m, e, , i, s, , x
-* c) my, name, is, x,
-* d) error
+- **a) m, y, , n, a, m, e, , i, s, , x,**
+- b) m, y, , n, a, m, e, , i, s, , x
+- c) my, name, is, x,
+- d) error
 
 > Variable i takes the value of one character at a time.
-
 
 ### 6. What will be the output of the following Python code?
 
@@ -2416,13 +2961,12 @@ for i in string.split():
     print (i, end=", ")
 ```
 
-* a) m, y, , n, a, m, e, , i, s, , x,
-* b) m, y, , n, a, m, e, , i, s, , x
-* **c) my, name, is, x,**
-* d) error
+- a) m, y, , n, a, m, e, , i, s, , x,
+- b) m, y, , n, a, m, e, , i, s, , x
+- **c) my, name, is, x,**
+- d) error
 
 > Variable i takes the value of one word at a time.
-
 
 ### 7. What will be the output of the following Python code snippet?
 
@@ -2432,13 +2976,12 @@ for a[-1] in a:
     print(a[-1])
 ```
 
-* a) 0 1 2 3
-* **b) 0 1 2 2**
-* c) 3 3 3 3
-* d) error
+- a) 0 1 2 3
+- **b) 0 1 2 2**
+- c) 3 3 3 3
+- d) error
 
 > The value of a[-1] changes in each iteration.
-
 
 ### 8. What will be the output of the following Python code snippet?
 
@@ -2448,13 +2991,12 @@ for a[0] in a:
     print(a[0])
 ```
 
-* **a) 0 1 2 3**
-* b) 0 1 2 2
-* c) 3 3 3 3
-* d) error
+- **a) 0 1 2 3**
+- b) 0 1 2 2
+- c) 3 3 3 3
+- d) error
 
 > The value of a[0] changes in each iteration. Since the first value that it takes is itself, there is no visible error in the current example.
-
 
 ### 9. What will be the output of the following Python code snippet?
 
@@ -2466,13 +3008,12 @@ for i not in a:
     i += 1
 ```
 
-* a) -2 -1
-* b) 0
-* **c) error**
-* d) none of the mentioned
+- a) -2 -1
+- b) 0
+- **c) error**
+- d) none of the mentioned
 
 > SyntaxError, not in isn’t allowed in for loops.
-
 
 ### 10. What will be the output of the following Python code snippet?
 
@@ -2482,13 +3023,12 @@ for i in ' '.join(string.split()):
     print (i, end=", ")
 ```
 
-* **a) m, y, , n, a, m, e, , i, s, , x,**
-* b) m, y, , n, a, m, e, , i, s, , x
-* c) my, name, is, x,
-* d) error
+- **a) m, y, , n, a, m, e, , i, s, , x,**
+- b) m, y, , n, a, m, e, , i, s, , x
+- c) my, name, is, x,
+- d) error
 
 > Variable i takes the value of one character at a time.
-
 
 ### Topic 21. Strings – 1
 
@@ -2498,37 +3038,34 @@ for i in ' '.join(string.split()):
     >>>"a"+"bc"
 ```
 
-* a) a
-* b) bc
-* c) bca
-* **d) abc**
+- a) a
+- b) bc
+- c) bca
+- **d) abc**
 
-> + operator is concatenation operator.
-
+> - operator is concatenation operator.
 
 ### 2. What will be the output of the following Python statement?
 
     >>>"abcd"[2:]
 
-* a) a
-* b) ab
-* **c) cd**
-* d) dc
+- a) a
+- b) ab
+- **c) cd**
+- d) dc
 
 > Slice operation is performed on string.
 
-
 ### 3. The output of executing string.ascii_letters can also be achieved by: [Результату виконання string.ascii_letters також можна досягнути за допомогою:]
 
-* a) string.ascii_lowercase_string.digits
-* **b) string.ascii_lowercase+string.ascii_uppercase**
-* c) string.letters
-* d) string.lowercase_string.uppercase
+- a) string.ascii_lowercase_string.digits
+- **b) string.ascii_lowercase+string.ascii_uppercase**
+- c) string.letters
+- d) string.lowercase_string.uppercase
 
 > Explanation: Execute in shell and check.
 
 ))))))0)
-
 
 ### 4. What will be the output of the following Python code?
 
@@ -2540,60 +3077,56 @@ for i in ' '.join(string.split()):
 
     >>> str1[-1:]
 
-* a) olleh
-* b) hello
-* c) h
-* **d) o**
+- a) olleh
+- b) hello
+- c) h
+- **d) o**
 
 > -1 corresponds to the last index.
 
-
 ### 5. What arithmetic operators cannot be used with strings? [Які арифметичні оператори не можна застосовувати до строк?]
-* a) +
-* b) *
-* **c) -**
-* d) All of the mentioned
 
-> '+' is used to concatenate and * is used to multiply strings.
+- a) +
+- b) \*
+- **c) -**
+- d) All of the mentioned
 
+> '+' is used to concatenate and \* is used to multiply strings.
 
 ### 6. What will be the output of the following Python code?
 
     >>>print (r"\nhello")
 
-* a) a new line and hello
-* **b) \nhello**
-* c) the letter r and then hello
-* d) error
+- a) a new line and hello
+- **b) \nhello**
+- c) the letter r and then hello
+- d) error
 
 > When prefixed with the letter ‘r’ or ‘R’ a string literal becomes a raw string and the escape sequences such as \n are not converted.
-
 
 ### 7. What will be the output of the following Python statement?
 
     >>>print('new' 'line')
 
-* a) Error
-* b) Output equivalent to print ‘new\nline’
-* **c) newline**
-* d) new line
+- a) Error
+- b) Output equivalent to print ‘new\nline’
+- **c) newline**
+- d) new line
 
 > String literal separated by whitespace are allowed. They are concatenated.
-
 
 ### 8. What will be the output of the following Python statement?
 
     >>> print('x\97\x98')
 
-* a) Error
-* b)
-    97
-    98
-* **c) x\97**
-* d) \x97\x98
+- a) Error
+- b)
+  97
+  98
+- **c) x\97**
+- d) \x97\x98
 
 > \x is an escape sequence that means the following 2 digits are a hexadecimal number encoding a character.
-
 
 ### 9. What will be the output of the following Python code?
 
@@ -2601,15 +3134,14 @@ for i in ' '.join(string.split()):
 
     >>>str1[::-1]
 
-* **a) dlrowolleh**
-* b) hello
-* c) world
-* d) helloworld
+- **a) dlrowolleh**
+- b) hello
+- c) world
+- d) helloworld
 
 > Explanation: Execute in shell to verify.
 
 lol
-
 
 ### 10. What will be the output of the following Python code?
 
@@ -2617,13 +3149,12 @@ lol
 print(0xA + 0xB + 0xC)
 ```
 
-* a) 0xA0xB0xC
-* b) Error
-* c) 0x22
-* **d) 33**
+- a) 0xA0xB0xC
+- b) Error
+- c) 0x22
+- **d) 33**
 
 > 0xA and 0xB and 0xC are hexadecimal integer literals representing the decimal values 10, 11 and 12 respectively. There sum is 33.
-
 
 # Section 7
 
@@ -4327,6 +4858,7 @@ d) +++99
 # Section 10
 
 ## 1. Which of the following commands will create a list? [Яка з наступних команд створює список]
+
 a) list1 = list()\
 b) list1 = [] \
 c) list1 = list([1, 2, 3])\
@@ -4344,6 +4876,7 @@ d) [‘olleh’]
 > Explanation: Execute in the shell and verify.
 
 ## 3. Suppose listExample is [‘h’,’e’,’l’,’l’,’o’], what is len(listExample)? [Припустимо що listExample це [‘h’,’e’,’l’,’l’,’o’], чому дорівнюватиме len(listExample)]
+
 _**a) 5**_\
 b) 4\
 c) None\
@@ -4352,6 +4885,7 @@ d) Error
 > Explanation: Execute in the shell and verify.
 
 ## 4. Suppose list1 is [2445,133,12454,123], what is max(list1)? [Припустимо що list1 це [2445,133,12454,123], що буде тоді max(list1)?]
+
 a) 2445\
 b) 133\
 _**c) 12454**_\
@@ -4360,6 +4894,7 @@ d) 123
 > Explanation: Max returns the maximum element in the list.
 
 ## 5. Suppose list1 is [3, 5, 25, 1, 3], what is min(list1)? [Припустимо що list1 це [3, 5, 25, 1, 3], що буде тоді min(list1)?]
+
 a) 3\
 b) 5\
 c) 25\
@@ -4368,6 +4903,7 @@ _**d) 1**_
 > Explanation: Min returns the minimum element in the list.
 
 ## 6. Suppose list1 is [1, 5, 9], what is sum(list1)? [Припустимо що list1 це [1, 5, 9], що буде тоді sum(list1)?]
+
 a) 1\
 b) 9\
 _**c) 15**_\
@@ -4376,14 +4912,16 @@ d) Error
 > Explanation: Sum returns the sum of all elements in the list.
 
 ## 7. To shuffle the list(say list1) what function do we use? [Для того щоб перемішати список(наприклад list1) яку функцію ми використовуємо?]
+
 a) list1.shuffle()\
 b) shuffle(list1)\
 _**c) random.shuffle(list1)**_\
 d) random.shuffleList(list1)
 
-> Explanation: Execute in the shell to verify. 
+> Explanation: Execute in the shell to verify.
 
 ## 8. Suppose list1 is [4, 2, 2, 4, 5, 2, 1, 0], Which of the following is correct syntax for slicing operation? [Припустимо, що list1 це [4, 2, 2, 4, 5, 2, 1, 0], який із наступного є правильним синтаксисом для операції slicing?]
+
 a) print(list1[0])\
 b) print(list1[:2])\
 c) print(list1[:-2])\
@@ -4392,6 +4930,7 @@ _**d) all of the mentioned**_
 > Explanation: Slicing is allowed in lists just as in the case of strings.
 
 ## 9. Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1]? [Припустимо що list1 це [2, 33, 222, 14, 25], що тоді буде list[-1] ?]
+
 a) Error\
 b) None\
 _**c) 25**_\
@@ -4400,14 +4939,16 @@ d) 2
 > Explanation: -1 corresponds to the last index in the list.
 
 ## 10. Suppose list1 is [2, 33, 222, 14, 25], What is list1[:-1]? [Припустимо що list1 це [2, 33, 222, 14, 25], що тоді буде list1[:-1]]
+
 _**a) [2, 33, 222, 14]**_\
 b) Error\
 c) 25\
-d) [25, 14, 222, 33, 2] 
+d) [25, 14, 222, 33, 2]
 
 > Explanation: Execute in the shell to verify.
 
 ## 1. What will be the output of the following Python code? [Що виведеться піісля виконання наступного коду?]
+
 ```
 names = ['Amir', 'Bear', 'Charlton', 'Daman']
 print(names[-1][-1])
@@ -4421,21 +4962,22 @@ _**d) n**_
 > Explanation: Execute in the shell to verify.
 
 ## 2. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code]
+
 ```python
 names1 = ['Amir', 'Bear', 'Charlton', 'Daman']
 names2 = names1
 names3 = names1[:]
- 
+
 names2[0] = 'Alice'
 names3[1] = 'Bob'
- 
+
 sum = 0
 for ls in (names1, names2, names3):
     if ls[0] == 'Alice':
         sum += 1
     if ls[1] == 'Bob':
         sum += 10
- 
+
 print sum
 ```
 
@@ -4444,15 +4986,16 @@ _**b) 12**_\
 c) 21\
 d) 22
 
-> Explanation: When assigning names1 to names2, we create a second reference to the same list. Changes to names2 affect names1. When assigning the slice of all elements in names1 to names3, we are creating a full copy of names1 which can be modified independently. 
+> Explanation: When assigning names1 to names2, we create a second reference to the same list. Changes to names2 affect names1. When assigning the slice of all elements in names1 to names3, we are creating a full copy of names1 which can be modified independently.
 
 > **ПРИМІТКА!!!!** цей код взагалі не запускається через синтаксичну помилку в останній строці `print sum` (і навіть в python 2.7 не запускається), бо функція `print` має викликатись з дужками, тобто має бути `print(sum)`. Але так як варіанту що код не запускається нема будемо вважати що той хто набирав цей код просто забув скобкі і `print` виводить значення, ну і тоді сума буде дорівнювати 12.
 
-## 3. Suppose list1 is [1, 3, 2], What is list1 * 2? [Дано list1 який дорівнює [1,2,3], чому дорівнюватиме list1 * 2?]
+## 3. Suppose list1 is [1, 3, 2], What is list1 _ 2? [Дано list1 який дорівнює [1,2,3], чому дорівнюватиме list1 _ 2?]
+
 a) [2, 6, 4]\
 b) [1, 3, 2, 1, 3]\
 _**c) [1, 3, 2, 1, 3, 2]**_\
-d) [1, 3, 2, 3, 2, 1] 
+d) [1, 3, 2, 3, 2, 1]
 
 > Explanation: Execute in the shell and verify.
 
@@ -4461,11 +5004,11 @@ d) [1, 3, 2, 3, 2, 1]
 a) [0, 1, 2, 3]\
 b) [0, 1, 2, 3, 4]\
 _**c) [0.0, 0.5, 1.0, 1.5]**_\
-d) [0.0, 0.5, 1.0, 1.5, 2.0] 
+d) [0.0, 0.5, 1.0, 1.5, 2.0]
 
 > Explanation: Execute in the shell to verify.
 
-## 5.  What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code]
+## 5. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code]
 
 ```
 >>>list1 = [11, 2, 23]
@@ -4490,6 +5033,7 @@ d) list1.addEnd(5)
 > Explanation: We use the function append to add an element to the list.
 
 ## 7. To insert 5 to the third position in list1, we use which command?[Яку команду ми використовуємо, щоб вставити 5 на третю позицію в list1?]
+
 a) list1.insert(3, 5)\
 _**b) list1.insert(2, 5)**_\
 c) list1.add(3, 5)\
@@ -4516,6 +5060,7 @@ _**d) 2**_
 > Explanation: Execute help(list.index) to get details.
 
 ## 10. Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1.count(5)? [Вважаємо що list1 це [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1.count(5) ?]
+
 a) 0\
 b) 4\
 c) 1\
@@ -4524,6 +5069,7 @@ _**d) 2**_
 > Explanation: Execute in the shell to verify.
 
 ## 1. Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after list1.reverse()? [Вважаємо list1 це [3, 4, 5, 20, 5, 25, 1, 3], тоді чому дорівнює list1 після list1.reverse()?]
+
 a) [3, 4, 5, 20, 5, 25, 1, 3]\
 b) [1, 3, 3, 4, 5, 5, 20, 25]\
 c) [25, 20, 5, 5, 4, 3, 3, 1]\
@@ -4532,36 +5078,40 @@ _**d) [3, 1, 25, 5, 20, 5, 4, 3]**_
 > Explanation: Execute in the shell to verify.
 
 ## 2. Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.extend([34, 5])? [Вважаємо що listExample є [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1 після listExample.extend([34, 5])?]
+
 _**a) [3, 4, 5, 20, 5, 25, 1, 3, 34, 5]**_\
 b) [1, 3, 3, 4, 5, 5, 20, 25, 34, 5]\
 c) [25, 20, 5, 5, 4, 3, 3, 1, 34, 5]\
-d) [1, 3, 4, 5, 20, 5, 25, 3, 34, 5] 
+d) [1, 3, 4, 5, 20, 5, 25, 3, 34, 5]
 
 > Explanation: Execute in the shell to verify.
 
 > **ПРИМІТКА!!!!** Можна докопатись до того що яким вообще боком list1 до listExample??? Но якщо просто додумувать те що list1 це мав би бути listExample то відповідь буде **а)** .
 
-## 3. Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop(1)? [Вважаємо що listExample є [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1 після listExample.pop(1)] 
+## 3. Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop(1)? [Вважаємо що listExample є [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1 після listExample.pop(1)]
+
 a) [3, 4, 5, 20, 5, 25, 1, 3]\
 b) [1, 3, 3, 4, 5, 5, 20, 25]\
 _**c) [3, 5, 20, 5, 25, 1, 3]**_\
-d) [1, 3, 4, 5, 20, 5, 25] 
+d) [1, 3, 4, 5, 20, 5, 25]
 
 > Explanation: pop() removes the element at the position specified in the parameter.
 
 > **ПРИМІТКА!!!!** Можна докопатись до того, що яким вообще боком list1 може бути до listExample???! Но якщо просто додумувать те що list1 це мав би бути listExample то відповідь буде с)
 
-## 4. Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop()? [Вважаємо що listExample є [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1 після listExample.pop()] 
+## 4. Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop()? [Вважаємо що listExample є [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1 після listExample.pop()]
+
 _**a) [3, 4, 5, 20, 5, 25, 1]**_\
 b) [1, 3, 3, 4, 5, 5, 20, 25]\
 c) [3, 5, 20, 5, 25, 1, 3]\
-d) [1, 3, 4, 5, 20, 5, 25] 
+d) [1, 3, 4, 5, 20, 5, 25]
 
 > Explanation: pop() by default will remove the last element.
 
 > **ПРИМІТКА!!!!** Можна докопатись до того, що яким вообще боком list1 може бути до listExample???! Но якщо просто додумувать те що list1 це мав би бути listExample то відповідь буде a)
 
 ## 5. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code]
+
 ```
 >>>"Welcome to Python".split()
 ```
@@ -4582,11 +5132,12 @@ d) “Welcome”, “to”, “Python”
 _**a) [‘a’, ‘b’, ‘c’, ‘d’]**_\
 b) [‘a b c d’]\
 c) [‘a#b#c#d’]\
-d) [‘abcd’] 
+d) [‘abcd’]
 
 > Explanation: Execute in the shell to verify.
 
 ## 7. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code?]
+
 ```python
 myList = [1, 5, 5, 5, 5, 1]
 max = myList[0]
@@ -4595,7 +5146,7 @@ for i in range(1, len(myList)):
     if myList[i] > max:
         max = myList[i]
         indexOfMax = i
- 
+
 >>>print(indexOfMax)
 ```
 
@@ -4607,12 +5158,13 @@ d) 4
 > Explanation: First time the highest number is encountered is at index 1.
 
 ## 8. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code?]
+
 ```python
 myList = [1, 2, 3, 4, 5, 6]
 for i in range(1, 6):
     myList[i - 1] = myList[i]
- 
-for i in range(0, 6): 
+
+for i in range(0, 6):
     print(myList[i], end = " ")
 ```
 
@@ -4644,7 +5196,7 @@ d) [1, 3, 4]
 ```python
 def f(values):
     values[0] = 44
- 
+
 v = [1, 2, 3]
 f(v)
 print(v)
@@ -4663,7 +5215,7 @@ d) [1, 2, 3]
 def f(i, values = []):
     values.append(i)
     return values
- 
+
 f(1)
 f(2)
 v = f(3)
@@ -4681,7 +5233,7 @@ d) 1 2 3
 
 ```python
 names1 = ['Amir', 'Bala', 'Chales']
- 
+
 if 'amir' in names1:
     print(1)
 else:
@@ -4700,7 +5252,7 @@ d) Error
 ```python
 names1 = ['Amir', 'Bala', 'Charlie']
 names2 = [name.lower() for name in names1]
- 
+
 print(names2[2][0])
 ```
 
@@ -4715,9 +5267,9 @@ _**d) c**_
 
 ```python
 numbers = [1, 2, 3, 4]
- 
+
 numbers.append([5,6,7,8])
- 
+
 print(len(numbers))
 ```
 
@@ -4729,6 +5281,7 @@ d) 12
 > Explanation: A list is passed in append so the length is 5.
 
 ## 5. To which of the following the “in” operator can be used to check if an item is in it? [До яких наступних структур даних "in" оператор може бути використаним для перевірки чи є елемент в ній?]
+
 a) Lists\
 b) Dictionary\
 c) Set\
@@ -4737,12 +5290,14 @@ _**d) All of the mentioned**_
 > Explanation: In can be used in all data structures.
 
 ## 6. What will be the output of the following Python code?
+
 ```python
 list1 = [1, 2, 3, 4]
 list2 = [5, 6, 7, 8]
- 
+
 print(len(list1 + list2))
 ```
+
 a) 2\
 b) 4\
 c) 5\
@@ -4751,10 +5306,11 @@ _**d) 8**_
 > Explanation: + appends all the elements individually into a new list.
 
 ## 7. What will be the output of the following Python code?
+
 ```python
 def addItem(listParam):
     listParam += [1]
- 
+
 mylist = [1, 2, 3, 4]
 addItem(mylist)
 print(len(mylist))
@@ -4768,43 +5324,53 @@ d) 8
 > Explanation: + will append the element to the list.
 
 ## 8. What will be the output of the following Python code?
+
 ```python
 def increment_items(L, increment):
     i = 0
     while i < len(L):
         L[i] = L[i] + increment
         i = i + 1
- 
+
 values = [1, 2, 3]
 print(increment_items(values, 2))
 print(values)
 ```
 
 _**a)**_
+
 ```
  None
  [3, 4, 5]
 ```
+
 b)
+
 ```
    None
    [1, 2, 3]
 ```
+
 c)
+
 ```
    [3, 4, 5]
    [1, 2, 3]
 ```
+
 d)
+
 ```
    [3, 4, 5]
    None
 ```
+
 Answer: a)
 
 > Explanation: Execute in the shell to verify.
 
 ## 9. What will be the output of the following Python code?
+
 ```python
 def example(L):
     ''' (list) -> list
@@ -4816,6 +5382,7 @@ def example(L):
         i = i + 3
     return result
 ```
+
 _**a) Return a list containing every third item from L starting at index 0**_\
 b) Return an empty list\
 c) Return a list containing every third index from L starting at index 0\
@@ -4824,6 +5391,7 @@ d) Return a list containing the items from L starting from index 0, omitting eve
 > Explanation: Run the code to get a better understanding with many arguments.
 
 ## 10. What will be the output of the following Python code?
+
 ```python
 veggies = ['carrot', 'broccoli', 'potato', 'asparagus']
 veggies.insert(veggies.index('broccoli'), 'celery')
@@ -4869,13 +5437,13 @@ d) 32
 
 ```python
 values = [[3, 4, 5, 1], [33, 6, 1, 2]]
- 
+
 v = values[0][0]
 for row in range(0, len(values)):
     for column in range(0, len(values[row])):
         if v < values[row][column]:
             v = values[row][column]
- 
+
 print(v)
 ```
 
@@ -4888,13 +5456,13 @@ c) 6\
 
 ```python
 values = [[3, 4, 5, 1], [33, 6, 1, 2]]
- 
+
 v = values[0][0]
 for lst in values:
     for element in lst:
         if v > element:
             v = element
- 
+
 print(v)
 ```
 
@@ -4927,7 +5495,7 @@ matrix = [[1, 2, 3, 4],
        [4, 5, 6, 7],
        [8, 9, 10, 11],
        [12, 13, 14, 15]]
- 
+
 for i in range(0, 4):
     print(matrix[i][1], end = " ")
 ```
@@ -4948,7 +5516,7 @@ def m(list):
 
 values = [[3, 4, 5, 1], [33, 6, 1, 2]]
 
-for row in values: 
+for row in values:
     print(m(row), end = " ")
 ```
 
@@ -4961,7 +5529,7 @@ c) 5 6\
 
 ```python
 data = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
- 
+
 print(data[1][0][0])
 ```
 
@@ -4977,11 +5545,11 @@ data = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
 
 def ttt(m):
     v = m[0][0]
- 
+
     for row in m:
         for element in row:
            if v < element: v = element
- 
+
     return v
 
 print(ttt(data[0]))
@@ -5028,12 +5596,14 @@ print(list(zip((2,4),('b','c'),('yy','xx'))))
 ```
 
 a)
+
 ```python
 [(1, 2, 3), ('a'), ('xxx', 'yyy')]
 [(2, 4), ('b', 'c'), ('yy', 'xx')]
 ```
 
 b)
+
 ```python
 [(1, 'a', 'xxx'), (2, ' ', 'yyy'), (3, ' ', ' ')]
 [(2, 'b', 'yy'), (4, 'c', 'xx')]
@@ -5041,6 +5611,7 @@ b)
 
 c) Syntax error
 **d)**
+
 ```python
 [(1, 'a', 'xxx')]
 [(2, 'b', 'yy'), (4, 'c', 'xx')]
@@ -5075,23 +5646,28 @@ print(b)
 ```
 
 a)
+
 ```python
 ['a','b','c','d']
 ['a','b','c','d']
 ```
 
 b)
+
 ```python
 ['a','@','b','@','c','@','d']
 ['a','b','c','d']
 ```
 
 **c)**
+
 ```python
 ['a','@','b@c@d']
 ['a','b','c','d']
 ```
+
 d)
+
 ```python
 ['a','@','b@c@d']
 ['a','@','b','@','c','@','d']
@@ -5185,12 +5761,14 @@ print(b)
 ```
 
 a)
+
 ```python
 [1,2,3,4]
 [1,2,3,4]
 ```
 
 **b)**
+
 ```python
 [1, 2, 3, 4]
 None
@@ -5198,6 +5776,7 @@ None
 
 c) Syntax error
 d)
+
 ```python
 [1,2,3]
 [1,2,3,4]
@@ -5237,18 +5816,21 @@ print(a)
 ```
 
 **a)**
+
 ```python
 180
 [(45),(45),(45),(45)]
 ```
 
 b)
+
 ```python
 (45,45,45,45)
 [45,45,45,45]
 ```
 
 c)
+
 ```python
 180
 [45,45,45,45]
@@ -5280,24 +5862,28 @@ print(list1 is list2)
 ```
 
 a)
+
 ```python
 True
 True
 ```
 
 b)
+
 ```python
 False
 True
 ```
 
 c)
+
 ```python
 False
 False
 ```
 
 **d)**
+
 ```python
 True
 False
@@ -5327,6 +5913,7 @@ places1[1]="Pune"
 places2[2]="Hyderabad"
 print(places)
 ```
+
 a) `['Bangalore', 'Pune', 'Hyderabad']`\
 **b) `['Bangalore', 'Pune', 'Delhi']`**\
 c) `['Bangalore', 'Mumbai', 'Delhi']`\
@@ -5363,7 +5950,7 @@ d) Syntax error
 a= [1, 2, 3, 4, 5]
 for i in range(1, 5):
     a[i-1] = a[i]
-for i in range(0, 5): 
+for i in range(0, 5):
     print(a[i],end = " ")
 ```
 
@@ -5386,24 +5973,28 @@ print(a)
 ```
 
 **a)**
+
 ```python
 3
 [44, 2, 3]
 ```
 
 b)
+
 ```python
 1
 [1,2,3]
 ```
 
 c)
+
 ```python
 3
 [1,2,3]
 ```
 
 d)
+
 ```python
 1
 [44,2,3]
@@ -5490,7 +6081,9 @@ c) `[('HELLO WORLD', 11)]`\
 d) none of the mentioned
 
 ## 4. Which of the following is the correct expansion of `list_1 = [expr(i) for i in list_0 if func(i)]`? [Які з наступних уривків є коректним розкриттям `list_1 = [expr(i) for i in list_0 if func(i)]`?]
+
 a)
+
 ```python
 list_1 = []
 for i in list_0:
@@ -5499,6 +6092,7 @@ for i in list_0:
 ```
 
 b)
+
 ```python
 for i in list_0:
     if func(i):
@@ -5506,6 +6100,7 @@ for i in list_0:
 ```
 
 **c)**
+
 ```python
 list_1 = []
 for i in list_0:
@@ -5523,7 +6118,7 @@ x = [i**+1 for i in range(3)]; print(x);
 
 **a) `[0, 1, 2]`**\
 b) `[1, 2, 5]`\
-c) error, **+ is not a valid operator\
+c) error, \*\*+ is not a valid operator\
 d) error, ‘;’ is not allowed
 
 ## 6. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
@@ -6429,7 +7024,6 @@ d) Error, no method called issuperset() exists
 
 ## 1. Which of these about a dictionary is false?[Що з наведеного вище неправильно]
 
-
 a) The values of a dictionary can be accessed using keys
 
 **b) The keys of a dictionary can be accessed using values**
@@ -6440,7 +7034,7 @@ d) Dictionaries are mutable
 
 Explanation: The values of a dictionary can be accessed using keys but the keys of a dictionary can’t be accessed using values.
 
-## 2.  Which of the following is not a declaration of the dictionary?[Що не є визначенням словника]
+## 2. Which of the following is not a declaration of the dictionary?[Що не є визначенням словника]
 
 a) {1: ‘A’, 2: ‘B’}
 
@@ -6454,11 +7048,11 @@ Explanation: Option c is a set, not a dictionary.
 
 ## 3. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->a={1:"A",2:"B",3:"C"}
+> a={1:"A",2:"B",3:"C"}
 >
->for i,j in a.items():
+> for i,j in a.items():
 >
->    print(i,j,end=" ")
+> print(i,j,end=" ")
 
 **a) 1 A 2 B 3 C**
 
@@ -6468,14 +7062,13 @@ c) A B C
 
 d) 1:”A” 2:”B” 3:”C”
 
-
-Explanation: In the above code, variables i and j iterate over the keys and values of the dictionary respectively.**
+Explanation: In the above code, variables i and j iterate over the keys and values of the dictionary respectively.\*\*
 
 ## 4. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->a={1:"A",2:"B",3:"C"}
+> a={1:"A",2:"B",3:"C"}
 >
->print(a.get(1,4))
+> print(a.get(1,4))
 
 a) 1
 
@@ -6485,14 +7078,13 @@ c) 4
 
 d) Invalid syntax for get method
 
-
 Explanation: The get() method returns the value of the key if the key is present in the dictionary and the default value(second parameter) if the key isn’t present in the dictionary.
 
 ## 5. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->a={1:"A",2:"B",3:"C"}
+> a={1:"A",2:"B",3:"C"}
 >
->print(a.get(5,4))
+> print(a.get(5,4))
 
 a) Error, invalid syntax
 
@@ -6502,14 +7094,13 @@ c) 5
 
 **d) 4**
 
-
 Explanation: The get() method returns the default value(second parameter) if the key isn’t present in the dictionary.
 
 ## 6. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->a={1:"A",2:"B",3:"C"}
+> a={1:"A",2:"B",3:"C"}
 >
->print(a.setdefault(3))
+> print(a.setdefault(3))
 
 a) {1: ‘A’, 2: ‘B’, 3: ‘C’}
 
@@ -6523,11 +7114,11 @@ Explanation: setdefault() is similar to get() but will set dict[key]=default if 
 
 ## 7. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->a={1:"A",2:"B",3:"C"}
+> a={1:"A",2:"B",3:"C"}
 >
->a.setdefault(4,"D")
+> a.setdefault(4,"D")
 >
->print(a)
+> print(a)
 
 **a) {1: ‘A’, 2: ‘B’, 3: ‘C’, 4: ‘D’}**
 
@@ -6541,13 +7132,13 @@ Explanation: setdefault() will set dict[key]=default if key is not already in th
 
 ## 8. What will be the output of the following Python code?[Яким буде вивід]
 
->a={1:"A",2:"B",3:"C"}
+> a={1:"A",2:"B",3:"C"}
 >
->b={4:"D",5:"E"}
+> b={4:"D",5:"E"}
 >
->a.update(b)
+> a.update(b)
 >
->print(a)
+> print(a)
 
 a) {1: ‘A’, 2: ‘B’, 3: ‘C’}
 
@@ -6561,13 +7152,13 @@ Explanation: update() method adds dictionary b’s key-value pairs to dictionary
 
 ## 9. What will be the output of the following Python code?[Яким буде вивід]
 
->a={1:"A",2:"B",3:"C"}
+> a={1:"A",2:"B",3:"C"}
 >
->b=a.copy()
+> b=a.copy()
 >
->b[2]="D"
+> b[2]="D"
 >
->print(a)
+> print(a)
 
 a) Error, copy() method doesn’t exist for dictionaries
 
@@ -6581,11 +7172,11 @@ Explanation: Changes made in the copy of the dictionary isn’t reflected in the
 
 ## 10. What will be the output of the following Python code?[Яким буде вивід]
 
->a={1:"A",2:"B",3:"C"}
+> a={1:"A",2:"B",3:"C"}
 >
->a.clear()
+> a.clear()
 >
->print(a)
+> print(a)
 
 a) None
 
@@ -6607,16 +7198,15 @@ b) Keys must be immutable
 
 d) When duplicate keys encountered, the last assignment wins
 
-
 Explanation: Keys of a dictionary may be any data type that is immutable.
 
 ## 12. What will be the output of the following Python code?[Яким буде вивід]
 
->a={1:5,2:3,3:4}
+> a={1:5,2:3,3:4}
 >
->a.pop(3)
+> a.pop(3)
 >
->print(a)
+> print(a)
 
 a) {1: 5}
 
@@ -6630,9 +7220,9 @@ Explanation: pop() method removes the key-value pair for the key mentioned in th
 
 ## 13. What will be the output of the following Python code?[Яким буде вивід]
 
->a={1:5,2:3,3:4}
+> a={1:5,2:3,3:4}
 >
->print(a.pop(4,9))
+> print(a.pop(4,9))
 
 **a) 9**
 
@@ -6646,11 +7236,11 @@ Explanation: pop() method returns the value when the key is passed as an argumen
 
 ## 14. What will be the output of the following Python code?[Яким буде вивід]
 
->a={1:"A",2:"B",3:"C"}
+> a={1:"A",2:"B",3:"C"}
 >
->for i in a:
+> for i in a:
 >
->    print(i,end=" ")
+> print(i,end=" ")
 
 **a) 1 2 3**
 
@@ -6664,9 +7254,8 @@ Explanation: The variable i iterates over the keys of the dictionary and hence t
 
 ## 15. What will be the output of the following Python code?[Яким буде вивід]
 
-
 > a={1:"A",2:"B",3:"C"}
-> 
+>
 > a.items()
 
 a) Syntax error
@@ -6676,7 +7265,6 @@ b) dict_items([(‘A’), (‘B’), (‘C’)])
 c) dict_items([(1,2,3)])
 
 **d) dict_items([(1, ‘A’), (2, ‘B’), (3, ‘C’)])**
-
 
 Explanation: The method items() returns list of tuples with each tuple having a key-value pair.
 
@@ -6690,7 +7278,6 @@ b) The values of the dictionary can be accessed as dict[key]
 
 d) Values of a dictionary can be a mixture of letters and numbers
 
-
 Explanation: More than one key can have the same value.
 
 ## 2. What will be the output of the following Python code snippet?[Яким буде вивід]
@@ -6698,7 +7285,6 @@ Explanation: More than one key can have the same value.
 > a={1:"A",2:"B",3:"C"}
 >
 > del a
-
 
 a) method del doesn’t exist for the dictionary
 
@@ -6725,25 +7311,25 @@ Explanation: The method popitem() removes a random key-value pair.
 
 ## 4. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->total={}
+> total={}
 >
->def insert(items):
+> def insert(items):
 >
->    if items in total:
+> if items in total:
 >
 >       total[items] += 1
 >
->    else:
+> else:
 >
 >        total[items] = 1
 >
->insert('Apple')
+> insert('Apple')
 >
->insert('Ball')
+> insert('Ball')
 >
->insert('Apple')
+> insert('Apple')
 >
->print (len(total))
+> print (len(total))
 
 a) 3
 
@@ -6757,21 +7343,21 @@ Explanation: The insert() function counts the number of occurrences of the item 
 
 ## 5. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->a = {}
+> a = {}
 >
->a[1] = 1
+> a[1] = 1
 >
->a['1'] = 2
+> a['1'] = 2
 >
->a[1]=a[1]+1
+> a[1]=a[1]+1
 >
->count = 0
+> count = 0
 >
->for i in a:
+> for i in a:
 >
->    count += a[i]
-> 
->print(count)
+> count += a[i]
+>
+> print(count)
 
 a) 1
 
@@ -6785,23 +7371,23 @@ Explanation: The above piece of code basically finds the sum of the values of ke
 
 ## 6. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->numbers = {}
+> numbers = {}
 >
->letters = {}
+> letters = {}
 >
->comb = {}
+> comb = {}
 >
->numbers[1] = 56
+> numbers[1] = 56
 >
->numbers[3] = 7
+> numbers[3] = 7
 >
->letters[4] = 'B'
+> letters[4] = 'B'
 >
->comb['Numbers'] = numbers
+> comb['Numbers'] = numbers
 >
->comb['Letters'] = letters
+> comb['Letters'] = letters
 >
->print(comb)
+> print(comb)
 
 a) Error, dictionary in a dictionary can’t exist
 
@@ -6815,11 +7401,11 @@ Explanation: Dictionary in a dictionary can exist.
 
 ## 7. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->test = {1:'A', 2:'B', 3:'C'}
+> test = {1:'A', 2:'B', 3:'C'}
 >
->test = {}
+> test = {}
 >
->print(len(test))
+> print(len(test))
 
 **a) 0**
 
@@ -6833,15 +7419,15 @@ Explanation: In the second line of code, the dictionary becomes an empty diction
 
 ## 8. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->test = {1:'A', 2:'B', 3:'C'}
+> test = {1:'A', 2:'B', 3:'C'}
 >
->del test[1]
+> del test[1]
 >
->test[1] = 'D'
+> test[1] = 'D'
 >
->del test[2]
+> del test[2]
 >
->print(len(test))
+> print(len(test))
 
 a) 0
 
@@ -6855,21 +7441,21 @@ Explanation: After the key-value pair of 1:’A’ is deleted, the key-value pai
 
 ## 9. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->a = {}
+> a = {}
 >
->a[1] = 1
+> a[1] = 1
 >
->a['1'] = 2
+> a['1'] = 2
 >
->a[1.0]=4
+> a[1.0]=4
 >
->count = 0
+> count = 0
 >
->for i in a:
+> for i in a:
 >
->    count += a[i]
-> 
->print(count)
+> count += a[i]
+>
+> print(count)
 
 a) An exception is thrown
 
@@ -6883,13 +7469,13 @@ Explanation: The value of key 1 is 4 since 1 and 1.0 are the same. Then, the fun
 
 ## 10. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->a={}
+> a={}
 >
->a['a']=1
+> a['a']=1
 >
->a['b']=[2,3,4]
+> a['b']=[2,3,4]
 >
->print(a)
+> print(a)
 
 a) Exception is thrown
 
@@ -6903,11 +7489,11 @@ Explanation: Mutable members can be used as the values of the dictionary but the
 
 ## 11. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->import collections
+> import collections
 >
 > a=collections.Counter([1,1,2,3,3,4,4,4])
-> 
->a
+>
+> a
 
 a) {1,2,3,4}
 
@@ -6917,15 +7503,14 @@ b) Counter({4, 1, 3, 2})
 
 d) {4: 3, 1: 2, 3: 2, 2: 1}
 
-
 Explanation: The statement a=collections.OrderedDict() generates a dictionary with the number as the key and the count of times the number appears as the value.
 
 ## 12. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->import collections
+> import collections
 >
 > b=collections.Counter([2,2,3,4,4,4])
-> 
+>
 > b.most_common(1)
 
 a) Counter({4: 3, 2: 2, 3: 1})
@@ -6940,10 +7525,10 @@ Explanation: The most_common() method returns the n number key-value pairs where
 
 ## 13. What will be the output of the following Python code snippet?[Яким буде вивід]
 
->import collections
+> import collections
 >
 > b=collections.Counter([2,2,3,4,4,4])
-> 
+>
 > b.most_common(1)
 
 a) Counter({4: 3, 2: 2, 3: 1})
@@ -6959,11 +7544,11 @@ Explanation: The most_common() method returns the n number key-value pairs where
 ## 14. What will be the output of the following Python code snippet?[Яким буде вивід]
 
 > import collections
-> 
+>
 > a=collections.Counter([2,2,3,3,3,4])
-> 
+>
 > b=collections.Counter([2,2,3,4,4])
-> 
+>
 > a|b
 
 **a) Counter({3: 3, 2: 2, 4: 2})**
@@ -6979,11 +7564,11 @@ Explanation: a|b returns the pair of keys and the highest recurring value.
 ## 15. What will be the output of the following Python code snippet?[Яким буде вивід]
 
 > import collections
-> 
+>
 > a=collections.Counter([3,3,4,5])
-> 
+>
 > b=collections.Counter([3,4,4,5,5,5])
-> 
+>
 > a&b
 
 a) Counter({3: 12, 4: 1, 5: 1})
@@ -6999,15 +7584,15 @@ Explanation: a&b returns the pair of keys and the lowest recurring value.
 ## 1. The following Python code is invalid.[Чи правильний наведений код?]
 
 > class demo(dict):
-> 
->  def __test__(self,key):
-> 
->    return []
-> 
+>
+> def **test**(self,key):
+>
+> return []
+>
 > a = demo()
-> 
+>
 > a['test'] = 7
-> 
+>
 > print(a)
 
 a) True
@@ -7019,23 +7604,22 @@ Explanation: The output of the code is: {‘test’:7}.
 ## 2. What will be the output of the following Python code ?[Яким буде вивід]
 
 > count={}
-> 
+>
 > count[(1,2,4)] = 5
-> 
+>
 > count[(4,2,1)] = 7
-> 
+>
 > count[(1,2)] = 6
-> 
+>
 > count[(4,2,1)] = 2
-> 
+>
 > tot = 0
-> 
+>
 > for i in count:
-> 
+>
 >     tot=tot+count[i]
-> 
+>
 > print(len(count)+tot)
-
 
 a) 25
 
@@ -7050,11 +7634,11 @@ Explanation: Tuples can be made keys of a dictionary. Length of the dictionary i
 ## 3. What will be the output of the following Python code ?[Яким буде вивід]
 
 > a={}
-> 
+>
 > a[2]=1
-> 
+>
 > a[1]=[2,3,4]
-> 
+>
 > print(a[1][1])
 
 a) [2,3,4]
@@ -7070,7 +7654,7 @@ Explanation: Now, a={1:[2,3,4],2:1} . a[1][1] refers to second element having ke
 ## 4. What will be the output of the following Python code ?[Яким буде вивід]
 
 > a={'B':5,'A':9,'C':7}
-> 
+>
 > sorted(a)
 
 **a) [‘A’,’B’,’C’]**
@@ -7085,8 +7669,8 @@ Explanation: Return a new sorted list of keys in the dictionary.
 
 ## 5. What will be the output of the following Python code ?[Яким буде вивід]
 
-> a={i: i*i for i in range(6)}
-> 
+> a={i: i\*i for i in range(6)}
+>
 > a
 
 a) Dictionary comprehension doesn’t exist
@@ -7102,7 +7686,7 @@ Explanation: Dictionary comprehension is implemented in the above piece of code.
 ## 6. What will be the output of the following Python code ?[Яким буде вивід]
 
 > a={}
-> 
+>
 > a.fromkeys([1,2,3],"check")
 
 a) Syntax error
@@ -7118,7 +7702,7 @@ Explanation: The dictionary takes values of keys from the list and initializes i
 ## 7. What will be the output of the following Python code?[Яким буде вивід]
 
 > b={}
-> 
+>
 > all(b)
 
 a) { }
@@ -7146,9 +7730,9 @@ Explanation: Method any() returns True if any key of the dictionary is true and 
 ## 9. What will be the output of the following Python code?[Яким буде вивід]
 
 > a={"a":1,"b":2,"c":3}
-> 
+>
 > b=dict(zip(a.values(),a.keys()))
-> 
+>
 > b
 
 a) {‘a’: 1, ‘b’: 2, ‘c’: 3}
@@ -7164,7 +7748,7 @@ Explanation: The above piece of code inverts the key-value pairs in the dictiona
 ## 10. What will be the output of the following Python code?[Яким буде вивід]
 
 > a={i: 'A' + str(i) for i in range(5)}
-> 
+>
 > a
 
 a) An exception is thrown
@@ -7180,7 +7764,7 @@ Explanation: Dictionary comprehension and string concatenation is implemented in
 ## 11. What will be the output of the following Python code?[Яким буде вивід]
 
 > a=dict()
-> 
+>
 > a[1]
 
 **a) An exception is thrown since the dictionary is empty**
@@ -7191,17 +7775,16 @@ c) 1
 
 d) 0
 
-
 Explanation: The values of a dictionary can be accessed through the keys only if the keys exist in the dictionary.
 
 ## 12. What will be the output of the following Python code?[Яким буде вивід]
 
 > import collections
-> 
+>
 > a=dict()
-> 
+>
 > a=collections.defaultdict(int)
-> 
+>
 > a[1]
 
 a) 1
@@ -7218,11 +7801,11 @@ Explanation: The statement a=collections.defaultdict(int) gives the default valu
 ## 13. What will be the output of the following Python code?[Яким буде вивід]
 
 > import collections
-> 
+>
 > a=dict()
-> 
+>
 > a=collections.defaultdict(str)
-> 
+>
 > a['A']
 
 a) An exception is thrown since the dictionary is empty
@@ -7238,11 +7821,11 @@ Explanation: The statement a=collections.defaultdict(str) gives the default valu
 ## 14. What will be the output of the following Python code?[Яким буде вивід]
 
 > import collections
-> 
+>
 > b=dict()
-> 
+>
 > b=collections.defaultdict(lambda: 7)
-> 
+>
 > b[4]
 
 a) 4
@@ -7258,9 +7841,9 @@ Explanation: The statement a=collections.defaultdict(lambda: x) gives the defaul
 ## 15. What will be the output of the following Python code?[Яким буде вивід]
 
 > import collections
-> 
+>
 > a=collections.OrderedDict((str(x),x) for x in range(3))
-> 
+>
 > a
 
 a) {‘2’:2, ‘0’:0, ‘1’:1}
@@ -7289,7 +7872,6 @@ Explanation: The function seed is a function which is present in the random modu
 
 > round(4.576)
 
-
 a) 4.5
 
 **b) 5**
@@ -7304,11 +7886,11 @@ Explanation: This is a built-in function which rounds a number to give precision
 
 a) (x**y) ** z
 
-b) (x**y) / z
+b) (x\*\*y) / z
 
-**c) (x ** y) % z**
+**c) (x ** y) % z\*\*
 
-d) (x**y)*z
+d) (x\**y)*z
 
 Explanation: The built-in function pow() can accept two or three arguments. When it takes in two arguments, they are evaluated as x ** y. When it takes in three arguments, they are evaluated as (x ** y)%z.
 
@@ -7357,7 +7939,7 @@ Explanation: The built-in function any() returns true if any or more of the elem
 ## 7. What will be the output of the following Python function?[Яким буде результат функції]
 
 > import math
-> 
+>
 > abs(math.sqrt(25))
 
 a) Error
@@ -7373,7 +7955,7 @@ Explanation: The abs() function prints the absolute value of the argument passed
 ## 8. What will be the output of the following Python function?[Яким буде результат функції]
 
 > sum(2,4,6)
-> 
+>
 > sum([1,2,3])
 
 **a) Error, 6**
@@ -7420,7 +8002,8 @@ Explanation: The function max() is being used to find the maximum value from amo
 
 # Section 18
 
-### 1. What will be the output of the following Python code?  [Яким буде результат наступного фрагмента коду Python?]
+### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 def f1():
     x=15
@@ -7428,6 +8011,7 @@ def f1():
 x=12
 f1()
 ```
+
 a) Error
 
 b) 12
@@ -7436,9 +8020,10 @@ b) 12
 
 d) 1512
 
->Explanation: In the code shown above, x=15 is a local variable whereas x=12 is a global variable. Preference is given to local variable over global variable. Hence the output of the code shown above is 15.
+> Explanation: In the code shown above, x=15 is a local variable whereas x=12 is a global variable. Preference is given to local variable over global variable. Hence the output of the code shown above is 15.
 
 ### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 def f1():
     x=100
@@ -7446,6 +8031,7 @@ def f1():
 x=+1
 f1()
 ```
+
 a) Error
 
 **b) 100**
@@ -7454,9 +8040,10 @@ c) 101
 
 d) 99
 
->Explanation: The variable x is a local variable. It is first printed and then modified. Hence the output of this code is 100.
+> Explanation: The variable x is a local variable. It is first printed and then modified. Hence the output of this code is 100.
 
 ### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 def san(x):
     print(x+1)
@@ -7464,6 +8051,7 @@ x=-2
 x=4
 san(12)
 ```
+
 **a) 13**
 
 b) 10
@@ -7472,9 +8060,10 @@ c) 2
 
 d) 5
 
->Explanation: The value passed to the function san() is 12. This value is incremented by one and printed. Hence the output of the code shown above is 13.
+> Explanation: The value passed to the function san() is 12. This value is incremented by one and printed. Hence the output of the code shown above is 13.
 
 ### 4. What will be the output of the following Python code?
+
 ```
 def f1():
     global x
@@ -7483,6 +8072,7 @@ def f1():
 x=12
 print("x")
 ```
+
 a) Error
 
 b) 13
@@ -7493,9 +8083,10 @@ x
 
 **d) x**
 
->Explanation: In the code shown above, the variable ‘x’ is declared as global within the function. Hence the output is ‘x’. Had the variable ‘x’ been a local variable, the output would have been:
+> Explanation: In the code shown above, the variable ‘x’ is declared as global within the function. Hence the output is ‘x’. Had the variable ‘x’ been a local variable, the output would have been:
 
 ### 5. What will be the output of the following Python code?
+
 ```
 def f1(x):
     global x
@@ -7516,10 +8107,11 @@ d)
 16
 hello
 
->Explanation: The code shown above will result in an error because ‘x’ is a global variable. Had it been a local variable, the output would be: 16
-hello
+> Explanation: The code shown above will result in an error because ‘x’ is a global variable. Had it been a local variable, the output would be: 16
+> hello
 
 ### 6. What will be the output of the following Python code?
+
 ```
 def f1(x):
     global x
@@ -7537,17 +8129,17 @@ b) 12 4
 
 d) 4 15
 
->Explanation: At the time of leader processing, the value of ‘x’ is 12. It is not modified later. The value passed to the function f1 is 4. Hence the output of the code shown above is 4 12.
-
+> Explanation: At the time of leader processing, the value of ‘x’ is 12. It is not modified later. The value passed to the function f1 is 4. Hence the output of the code shown above is 4 12.
 
 ### 7. What will be the output of the following Python code?
+
 ```
 def f():
     global a
     print(a)
     a = "hello"
-    print(a) 
-a = "world" 
+    print(a)
+a = "world"
 f()
 print(a)
 ```
@@ -7555,12 +8147,12 @@ print(a)
 a)
 
     hello
-    hello 
+    hello
     world
 
 **b)**
 
-    world 
+    world
     hello
     hello
 
@@ -7576,12 +8168,13 @@ d)
     hello
     world
 
->Explanation: Since the variable ‘a’ has been explicitly specified as a global variable, the value of a passed to the function is ‘world’. Hence the output of this code is:
-world
-hello
-hello
+> Explanation: Since the variable ‘a’ has been explicitly specified as a global variable, the value of a passed to the function is ‘world’. Hence the output of this code is:
+> world
+> hello
+> hello
 
 ### 8. What will be the output of the following Python code?
+
 ```
 def f1(a,b=[]):
     b.append(a)
@@ -7597,9 +8190,10 @@ c) Error
 
 **d) [3,4,2]**
 
->Explanation: In the code shown above, the integer 2 is appended to the list [3,4]. Hence the output of the code is [3,4,2]. Both the variables a and b are local variables.
+> Explanation: In the code shown above, the integer 2 is appended to the list [3,4]. Hence the output of the code is [3,4,2]. Both the variables a and b are local variables.
 
 ### 9. What will be the output of the following Python code?
+
 ```
 def f(p, q, r):
     global s
@@ -7620,9 +8214,10 @@ b) 5 10 15 4
 
 d) 5 10 15 40
 
->Explanation: The above code shows a combination of local and global variables. The output of this code is: 10 20 30 40
+> Explanation: The above code shows a combination of local and global variables. The output of this code is: 10 20 30 40
 
 ### 10. What will be the output of the following Python code?
+
 ```
 def f(x):
     print("outer")
@@ -7640,8 +8235,8 @@ error
 
 b)
 
-inner 
-error 
+inner
+error
 
 c)
 
@@ -7650,11 +8245,12 @@ inner
 
 d) error
 
->Explanation: The error will be caused due to the statement f1(1) because the function is nested. If f1(1) had been called inside the function, the output would have been different and there would be no error.
+> Explanation: The error will be caused due to the statement f1(1) because the function is nested. If f1(1) had been called inside the function, the output would have been different and there would be no error.
 
 ### 11. What will be the output of the following Python code?
+
 ```
-x = 5 
+x = 5
 def f1():
     global x
     x = 4
@@ -7674,9 +8270,10 @@ c) 8
 
 d) 15
 
->Explanation: In the code shown above, the variable ‘x’ has been declared as a global variable under both the functions f1 and f2. The value returned is a+b+x = 1+2+4 = 7.
+> Explanation: In the code shown above, the variable ‘x’ has been declared as a global variable under both the functions f1 and f2. The value returned is a+b+x = 1+2+4 = 7.
 
 ### 12. What will be the output of the following Python code?
+
 ```
 x=100
 def f1():
@@ -7696,9 +8293,10 @@ c) 80
 
 d) Error
 
->Explanation: The output of the code shown above is 100. This is because the variable ‘x’ has been declared as global within the functions f1 and f2.
+> Explanation: The output of the code shown above is 100. This is because the variable ‘x’ has been declared as global within the functions f1 and f2.
 
 ### 13. Read the following Python code carefully and point out the global variables?
+
 ```
 y, z = 1, 2
 def f():
@@ -7714,9 +8312,10 @@ b) y and z
 
 d) Neither x, nor y, nor z
 
->Explanation: In the code shown above, x, y and z are global variables inside the function f. y and z are global because they are not assigned in the function. x is a global variable because it is explicitly specified so in the code. Hence, x, y and z are global variables.
+> Explanation: In the code shown above, x, y and z are global variables inside the function f. y and z are global because they are not assigned in the function. x is a global variable because it is explicitly specified so in the code. Hence, x, y and z are global variables.
 
 ### 1. Which of the following data structures is returned by the functions globals() and locals()?
+
 a) list
 
 b) set
@@ -7725,17 +8324,19 @@ b) set
 
 d) tuple
 
->Explanation: Both the functions, that is, globals() and locals() return value of the data structure dictionary.
+> Explanation: Both the functions, that is, globals() and locals() return value of the data structure dictionary.
 
 ### 2. What will be the output of the following Python code?
+
 ```
 x=1
 def cg():
     global x
-    x=x+1   
+    x=x+1
 cg()
 x
 ```
+
 **a) 2**
 
 b) 1
@@ -7744,21 +8345,24 @@ c) 0
 
 d) Error
 
->Explanation: Since ‘x’ has been declared a global variable, it can be modified very easily within the function. Hence the output is 2.
+> Explanation: Since ‘x’ has been declared a global variable, it can be modified very easily within the function. Hence the output is 2.
 
 ### 3. On assigning a value to a variable inside a function, it automatically becomes a global variable.
+
 a) True
 
 **b) False**
 
->Explanation: On assigning a value to a variable inside a function, t automatically becomes a local variable. Hence the above statement is false.
+> Explanation: On assigning a value to a variable inside a function, t automatically becomes a local variable. Hence the above statement is false.
 
 ### 4. What will be the output of the following Python code?
+
 ```
 e="butter"
 def f(a): print(a)+e
 f("bitter")
 ```
+
 a) error
 
 b)
@@ -7773,9 +8377,10 @@ b)
 
 d) bitterbutter
 
->Explanation: The output of the code shown above will be ‘bitter’, followed by an error. The error is because the operand ‘+’ is unsupported on the types used above.
+> Explanation: The output of the code shown above will be ‘bitter’, followed by an error. The error is because the operand ‘+’ is unsupported on the types used above.
 
 ### 5. What happens if a local variable exists with the same name as the global variable you want to access?
+
 a) Error
 
 b) The local variable is shadowed
@@ -7784,14 +8389,16 @@ c) Undefined behavior
 
 **d) The global variable is shadowed**
 
->Explanation: If a local variable exists with the same name as the local variable that you want to access, then the global variable is shadowed. That is, preference is given to the local variable.
+> Explanation: If a local variable exists with the same name as the local variable that you want to access, then the global variable is shadowed. That is, preference is given to the local variable.
 
 ### 6. What will be the output of the following Python code?
+
 ```
 a=10
 globals()['a']=25
 print(a)
 ```
+
 a) 10
 
 **b) 25**
@@ -7800,16 +8407,17 @@ c) Junk value
 
 d) Error
 
->Explanation: In the code shown above, the value of ‘a’ can be changed by using globals() function. The dictionary returned is accessed using key of the variable ‘a’ and modified to 25.
-
+> Explanation: In the code shown above, the value of ‘a’ can be changed by using globals() function. The dictionary returned is accessed using key of the variable ‘a’ and modified to 25.
 
 ### 7. What will be the output of the following Python code?
+
 ```
 def f(): x=4
 x=1
 f()
 x
 ```
+
 a) Error
 
 b) 4
@@ -7818,10 +8426,11 @@ c) Junk value
 
 **d) 1**
 
->Explanation: In the code shown above, when we call the function f, a new namespace is created. The assignment x=4 is performed in the local namespace and does not affect the global namespace. Hence the output is 1.
+> Explanation: In the code shown above, when we call the function f, a new namespace is created. The assignment x=4 is performed in the local namespace and does not affect the global namespace. Hence the output is 1.
 
-### 8. ______________ returns a dictionary of the module namespace.
-________________ returns a dictionary of the current namespace.
+### 8. ******\_\_****** returns a dictionary of the module namespace.
+
+******\_\_\_\_****** returns a dictionary of the current namespace.
 
 a)
 
@@ -7843,9 +8452,10 @@ d)
 globals()
 globals()
 
->Explanation: The function globals() returns a dictionary of the module namespace, whereas the function locals() returns a dictionary of the current namespace.
+> Explanation: The function globals() returns a dictionary of the module namespace, whereas the function locals() returns a dictionary of the current namespace.
 
 ### 1. Which is the most appropriate definition for recursion?
+
 a) A function that calls itself
 
 **b) A function execution instance that calls another execution instance of the same function**
@@ -7854,16 +8464,18 @@ c) A class method that calls another class method
 
 d) An in-built method that is automatically called
 
->Explanation: The appropriate definition for a recursive function is a function execution instance that calls another execution instance of the same function either directly or indirectly.
+> Explanation: The appropriate definition for a recursive function is a function execution instance that calls another execution instance of the same function either directly or indirectly.
 
 ### 2. Only problems that are recursively defined can be solved using recursion.
+
 a) True
 
 **b) False**
 
->Explanation: There are many other problems can also be solved using recursion.
+> Explanation: There are many other problems can also be solved using recursion.
 
 ### 3. Which of these is false about recursion?
+
 a) Recursive function can be replaced by a non-recursive function
 
 b) Recursive functions usually take more memory space than non-recursive function
@@ -7872,16 +8484,18 @@ b) Recursive functions usually take more memory space than non-recursive functio
 
 d) Recursion makes programs easier to understand
 
->Explanation: The speed of a program using recursion is slower than the speed of its non-recursive equivalent.
+> Explanation: The speed of a program using recursion is slower than the speed of its non-recursive equivalent.
 
 ### 4. Fill in the line of the following Python code for calculating the factorial of a number.
+
 ```
 def fact(num):
-    if num == 0: 
+    if num == 0:
         return 1
     else:
         return _____________________
 ```
+
 **a) num\*fact(num-1)**
 
 b) (num-1)\*(num-2)
@@ -7890,9 +8504,10 @@ c) num\*(num-1)
 
 d) fact(num)\*fact(num-1)
 
->Explanation: Suppose n=5 then, 5*4*3*2*1 is returned which is the factorial of 5.
+> Explanation: Suppose n=5 then, 5*4*3*2*1 is returned which is the factorial of 5.
 
 ### 5. What will be the output of the following Python code?
+
 ```
 def test(i,j):
     if(i==0):
@@ -7901,6 +8516,7 @@ def test(i,j):
         return test(i-1,i+j)
 print(test(4,7))
 ```
+
 a) 13
 
 b) 7
@@ -7909,9 +8525,10 @@ c) Infinite loop
 
 **d) 17**
 
->Explanation: The test(i-1,i+j) part of the function keeps calling the function until the base condition of the function is satisfied.
+> Explanation: The test(i-1,i+j) part of the function keeps calling the function until the base condition of the function is satisfied.
 
 ### 6. What will be the output of the following Python code?
+
 ```
 l=[]
 def convert(b):
@@ -7925,6 +8542,7 @@ l.reverse()
 for i in l:
     print(i,end="")
 ```
+
 a) 011
 
 **b) 110**
@@ -7933,9 +8551,10 @@ c) 3
 
 d) Infinite loop
 
->Explanation: The above code gives the binary equivalent of the number.
+> Explanation: The above code gives the binary equivalent of the number.
 
 ### 7. What is tail recursion?
+
 a) A recursive function that has two base cases
 
 b) A function where the recursive functions leads to an infinite loop
@@ -7944,9 +8563,10 @@ c) A recursive function where the function doesn’t return anything and just pr
 
 **d) A function where the recursive call is the last thing executed by the function**
 
->Explanation: A recursive function is tail recursive when recursive call is executed by the function in the last.
+> Explanation: A recursive function is tail recursive when recursive call is executed by the function in the last.
 
 ### 8. Observe the following Python code?
+
 ```
 def a(n):
     if n == 0:
@@ -7959,6 +8579,7 @@ def b(n, tot):
     else:
         return b(n-2, tot-2)
 ```
+
 a) Both a() and b() aren’t tail recursive
 
 b) Both a() and b() are tail recursive
@@ -7967,9 +8588,10 @@ b) Both a() and b() are tail recursive
 
 d) a() is tail recursive but b() isn’t
 
->Explanation: A recursive function is tail recursive when recursive call is executed by the function in the last.
+> Explanation: A recursive function is tail recursive when recursive call is executed by the function in the last.
 
 ### 9. Which of the following statements is false about recursion?
+
 a) Every recursive function must have a base case
 
 b) Infinite recursion can occur if the base case isn’t properly mentioned
@@ -7978,17 +8600,19 @@ c) A recursive function makes the code easier to understand
 
 **d) Every recursive function must have a return value**
 
->Explanation: A recursive function needn’t have a return value.
+> Explanation: A recursive function needn’t have a return value.
 
 ### 10. What will be the output of the following Python code?
+
 ```
 def fun(n):
     if (n > 100):
         return n - 5
     return fun(fun(n+11));
- 
+
 print(fun(45))
 ```
+
 a) 50
 
 **b) 100**
@@ -7997,16 +8621,18 @@ c) 74
 
 d) Infinite loop
 
->Explanation: The fun(fun(n+11)) part of the code keeps executing until the value of n becomes greater than 100, after which n-5 is returned and printed.
+> Explanation: The fun(fun(n+11)) part of the code keeps executing until the value of n becomes greater than 100, after which n-5 is returned and printed.
 
 ### 11. Recursion and iteration are the same programming approach.
+
 a) True
 
 **b) False**
 
->Explanation: In recursion, the function calls itself till the base condition is reached whereas iteration means repetition of process for example in for-loops.
+> Explanation: In recursion, the function calls itself till the base condition is reached whereas iteration means repetition of process for example in for-loops.
 
 ### 12. What happens if the base condition isn’t defined in recursive programs?
+
 **a) Program gets into an infinite loop**
 
 b) Program runs once
@@ -8015,9 +8641,10 @@ c) Program runs n number of times where n is the argument given to the function
 
 d) An exception is thrown
 
->Explanation: The program will run until the system gets out of memory.
+> Explanation: The program will run until the system gets out of memory.
 
 ### 13. Which of these is not true about recursion?
+
 a) Making the code look clean
 
 b) A complex task can be broken into sub-problems
@@ -8026,9 +8653,10 @@ b) A complex task can be broken into sub-problems
 
 d) Sequence generation is easier than a nested iteration
 
->Explanation: Recursive calls take up a lot of memory and time as memory is taken up each time the function is called.
+> Explanation: Recursive calls take up a lot of memory and time as memory is taken up each time the function is called.
 
 ### 14. Which of these is not true about recursion?
+
 a) It’s easier to code some real-world problems using recursion than non-recursive equivalent
 
 **b) Recursive functions are easy to debug**
@@ -8037,9 +8665,10 @@ c) Recursive calls take up a lot of memory
 
 d) Programs using recursion take longer time than their non-recursive equivalent
 
->Explanation: Recursive functions may be hard to debug as the logic behind recursion may be hard to follow.
+> Explanation: Recursive functions may be hard to debug as the logic behind recursion may be hard to follow.
 
 ### 15. What will be the output of the following Python code?
+
 ```
 def a(n):
     if n == 0:
@@ -8051,6 +8680,7 @@ def a(n):
 for i in range(0,4):
     print(a(i),end=" ")
 ```
+
 a) 0 1 2 3
 
 b) An exception is thrown
@@ -8059,9 +8689,10 @@ c) 0 1 1 2 3
 
 **d) 0 1 1 2**
 
->Explanation: The above piece of code prints the Fibonacci series.
+> Explanation: The above piece of code prints the Fibonacci series.
 
 ### 1. Which type of copy is shown in the following python code?
+
 ```
 l1=[[10, 20], [30, 40], [50, 60]]
 ls=list(l1)
@@ -8077,9 +8708,10 @@ c) memberwise
 
 d) All of the mentioned
 
->Explanation: The code shown above depicts shallow copy. For deep copy, the command given is: l2 = l1.copy().
+> Explanation: The code shown above depicts shallow copy. For deep copy, the command given is: l2 = l1.copy().
 
 ### 2. What will be the output of the following Python code?
+
 ```
 l=[2, 3, [4, 5]]
 l2=l.copy()
@@ -8087,6 +8719,7 @@ l2[0]=88
 l
 l2
 ```
+
 a)
 
 [88, 2, 3, [4, 5]]
@@ -8107,9 +8740,10 @@ d)
 [2, 3, [4, 5]]
 [2, 3, [4, 5]]
 
->Explanation: The code shown above depicts deep copy. In deep copy, the base address of the objects is not copied. Hence the modification done on one list does not affect the other list.
+> Explanation: The code shown above depicts deep copy. In deep copy, the base address of the objects is not copied. Hence the modification done on one list does not affect the other list.
 
-### 3. In _______________ copy, the base address of the objects are copied. In _______________ copy, the base address of the objects are not copied.
+### 3. In ******\_\_\_****** copy, the base address of the objects are copied. In ******\_\_\_****** copy, the base address of the objects are not copied.
+
 a) deep. shallow
 
 b) memberwise, shallow
@@ -8118,24 +8752,27 @@ b) memberwise, shallow
 
 d) deep, memberwise
 
->Explanation: In shallow copy, the base address of the objects are copied.
-In deep copy, the base address of the objects are not copied.
-Note that memberwise copy is another name for shallow copy.
+> Explanation: In shallow copy, the base address of the objects are copied.
+> In deep copy, the base address of the objects are not copied.
+> Note that memberwise copy is another name for shallow copy.
 
 ### 4. The nested list undergoes shallow copy even when the list as a whole undergoes deep copy.
+
 **a) True**
 
 b) False
 
->Explanation: A nested list undergoes shallow copy even when the list as a whole undergoes deep copy. Hence, this statement is true.
+> Explanation: A nested list undergoes shallow copy even when the list as a whole undergoes deep copy. Hence, this statement is true.
 
 ### 5. What will be the output of the following Python code and state the type of copy that is depicted?
+
 ```
 l1=[2, 4, 6, 8]
 l2=[1, 2, 3]
 l1=l2
 l2
 ```
+
 a) [2, 4, 6, 8], shallow copy
 
 b) [2, 4, 6, 8], deep copy
@@ -8144,17 +8781,19 @@ b) [2, 4, 6, 8], deep copy
 
 d) [1, 2, 3], deep copy
 
->Explanation: The code shown above depicts shallow copy and the output of the code is: [1, 2, 3].
+> Explanation: The code shown above depicts shallow copy and the output of the code is: [1, 2, 3].
 
 ### 6. What will be the output of the following Python code?
+
 ```
 l1=[10, 20, 30]
 l2=l1
 id(l1)==id(l2)
- 
+
 l2=l1.copy()
 id(l1)==id(l2)
 ```
+
 a) False, False
 
 b) False, True
@@ -8163,14 +8802,16 @@ c) True, True
 
 **d) True, False**
 
->Explanation: The first code shown above represents shallow copy. Hence the output of the expression id(l1)==id(l2) is True. The second code depicts deep copy. Hence the output of the expression id(l1)==id(l2) in the second case is False.
+> Explanation: The first code shown above represents shallow copy. Hence the output of the expression id(l1)==id(l2) is True. The second code depicts deep copy. Hence the output of the expression id(l1)==id(l2) in the second case is False.
 
 ### 7. What will be the output of the following Python code?
+
 ```
 l1=[1, 2, 3, [4]]
 l2=list(l1)
 id(l1)==id(l2)
 ```
+
 a) True
 
 **b) False**
@@ -8179,9 +8820,10 @@ c) Error
 
 d) Address of l1
 
->Explanation: The code shown above shows a nested list. A nested list will undergo shallow copy when the list as a whole undergoes deep copy. Hence the output of this code is False.
+> Explanation: The code shown above shows a nested list. A nested list will undergo shallow copy when the list as a whole undergoes deep copy. Hence the output of this code is False.
 
 ### 8. What will be the output of the following Python code?
+
 ```
 l1=[10, 20, 30, [40]]
 l2=copy.deepcopy(l1)
@@ -8189,6 +8831,7 @@ l1[3][0]=90
 l1
 l2
 ```
+
 a)
 
 [10, 20, 30, [40]]
@@ -8206,23 +8849,26 @@ d)
 [10, 20, 30, [40]]
 [10, 20, 30, [90]]
 
->Explanation: The code shown above depicts deep copy. Hence at the end of the code, l1=[10, 20, 30, [90]] and l2=[10, 20, 30, [40]].
+> Explanation: The code shown above depicts deep copy. Hence at the end of the code, l1=[10, 20, 30, [90]] and l2=[10, 20, 30, [40]].
 
-### 9. In ____________________ copy, the modification done on one list affects the other list. In ____________________ copy, the modification done on one list does not affect the other list.
+### 9. In ********\_\_\_\_******** copy, the modification done on one list affects the other list. In ********\_\_\_\_******** copy, the modification done on one list does not affect the other list.
+
 **a) shallow, deep**
 b) memberwise, shallow
 c) deep, shallow
 d) deep, memberwise
 
->Explanation: In shallow copy, the modification done on one list affects the other list. In deep copy, the modification done on one list does not affect the other list.
+> Explanation: In shallow copy, the modification done on one list affects the other list. In deep copy, the modification done on one list does not affect the other list.
 
 ### 10. What will be the output of the following Python code?
+
 ```
 l1=[1, 2, 3, (4)]
 l2=l1.copy()
 l2
 l1
 ```
+
 a)
 
 [1, 2, 3, (4)]
@@ -8243,9 +8889,10 @@ d)
 [1, 2, 3, (4)]
 [1, 2, 3, (4)]
 
->Explanation: In the code shown above, the list l1 is enclosed in a tuple. When we print this list, it is printed as [1, 2, 3, 4]. Note the absence of the tuple. The code shown depicts deep copy. Hence the output of this program is: l1=[1, 2, 3, 4] and l2=[1, 2, 3, 4].
+> Explanation: In the code shown above, the list l1 is enclosed in a tuple. When we print this list, it is printed as [1, 2, 3, 4]. Note the absence of the tuple. The code shown depicts deep copy. Hence the output of this program is: l1=[1, 2, 3, 4] and l2=[1, 2, 3, 4].
 
 ### 11. What will be the output of the following Python code?
+
 ```
 def check(n):
     if n < 2:
@@ -8253,6 +8900,7 @@ def check(n):
     return check(n - 2)
 print(check(11))
 ```
+
 **a) False**
 
 b) True
@@ -8261,9 +8909,10 @@ c) 1
 
 d) An exception is thrown
 
->Explanation: The above piece of code checks recursively whether a number is even or odd.
+> Explanation: The above piece of code checks recursively whether a number is even or odd.
 
 ### 12. What is the base case in the Merge Sort algorithm when it is solved recursively?
+
 a) n=0
 
 b) n=1
@@ -8272,14 +8921,16 @@ b) n=1
 
 d) An empty list
 
->Explanation: Merge Sort algorithm implements the recursive algorithm and when the recursive function receives a list of length 1 which is the base case, the list is returned.
+> Explanation: Merge Sort algorithm implements the recursive algorithm and when the recursive function receives a list of length 1 which is the base case, the list is returned.
 
 ### 13. What will be the output of the following Python code?
+
 ```
 a = [1, 2, 3, 4, 5]
-b = lambda x: (b (x[1:]) + x[:1] if x else []) 
+b = lambda x: (b (x[1:]) + x[:1] if x else [])
 print(b (a))
 ```
+
 a) 1 2 3 4 5
 
 b) [5,4,3,2,1]
@@ -8288,11 +8939,12 @@ b) [5,4,3,2,1]
 
 d) Error, lambda functions can’t be called recursively
 
->Explanation: The above piece of code appends the first element of the list to a reversed sublist and reverses the list using recursion.
+> Explanation: The above piece of code appends the first element of the list to a reversed sublist and reverses the list using recursion.
 
 # Section 19
 
 ### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 odd=lambda x: bool(x%2)
 numbers=[n for n in range(10)]
@@ -8304,33 +8956,45 @@ for i in numbers:
     else:
         break
 ```
+
 a) [0, 2, 4, 6, 8, 10]\
 **b) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]**\
 c) [1, 3, 5, 7, 9]\
 d) Error
->Explanation: The code shown above returns a new list containing whole numbers up to 10 (excluding 10). Hence the output of the code is: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].
+
+> Explanation: The code shown above returns a new list containing whole numbers up to 10 (excluding 10). Hence the output of the code is: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].
+
 ### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 f=lambda x:bool(x%2)
 print(f(20), f(21))
 ```
+
 **a) False True**\
 b) False False\
 c) True True\
 d) True False
->Explanation: The code shown above will return true if the given argument is an odd number, and false if the given argument is an even number. Since the arguments are 20 and 21 respectively, the output of this code is: False True.
+
+> Explanation: The code shown above will return true if the given argument is an odd number, and false if the given argument is an even number. Since the arguments are 20 and 21 respectively, the output of this code is: False True.
+
 ### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 import functools
 l=[1,2,3,4]
 print(functools.reduce(lambda x,y:x*y,l))
 ```
+
 a) Error\
 b) 10\
 **c) 24**\
 d) No output
->Explanation: The code shown above returns the product of all the elements of the list. Hence the output is 1*2*3*4 = 24.
+
+> Explanation: The code shown above returns the product of all the elements of the list. Hence the output is 1*2*3\*4 = 24.
+
 ### 4. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 l=[1, -2, -3, 4, 5]
 def f1(x):
@@ -8338,27 +9002,36 @@ def f1(x):
 m1=filter(f1, l)
 print(list(m1))
 ```
+
 a) [1, 4, 5 ]\
 b) Error\
 c) [-2, -3]\
 **d) [1, -2, -3]**
->Explanation: The code shown above returns only those elements from the list, which are less than 2. The functional programming tool used to achieve this operation is filter. Hence the output of the code is:[1, -2, -3].
+
+> Explanation: The code shown above returns only those elements from the list, which are less than 2. The functional programming tool used to achieve this operation is filter. Hence the output of the code is:[1, -2, -3].
+
 ### 5. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 l=[-2, 4]
 m=map(lambda x:x*2, l)
 print(m)
 ```
+
 a) [-4, 16]\
 **b) Address of m**\
 c) Error\
-d) 
+d)
+
 ```
 -4
    16
 ```
->Explanation: The code shown above returns the address of m. Had we used the statement: print(list(m)), the output would have been: [-4, 16].
+
+> Explanation: The code shown above returns the address of m. Had we used the statement: print(list(m)), the output would have been: [-4, 16].
+
 ### 6. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 l=[1, -2, -3, 4, 5]
 def f1(x):
@@ -8366,35 +9039,47 @@ def f1(x):
 m1=map(f1, l)
 print(list(m1))
 ```
+
 a) [False, False, False, False, False]\
 **b) [False, True, True, False, False]**\
 c) [True, False, False, True, True]\
-d)  [True, True, True, True, True]
->Explanation: This code shown returns a list which contains True if the corresponding element of the list is less than -1, and false if the corresponding element is greater than -1. Hence the output of the code shown above: [False, True, True, False, False].
+d) [True, True, True, True, True]
+
+> Explanation: This code shown returns a list which contains True if the corresponding element of the list is less than -1, and false if the corresponding element is greater than -1. Hence the output of the code shown above: [False, True, True, False, False].
+
 ### 7. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 l=[1, 2, 3, 4, 5]
 m=map(lambda x:2**x, l)
 print(list(m))
 ```
+
 a) [1, 4, 9, 16, 25 ]\
 **b) [2, 4, 8, 16, 32 ]**\
 c) [1, 0, 1, 0, 1]\
-d)  Error
->Explanation: The code shown above prints a list containing each element of the list as the power of two. That is, the output is: [2, 4, 8, 16, 32].
+d) Error
+
+> Explanation: The code shown above prints a list containing each element of the list as the power of two. That is, the output is: [2, 4, 8, 16, 32].
+
 ### 8. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 import functools
 l=[1, 2, 3, 4, 5]
 m=functools.reduce(lambda x, y:x if x>y else y, l)
 print(m)
 ```
+
 a) Error\
 b) Address of m\
 c) 1\
 **d) 5**
->Explanation: The code shown above can be used to find the maximum of the elements from the given list. In the above code, this operation is achieved by using the programming tool reduce. Hence the output of the code shown above is 5.
+
+> Explanation: The code shown above can be used to find the maximum of the elements from the given list. In the above code, this operation is achieved by using the programming tool reduce. Hence the output of the code shown above is 5.
+
 ### 9. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 l=[n for n in range(5)]
 f=lambda x:bool(x%2)
@@ -8404,56 +9089,75 @@ for i in range(len(l)):
         del l[i]
         print(i)
 ```
+
 **a)**
+
 ```
   True True
   1
   2
   Error
 ```
+
 b)
+
 ```
   False False
   1
   2
 ```
-c) 
+
+c)
+
 ```
-  True False 
+  True False
   1
   2
   Error
 ```
-d)  
+
+d)
+
 ```
   False True
   1
   2
 ```
->Explanation: The code shown above prints true if the value entered as an argument is odd, else false is printed. Hence the output: True True. The error is due to the list index being out of range.
+
+> Explanation: The code shown above prints true if the value entered as an argument is odd, else false is printed. Hence the output: True True. The error is due to the list index being out of range.
+
 ### 10. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 m=reduce(lambda x: x-3 in range(4, 10))
 print(list(m))
 ```
+
 a) [1, 2, 3, 4, 5, 6, 7]\
 b) No output\
 c) [1, 2, 3, 4, 5, 6]\
 **d) Error**
->Explanation: The code shown above will result in an error. This is because e have not imported functools. Further, ‘reduce’, as such is not defined. We should use functools.reduce to remove the error.
+
+> Explanation: The code shown above will result in an error. This is because e have not imported functools. Further, ‘reduce’, as such is not defined. We should use functools.reduce to remove the error.
+
 ### 11. Which of the following numbers will not be a part of the output list of the following Python code? [Яке з наступних чисел не буде частиною результуючого списку наступного фрагмента коду Python?]
+
 ```
 def sf(a):
     return a%3!=0 and a%5!=0
 m=filter(sf, range(1, 31))
 print(list(m)))
 ```
+
 a) 1\
 b) 29\
 c) 6\
 **d) 10**
->Explanation: The output list of the code shown above will not contain any element that is divisible by 3 or 5. Hence the number which is not present in the output list is 10. The output list: [1, 2, 4, 7, 8, 11, 13, 14, 16, 17, 19, 22, 23, 26, 28, 29]
+
+> Explanation: The output list of the code shown above will not contain any element that is divisible by 3 or 5. Hence the number which is not present in the output list is 10. The output list: [1, 2, 4, 7, 8, 11, 13, 14, 16, 17, 19, 22, 23, 26, 28, 29]
+
 ### 12. The single line equivalent of the following Python code? [Який рядок еквівалентний наступному фрагменту коду Python?]
+
 ```
 l=[1, 2, 3, 4, 5]
 def f1(x):
@@ -8461,400 +9165,546 @@ def f1(x):
 m1=filter(f1, l)
 print(list(m1))
 ```
+
 **a) filter(lambda x:x<0, l)**\
 b) filter(lambda x, y: x<0, l)\
 c) filter(reduce x<0, l)\
 d) reduce(x: x<0, l)
->Explanation: The code shown above returns a new list containing only those elements from list l, which are less than 0. Since there are no such elements in the list l, the output of this code is: []. The single line equivalent of this code is filter(lambda x:x<0, l).
+
+> Explanation: The code shown above returns a new list containing only those elements from list l, which are less than 0. Since there are no such elements in the list l, the output of this code is: []. The single line equivalent of this code is filter(lambda x:x<0, l).
+
 ### 13. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 list(map((lambda x:x^2), range(10)))
 ```
+
 a) [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]\
 b) 29\
 **c) [2, 3, 0, 1, 6, 7, 4, 5, 10, 11]**\
 d) No output
->Explanation: The line of code shown above returns a list of each number from 1 to 10, after an XOR operation is performed on each of these numbers with 2. Hence the output of this code is: [2, 3, 0, 1, 6, 7, 4, 5, 10, 11]
+
+> Explanation: The line of code shown above returns a list of each number from 1 to 10, after an XOR operation is performed on each of these numbers with 2. Hence the output of this code is: [2, 3, 0, 1, 6, 7, 4, 5, 10, 11]
+
 ### 14. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 list(map((lambda x:x**2), filter((lambda x:x%2==0), range(10))))
 ```
+
 a) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\
 **b) [0, 4, 16, 36, 64]**\
 c) Error\
 d) No output
->Explanation: The output list will contain each number up to 10 raised to 2, except odd numbers, that is, 1, 3, 5, 9. Hence the output of the code is: [0, 4, 16, 36, 64].
+
+> Explanation: The output list will contain each number up to 10 raised to 2, except odd numbers, that is, 1, 3, 5, 9. Hence the output of the code is: [0, 4, 16, 36, 64].
+
 ### 15.The output of the following codes are the same. [Результати наступних рядків коду однакові. ]
+
 ```
 [x**2 for x in range(10)]
 list(map((lambda x:x**2), range(10)))
 ```
+
 a) True\
 b) False
->Explanation: Both of the codes shown above print each whole number up to 10, raised to the power 2. Hence the output of both of these codes is: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]. Therefore, the statement is true.
+
+> Explanation: Both of the codes shown above print each whole number up to 10, raised to the power 2. Hence the output of both of these codes is: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]. Therefore, the statement is true.
+
 ### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 elements = [0, 1, 2]
 def incr(x):
     return x+1
 print(list(map(elements, incr)))
 ```
+
 a) [1, 2, 3]\
 b) [0, 1, 2]\
 **c) error**\
 d) none of the mentioned
->Explanation: The list should be the second parameter to the mapping function.
+
+> Explanation: The list should be the second parameter to the mapping function.
+
 ### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 elements = [0, 1, 2]
 def incr(x):
     return x+1
 print(list(map(incr, elements)))
 ```
+
 **a) [1, 2, 3]**\
 b) [0, 1, 2]\
 c) error\
 d) none of the mentioned
->Explanation: Each element of the list is incremented.
+
+> Explanation: Each element of the list is incremented.
+
 ### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = ['ab', 'cd']
 print(list(map(upper, x)))
 ```
+
 a) [‘AB’, ‘CD’]\
 b) [‘ab’, ‘cd’]\
 **c) error**\
 d) none of the mentioned
->Explanation: A NameError occurs because upper is a class method.
+
+> Explanation: A NameError occurs because upper is a class method.
+
 ### 4. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 def to_upper(k):
     return k.upper()
 x = ['ab', 'cd']
 print(list(map(upper, x)))
 ```
+
 a) [‘AB’, ‘CD’]\
 b) [‘ab’, ‘cd’]\
 **c) error**\
 d) none of the mentioned
->Explanation: A NameError occurs because upper is a class method.
+
+> Explanation: A NameError occurs because upper is a class method.
+
 ### 5. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 def to_upper(k):
     return k.upper()
 x = ['ab', 'cd']
 print(list(map(to_upper, x)))
 ```
+
 **a) [‘AB’, ‘CD’]**\
 b) [‘ab’, ‘cd’]\
 c) error\
 d) none of the mentioned
->Explanation: Each element of the list is converted to uppercase.
+
+> Explanation: Each element of the list is converted to uppercase.
+
 ### 6. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 def to_upper(k):
     k.upper()
 x = ['ab', 'cd']
 print(list(map(to_upper, x)))
 ```
+
 a) [‘AB’, ‘CD’]\
 b) [‘ab’, ‘cd’]\
 **c) none of the mentioned**\
 d) error
->Explanation: A list of Nones is printed as to_upper() returns None.
+
+> Explanation: A list of Nones is printed as to_upper() returns None.
+
 ### 7. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = ['ab', 'cd']
 print(map(len, x))
 ```
+
 a) [‘ab’, ‘cd’]\
 b) [2, 2]\
 c) [‘2’, ‘2’]\
 **d) none of the mentioned**
->Explanation: A map object is generated by map(). We must convert this to a list to be able to print it in a human readable form.
+
+> Explanation: A map object is generated by map(). We must convert this to a list to be able to print it in a human readable form.
+
 ### 8. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = ['ab', 'cd']
 print(list(map(len, x)))
 ```
+
 a) [‘ab’, ‘cd’]\
 **b) [2, 2]**\
 c) [‘2’, ‘2’]\
 d) none of the mentioned
->Explanation: The length of each string is 2.
+
+> Explanation: The length of each string is 2.
+
 ### 9. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = ['ab', 'cd']
 print(len(map(list, x)))
 ```
+
 a) [2, 2]\
 b) 2\
 c) 4\
 **d) none of the mentioned**
->Explanation: A TypeError occurs as map has no len().
+
+> Explanation: A TypeError occurs as map has no len().
+
 ### 10. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = ['ab', 'cd']
 print(len(list(map(list, x))))
 ```
+
 a) [2, 2]\
 **b) 2**\
 c) 4\
 d) none of the mentioned
->Explanation: The outer list has two lists in it. So it’s length is 2.
+
+> Explanation: The outer list has two lists in it. So it’s length is 2.
+
 ### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = ['ab', 'cd']
 print(len(list(map(list, x))))))
 ```
+
 a) 2\
 b) 4\
 **c) error**\
 d) none of the mentioned
->Explanation: SyntaxError, unbalanced parenthesis.
+
+> Explanation: SyntaxError, unbalanced parenthesis.
+
 ### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = ['ab', 'cd']
 print(list(map(list, x)))
 ```
+
 a) [‘a’, ‘b’, ‘c’, ‘d’]\
 b) [[‘ab’], [‘cd’]]\
 **c) [[‘a’, ‘b’], [‘c’, ‘d’]]**\
 d) none of the mentioned
->Explanation: Each element of x is converted into a list.
+
+> Explanation: Each element of x is converted into a list.
+
 ### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [12, 34]
 print(len(list(map(len, x))))
 ```
+
 a) 2\
 b) 1\
 **c) error**\
 d) none of the mentioned
->Explanation: SyntaxError, unbalanced parenthesis.
+
+> Explanation: SyntaxError, unbalanced parenthesis.
+
 ### 4. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [12, 34]
 print(len(list(map(int, x))))
 ```
+
 **a) 2**\
 b) 1\
 c) error\
 d) none of the mentioned
->Explanation: list(map()) returns a list of two items in this example.
+
+> Explanation: list(map()) returns a list of two items in this example.
+
 ### 5. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [12, 34]
 print(len(''.join(list(map(int, x)))))
 ```
+
 a) 4\
 b) 2\
 **c) error**\
 d) none of the mentioned
->Explanation: SyntaxError, unbalanced parenthesis.
+
+> Explanation: SyntaxError, unbalanced parenthesis.
+
 ### 6. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [12, 34]
 print(len(''.join(list(map(str, x)))))
 ```
+
 **a) 4**\
 b) 5\
 c) 6\
 d) error
->Explanation: Each number is mapped into a string of length 2.
+
+> Explanation: Each number is mapped into a string of length 2.
+
 ### 7. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [12, 34]
 print(len(' '.join(list(map(int, x)))))
 ```
+
 a) 4\
 b) 5\
 c) 6\
 **d) error**
->Explanation: TypeError. Execute in shell to verify.
+
+> Explanation: TypeError. Execute in shell to verify.
+
 ### 8. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [12.1, 34.0]
 print(len(' '.join(list(map(str, x)))))
 ```
+
 a) 6\
 b) 8\
 **c) 9**\
 d) error
->Explanation: The floating point numbers are converted to strings and joined with a space between them.
+
+> Explanation: The floating point numbers are converted to strings and joined with a space between them.
+
 ### 9. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [12.1, 34.0]
 print(' '.join(list(map(str, x))))
 ```
+
 a) 12 1 34 0\
 b) 12.1 34\
 c) 121 340\
 **d) 12.1 34.0**
->Explanation: str(ab.c) is ‘ab.c’.
+
+> Explanation: str(ab.c) is ‘ab.c’.
+
 ### 10. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [[0], [1]]
 print(len(' '.join(list(map(str, x)))))
 ```
+
 a) 2\
 b) 3\
 **c) 7**\
 d) 8
->Explanation: map() is applied to the elements of the outer loop.
+
+> Explanation: map() is applied to the elements of the outer loop.
+
 ### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [[0], [1]]
 print((' '.join(list(map(str, x)))))
 ```
+
 a) (‘[0] [1]’,)\
 b) (’01’,)\
 **c) [0] [1]**\
 d) 01
->Explanation: (element) is the same as element. It is not a tuple with one item.
+
+> Explanation: (element) is the same as element. It is not a tuple with one item.
+
 ### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [[0], [1]]
 print((' '.join(list(map(str, x))),))
 ```
+
 **a) (‘[0] [1]’,)**\
 b) (’01’)\
-c) [0] [1]\	
+c) [0] [1]\
 d) 01
->Explanation: (element,) is not the same as element. It is a tuple with one item.
+
+> Explanation: (element,) is not the same as element. It is a tuple with one item.
+
 ### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [34, 56]
 print((''.join(list(map(str, x))),))
 ```
+
 a) 3456\
 b) (3456)\
 c) (‘3456’)\
 **d) (‘3456’,)**
->Explanation: We have created a tuple with one string in it.
+
+> Explanation: We have created a tuple with one string in it.
+
 ### 4. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [34, 56]
 print((''.join(list(map(str, x)))),)
 ```
+
 **a) 3456**\
 b) (3456)\
 c) (‘3456’)\
 d) (‘3456’,)
->Explanation: We have just created a string.
+
+> Explanation: We have just created a string.
+
 ### 5. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = [34, 56]
 print(len(map(str, x)))
 ```
+
 a) [34, 56]\
 b) [’34’, ’56’]\
 c) 34 56\
 **d) error**
->Explanation: TypeError, map has no len.
+
+> Explanation: TypeError, map has no len.
+
 ### 6. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = 'abcd'
 print(list(map(list, x)))
 ```
+
 a) [‘a’, ‘b’, ‘c’, ‘d’]\
 b) [‘abcd’]\
 **c) [[‘a’], [‘b’], [‘c’], [‘d’]]**\
 d) none of the mentioned
->Explanation: list() is performed on each character in x.
+
+> Explanation: list() is performed on each character in x.
+
 ### 7. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
 ```
 x = abcd
 print(list(map(list, x)))
 ```
-a)  [‘a’, ‘b’, ‘c’, ‘d’]\
-b) [‘abcd’]\
-c) [[‘a’], [‘b’], [‘c’], [‘d’]]\
-**d) none of the mentioned**
->Explanation: NameError, we have not defined abcd.
-### 8. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
-```
-x = 1234
-print(list(map(list, x)))
-```
-a) [1, 2, 3, 4]\
-b) [1234]\
-c) [[1], [2], [3], [4]]\ 	
-**d) none of the mentioned**
->Explanation: TypeError, int is not iterable.
-### 9. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
-```
-x = 1234
-print(list(map(list, [x])))
-```
-a) [1, 2, 3, 4]\
-b) [1234]\
-c) [[1], [2], [3], [4]]\
-**d) none of the mentioned**
->Explanation: TypeError, int is not iterable.
-### 10. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
-```
-x = 'abcd'
-print(list(map([], x)))
-```
+
 a) [‘a’, ‘b’, ‘c’, ‘d’]\
 b) [‘abcd’]\
 c) [[‘a’], [‘b’], [‘c’], [‘d’]]\
 **d) none of the mentioned**
->Explanation: TypeError, list object is not callable.
+
+> Explanation: NameError, we have not defined abcd.
+
+### 8. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
+```
+x = 1234
+print(list(map(list, x)))
+```
+
+a) [1, 2, 3, 4]\
+b) [1234]\
+c) [[1], [2], [3], [4]]\
+**d) none of the mentioned**
+
+> Explanation: TypeError, int is not iterable.
+
+### 9. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
+```
+x = 1234
+print(list(map(list, [x])))
+```
+
+a) [1, 2, 3, 4]\
+b) [1234]\
+c) [[1], [2], [3], [4]]\
+**d) none of the mentioned**
+
+> Explanation: TypeError, int is not iterable.
+
+### 10. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+
+```
+x = 'abcd'
+print(list(map([], x)))
+```
+
+a) [‘a’, ‘b’, ‘c’, ‘d’]\
+b) [‘abcd’]\
+c) [[‘a’], [‘b’], [‘c’], [‘d’]]\
+**d) none of the mentioned**
+
+> Explanation: TypeError, list object is not callable.
+
 ### 11. Is Python code compiled or interpreted? [Python код компілюємий чи інтерпретуємий?]
+
 a) Python code is only compiled\
 **b) Python code is both compiled and interpreted**\
 c) Python code is only interpreted\
 d) Python code is neither compiled nor interpreted
->Explanation: Many languages have been implemented using both compilers and interpreters, including C, Pascal, and Python.
+
+> Explanation: Many languages have been implemented using both compilers and interpreters, including C, Pascal, and Python.
+
 ### 12. Which of these is the definition for packages in Python? [Що з цього є визначенням пакету у Python?]
+
 **a) A folder of python modules**\
 b) A set of programs making use of Python modules\
-c) A set of main modules\	
+c) A set of main modules\
 d) A number of files containing Python definitions and statements
->Explanation: A folder of python programs is called as a package of modules.
+
+> Explanation: A folder of python programs is called as a package of modules.
+
 ### 13. Which of these is false about a package? [Що з цього неправда про Python?]
+
 ```
 x = [[0], [1]]
 print(len(' '.join(list(map(str, x)))))
 ```
+
 a) A package can have subfolders and modules\
 **b) Each import package need not introduce a namespace**\
 c) import folder.subfolder.mod1 imports packages\
 d) from folder.subfolder.mod1 import objects imports packages
->Explanation:  Packages provide a way of structuring Python namespace. Each import package introduces a namespace.
 
+> Explanation: Packages provide a way of structuring Python namespace. Each import package introduces a namespace.
 
 # Section 20
 
 # Section 21
-	
+
 Python Question and Answers – Datetime Module – 1
-	
+
 ## 1. [broken] What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 import datetime
 d=datetime.date(2016,7,24) тут переплутали рік
 print(d)
-	
 a) Error
 **b) 2017-07-24**
 c) 2017-7-24
 d) 24-7-2017
+
 > In the snippet of code shown above, we are simply printing the date entered by us. We enter the date in the format: yyyy,m,dd. The date is then printed in the format: yyyy-mm-dd. Hence the output is: 2017-07-24.
 
 ## 2. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 import datetime
 d=datetime.date(2017,06,18)
 print(d)
-	
 **a) Error**
 b) 2017-06-18
 c) 18-06-2017
 d) 06-18-2017
+
 > The code shown above will result in an error because of the format of the date entered. Had the date been entered as: d=datetime.date(2017,6,18), no error would have been thrown.
-	
+
 ## 3. [broken] What will be the output of the following Python code if the system date is 18th August, 2016? [Яким буде результат наступного коду Python, якщо системна дата – 18 серпня 2016 р.?]
+
 Ну мабуть тут має бути import datetime
 tday=datetime.date.today()
 print(tday.month()) а тут треба писати tday.month
@@ -8864,9 +9714,11 @@ a) August
 b) Aug
 c) 08
 **d) 8**
+
 > The code shown above prints the month number from the system date. Therefor the output will be 8 if the system date is 18th August, 2016.
-	
+
 ## 4. What will be the output of the following Python code if the system date is 18th June, 2017? [Яким буде вихід наступного коду Python, якщо системна дата – 18 червня 2017 р.?]
+
 import datetime
 tday=datetime.date.today()
 print(tday)
@@ -8875,10 +9727,12 @@ a) 18-06-2017
 b) 06-18-2017
 **c) 2017-06-18**
 d) Error
+
 > The code shown above prints the system date in the format yyyy-mm-dd. Hence the output of this code is: 2017-06-18.
-	
+
 ## 5. [broken] What will be the output of the following Python code if the system date is 18th June, 2017 (Sunday)? [Яким буде результат наступного коду Python, якщо системна дата – 18 червня 2017 року (неділя)?]
-Ну мабуть тут має бути ```import datetime```
+
+Ну мабуть тут має бути `import datetime`
 tday=datetime.date.today()
 print(tday.weekday())
 
@@ -8886,10 +9740,12 @@ print(tday.weekday())
 b) 1
 c) 0
 d) 7
+
 > The code shown above prints an integer depending on which day of the week it is. Monday-0, Tuesday-1, Wednesday-2, Thursday-3, Friday-4, Saturday-5, Sunday-6. Hence the output is 6 in the case shown above.
-	
+
 ## 6. [broken] What will be the output of the following Python code if the system date is 21st June, 2017 (Wednesday)? [Яким буде результат наступного коду Python, якщо системна дата – 21 червня 2017 року (середа)?]
-Ну мабуть тут має бути ```import datetime```
+
+Ну мабуть тут має бути `import datetime`
 tday=datetime.date.today()
 print(tday.isoweekday())
 
@@ -8897,9 +9753,11 @@ a) Wed
 b) Wednesday
 c) 2
 **d) 3**
+
 > This code prints an integer depending on which day of the week it is. Monday-1, Tuesday-2, Wednesday-3, Thursday-4, Friday-5, Saturday-6, Sunday-7. Hence the output of the code shown above is 3.
-	
+
 ## 7. [broken] Point out the error (if any) in the code shown below if the system date is 18th June, 2017? [Вкажіть на помилку (якщо є) у коді, показаному нижче, якщо системна дата – 18 червня 2017 р.?]
+
 Ну мабуть тут має бути import datetime
 tday=datetime.date.today()
 bday=datetime.date(2017,9,18)
@@ -8910,17 +9768,20 @@ a) 3 months, 0:00:00
 b) 90 days, 0:00:00
 c) 3 months 2 days, 0:00:00
 **d) 92 days, 0:00:00**
+
 > The code shown above can be used to find the number of days between two given dates. The output of the code shown above will thus be 92.
-	
-## 8. The value returned when we use the function isoweekday() is ______ and that for the function weekday() is ________ if the system date is 19th June, 2017 (Monday)? [Значення, яке повертається, коли ми використовуємо функцію isoweekday(), дорівнює ______, а для функції weekday() — ________, якщо системна дата — 19 червня 2017 року (понеділок)?]
+
+## 8. The value returned when we use the function isoweekday() is **\_\_** and that for the function weekday() is **\_\_\_\_** if the system date is 19th June, 2017 (Monday)? [Значення, яке повертається, коли ми використовуємо функцію isoweekday(), дорівнює ______, а для функції weekday() — ________, якщо системна дата — 19 червня 2017 року (понеділок)?]
 
 a) 0,0
 b) 0,1
 **c) 1,0**
 d) 1,1
+
 > The value returned when we use the function isoweekday() is 1 and that for the function weekday() is 0 if the system date is 19th June, 2017 (Monday).
-	
+
 ## 9. [broken] Which of the following will throw an error if used after the following Python code? [Що з наведеного нижче призведе до помилки, якщо використовується після наступного коду Python?]
+
 Ну мабуть тут має бути import datetime
 tday=datetime.date.today()
 bday=datetime.date(2017,9,18)
@@ -8930,9 +9791,11 @@ a) print(t_day.seconds)
 **b) print(t_day.months)**
 c) print(t_day.max)
 d) print(t_day.resolution)
+
 > The statement: print(t_day.months) will throw an error because there is no function such as t_day.months, whereas t_day.seconds, t_day.max and t_day.resolution are valid, provided that t_day is defined.
-	
+
 ## 10. [broken] What will be the output of the following Python code if the system date is: 6/19/2017? [Яким буде вихід наступного коду Python, якщо системна дата: 19.06.2017?]
+
 Ну мабуть тут має бути import datetime
 tday=datetime.date.today()
 tdelta=datetime.timedelta(days=10)
@@ -8942,150 +9805,152 @@ a) 2017-16-19
 b) 2017-06-9
 **c) 2017-06-29**
 d) Error
+
 > The code shown above will add the specified number of days to the current date and print the new date. On adding ten days to 6/19/2017, we get 6/29/2017. Hence the output is: 2017-06-29.
 
 Python Question and Answers – Datetime Module – 2
 
 ## 1. [broken] The output of both of the print statements is the same. [Висновок обох операторів друку однаковий.]
+
 import datetime
 dt_1 = datetime.datetime.today()
 dt_2 = datetime.datetime.now()
 print(dt_1)
 print(dt_2)
-	
 У відповідях було написано що правильно False бо - див. Explanation, але якщо в питанні малось на увазі чи виводить воно одне і те саме - то відповідь True + я скомпілив і різниці у часі не було помітно.
 
 **a) True**
 b) False
+
 > The output of the two print statements is not the same because of the difference in time between the execution of the two print statements. There is a difference in the order of milliseconds between the two statements and this is reflected in the output.
-	
+
 ## 2. Which of the following functions can be used to find the coordinated universal time, assuming that the datetime module has already been imported? [Яку з наведених нижче функцій можна використовувати, щоб знайти скоординований універсальний час, якщо припустити, що модуль datetime вже імпортовано?]
-	
+
 a) datetime.utc()
 b) datetime.datetime.utc()
 c) datetime.utcnow()
 **d) datetime.datetime.utcnow()**
 
 > The function datetime.datetime.utcnow() can be used to find the UTC (Coordinated Universal Time), assuming that the datetime module has already been imported. The other function s shown above are invalid.
-	
+
 ## 3. [broken] What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 import time
 time.time()
-	
 a) The number of hours passed since 1st January, 1970
 b) The number of days passed since 1st January, 1970
 **c) The number of seconds passed since 1st January, 1970**
 d) The number of minutes passed since 1st January, 1970
-	
 Якщо дописати print(time.time()) то відповідь c.
 
 > The code shown above will return the number of seconds passed since 1st January, 1970.
-	
+
 ## 4. [broken] What will be the output of the following Python code, if the time module has already been imported? [Яким буде результат наступного коду Python, якщо модуль часу вже імпортовано?]
+
 def num(m):
-	t1 = time.time()
-	for i in range(0,m):
-		print(i)
-	t2 = time.time()
-	print(str(t2-t1))
- 
+t1 = time.time()
+for i in range(0,m):
+print(i)
+t2 = time.time()
+print(str(t2-t1))
+
     num(3)
-	
+
 **a) 1**
-**   2**
-**   3**
-**   The time taken for the execution of the code**
+** 2**
+** 3**
+** The time taken for the execution of the code**
 b) 3
-   The time taken for the execution of the code
+The time taken for the execution of the code
 c) 1
-   2
-   3
-   UTC time 
+2
+3
+UTC time
 d) 3
-   UTC time
-	
+UTC time
 Якась діч, бо воно має виводити з 0 а не з 1 як у відповідях. У мене після запуску вивело 0 1 2 0.0
 
 > The code shown above will return the numbers 1, 2, 3, followed by the time taken in the execution of the code.
-Output:
-1
-2
-3
-The time taken for the execution of the code
-	
+> Output:
+> 1
+> 2
+> 3
+> The time taken for the execution of the code
+
 ## 5. [broken] What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 import time
 time.asctime()
-	
 a) Current date only
 b) UTC time
 **c) Current date and time**
 d) Current time only
-	
 Якщо дописати print(time.asctime()) то відповідь c.
 
 > The function time.asctime(), present if the time module can be used to return the current date and time. It can also accept a parameter and return the date and time in a particular format. However in the above code, since we have not passed any parameters in the above code, the current date and time is returned.
-	
+
 ## 6. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 import time
 t=(2010, 9, 20, 8, 15, 12, 6)
 time.asctime(t)
-	
 a) ‘20 Sep 2010 8:15:12 Sun’
 b) ‘2010 20 Sept 08:15:12 Sun’
 c) ‘Sun Sept 20 8:15:12 2010’
 **d) Error**
 
 > The code shown above results in an error because this function accepts exactly 9 arguments (including day of the year and DST), but only 7 are given. Hence an error is thrown.
-	
+
 ## 7. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 import time
 t=(2010, 9, 20, 8, 45, 12, 6, 0, 0)
 time.asctime(t)
-	
 a) ‘Sep 20 2010 08:45:12 Sun’
 **b) ‘Sun Sep 20 08:45:12 2010’**
 c) ’20 Sep 08:45:12 Sun 2010’
 d) ‘2010 20 Sep 08:45:12 Sun’
 
 > The code shown above returns the given date and time in a particular format. Hence the output of the code shown above will be: ‘Sun Sep 20 08:45:12 2010’.
-	
-## 8. The sleep function (under the time module) is used to ___________ [Функція сну (під модулем часу) використовується для ___________]
+
+## 8. The sleep function (under the time module) is used to ****\_\_\_**** [Функція сну (під модулем часу) використовується для ___________]
+
 **a) Pause the code for the specified number of seconds**
 b) Return the specified number of seconds, in terms of milliseconds
 c) Stop the execution of the code
 d) Return the output of the code had it been executed earlier by the specified number of seconds
 
 > The sleep function (under the time module) is used to pause the code for the specified number of seconds. The number of seconds is taken as an argument by this function.
-	
+
 ## 9. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 import time
 for i in range(0,5):
-	print(i)
-	time.sleep(2)
-	
+print(i)
+time.sleep(2)
 a) After an interval of 2 seconds, the numbers 1, 2, 3, 4, 5 are printed all together
 b) After an interval of 2 seconds, the numbers 0, 1, 2, 3, 4 are printed all together
 c) Prints the numbers 1, 2, 3, 4, 5 at an interval of 2 seconds between each number
 **d) Prints the numbers 0, 1, 2, 3, 4 at an interval of 2 seconds between each number**
 
 > The output of the code shown above will be the numbers 0, 1, 2, 3, 4 at an interval of 2 seconds each.
-	
+
 ## 10. What will be the output if we try to extract only the year from the following Python code? (time.struct_time(tm_year=2017, tm_mon=6, tm_mday=25, tm_hour=18, tm_min=26, tm_sec=6, tm_wday=6, tm_yday=176, tm_isdst=0))? [Яким буде результат, якщо ми спробуємо витягти лише рік із наступного коду Python? (time.struct_time(tm_year=2017, tm_mon=6, tm_mday=25, tm_hour=18, tm_min=26, tm_sec=6, tm_wday=6, tm_yday=176, tm_isdst=0))?]
+
 import time
 t=time.localtime()
 print(t)
-	
 a) t[1]
 b) tm_year
 **c) t[0]**
 d) t_year
 
 > To extract the year from the code shown above, we use the command t[0]. The command t[1] will return the month number (6 in the above case). The commands tm_year and t_year will result in errors.
-	
+
 Python Question and Answers – Random module – 1
-	
+
 ## 1. To include the use of functions which are present in the random library, we must use the option: [Щоб включити використання функцій, які присутні у випадковій бібліотеці, ми повинні використовувати параметр:]
+
 **a) import random**
 b) random.h
 c) import.random
@@ -9094,29 +9959,29 @@ d) random.random
 > The command import random is used to import the random module, which enables us to use the functions which are present in the random library.
 
 ## 2. The output of the following Python code is either 1 or 2 [Результатом наступного коду Python є 1 або 2]
+
 import random
 random.randint(1,2)
-	
 **a) True**
 b) False
 
 > The function random.randint(a,b) helps us to generate an integer between ‘a’ and ‘b’, including ‘a’ and ‘b’. In this case, since there are no integers between 1 and 2, the output will necessarily be either 1 or 2’.
-	
+
 ## 3. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 import random
 random.choice(2,3,4)
-	
 a) An integer other than 2, 3 and 4
 b) Either 2, 3 or 4
 **c) Error**
 d) 3 only
 
 > The code shown above displays the incorrect syntax of the function random.choice(). This functions takes its numeric parameter in the form of a list. Hence the correct syntax world be: random.choice([2,3,4]).
-	
+
 ## 4. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 import random
 random.choice([10.4, 56.99, 76])
-	
 a) Error
 **b) Either 10.4, 56.99 or 76**
 c) Any number other than 10.4, 56.99 and 76
@@ -9125,188 +9990,203 @@ d) 56.99 only
 > The function random.choice(a,b,c,d) returns a random number which is selected from a, b, c and d. The output can be either a, b, c or d. Hence the output of the snippet of code shown above can be either 10.4, 56.99 or 76.
 
 ## 5. What will be the output of the following Python function (random module has already been imported)? [Яким буде результат наступної функції Python (довільний модуль вже імпортовано)?]
+
 random.choice('sun')
-	
 a) sun
 b) u
 **c) either s, u or n**
 d) error
 
 > The above function works with alphabets just as it does with numbers. The output of this expression will be either s, u or n.
-	
+
 ## 6. What will be the output of the following Python function, assuming that the random module has already been imported? [Яким буде результат наступної функції Python, якщо припустити, що випадковий модуль вже імпортовано?]
+
 random.uniform(3,4)
-	
 a) Error
 b) Either 3 or 4
 c) Any integer other than 3 and 4
 **d) Any decimal value between 3 and 4**
 
 > This question depicts the basic difference between the functions random.randint(a, b) and random.uniform(a, b). While random.randint(a,b) generates an integer between ‘a’ and ‘b’, including ‘a’ and ‘b’, the function random.uniform(a,b) generates a decimal value between ‘a’ and ‘b’.
-	
+
 ## 7. What will be the output of the following Python function if the random module has already been imported? [Яким буде результат наступної функції Python, якщо випадковий модуль вже імпортовано?]
+
 random.randint(3.5,7)
-	
 **a) Error**
 b) Any integer between 3.5 and 7, including 7
 c) Any integer between 3.5 and 7, excluding 7
 d) The integer closest to the mean of 3.5 and 7
 
 > The function random.randint() does not accept a decimal value as a parameter. Hence the function shown above will throw an error.
-	
+
 ## 8. Which of the following functions helps us to randomize the items of a list? [Яка з наведених нижче функцій допомагає нам рандомізувати елементи списку?]
+
 a) seed
 b) randomise
 **c) shuffle**
 d) uniform
 
 > The function shuffle, which is included in the random module, helps us to randomize the items of a list. This function takes the list as a parameter.
-	
+
 ## 9. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 random.seed(3)
 random.randint(1,5)
 2
 random.seed(3)
 random.randint(1,5)
-	
 a) 3
 **b) 2**
 c) Any integer between 1 and 5, including 1 and 5
 d) Any integer between 1 and 5, excluding 1 and 5
 
 > We use the seed function when we want to use the same random number once again in our program. Hence the output of the code shown above will be 2, since 2 was generated previously following which we used the seed function.
-	
+
 ## 10. What is the interval of the value generated by the function random.random(), assuming that the random module has already been imported? [Який інтервал значення генерується функцією random.random(), якщо припустити, що модуль random вже імпортовано?]
+
 a) (0,1)
 b) (0,1]
 c) [0,1]
 **d) [0,1)**
 
 > The function random.random() generates a random value in the interval [0,1), that is, including zero but excluding one.
-	
+
 ## 11. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 random.randrange(0,91,5)
-	
 **a) 10**
 b) 18
 c) 79
 d) 95
 
 > The function shown above will generate an output which is a multiple of 5 and is between 0 and 91. The only option which satisfies these criteria is 10. Hence the only possible output of this function is 10.
-	
-## 12. Both the functions randint and uniform accept ____________ parameters. [Обидві функції randint і uniform приймають ____________ параметри.]
+
+## 12. Both the functions randint and uniform accept ****\_\_\_\_**** parameters. [Обидві функції randint і uniform приймають ____________ параметри.]
+
 a) 0
 b) 1
 c) 3
 **d) 2**
 
 > Both of these functions, that is, randint and uniform are included in the random module and both of these functions accept 2 parameters. For example: random.uniform(a,b) where ‘a’ and ‘b’ specify the range.
-	
+
 ## 13. The randrange function returns only an integer value. [Функція randrange повертає лише ціле значення.]
+
 **a) True**
 b) False
 
 > The function randrange returns only an integer value. Hence this statement is true.
-	
+
 ## 14. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+
 random.randrange(1,100,10)
-	
 a) 32
 b) 67
 **c) 91**
 d) 80
 
 > The output of this function can be any value which is a multiple of 10, plus 1. Hence a value like 11, 21, 31, 41…91 can be the output. Also, the value should necessarily be between 1 and 100. The only option which satisfies this criteria is 91.
-	
+
 ## 15. What will be the output of the following Python function, assuming that the random library has already been included? [Яким буде результат наступної функції Python, якщо припустити, що випадкова бібліотека вже включена?]
+
 random.shuffle[1,2,24]
-	
 a) Randomized list containing the same numbers in any order
 b) The same list, that is [1,2,24]
 c) A list containing any random numbers between 1 and 24
 **d) Error**
 
 > The function shown above will result in an error because this is the incorrect syntax for the usage of the function shuffle(). The list should be previously declared and then passed to this function to get an output.
-An example of the correct syntax:
->>> l=['a','b','c','d']
->>> random.shuffle(l)
->>> print(l)
-	
+> An example of the correct syntax:
+>
+> > > l=['a','b','c','d']
+> > > random.shuffle(l)
+> > > print(l)
+
 Python Questions and Answers – Random Module – 2
-	
+
 ## 1. What the does random.seed(3) return? [Що повертає random.seed(3)?]
+
 a) True
 **b) None**
 c) 3
 d) 1
 
 > The function random.seed() always returns a None.
-	
+
 ## 2. Which of the following cannot be returned by random.randrange(4)? [Що з наведеного нижче не може бути повернуто random.randrange(4)?]
+
 a) 0
 b) 3
 **c) 2.3**
 d) none of the mentioned
 
 > Only integers can be returned.
-	
+
 ## 3. Which of the following is equivalent to random.randrange(3)? [Що з наведеного нижче є еквівалентним random.randrange(3)?]
+
 a) range(3)
 **b) random.choice(range(0, 3))**
 c) random.shuffle(range(3))
 d) random.select(range(3))
 
 > It returns one number from the given range.
-	
+
 ## 4. The function random.randint(4) can return only one of the following values. Which? [Функція random.randint(4) може повертати лише одне з наступних значень. Котрий?]
+
 a) 4
 b) 3.4
 **c) error**
 d) 5
 
 > Error, the function takes two arguments.
-	
+
 ## 5. Which of the following is equivalent to random.randint(3, 6)? [Що з наведеного нижче є еквівалентним random.randint(3, 6)?]
+
 a) random.choice([3, 6])
 b) random.randrange(3, 6)
 c) 3 + random.randrange(3)
 **d) 3 + random.randrange(4)**
 
 > Random.randint(3, 6) can return any one of 3, 4, 5 and 6.
-	
+
 ## 6. Which of the following will not be returned by random.choice(“1 ,”)? [Що з наведеного нижче не буде повернуто random.choice(“1 ,”)?]
+
 a) 1
 b) (space)
 c) ,
 **d) none of the mentioned**
 
 > Any of the characters present in the string may be returned.
-	
+
 ## 7. Which of the following will never be displayed on executing print(random.choice({0: 1, 2: 3}))? [Що з наведеного нижче ніколи не відображатиметься під час виконання print(random.choice({0: 1, 2: 3}))?]
+
 **a) 0**
 b) 1
 c) KeyError: 1
 d) none of the mentioned
 
 > It will not print 0 but dict[0] i.e. 1 may be printed.
-	
+
 ## 8. What does random.shuffle(x) do when x = [1, 2, 3]? [Що робить random.shuffle(x), коли x = [1, 2, 3]?]
+
 a) error
 b) do nothing, it is a placeholder for a function that is yet to be implemented
 **c) shuffle the elements of the list in-place**
 d) none of the mentioned
 
 > The elements of the list passed to it are shuffled in-place.
-	
+
 ## 9. Which type of elements are accepted by random.shuffle()? [Який тип елементів приймає random.shuffle()?]
+
 a) strings
 **b) lists**
 c) tuples
 d) integers
 
 > Strings and tuples are immutable and an integer has no len().
-	
+
 ## 10. What is the range of values that random.random() can return? [Який діапазон значень може повернути random.random()?]
+
 a) [0.0, 1.0]
 b) (0.0, 1.0]
 c) (0.0, 1.0)
@@ -9315,87 +10195,103 @@ c) (0.0, 1.0)
 > Any number that is greater than or equal to 0.0 and lesser than 1.0 can be returned.
 
 # Section 22
- 
+
 ### Which of the following functions can help us to find the version of python that we are currently working on? [Яка з функцій допоможе знайте версія Python, яку ми зараз використовуємо?]
+
 **a) sys.version**\
 b) sys.version()\
 c) sys.version(0)\
 d) sys.version(1)
->Explanation: The function sys.version can help us to find the version of python that we are currently working on. For example, 3.5.2, 2.7.3 etc. this function also returns the current date, time, bits etc along with the version.
+
+> Explanation: The function sys.version can help us to find the version of python that we are currently working on. For example, 3.5.2, 2.7.3 etc. this function also returns the current date, time, bits etc along with the version.
 
 ### Which of the following functions is not defined under the sys module? [Яка з функцій не визначена в модулі sys?]
+
 a) sys.platform\
 b) sys.path\
 **c) sys.readline**\
 d) sys.argv
->Explanation: The functions sys.platform, sys.path and sys.argv are defined under the sys module. The function sys.readline is not defined. However, sys.stdin.readline is defined.
+
+> Explanation: The functions sys.platform, sys.path and sys.argv are defined under the sys module. The function sys.readline is not defined. However, sys.stdin.readline is defined.
 
 ### The output of the functions len(“abc”) and sys.getsizeof(“abc”) will be the same. [Вивід функцій len(“abc”) і sys.getsizeof(“abc”) буде однаковий.]
+
 a) True\
 **b) False**
->Explanation: The function len returns the length of the string passed, and hence it’s output will be 3. The function getsizeof, present under the sys module returns the size of the object passed. It’s output will be a value much larger than 3. Hence the above statement is false.
- 
+
+> Explanation: The function len returns the length of the string passed, and hence it’s output will be 3. The function getsizeof, present under the sys module returns the size of the object passed. It’s output will be a value much larger than 3. Hence the above statement is false.
+
 ### What will be the output of the following Python code, if the code is run on Windows operating system? [Який буде вивід, якщо код запустити на ОС Windows?]
+
 ```python
 import sys
 if sys.platform[:2]== 'wi':
 	 print("Hello")
 ```
- 
+
 a) Error\
 **b) Hello**\
 c) No output\
 d) Junk value
->Explanation: The output of the function sys.platform[:2] is equal to ‘wi’, when this code is run on windows operating system. Hence the output printed is ‘hello’.
- 
+
+> Explanation: The output of the function sys.platform[:2] is equal to ‘wi’, when this code is run on windows operating system. Hence the output printed is ‘hello’.
+
 ### What will be the output of the following Python code, if the sys module has already been imported? [Який буде вивід, якщо модуль sys вже заімпортований?]
+
 `sys.stdout.write("hello world")`
- 
+
 a) helloworld\
 b) hello world10\
 **c) hello world11**\
 d) error
->Explanation: The function shown above prints the given string along with the length of the string. Hence the output of the function shown above will be hello world11. (In PyChram output = "hello world", in terminal = "hello world11", think about it :))
- 
+
+> Explanation: The function shown above prints the given string along with the length of the string. Hence the output of the function shown above will be hello world11. (In PyChram output = "hello world", in terminal = "hello world11", think about it :))
+
 ## What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import sys
 sys.stdin.readline()
 Sanfoundry
 ```
- 
+
 **a) ‘Sanfoundry\n’**\
 b) ‘Sanfoundry’\
 c) ‘Sanfoundry10’\
 d) Error
->Explanation: The function shown above works just like raw_input. Hence it automatically adds a ‘\n’ character to the input string. Therefore, the output of the function shown above will be: Sanfoundry\n.
- 
+
+> Explanation: The function shown above works just like raw_input. Hence it automatically adds a ‘\n’ character to the input string. Therefore, the output of the function shown above will be: Sanfoundry\n.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import sys
 eval(sys.stdin.readline())
 "India"
 ```
- 
+
 a) India5\
 b) India\
 c) ‘India\n’\
 **d) ‘India’**
->Explanation: The function shown above evaluates the input into a string. Hence if the input entered is enclosed in double quotes, the output will be enclosed in single quotes. Therefore, the output of this code is ‘India’.
- 
+
+> Explanation: The function shown above evaluates the input into a string. Hence if the input entered is enclosed in double quotes, the output will be enclosed in single quotes. Therefore, the output of this code is ‘India’.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import sys
 eval(sys.stdin.readline())
 Computer
 ```
- 
+
 **a) Error**\
 b) ‘Computer\n’\
 c) Computer8\
 d) Computer
->Explanation: The code shown above will result in an error. This is because this particular function accepts only strings enclosed in single or double inverted quotes, or numbers. Since the string entered above is not enclosed in single or double inverted quotes, an error will be thrown.
- 
+
+> Explanation: The code shown above will result in an error. This is because this particular function accepts only strings enclosed in single or double inverted quotes, or numbers. Since the string entered above is not enclosed in single or double inverted quotes, an error will be thrown.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
 
 ```python
@@ -9407,9 +10303,11 @@ a) Junk value\
 **b) ‘ ‘**\
 c) No output\
 d) Error
->Explanation: The output of the function shown above will be a blank space enclosed in single quotes. Hence the output of the code shown above is ‘ ‘.
- 
+
+> Explanation: The output of the function shown above will be a blank space enclosed in single quotes. Hence the output of the code shown above is ‘ ‘.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import sys
 sys.stderr.write(“hello”)
@@ -9419,107 +10317,133 @@ a) ‘hello’\
 b) ‘hello\n’\
 c) hello\
 **d) hello5**
->Explanation: The code shown above returns the string, followed by the length of the string. Hence the output of the code shown above is hello5.
- 
+
+> Explanation: The code shown above returns the string, followed by the length of the string. Hence the output of the code shown above is hello5.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import sys
 sys.argv
 ```
- 
+
 a) ‘ ‘\
 b) [ ]\
 **c) [‘ ‘]**\
 d) Error
->Explanation: The output of the code shown above is a blank space inserted in single quotes, which is enclosed by square brackets. Hence the output will be [‘ ‘].
- 
+
+> Explanation: The output of the code shown above is a blank space inserted in single quotes, which is enclosed by square brackets. Hence the output will be [‘ ‘].
+
 ### To obtain a list of all the functions defined under sys module, which of the following functions can be used? [Щоб отримати список усіх функцій, визначених у модулі sys, які з наведених нижче функцій можна використовувати]
 
 a) print(sys)\
 b) print(dir.sys)\
 c) print(dir[sys])\
 **d) print(dir(sys))**
->Explanation: The function print(dir(sys)) helps us to obtain a list of all the functions defined under the sys module. The function can be used to obtain the list of functions under any given module in Python.
- 
+
+> Explanation: The function print(dir(sys)) helps us to obtain a list of all the functions defined under the sys module. The function can be used to obtain the list of functions under any given module in Python.
+
 ### The output of the function len(sys.argv) is [Вивід функції len(sys.argv) - це]
- 
+
 a) Error\
 **b) 1**\
 c) 0\
 d) Junk value
->Explanation: The output of the function sys.argv is [‘ ‘]. When we execute the function len([‘ ‘]), the output is 1. Hence the output of the function len(sys.argv) is also 1.
- 
+
+> Explanation: The output of the function sys.argv is [‘ ‘]. When we execute the function len([‘ ‘]), the output is 1. Hence the output of the function len(sys.argv) is also 1.
+
 ### What does os.name contain? [Що містить в собі os.name?]
+
 **a) the name of the operating system dependent module imported**\
 b) the address of the module os\
 c) error, it should’ve been os.name()\
 d) none of the mentioned
->Explanation: It contains the name of the operating system dependent module imported such as ‘posix’, ‘java’ etc.
- 
+
+> Explanation: It contains the name of the operating system dependent module imported such as ‘posix’, ‘java’ etc.
+
 ### What does print(os.geteuid()) print? [Що виводить функція print(os.geteuid())?]
+
 a) the group id of the current process\
 **b) the user id of the current process**\
 c) both the group id and the user of the current process\
 d) none of the mentione
->Explanation: os.geteuid() gives the user id while the os.getegid() gives the group id.
- 
+
+> Explanation: os.geteuid() gives the user id while the os.getegid() gives the group id.
+
 ### What does os.getlogin() return? [Що повертає функція os.getlogin()?]
+
 **a) name of the current user logged in**\
 b) name of the superuser\
 c) gets a form to login as a different user\
 d) all of the mentioned
->Explanation: It returns the name of the user who is currently logged in and is running the script.
- 
+
+> Explanation: It returns the name of the user who is currently logged in and is running the script.
+
 ### What does os.close(f) do? [Що робить os.close()?]
+
 a) terminate the process f\
 b) terminate the process f if f is not responding\
 **c) close the file descriptor f**\
 d) return an integer telling how close the file pointer is to the end of file
->Explanation: When a file descriptor is passed as an argument to os.close() it will be closed.
- 
+
+> Explanation: When a file descriptor is passed as an argument to os.close() it will be closed.
+
 ### What does os.fchmod(fd, mode) do? [Що робить os.fchmod(fd, mode)?]
+
 **a) change permission bits of the file**\
 b) change permission bits of the directory\
 c) change permission bits of either the file or the directory\
 d) none of the mentioned\
->Explanation: The arguments to the function are a file descriptor and the new mode.
- 
+
+> Explanation: The arguments to the function are a file descriptor and the new mode.
+
 ### Which of the following functions can be used to read data from a file using a file descriptor? [Яку з наведених нижче функцій можна використовувати для читання даних із файлу за допомогою дескриптора файлу?]
+
 a) os.reader()\
 **b) os.read()**\
 c) os.quick_read()\
 d) os.scan()
->Explanation: None of the other functions exist.
- 
+
+> Explanation: None of the other functions exist.
+
 ### Which of the following returns a string that represents the present working directory? [Що з наведеного нижче повертає рядок, що представляє поточний робочий каталог?]
+
 **a) os.getcwd()**\
 b) os.cwd()\
 c) os.getpwd()\
 d) os.pwd()
->Explanation: The function getcwd() (get current working directory) returns a string that represents the present working directory.
- 
+
+> Explanation: The function getcwd() (get current working directory) returns a string that represents the present working directory.
+
 ### What does os.link() do? [Що робить os.link()?]
+
 a) create a symbolic link\
 **b) create a hard link**\
 c) create a soft link\
 d) none of the mentioned
->Explanation: os.link(source, destination) will create a hard link from source to destination.
- 
+
+> Explanation: os.link(source, destination) will create a hard link from source to destination.
+
 ### Which of the following can be used to create a directory? [Що з наведеного нижче можна використовувати для створення каталогу?]
+
 **a) os.mkdir()**\
 b) os.creat_dir()\
 c) os.create_dir()\
 d) os.make_dir()
->Explanation: The function mkdir() creates a directory in the path specified.
- 
+
+> Explanation: The function mkdir() creates a directory in the path specified.
+
 ### Which of the following can be used to create a symbolic link? [Що з наведеного нижче можна використовувати для створення символічного посилання?]
+
 **a) os.symlink()**\
 b) os.symb_link()\
 c) os.symblin()\
 d) os.ln()
->Explanation: It is the function that allows you to create a symbolic link.
- 
+
+> Explanation: It is the function that allows you to create a symbolic link.
+
 ### What will be the output shape of the following Python code? [Який буде вигляд виводу наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
@@ -9527,14 +10451,16 @@ for i in range(0,4):
 	t.forward(100)
 	t.left(120)
 ```
- 
+
 a) square\
 b) rectangle\
 **c) triangle**\
 d) kite
->Explanation: According to the code shown above, 4 lines will be drawn. Three lines will be in the shape of a triangle. The fourth line will trace the base, which is already drawn. Hence the base will be slightly thicker than the rest of the lines. However there will be no change in the shape due to this extra line. Hence the output shape will be a triangle.
- 
+
+> Explanation: According to the code shown above, 4 lines will be drawn. Three lines will be in the shape of a triangle. The fourth line will trace the base, which is already drawn. Hence the base will be slightly thicker than the rest of the lines. However there will be no change in the shape due to this extra line. Hence the output shape will be a triangle.
+
 ### The number of lines drawn in each case, assuming that the turtle module has been imported: [Кількість ліній, намальованих у кожному випадку, якщо припустити, що модуль turtle було імпортовано:]
+
 ```python
 Case 1:
 for i in range(0,10):
@@ -9545,21 +10471,25 @@ for i in range(1,10):
 	turtle.forward(100)
 	turtle.left(90)
 ```
- 
+
 **a) 10, 9**\
 b) 9, 10\
 c) 9, 9\
 d) 10, 10
->Explanation: The number of lines drawn in the first case is 10, while that in the second case is 9.
- 
+
+> Explanation: The number of lines drawn in the first case is 10, while that in the second case is 9.
+
 ### The command which helps us to reset the pen (turtle): [Команда, яка допомагає нам скинути pen (turtle)]
+
 a) turtle.reset\
 b) turtle.penreset\
 c) turtle.penreset()\
 **d) turtle.reset()**
->Explanation: The command turtle.reset() helps us to reset the pen. After the execution of this command, we get a blank page with an arrow on it. We can then perform any desired operation on this page.
- 
+
+> Explanation: The command turtle.reset() helps us to reset the pen. After the execution of this command, we get a blank page with an arrow on it. We can then perform any desired operation on this page.
+
 ### Fill in the blank such that the following Python code results in the formation of an inverted, equilateral triangle. [Заповніть пропуск так, щоб наступний код Python утворив перевернутий рівносторонній трикутник.]
+
 ```python
 import turtle
 t=turtle.Pen()
@@ -9567,14 +10497,16 @@ for i in range(0,3):
 	t.forward(150)
 	t.right(_____)
 ```
- 
+
 a) -60\
 **b) 120**\
 c) -120\
 d) 60
->Explanation: An angle of -120 will result in the formation of an upright, equilateral triangle. An angle of 120 will result in the formation of an inverted triangle. The angles of 60 and -60 do not result in the formation of a triangle.
- 
+
+> Explanation: An angle of -120 will result in the formation of an upright, equilateral triangle. An angle of 120 will result in the formation of an inverted triangle. The angles of 60 and -60 do not result in the formation of a triangle.
+
 ### What will be the output shape of the following Python code? [Який буде вигляд виводу наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
@@ -9587,16 +10519,18 @@ a) Rectangle\
 b) Trapezium\
 c) Triangle\
 **d) Square**
->Explanation: The code shown above will result in the formation of a square, with each of side 60.
- 
+
+> Explanation: The code shown above will result in the formation of a square, with each of side 60.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
 for i in range(0,4):
 	t.forward(100)
 	t.left(90)
- 
+
 t.penup()
 t.left(90)
 t.forward(200)
@@ -9604,35 +10538,41 @@ for i in range(0,4):
 	t.forward(100)
 	t.left(90)
 ```
- 
+
 a) Error\
 **b) 1 square**\
 c) 2 squares, at a separation of100 units, joined by a straight line\
 d) 2 squares, at a separation of 100 units, without a line joining them\
->Explanation: The output of the code shown above will be a single square. This is because the function t.penup() is used to lift the pen after the construction of the first square. However, the function t.pendown() has not been used to put the pen back down. Hence, the output shape of this code is one square, of side 100 units.
- 
+
+> Explanation: The output of the code shown above will be a single square. This is because the function t.penup() is used to lift the pen after the construction of the first square. However, the function t.pendown() has not been used to put the pen back down. Hence, the output shape of this code is one square, of side 100 units.
+
 ### Which of the following functions does not accept any arguments? [Яка з наведених функцій не приймає жодних аргументів?]
+
 **a) position**\
 b) fillcolor\
 c) goto\
 d) setheading()
->Explanation: The functions fillcolor(), goto() and setheading() accept arguments, whereas the function position() does not accept any arguments. The function position() returns the current position of the turtle.
- 
+
+> Explanation: The functions fillcolor(), goto() and setheading() accept arguments, whereas the function position() does not accept any arguments. The function position() returns the current position of the turtle.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
 t.goto(300,9)
 t.position()
 ```
- 
+
 **a) 300.00, 9.00**\
 b) 9, 300\
 c) 300, 9\
 d) 9.00, 300.00
->Explanation: The goto functions takes the arrow to the position specified by the user as arguments. The position function returns the current position of the arrow. Hence the output of the code shown above will be: 300.00, 9.00.
- 
+
+> Explanation: The goto functions takes the arrow to the position specified by the user as arguments. The position function returns the current position of the arrow. Hence the output of the code shown above will be: 300.00, 9.00.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
@@ -9640,34 +10580,38 @@ for i in range(0,5):
         t.left(144)
         t.forward(100)
 ```
- 
+
 a) Trapezium\
 b) Parallelepiped\
 c) Tetrahedron\
 **d) Star**
->Explanation: It is clear from the above code that 5 lines will be drawn on the canvas, at an angle of 144 degrees. The only shape which fits this description is star. Hence the output of the code shown above is star.
- 
+
+> Explanation: It is clear from the above code that 5 lines will be drawn on the canvas, at an angle of 144 degrees. The only shape which fits this description is star. Hence the output of the code shown above is star.
+
 ### What will be the output of the following Python functions? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
 for i in range(0,3):
 	t.forward(100)
 	t.left(120)
- 
+
 t.back(100)
 for i in range(0,3):
 	t.forward(100)
 	t.left(120)
 ```
- 
+
 a) Error\
 b) Two triangles, joined by a straight line\
 **c) Two triangles, joined at one vertex**\
 d) Two separate triangles, not connected by a line
->Explanation: The output of the code shown above is two equilateral triangles (of side 100 units), joined at the vertex.
- 
+
+> Explanation: The output of the code shown above is two equilateral triangles (of side 100 units), joined at the vertex.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
@@ -9676,21 +10620,25 @@ t.begin_fill()
 t.circle(15)
 t.end_fill()
 ```
- 
+
 a) Error\
 b) A circle filled in with the colour red\
 **c) A circle filled in with the colour blue**\
 d) A circle filled in with the colour green
->Explanation: The function t.colour(0, 0, 1) is used to fill in the colour blue into any given shape. Hence the output of the code shown above will be a circle filled in with the colour blue.
- 
+
+> Explanation: The function t.colour(0, 0, 1) is used to fill in the colour blue into any given shape. Hence the output of the code shown above will be a circle filled in with the colour blue.
+
 ### Which of the following functions can be used to make the arrow black? [Яку з наведених нижче функцій можна використати, щоб зробити стрілку чорною?]
+
 a) turtle.color(0,1,0)\
 b) turtle.color(1,0,0)\
 c) turtle.color(0,0,1)\
 **d) turtle.color(0,0,0)**
->Explanation: The function turtle.color(0,0,0) can change the colour of the arrow. The function turtle.color(0,1,0) will make the arrow green. The function turtle.color(1,0,0) will make the arrow red. The function turtle.color(0,0,1) will make the arrow blue. The function turtle.color(0,0,0) will make the arrow black.
- 
+
+> Explanation: The function turtle.color(0,0,0) can change the colour of the arrow. The function turtle.color(0,1,0) will make the arrow green. The function turtle.color(1,0,0) will make the arrow red. The function turtle.color(0,0,1) will make the arrow blue. The function turtle.color(0,0,0) will make the arrow black.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
@@ -9706,9 +10654,11 @@ for i in range(0,3):
 b) A triangle filled in with the colour yellow\
 c) A triangle which is not filled in with any colour\
 d) Error
->Explanation: The code shown above will result in a blank page. This is because the command turtle.color(1,1,1) eliminates the arrow from the page. Hence all the commands after this command are ineffective.
- 
+
+> Explanation: The code shown above will result in a blank page. This is because the command turtle.color(1,1,1) eliminates the arrow from the page. Hence all the commands after this command are ineffective.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
@@ -9718,40 +10668,43 @@ for i in range(0,4):
 	t.forward(100)
 	t.right(90)
 ```
- 
+
 a) A square filled in with the colour green\
 **b) A square outlined with the colour green**\
 c) Blank canvas\
 d) Error
->Explanation: The output shape of the code shown above is a square, outlined with the colour green, but not filled in with any colour. This is because we have not used the command t.end_fill() at the end.
 
- 
+> Explanation: The output shape of the code shown above is a square, outlined with the colour green, but not filled in with any colour. This is because we have not used the command t.end_fill() at the end.
+
 ### In which direction is the turtle pointed by default? [У який бік за замовчуванням вказана turtle?]
 
 a) North\
 b) South\
 **c) East**\
 d) West
->Explanation: By default, the turtle is pointed towards the east direction. We can change the direction of the turtle by using certain commands. However, whenever the turtle is reset, it points towards east.
- 
+
+> Explanation: By default, the turtle is pointed towards the east direction. We can change the direction of the turtle by using certain commands. However, whenever the turtle is reset, it points towards east.
+
 ### The command used to set only the x coordinate of the turtle at 45 units is: [Команда, яка використовується для встановлення лише координати x turtle на 45 одиниць]
- 
+
 a) reset(45)\
 **b) setx(45)**\
 c) xset(45)\
 d) xreset(45)
->Explanation: The command setx(45) is used to set the x coordinate of the turtle. Similarly, the command sety() is used to set the y coordinate of the turtle. The function reset() takes two values as arguments, one for the x-coordinate and the other for the y-coordinate.
 
- 
+> Explanation: The command setx(45) is used to set the x coordinate of the turtle. Similarly, the command sety() is used to set the y coordinate of the turtle. The function reset() takes two values as arguments, one for the x-coordinate and the other for the y-coordinate.
+
 ### Which of the following functions returns a value in degrees, counterclockwise from the horizontal right? [Яка з наведених нижче функцій повертає значення в градусах проти годинникової стрілки від горизонтального праворуч?]
- 
+
 **a) heading()**\
 b) degrees()\
 c) position()\
 d) window_height()
->Explanation: The function heading() returns the heading of the turtle, which is a value in degrees counterclockwise from the horizontal right. This measure will be in radians if radians() has been called.
- 
+
+> Explanation: The function heading() returns the heading of the turtle, which is a value in degrees counterclockwise from the horizontal right. This measure will be in radians if radians() has been called.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
@@ -9759,28 +10712,32 @@ t.right(90)
 t.forward(100)
 t.heading()
 ```
- 
+
 a) 0.0\
 b) 90.0\
 **c) 270.0**\
 d) 360.0
->Explanation: The output of the code shown above will be 270.0. The function heading() returns the heading of the turtle, a value in degrees, counterclockwise from the horizontal right. The output shape of this code is a straight line pointing downwards.
- 
+
+> Explanation: The output of the code shown above will be 270.0. The function heading() returns the heading of the turtle, a value in degrees, counterclockwise from the horizontal right. The output shape of this code is a straight line pointing downwards.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
 t.clear()
 t.isvisible()
 ```
- 
+
 a) Yes\
 **b) True**\
 c) No\
 d) False
->Explanation: The function t.clear() returns a blank canvas, without changing the position of the turtle. Since the turtle is visible on the blank canvas, the output of this code is: Yes.
- 
+
+> Explanation: The function t.clear() returns a blank canvas, without changing the position of the turtle. Since the turtle is visible on the blank canvas, the output of this code is: Yes.
+
 ### What will be the output of the following Python code? [Який буде вивід наступного коду?]
+
 ```python
 import turtle
 t=turtle.Pen()
@@ -9789,13 +10746,13 @@ t.left(90)
 t.clear()
 t.position()
 ```
- 
+
 a) 0.00, 90.00\
 b) 0.00, 0.00\
 c) 100.00, 90.00\
 **d) 100.00, 100.00**
->Explanation: (Ну вапще-то (100.00, 0.00)..., но ладна) The output of the code shown above is 100.00, 100.00. The function clear() is used to erase the entire canvas and redraw the turtle. However, the position of the turtle is not changed.
 
+> Explanation: (Ну вапще-то (100.00, 0.00)..., но ладна) The output of the code shown above is 100.00, 100.00. The function clear() is used to erase the entire canvas and redraw the turtle. However, the position of the turtle is not changed.
 
 # Section 23
 
