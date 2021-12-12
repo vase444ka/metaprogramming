@@ -8124,6 +8124,735 @@ d) Error, no method called issuperset() exists
 
 # Section 14
 
+## 1. What will be the output of the following Python code?
+
+```
+s=set()
+type(s)
+```
+a) <’set’>
+	
+**b) <class ‘set’>**
+	
+c) set
+	
+d) class set
+	
+## 2. The following Python code results in an error.
+
+> s={2, 3, 4, [5, 6]}
+
+**a) True**
+	
+b) False
+
+Explanation: The set data type makes use of a principle known as hashing. This means that each item in the set should be hashable. Hashable in this context means immutable. List is mutable and hence the line of code shown above will result in an error.
+	
+## 3. Set makes use of __________ Dictionary makes use of ____________
+
+a) keys, keys
+
+b) key values, keys
+
+**c) keys, key values**
+
+d) key values, key values
+	
+## 4. Which of the following lines of code will result in an error?
+
+a) s={abs}
+	
+b) s={4, ‘abc’, (1,2)}
+	
+c) s={2, 2.2, 3, ‘xyz’}
+	
+**d) s={san}**
+	
+Explanation: The line: s={san} will result in an error because ‘san’ is not defined. The line s={abs} does not result in an error because abs is a built-in function. The other sets shown do not result in an error because all the items are hashable.
+	
+## 5. What will be the output of the following Python code?
+
+> s={2, 5, 6, 6, 7}
+
+a) {2, 5, 7}
+	
+**b) {2, 5, 6, 7}**
+	
+c) {2, 5, 6, 6, 7}
+	
+d) Error
+	
+## 6. Input order is preserved in sets.
+
+a) True
+	
+**b) False**
+	
+## 7. Write a list comprehension for number and its cube for:
+
+> l=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+	
+**a) [x\*\*3 for x in l]**
+	
+b) [x^3 for x in l]
+	
+c) [x**3 in l]
+	
+d) [x^3 in l]
+	
+## 8. What will be the output of the following Python code?
+
+```
+s={1, 2, 3}
+s.update(4)
+s
+```
+	
+a) {1, 2, 3, 4}
+	
+b) {1, 2, 4, 3}
+	
+c) {4, 1, 2, 3}
+	
+**d) Error**
+	
+Explanation: The code shown above will result in an error because the argument given to the function update should necessarily be an iterable. Hence if we write this function as: s.update([4]), there will be no error.
+	
+## 9. Which of the following functions cannot be used on heterogeneous sets?
+	
+a) pop
+	
+b) remove
+	
+c) update
+	
+**d) sum**
+	
+Explanation: The functions sum, min and max cannot be used on mixed type (heterogeneous) sets. The functions pop, remove, update etc can be used on homogenous as well as heterogeneous sets. An example of heterogeneous sets is: {‘abc’, 4, (1, 2)}
+
+## 10. What will be the output of the following Python code?
+
+```
+s={4>3, 0, 3-3}
+all(s)
+any(s)
+```
+
+a)
+```
+True
+False
+```
+	
+**b)**
+```
+False
+True
+```
+	
+c)	
+```
+True 
+True
+```
+
+d)
+```
+False
+False
+```
+	
+## 1. Which of the following functions will return the symmetric difference between two sets, x and y?
+	
+a) x | y
+	
+**b) x \^ y** 
+	
+c) x & y
+	
+d) x – y
+	
+Explanation: The function x ^ y returns the symmetric difference between the two sets x and y. This is basically an XOR operation being performed on the two sets.
+	
+## 2. What will be the output of the following Python code snippet?
+
+```
+z=set('abc$de')
+'a' in z
+```
+	
+**a) True**
+	
+b) False
+	
+c) No output
+	
+d) Error
+	
+Explanation: The code shown above is used to check whether a particular item is a part of a given set or not. Since ‘a’ is a part of the set z, the output is true. Note that this code would result in an error in the absence of the quotes.
+
+## 3. What will be the output of the following Python code snippet?
+
+```
+z=set('abc')
+z.add('san')
+z.update(set(['p', 'q']))
+z
+```
+	
+a) {‘abc’, ‘p’, ‘q’, ‘san’}
+	
+b) {‘a’, ‘b’, ‘c’, [‘p’, ‘q’], ‘san}
+	
+c) {‘a’, ‘c’, ‘c’, ‘p’, ‘q’, ‘s’, ‘a’, ‘n’}
+	
+**d) {‘a’, ‘b’, ‘c’, ‘p’, ‘q’, ‘san’}**
+	
+## 4. What will be the output of the following Python code snippet?
+
+```
+s=set([1, 2, 3])
+s.union([4, 5])
+s|([4, 5])
+```
+
+a)
+```
+   {1, 2, 3, 4, 5}
+   {1, 2, 3, 4, 5}
+```
+
+b)
+```
+   Error
+   {1, 2, 3, 4, 5}
+```
+
+**c)**
+```
+   {1, 2, 3, 4, 5}
+   Error
+```
+	
+d)
+```
+   Error
+   Error
+```
+	
+## 5. What will be the output of the following Python code snippet?
+
+```
+for x in set('pqr'):
+	print(x*2)
+```
+
+**a)**
+```
+pp
+qq
+rr
+```
+
+b)
+```
+pqr
+pqr
+```
+	
+c) ppqqrr
+	
+d) pqrpqr
+
+## 6. What will be the output of the following Python code snippet?
+
+> {a**2 for a in range(4)}
+	
+a) {1, 4, 9, 16}
+	
+b) {0, 1, 4, 9, 16}
+	
+c) Error
+	
+**d) {0, 1, 4, 9}**
+	
+## 7. What will be the output of the following Python function?
+
+```
+{x for x in 'abc'}
+{x*3 for x in 'abc'}
+```
+
+a)
+```
+    {abc}
+    aaa
+    bbb
+    ccc
+```
+
+b)
+```
+   abc
+   abc abc abc
+```
+	
+**c)**
+```
+   {‘a’, ‘b’, ‘c’}
+   {‘aaa’, ‘bbb’, ‘ccc’}
+```
+	
+d)
+```
+    {‘a’, ‘b’, ‘c’}
+    abc
+    abc
+    abc
+```
+
+## 8. The output of the following code is: class<’set’>.
+
+> type({})
+	
+a) True
+	
+**b) False**
+	
+## 9. What will be the output of the following Python code snippet?
+
+```
+a=[1, 4, 3, 5, 2]
+b=[3, 1, 5, 2, 4]
+a==b
+set(a)==set(b)
+```
+	
+a)
+```
+   True
+   False
+```
+	
+b)
+```
+   False
+   False
+```
+	
+**c)**
+```
+   False
+   True
+```
+
+d)
+```
+   True
+   True
+```
+	
+## 10. What will be the output of the following Python code snippet?
+
+```
+l=[1, 2, 4, 5, 2, 'xy', 4]
+set(l)
+l
+```
+	
+a)
+```
+{1, 2, 4, 5, 2, ‘xy’, 4}
+[1, 2, 4, 5, 2, ‘xy’, 4]
+```
+
+**b)**
+```
+{1, 2, 4, 5, ‘xy’}
+[1, 2, 4, 5, 2, ‘xy’, 4]
+```
+	
+c)
+```
+{1, 5, ‘xy’}
+[1, 5, ‘xy’]
+```
+	
+d)
+```
+{1, 2, 4, 5, ‘xy’}
+[1, 2, 4, 5, ‘xy’]
+```
+
+## 1. What will be the output of the following Python code?
+
+```
+s1={3, 4}
+s2={1, 2}
+s3=set()
+i=0
+j=0
+for i in s1:
+    for j in s2:
+        s3.add((i,j))
+        i+=1
+        j+=1
+print(s3)
+```
+	
+a) {(3, 4), (1, 2)}
+	
+b) Error
+	
+**c) {(4, 2), (3, 1), (4, 1), (5, 2)}**
+	
+d) {(3, 1), (4, 2)}
+	
+Explanation: The code shown above finds the Cartesian product of the two sets, s1 and s2. The Cartesian product of these two sets is stored in a third set, that is, s3. Hence the output of this code is: {(4, 2), (3, 1), (4, 1), (5, 2)}.
+	
+## 2. The ____________ function removes the first element of a set and the last element of a list.
+
+a) remove
+	
+**b) pop**
+	
+c) discard
+	
+d) dispose
+	
+Explanation: The function pop removes the first element when used on a set and the last element when used to a list.
+	
+## 3. The difference between the functions discard and remove is that:
+	
+a) Discard removes the last element of the set whereas remove removes the first element of the set
+	
+b) Discard throws an error if the specified element is not present in the set whereas remove does not throw an error in case of absence of the specified element
+	
+c) Remove removes the last element of the set whereas discard removes the first element of the set
+	
+**d) Remove throws an error if the specified element is not present in the set whereas discard does not throw an error in case of absence of the specified element**
+	
+Explanation: The function remove removes the element if it is present in the set. If the element is not present, it throws an error. The function discard removes the element if it is present in the set. If the element is not present, no action is performed (Error is not thrown).
+	
+## 4. What will be the output of the following Python code?
+
+```
+s1={1, 2, 3}
+s2={3, 4, 5, 6}
+s1.difference(s2)
+s2.difference(s1)
+```
+	
+**a)**
+```
+{1, 2}
+{4, 5, 6}
+```
+b)
+```
+{1, 2}
+{1, 2}
+```
+c)
+```
+{4, 5, 6}
+{1, 2}
+```
+d)
+```
+{4, 5, 6}
+{4, 5, 6}
+```
+
+Explanation: The function s1.difference(s2) returns a set containing the elements which are present in the set s1 but not in the set s2. Similarly, the function s2.difference(s1) returns a set containing elements which are present in the set s2 but not in the set s1. Hence the output of the code shown above will be:
+{1, 2}
+{4, 5, 6}.
+	
+## 5. What will be the output of the following Python code?
+
+```
+s1={1, 2, 3}
+s2={4, 5, 6}
+s1.isdisjoint(s2)
+s2.isdisjoint(s1)
+```
+	
+a)
+```
+True
+False
+```
+b)
+```
+False 
+True
+```
+**c)**
+```
+True
+True
+```
+d)
+```
+False
+False
+```
+	
+## 6. If we have two sets, s1 and s2, and we want to check if all the elements of s1 are present in s2 or not, we can use the function:
+	
+a) s2.issubset(s1)
+	
+**b) s2.issuperset(s1)**
+	
+c) s1.issuperset(s2)
+	
+d) s1.isset(s2)
+	
+## 7. What will be the output of the following Python code?
+
+```
+s1={1, 2, 3, 8}
+s2={3, 4, 5, 6}
+s1|s2
+s1.union(s2)
+```
+a)
+```
+{3}
+{1, 2, 3, 4, 5, 6, 8}
+```
+b)
+```
+{1, 2, 4, 5, 6, 8}
+{1, 2, 4, 5, 6, 8}
+```
+c)
+```
+{3}
+{3}
+```
+**d)**
+```
+{1, 2, 3, 4, 5, 6, 8}
+{1, 2, 3, 4, 5, 6, 8}
+```
+	
+Explanation: The function s1|s2 as well as the function s1.union(s2) returns a union of the two sets s1 and s2. Hence the output of both of these functions is: {1, 2, 3, 4, 5, 6, 8}.
+	
+## 8. What will be the output of the following Python code?
+
+```
+a=set('abc')
+b=set('def')
+b.intersection_update(a)
+a
+b
+```
+	
+a)
+```
+set()
+(‘e’, ‘d’, ‘f’}
+```
+b)
+```
+{}
+{}
+```
+**c)**
+```
+{‘b’, ‘c’, ‘a’}
+set()
+```
+d)
+```
+set()
+set()
+```
+	
+## 9. What will be the output of the following Python code, if s1= {1, 2, 3}?
+
+> s1.issubset(s1)
+	
+**a) True**
+	
+b) Error
+	
+c) No output
+	
+d) False
+	
+## 10. What will be the output of the following Python code?
+
+```
+x=set('abcde')
+y=set('xyzbd')
+x.difference_update(y)
+x
+y
+```
+	
+a)
+```
+   {‘a’, ‘b’, ‘c’, ‘d’, ‘e’}
+   {‘x’, ‘y’, ‘z’}
+```
+**b)**
+```
+   {‘a’, ‘c’, ‘e’}
+   {‘x’, ‘y’, ‘z’, ‘b’, ‘d’}
+```
+c)
+```
+   {‘b’, ‘d’}
+   {‘b’, ‘d’}
+```
+d)
+```
+   {‘a’, ‘c’, ‘e’}
+   {‘x’, ‘y’, ‘z’}
+```
+	
+Explanation: The function x.difference_update(y) removes all the elements of the set y from the set x. Hence the output of the code is:
+{‘a’, ‘c’, ‘e’}
+{‘x’, ‘y’, ‘z’, ‘b’, ‘d’}.
+	
+## 1. Which of the following statements create a dictionary?
+	
+a) d = {}
+	
+b) d = {“john”:40, “peter”:45}
+	
+c) d = {40:”john”, 45:”peter”}
+	
+**d) All of the mentioned**
+	
+Explanation: Dictionaries are created by specifying keys and values.
+	
+## 2. What will be the output of the following Python code snippet?
+
+> d = {"john":40, "peter":45}
+	
+a) “john”, 40, 45, and “peter”
+	
+**b) “john” and “peter”** 
+	
+c) 40 and 45
+	
+d) d = (40:”john”, 45:”peter”)
+	
+Answer: b
+Explanation: Dictionaries appear in the form of keys and values.
+
+Если делать print, будет {'john': 40, 'peter': 45}, но тут нет такого варианта ответа (может d?)
+	
+## 3. What will be the output of the following Python code snippet?
+
+```
+d = {"john":40, "peter":45}
+"john" in d
+```
+	
+**a) True**
+	
+b) False
+	
+c) None
+	
+d) Error
+	
+## 4. What will be the output of the following Python code snippet?
+
+```
+d1 = {"john":40, "peter":45}
+d2 = {"john":466, "peter":45}
+d1 == d2
+```
+	
+a) True
+	
+**b) False**
+	
+c) None
+	
+d) Error
+	
+## 5. What will be the output of the following Python code snippet?
+
+```
+d1 = {"john":40, "peter":45}
+d2 = {"john":466, "peter":45}
+d1 > d2
+```
+	
+a) True
+	
+b) False
+	
+**c) Error**
+	
+d) None
+
+## 6. What will be the output of the following Python code snippet?
+
+```
+d = {"john":40, "peter":45}
+d["john"]
+```
+	
+**a) 40**
+	
+b) 45
+	
+c) “john”
+	
+d) “peter”
+	
+## 7. Suppose d = {“john”:40, “peter”:45}, to delete the entry for “john” what command do we use?
+	
+a) d.delete(“john”:40)
+	
+b) d.delete(“john”)
+	
+**c) del d[“john”]**
+	
+d) del d(“john”:40)
+	
+## 8. Suppose d = {“john”:40, “peter”:45}. To obtain the number of entries in dictionary which command do we use?
+
+a) d.size()
+	
+**b) len(d)**
+	
+c) size(d)
+	
+d) d.len()
+	
+## 9. What will be the output of the following Python code snippet?
+
+```
+d = {"john":40, "peter":45}
+print(list(d.keys()))
+```
+	
+**a) [“john”, “peter”]**
+	
+b) [“john”:40, “peter”:45]
+	
+c) (“john”, “peter”)
+	
+d) (“john”:40, “peter”:45)
+	
+## 10. Suppose d = {“john”:40, “peter”:45}, what happens when we try to retrieve a value using the expression d[“susan”]?
+	
+a) Since “susan” is not a value in the set, Python raises a KeyError exception
+	
+b) It is executed fine and no exception is raised, and it returns None
+	
+**c) Since “susan” is not a key in the set, Python raises a KeyError exception**
+	
+d) Since “susan” is not a key in the set, Python raises a syntax error
+
 # Section 15
 
 ## 1. Which of these about a dictionary is false?[Що з наведеного вище неправильно]
