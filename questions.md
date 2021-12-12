@@ -4326,6 +4326,521 @@ d) +++99
 
 # Section 10
 
+## 1. Which of the following commands will create a list? [Яка з наступних команд створює список]
+a) list1 = list()\
+b) list1 = [] \
+c) list1 = list([1, 2, 3])\
+_**d) all of the mentioned**_
+
+> Explanation: Execute in the shell and verify.
+
+## 2. What is the output when we execute list(“hello”)? [Що виведеться при запуску list("hello")]
+
+_**a) [‘h’, ‘e’, ‘l’, ‘l’, ‘o’]**_\
+b) [‘hello’]\
+c) [‘llo’]\
+d) [‘olleh’]
+
+> Explanation: Execute in the shell and verify.
+
+## 3. Suppose listExample is [‘h’,’e’,’l’,’l’,’o’], what is len(listExample)? [Припустимо що listExample це [‘h’,’e’,’l’,’l’,’o’], чому дорівнюватиме len(listExample)]
+_**a) 5**_\
+b) 4\
+c) None\
+d) Error
+
+> Explanation: Execute in the shell and verify.
+
+## 4. Suppose list1 is [2445,133,12454,123], what is max(list1)? [Припустимо що list1 це [2445,133,12454,123], що буде тоді max(list1)?]
+a) 2445\
+b) 133\
+_**c) 12454**_\
+d) 123
+
+> Explanation: Max returns the maximum element in the list.
+
+## 5. Suppose list1 is [3, 5, 25, 1, 3], what is min(list1)? [Припустимо що list1 це [3, 5, 25, 1, 3], що буде тоді min(list1)?]
+a) 3\
+b) 5\
+c) 25\
+_**d) 1**_
+
+> Explanation: Min returns the minimum element in the list.
+
+## 6. Suppose list1 is [1, 5, 9], what is sum(list1)? [Припустимо що list1 це [1, 5, 9], що буде тоді sum(list1)?]
+a) 1\
+b) 9\
+_**c) 15**_\
+d) Error
+
+> Explanation: Sum returns the sum of all elements in the list.
+
+## 7. To shuffle the list(say list1) what function do we use? [Для того щоб перемішати список(наприклад list1) яку функцію ми використовуємо?]
+a) list1.shuffle()\
+b) shuffle(list1)\
+_**c) random.shuffle(list1)**_\
+d) random.shuffleList(list1)
+
+> Explanation: Execute in the shell to verify. 
+
+## 8. Suppose list1 is [4, 2, 2, 4, 5, 2, 1, 0], Which of the following is correct syntax for slicing operation? [Припустимо, що list1 це [4, 2, 2, 4, 5, 2, 1, 0], який із наступного є правильним синтаксисом для операції slicing?]
+a) print(list1[0])\
+b) print(list1[:2])\
+c) print(list1[:-2])\
+_**d) all of the mentioned**_
+
+> Explanation: Slicing is allowed in lists just as in the case of strings.
+
+## 9. Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1]? [Припустимо що list1 це [2, 33, 222, 14, 25], що тоді буде list[-1] ?]
+a) Error\
+b) None\
+_**c) 25**_\
+d) 2
+
+> Explanation: -1 corresponds to the last index in the list.
+
+## 10. Suppose list1 is [2, 33, 222, 14, 25], What is list1[:-1]? [Припустимо що list1 це [2, 33, 222, 14, 25], що тоді буде list1[:-1]]
+_**a) [2, 33, 222, 14]**_\
+b) Error\
+c) 25\
+d) [25, 14, 222, 33, 2] 
+
+> Explanation: Execute in the shell to verify.
+
+## 1. What will be the output of the following Python code? [Що виведеться піісля виконання наступного коду?]
+```
+names = ['Amir', 'Bear', 'Charlton', 'Daman']
+print(names[-1][-1])
+```
+
+a) A\
+b) Daman\
+c) Error\
+_**d) n**_
+
+> Explanation: Execute in the shell to verify.
+
+## 2. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code]
+```python
+names1 = ['Amir', 'Bear', 'Charlton', 'Daman']
+names2 = names1
+names3 = names1[:]
+ 
+names2[0] = 'Alice'
+names3[1] = 'Bob'
+ 
+sum = 0
+for ls in (names1, names2, names3):
+    if ls[0] == 'Alice':
+        sum += 1
+    if ls[1] == 'Bob':
+        sum += 10
+ 
+print sum
+```
+
+a) 11\
+_**b) 12**_\
+c) 21\
+d) 22
+
+> Explanation: When assigning names1 to names2, we create a second reference to the same list. Changes to names2 affect names1. When assigning the slice of all elements in names1 to names3, we are creating a full copy of names1 which can be modified independently. 
+
+> **ПРИМІТКА!!!!** цей код взагалі не запускається через синтаксичну помилку в останній строці `print sum` (і навіть в python 2.7 не запускається), бо функція `print` має викликатись з дужками, тобто має бути `print(sum)`. Але так як варіанту що код не запускається нема будемо вважати що той хто набирав цей код просто забув скобкі і `print` виводить значення, ну і тоді сума буде дорівнювати 12.
+
+## 3. Suppose list1 is [1, 3, 2], What is list1 * 2? [Дано list1 який дорівнює [1,2,3], чому дорівнюватиме list1 * 2?]
+a) [2, 6, 4]\
+b) [1, 3, 2, 1, 3]\
+_**c) [1, 3, 2, 1, 3, 2]**_\
+d) [1, 3, 2, 3, 2, 1] 
+
+> Explanation: Execute in the shell and verify.
+
+## 4. Suppose list1 = [0.5 * x for x in range(0, 4)], list1 is: [Дано list1 = [0.5 * x for x in range(0, 4)], тоді list1 є:]
+
+a) [0, 1, 2, 3]\
+b) [0, 1, 2, 3, 4]\
+_**c) [0.0, 0.5, 1.0, 1.5]**_\
+d) [0.0, 0.5, 1.0, 1.5, 2.0] 
+
+> Explanation: Execute in the shell to verify.
+
+## 5.  What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code]
+
+```
+>>>list1 = [11, 2, 23]
+>>>list2 = [11, 2, 2]
+>>>list1 < list2
+```
+
+a) True
+b) False
+c) Error
+d) None
+
+> Explanation: Elements are compared one by one.
+
+## 6. To add a new element to a list we use which command? [Для того щоб додати новий елемент до списку, яку команду ми використовуємо?]
+
+a) list1.add(5)\
+_**b) list1.append(5)**_\
+c) list1.addLast(5)\
+d) list1.addEnd(5)
+
+> Explanation: We use the function append to add an element to the list.
+
+## 7. To insert 5 to the third position in list1, we use which command?[Яку команду ми використовуємо, щоб вставити 5 на третю позицію в list1?]
+a) list1.insert(3, 5)\
+_**b) list1.insert(2, 5)**_\
+c) list1.add(3, 5)\
+d) list1.append(3, 5)
+
+> Explanation: Execute in the shell to verify.
+
+## 8. To remove string “hello” from list1, we use which command? [Яку команду ми використовуємо, щоб видалити рядок «hello» зі list1?]
+
+_**a) list1.remove(“hello”)**_\
+b) list1.remove(hello)\
+c) list1.removeAll(“hello”)\
+d) list1.removeOne(“hello”)
+
+> Explanation: Execute in the shell to verify.
+
+## 9. Suppose list1 is [3, 4, 5, 20, 5], what is list1.index(5)? [Вважаємо що list1 це [3, 4, 5, 20, 5], чому дорівнюватиме list1.index(5) ?]
+
+a) 0\
+b) 1\
+c) 4\
+_**d) 2**_
+
+> Explanation: Execute help(list.index) to get details.
+
+## 10. Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1.count(5)? [Вважаємо що list1 це [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1.count(5) ?]
+a) 0\
+b) 4\
+c) 1\
+_**d) 2**_
+
+> Explanation: Execute in the shell to verify.
+
+## 1. Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after list1.reverse()? [Вважаємо list1 це [3, 4, 5, 20, 5, 25, 1, 3], тоді чому дорівнює list1 після list1.reverse()?]
+a) [3, 4, 5, 20, 5, 25, 1, 3]\
+b) [1, 3, 3, 4, 5, 5, 20, 25]\
+c) [25, 20, 5, 5, 4, 3, 3, 1]\
+_**d) [3, 1, 25, 5, 20, 5, 4, 3]**_
+
+> Explanation: Execute in the shell to verify.
+
+## 2. Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.extend([34, 5])? [Вважаємо що listExample є [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1 після listExample.extend([34, 5])?]
+_**a) [3, 4, 5, 20, 5, 25, 1, 3, 34, 5]**_\
+b) [1, 3, 3, 4, 5, 5, 20, 25, 34, 5]\
+c) [25, 20, 5, 5, 4, 3, 3, 1, 34, 5]\
+d) [1, 3, 4, 5, 20, 5, 25, 3, 34, 5] 
+
+> Explanation: Execute in the shell to verify.
+
+> **ПРИМІТКА!!!!** Можна докопатись до того що яким вообще боком list1 до listExample??? Но якщо просто додумувать те що list1 це мав би бути listExample то відповідь буде **а)** .
+
+## 3. Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop(1)? [Вважаємо що listExample є [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1 після listExample.pop(1)] 
+a) [3, 4, 5, 20, 5, 25, 1, 3]\
+b) [1, 3, 3, 4, 5, 5, 20, 25]\
+_**c) [3, 5, 20, 5, 25, 1, 3]**_\
+d) [1, 3, 4, 5, 20, 5, 25] 
+
+> Explanation: pop() removes the element at the position specified in the parameter.
+
+> **ПРИМІТКА!!!!** Можна докопатись до того, що яким вообще боком list1 може бути до listExample???! Но якщо просто додумувать те що list1 це мав би бути listExample то відповідь буде с)
+
+## 4. Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop()? [Вважаємо що listExample є [3, 4, 5, 20, 5, 25, 1, 3], чому дорівнюватиме list1 після listExample.pop()] 
+_**a) [3, 4, 5, 20, 5, 25, 1]**_\
+b) [1, 3, 3, 4, 5, 5, 20, 25]\
+c) [3, 5, 20, 5, 25, 1, 3]\
+d) [1, 3, 4, 5, 20, 5, 25] 
+
+> Explanation: pop() by default will remove the last element.
+
+> **ПРИМІТКА!!!!** Можна докопатись до того, що яким вообще боком list1 може бути до listExample???! Но якщо просто додумувать те що list1 це мав би бути listExample то відповідь буде a)
+
+## 5. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code]
+```
+>>>"Welcome to Python".split()
+```
+
+_**a) [“Welcome”, “to”, “Python”]**_\
+b) (“Welcome”, “to”, “Python”)\
+c) {“Welcome”, “to”, “Python”}\
+d) “Welcome”, “to”, “Python”
+
+> Explanation: split() function returns the elements in a list.
+
+## 6. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code?]
+
+```python
+>>>list("a#b#c#d".split('#'))
+```
+
+_**a) [‘a’, ‘b’, ‘c’, ‘d’]**_\
+b) [‘a b c d’]\
+c) [‘a#b#c#d’]\
+d) [‘abcd’] 
+
+> Explanation: Execute in the shell to verify.
+
+## 7. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code?]
+```python
+myList = [1, 5, 5, 5, 5, 1]
+max = myList[0]
+indexOfMax = 0
+for i in range(1, len(myList)):
+    if myList[i] > max:
+        max = myList[i]
+        indexOfMax = i
+ 
+>>>print(indexOfMax)
+```
+
+_**a) 1**_\
+b) 2\
+c) 3\
+d) 4
+
+> Explanation: First time the highest number is encountered is at index 1.
+
+## 8. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code?]
+```python
+myList = [1, 2, 3, 4, 5, 6]
+for i in range(1, 6):
+    myList[i - 1] = myList[i]
+ 
+for i in range(0, 6): 
+    print(myList[i], end = " ")
+```
+
+a) 2 3 4 5 6 1\
+b) 6 1 2 3 4 5\
+_**c) 2 3 4 5 6 6**_\
+d) 1 1 2 3 4 5
+
+> Explanation: Execute in the shell to verify.
+
+## 9. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code?]
+
+```python
+>>>list1 = [1, 3]
+>>>list2 = list1
+>>>list1[0] = 4
+>>>print(list2)
+```
+
+a) [1, 3]\
+_**b) [4, 3]**_\
+c) [1, 4]\
+d) [1, 3, 4]
+
+> Explanation: Lists should be copied by executing [:] operation.
+
+## 10. What will be the output of the following Python code? [Що відбудеться при запуску наступного Python code?]
+
+```python
+def f(values):
+    values[0] = 44
+ 
+v = [1, 2, 3]
+f(v)
+print(v)
+```
+
+a) [1, 44]\
+b) [1, 2, 3, 44]\
+_**c) [44, 2, 3]**_\
+d) [1, 2, 3]
+
+> Explanation: Execute in the shell to verify.
+
+## 1. What will be the output of the following Python code?
+
+```python
+def f(i, values = []):
+    values.append(i)
+    return values
+ 
+f(1)
+f(2)
+v = f(3)
+print(v)
+```
+
+a) [1] [2] [3]\
+b) [1] [1, 2] [1, 2, 3]\
+_**c) [1, 2, 3]**_\
+d) 1 2 3
+
+> Explanation: Execute in the shell to verify
+
+## 2. What will be the output of the following Python code?
+
+```python
+names1 = ['Amir', 'Bala', 'Chales']
+ 
+if 'amir' in names1:
+    print(1)
+else:
+    print(2)
+```
+
+a) None\
+b) 1\
+_**c) 2**_\
+d) Error
+
+> Explanation: Execute in the shell to verify.
+
+## 3. What will be the output of the following Python code?
+
+```python
+names1 = ['Amir', 'Bala', 'Charlie']
+names2 = [name.lower() for name in names1]
+ 
+print(names2[2][0])
+```
+
+a) None\
+b) a\
+c) b\
+_**d) c**_
+
+> Explanation: List Comprehension are a shorthand for creating new lists.
+
+## 4. What will be the output of the following Python code?
+
+```python
+numbers = [1, 2, 3, 4]
+ 
+numbers.append([5,6,7,8])
+ 
+print(len(numbers))
+```
+
+a) 4\
+_**b) 5**_\
+c) 8\
+d) 12
+
+> Explanation: A list is passed in append so the length is 5.
+
+## 5. To which of the following the “in” operator can be used to check if an item is in it? [До яких наступних структур даних "in" оператор може бути використаним для перевірки чи є елемент в ній?]
+a) Lists\
+b) Dictionary\
+c) Set\
+_**d) All of the mentioned**_
+
+> Explanation: In can be used in all data structures.
+
+## 6. What will be the output of the following Python code?
+```python
+list1 = [1, 2, 3, 4]
+list2 = [5, 6, 7, 8]
+ 
+print(len(list1 + list2))
+```
+a) 2\
+b) 4\
+c) 5\
+_**d) 8**_
+
+> Explanation: + appends all the elements individually into a new list.
+
+## 7. What will be the output of the following Python code?
+```python
+def addItem(listParam):
+    listParam += [1]
+ 
+mylist = [1, 2, 3, 4]
+addItem(mylist)
+print(len(mylist))
+```
+
+a) 1\
+b) 4\
+_**c) 5**_\
+d) 8
+
+> Explanation: + will append the element to the list.
+
+## 8. What will be the output of the following Python code?
+```python
+def increment_items(L, increment):
+    i = 0
+    while i < len(L):
+        L[i] = L[i] + increment
+        i = i + 1
+ 
+values = [1, 2, 3]
+print(increment_items(values, 2))
+print(values)
+```
+
+_**a)**_
+```
+ None
+ [3, 4, 5]
+```
+b)
+```
+   None
+   [1, 2, 3]
+```
+c)
+```
+   [3, 4, 5]
+   [1, 2, 3]
+```
+d)
+```
+   [3, 4, 5]
+   None
+```
+Answer: a)
+
+> Explanation: Execute in the shell to verify.
+
+## 9. What will be the output of the following Python code?
+```python
+def example(L):
+    ''' (list) -> list
+    '''
+    i = 0
+    result = []
+    while i < len(L):
+        result.append(L[i])
+        i = i + 3
+    return result
+```
+_**a) Return a list containing every third item from L starting at index 0**_\
+b) Return an empty list\
+c) Return a list containing every third index from L starting at index 0\
+d) Return a list containing the items from L starting from index 0, omitting every third item
+
+> Explanation: Run the code to get a better understanding with many arguments.
+
+## 10. What will be the output of the following Python code?
+```python
+veggies = ['carrot', 'broccoli', 'potato', 'asparagus']
+veggies.insert(veggies.index('broccoli'), 'celery')
+print(veggies)
+```
+
+_**a) [‘carrot’, ‘celery’, ‘broccoli’, ‘potato’, ‘asparagus’] Correct 1.00**_\
+b) [‘carrot’, ‘celery’, ‘potato’, ‘asparagus’]\
+
+c) [‘carrot’, ‘broccoli’, ‘celery’, ‘potato’, ‘asparagus’]\
+
+d) [‘celery’, ‘carrot’, ‘broccoli’, ‘potato’, ‘asparagus’]\
+
+> Explanation: Execute in the shell to verify.
+
+> **ПРИМІТКА!!!** Correct 1.00 виглядає максимально странно у варіанті `а)`, але без цього correct 1.00 відповідь а) є правильною
+
 # Section 11
 
 ## 1. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
