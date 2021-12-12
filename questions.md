@@ -1145,6 +1145,842 @@ d) assert
 
 # Section 5
 
+## What will be the output of the following Python code? [Який буде вивід наступного коду]
+```python
+def mk(x):
+    def mk1():
+        print("Decorated")
+        x()
+    return mk1
+def mk2():
+    print("Ordinary")
+p = mk(mk2)
+p()
+```
+
+a)\
+    Decorated\
+    Decorated
+
+b)\
+    Ordinary\
+    Ordinary
+
+c)\
+    Ordinary\
+    Decorated
+
+**d)**\
+    **Decorated**\
+    **Ordinary**
+
+## In the following Python code, which function is the decorator?
+```python
+def mk(x):
+    def mk1():
+        print("Decorated")
+        x()
+    return mk1
+def mk2():
+    print("Ordinary")
+p = mk(mk2)
+p()
+```
+
+a) p()\
+**b) mk()**\
+c) mk1()\
+d) mk2()
+
+>Explanation: In the code shown above, the function mk() is the decorator. The function which is getting decorated is mk2(). The return function is given the name p().
+
+## The ______ symbol along with the name of the decorator function can be placed above the definition of the function to be decorated works as an alternate way for decorating a function.
+
+a) #\
+b) $\
+**c) @**\
+d) &
+
+>Explanation: The @ symbol along with the name of the decorator function can be placed above the definition of the function to be decorated works as an alternate way for decorating a function.
+
+## What will be the output of the following Python code?
+
+```python
+def ordi():
+	print("Ordinary")
+ordi
+ordi()
+```
+
+**a)**\
+    **Address**\
+    **Ordinary**
+
+b)\
+    Error\
+    Address
+
+c)\
+    Ordinary\
+    Ordinary
+
+d)\
+    Ordinary\
+     Address
+
+>Explanation: The code shown above returns the address on the function ordi first, after which the word “Ordinary” is printed.
+
+## The two snippets of the following Python codes are equivalent.
+
+```python
+# CODE 1
+@f
+def f1():
+    print(“Hello”)
+# CODE 2
+def f1():
+    print(“Hello”)
+f1 = f(f1)
+```
+
+a) True\
+b) False
+
+>Explanation: The @ symbol can be used as an alternate way to specify a function that needs to be decorated. The output of the codes shown above is the same. Hence they are equivalent. Therefore this statement is true.
+
+## What will be the output of the following Python function?
+
+```python
+def f(p, q):
+	return p%q
+f(0, 2)
+f(2, 0)
+```
+a)\
+    0\
+    0
+
+b)\
+    Zero Division Error\
+    Zero Division Error
+
+**c)**\
+    **0**\
+    **Zero Division Error**
+
+d)\
+    Zero Division Error\
+    0
+
+>Explanation: The output of f(0, 2) is 0, since o%2 is equal to 0. The output of the f(2, 0) is a Zero Division Error. We can make use of decorators (Ого як притягнуто, шикарні питання, нічо не скажеш 👍🏻) in order to avoid this error.
+
+## What will be the output of the following Python code?
+
+```python
+def f(x):
+    def f1(a, b):
+        print("hello")
+        if b==0:
+            print("NO")
+            return
+        return f(a, b)
+    return f1
+@f
+def f(a, b):
+    return a%b
+f(4,0)
+```
+
+**a)**\
+    **hello**\
+    **NO**
+
+b)\
+    hello\
+    Zero Division Error
+
+c)\
+NO
+
+d)\
+hello
+
+>Explanation: In the code shown above, we have used a decorator in order to avoid the Zero Division Error.
+
+## What will be the output of the following Python code?
+
+```python
+def f(x):
+    def f1(*args, **kwargs):
+        print("*"* 5)
+        x(*args, **kwargs)
+        print("*"* 5)
+    return f1
+def a(x):
+    def f1(*args, **kwargs):
+        print("%"* 5)
+        x(*args, **kwargs)
+        print("%"* 5)
+    return f1
+@f
+@a
+def p(m):
+    print(m)
+p("hello")
+```
+
+**a)**\
+    **\*\*\*\*\***\
+    **%%%%%**\
+    **hello**\
+    **%%%%%**\
+    **\*\*\*\*\***
+
+b)\
+Error
+
+c)\
+\*\*\*\*\*%%%%%hello%%%%%\*\*\*\*\*
+
+d)\
+hello
+
+> Explanation: The code shown above uses multiple decorators.
+
+## The following python code can work with ____ parameters.
+
+```python
+def f(x):
+    def f1(*args, **kwargs):
+           print("Sanfoundry")
+           return x(*args, **kwargs)
+    return f1
+```
+
+a) 2\
+b) 1\
+**c) any number of**\
+d) 0
+
+>Explanation: The code shown above shows a general decorator which can work with any number of arguments.
+
+## What will be the output of the following Python code?
+
+```python
+def f(x):
+    def f1(*args, **kwargs):
+        print("*", 5)
+        x(*args, **kwargs)
+        print("*", 5)
+    return f1
+@f
+def p(m):
+    p(m)
+print("hello")
+```
+
+a)\
+    *****\
+    hello
+
+b)\
+    *****\
+    *****\
+    hello
+
+c)\
+\*\*\*\*\*
+
+**d)**\
+**hello**
+
+>Explanation: In the code shown above, we have not passed any parameter to the function p. Hence the output of this code is: hello.
+
+## A function with parameters cannot be decorated.
+
+a) True\
+**b) False**
+
+>Explanation: Any function, irrespective of whether or not it has parameters can be decorated. Hence the statement is false.
+
+##  Identify the decorator in the snippet of code shown below.
+
+```python
+def sf():
+     pass
+sf = mk(sf)
+@f
+def sf():
+     return
+```
+a) @f\
+b) f\
+c) sf()\
+**d) mk**
+
+>Explanation: In the code shown above, @sf is not a decorator but only a decorator line. The ‘@’ symbol represents the application of a decorator. The decorator here is the function mk.
+
+## What will be the output of the following Python code?
+
+```python
+class A:
+    @staticmethod
+    def a(x):
+        print(x)
+A.a(100)
+```
+
+a) Error\
+b) Warning\
+**c) 100**\
+d) No output
+
+>Explanation: The code shown above demonstrates rebinding using a static method. This can be done with or without a decorator. The output of this code will be 100.
+
+## What will be the output of the following Python code?
+
+```python
+def d(f):
+    def n(*args):
+        return '$' + str(f(*args))
+    return n
+@d
+def p(a, t):
+    return a + a*t 
+print(p(100,0))
+```
+
+a) 100\
+**b) $100**\
+c) $0\
+d) 0
+
+>Explanation: In the code shown above, the decorator helps us to prefix the dollar sign along with the value. Since the second argument is zero, the output of the code is: $100.
+
+## What will be the output of the following Python code?
+
+```python
+def c(f):
+    def inner(*args, **kargs):
+        inner.co += 1
+        return f(*args, **kargs)
+    inner.co = 0
+    return inner
+@c
+def fnc():
+    pass
+if __name__ == '__main__':
+    fnc()
+    fnc()
+    fnc()
+    print(fnc.co)
+```
+
+a) 4\
+**b) 3**\
+c) 0\
+d) 1
+
+>Explanation: The code shown above returns the number of times a given function has been called. Hence the output of this code is: 3
+
+## What will be the output of the following Python code?
+
+```python
+x = ['ab', 'cd']
+for i in x:
+    i.upper()
+print(x)
+```
+
+**a) [‘ab’, ‘cd’]**\
+b) [‘AB’, ‘CD’]\
+c) [None, None]\
+d) none of the mentioned
+
+>Explanation: The function upper() does not modify a string in place, it returns a new string which isn’t being stored anywhere.
+
+## What will be the output of the following Python code?
+
+```python
+x = ['ab', 'cd']
+for i in x:
+    x.append(i.upper())
+print(x)
+```
+
+a) [‘AB’, ‘CD’]\
+b) [‘ab’, ‘cd’, ‘AB’, ‘CD’]\
+c) [‘ab’, ‘cd’]\
+**d) none of the mentioned**
+
+>Explanation: The loop does not terminate as new elements are being added to the list in each iteration.
+
+## What will be the output of the following Python code?
+
+```python
+i = 1
+while True:
+    if i%3 == 0:
+        break
+    print(i)
+ 
+    i + = 1
+```
+
+a) 1 2\
+b) 1 2 3\
+**c) error**\
+d) none of the mentioned
+
+>Explanation: SyntaxError, there shouldn’t be a space between + and = in +=.
+
+##  What will be the output of the following Python code?
+
+```python
+i = 1
+while True:
+    if i%0O7 == 0:
+        break
+    print(i)
+    i += 1
+```
+
+**a) 1 2 3 4 5 6**\
+b) 1 2 3 4 5 6 7\
+c) error\
+d) none of the mentioned
+
+>Explanation: Control exits the loop when i becomes 7.
+
+## What will be the output of the following Python code?
+
+```python
+i = 5
+while True:
+    if i%0O11 == 0:
+        break
+    print(i)
+    i += 1
+```
+
+a) 5 6 7 8 9 10\
+**b) 5 6 7 8**\
+c) 5 6\
+d) error
+
+>Explanation: 0O11 is an octal number.
+
+## What will be the output of the following Python code?
+
+```python
+i = 5
+while True:
+    if i%0O9 == 0:
+        break
+    print(i)
+    i += 1
+```
+
+a) 5 6 7 8\
+b) 5 6 7 8 9\
+c) 5 6 7 8 9 10 11 12 13 14 15 ….\
+**d) error**
+
+>Explanation: 9 isn’t allowed in an octal number.
+
+## What will be the output of the following Python code?
+
+```python
+i = 1
+while True:
+    if i%2 == 0:
+        break
+    print(i)
+    i += 2
+```
+
+a) 1\
+b) 1 2\
+c) 1 2 3 4 5 6 …\
+**d) 1 3 5 7 9 11 …**
+
+>Explanation: The loop does not terminate since i is never an even number.
+
+## What will be the output of the following Python code?
+
+```python
+i = 2
+while True:
+    if i%3 == 0:
+        break
+    print(i)
+    i += 2
+```
+
+a) 2 4 6 8 10 …\
+**b) 2 4**\
+c) 2 3\
+d) error
+
+>Explanation: The numbers 2 and 4 are printed. The next value of i is 6 which is divisible by 3 and hence control exits the loop.
+
+## What will be the output of the following Python code?
+
+```python
+i = 1
+while False:
+    if i%2 == 0:
+        break
+    print(i)
+    i += 2
+```
+
+a) 1\
+b) 1 3 5 7 …\
+c) 1 2 3 4 …\
+**d) none of the mentioned**
+
+>Explanation: Control does not enter the loop because of False.
+
+## What will be the output of the following Python code?
+
+```python
+True = False
+while True:
+    print(True)
+    break
+```
+
+a) True\
+b) False\
+c) None\
+**d) none of the mentioned**
+
+>Explanation: SyntaxError, True is a keyword and it’s value cannot be changed.
+
+## What will be the output of the following Python code?
+
+```python
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+else:
+    print(0)
+```
+
+a) 0 1 2 0\
+**b) 0 1 2**\
+c) error\
+d) none of the mentioned
+
+>Explanation: The else part is not executed if control breaks out of the loop.
+
+## What will be the output of the following Python code?
+
+```python
+i = 0
+while i < 3:
+    print(i)
+    i += 1
+else:
+    print(0)
+```
+
+a) 0 1 2 3 0\
+**b) 0 1 2 0**\
+c) 0 1 2\
+d) error
+
+>Explanation: The else part is executed when the condition in the while statement is false.
+
+## What will be the output of the following Python code?
+
+```python
+x = "abcdef"
+while i in x:
+    print(i, end=" ")
+```
+
+a) a b c d e f\
+b) abcdef\
+c) i i i i i i …\
+**d) error**
+
+>Explanation: NameError, i is not defined.
+
+## What will be the output of the following Python code?
+
+```python
+x = "abcdef"
+i = "i"
+while i in x:
+    print(i, end=" ")
+```
+
+**a) no output**\
+b) i i i i i i …\
+c) a a a a a a …\
+d) a b c d e f
+
+>Explanation: “i” is not in “abcdef”.
+
+## What will be the output of the following Python code?
+
+```python
+x = "abcdef"
+i = "a"
+while i in x:
+    print(i, end = " ")
+```
+
+a) no output\
+b) i i i i i i …\
+**c) a a a a a a …**\
+d) a b c d e f
+
+>Explanation: As the value of i or x isn’t changing, the condition will always evaluate to True.
+
+## What will be the output of the following Python code?
+
+```python
+x = "abcdef"
+i = "a"
+while i in x:
+    print('i', end = " ")
+```
+
+a) no output\
+**b) i i i i i i …**\
+c) a a a a a a …\
+d) a b c d e f
+
+>Explanation: Here i i i i i … printed continuously because as the value of i or x isn’t changing, the condition will always evaluate to True. But also here we use a citation marks on “i”, so, here i treated as a string, not like a variable.
+
+## What will be the output of the following Python code?
+
+```python
+x = "abcdef"
+i = "a"
+while i in x:
+    x = x[:-1]
+    print(i, end = " ")
+```
+
+a) i i i i i i\
+**b) a a a a a a**\
+c) a a a a a\
+d) none of the mentioned
+
+>Explanation: The string x is being shortened by one character in each iteration.
+
+## What will be the output of the following Python code?
+
+```python
+x = "abcdef"
+i = "a"
+while i in x[:-1]:
+    print(i, end = " ")
+```
+
+a) a a a a a\
+b) a a a a a a\
+**c) a a a a a a …**\
+d) a
+
+>Explanation: String x is not being altered and i is in x[:-1].
+
+## What will be the output of the following Python code?
+
+```python
+x = "abcdef"
+i = "a"
+while i in x:
+    x = x[1:]
+    print(i, end = " ")
+```
+
+a) a a a a a a\
+**b) a**\
+c) no output\
+d) error
+
+>Explanation: The string x is being shortened by one character in each iteration.
+
+## What will be the output of the following Python code?
+
+```python
+x = "abcdef"
+i = "a"
+while i in x[1:]:
+    print(i, end = " ")
+```
+
+a) a a a a a a\
+b) a\
+**c) no output**\
+d) error
+
+>Explanation: i is not in x[1:].
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in x:
+    print(i)
+    x.upper()
+```
+
+a) a B C D\
+**b) a b c d**\
+c) A B C D\
+d) error
+
+>Explanation: Changes do not happen in-place, rather a new instance of the string is returned.
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in x:
+    print(i.upper())
+```
+
+a) a b c d\
+**b) A B C D**\
+c) a B C D\
+d) error
+
+>Explanation: The instance of the string returned by upper() is being printed.
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in range(x):
+    print(i)
+```
+
+a) a b c d\
+b) 0 1 2 3\
+**c) error**\
+d) none of the mentioned
+
+>Explanation: range(str) is not allowed.
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in range(len(x)):
+    print(i)
+```
+
+a) a b c d\
+**b) 0 1 2 3**\
+c) error\
+d) 1 2 3 4
+
+>Explanation: i takes values 0, 1, 2 and 3.
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in range(len(x)):
+    print(i.upper())
+```
+
+a) a b c d\
+b) 0 1 2 3\
+**c) error**\
+d) 1 2 3 4
+
+>Explanation: Objects of type int have no attribute upper().
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in range(len(x)):
+    i.upper()
+print (x)
+```
+
+a) a b c d\
+b) 0 1 2 3\
+**c) error**\
+d) none of the mentioned
+
+>Explanation: Objects of type int have no attribute upper().
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in range(len(x)):
+    x[i].upper()
+print (x)
+```
+
+**a) abcd**\
+b) ABCD\
+c) error\
+d) none of the mentioned
+
+>Explanation: Changes do not happen in-place, rather a new instance of the string is returned.
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in range(len(x)):
+    i[x].upper()
+print (x)
+```
+
+a) abcd\
+b) ABCD\
+**c) error**\
+d) none of the mentioned
+
+>Explanation: Objects of type int aren’t subscriptable. However, if the statement was x[i], an error would not have been thrown.
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in range(len(x)):
+    x = 'a'
+    print(x)
+```
+
+a) a\
+b) abcd abcd abcd\
+**c) a a a a**\
+d) none of the mentioned
+
+>Explanation: range() is computed only at the time of entering the loop.
+
+## What will be the output of the following Python code?
+
+```python
+x = 'abcd'
+for i in range(len(x)):
+    print(x)
+    x = 'a'
+```
+
+a) a\
+b) abcd abcd abcd abcd\
+c) a a a a\
+**d) none of the mentioned**
+
+>Explanation: abcd a a a is the output as x is modified only after ‘abcd’ has been printed once.
+
 # Section 6
 
 # Section 7
