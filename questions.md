@@ -3842,9 +3842,9 @@ points.sort()
 print(points)
 ```
 
-a) `[[1, 2], [3, 1.5], [0.5, 0.5]]`
-b) `[[3, 1.5], [1, 2], [0.5, 0.5]]`
-**c) `[[0.5, 0.5], [1, 2], [3, 1.5]]`**
+a) `[[1, 2], [3, 1.5], [0.5, 0.5]]`\
+b) `[[3, 1.5], [1, 2], [0.5, 0.5]]`\
+**c) `[[0.5, 0.5], [1, 2], [3, 1.5]]`**\
 d) `[[0.5, 0.5], [3, 1.5], [1, 2]]`
 
 ## 1. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
@@ -4065,9 +4065,9 @@ a.extend([45,67])
 print(a)
 ```
 
-**a) `[13, 56, 17, [87], 45, 67]`**
-b) `[13, 56, 17, 87, 45, 67]`
-c) `[13, 56, 17, 87,[ 45, 67]]`
+**a) `[13, 56, 17, [87], 45, 67]`**\
+b) `[13, 56, 17, 87, 45, 67]`\
+c) `[13, 56, 17, 87,[ 45, 67]]`\
 d) `[13, 56, 17, [87], [45, 67]]`
 
 ## 4. What is the output of the following piece of code? [Який буде результат виконання наступного уривку коду?]
@@ -4105,9 +4105,9 @@ lst=[[1,2],[3,4]]
 print(sum(lst,[]))
 ```
 
-a) `[[3],[7]]`
-**b) `[1,2,3,4]`**
-c) Error
+a) `[[3],[7]]`\
+**b) `[1,2,3,4]`**\
+c) Error\
 d) `[10]`
 
 ## 6. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
@@ -4154,9 +4154,9 @@ x = [1,2,3,4]
 unpack(*x)
 ```
 
-a) Error
-b) `[1,4]`
-c) `[5]`
+a) Error\
+b) `[1,4]`\
+c) `[5]`\
 **d) `5`**
 
 ## 8. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
@@ -4169,9 +4169,9 @@ places1[1]="Pune"
 places2[2]="Hyderabad"
 print(places)
 ```
-a) `['Bangalore', 'Pune', 'Hyderabad']`
-**b) `['Bangalore', 'Pune', 'Delhi']`**
-c) `['Bangalore', 'Mumbai', 'Delhi']`
+a) `['Bangalore', 'Pune', 'Hyderabad']`\
+**b) `['Bangalore', 'Pune', 'Delhi']`**\
+c) `['Bangalore', 'Mumbai', 'Delhi']`\
 d) `['Bangalore', 'Mumbai', 'Hyderabad']`
 
 ## 9. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
@@ -4181,9 +4181,9 @@ x=[[1],[2]]
 print(" ".join(list(map(str,x))))
 ```
 
-**a) `[1] [2]`**
-b) `[49] [50]`
-c) Syntax error
+**a) `[1] [2]`**\
+b) `[49] [50]`\
+c) Syntax error\
 d) `[[1]] [[2]]`
 
 ## 10. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
@@ -4277,9 +4277,9 @@ a.sort(key=len)
 print(a)
 ```
 
-a) `['Apple', 'Ball', 'Cobra']`
-**b) `['Ball', 'Apple', 'Cobra']`**
-c) `['Cobra', 'Apple', 'Ball']`
+a) `['Apple', 'Ball', 'Cobra']`\
+**b) `['Ball', 'Apple', 'Cobra']`**\
+c) `['Cobra', 'Apple', 'Ball']`\
 d) Invalid syntax for sort()
 
 ## 15. What will be the output of the following Python code? [Який буде результат виконання наступного Python-коду?]
@@ -4326,9 +4326,9 @@ k = [(i.upper(), len(i)) for i in my_string]
 print(k)
 ```
 
-a) `[('HELLO', 5), ('WORLD', 5)]`
-**b) `[('H, 1), ('E, 1), ('L, 1), ('L', 1), ('O', 1), (' ', 1), ('W', 1), ('O', 1), ('R', 1), ('L', 1), ('D', 1)]`**
-c) `[('HELLO WORLD', 11)]`
+a) `[('HELLO', 5), ('WORLD', 5)]`\
+**b) `[('H, 1), ('E, 1), ('L, 1), ('L', 1), ('O', 1), (' ', 1), ('W', 1), ('O', 1), ('R', 1), ('L', 1), ('D', 1)]`**\
+c) `[('HELLO WORLD', 11)]`\
 d) none of the mentioned
 
 ## 4. Which of the following is the correct expansion of `list_1 = [expr(i) for i in list_0 if func(i)]`? [Які з наступних уривків є коректним розкриттям `list_1 = [expr(i) for i in list_0 if func(i)]`?]
@@ -4374,9 +4374,9 @@ d) error, ‘;’ is not allowed
 print([i.lower() for i in "HELLO"])
 ```
 
-**a) `['h', 'e', 'l', 'l', 'o']`**
-b) `'hello'`
-c) `['hello']`
+**a) `['h', 'e', 'l', 'l', 'o']`**\
+b) `'hello'`\
+c) `['hello']`\
 d) `hello`
 
 ## 7. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
@@ -4385,9 +4385,9 @@ d) `hello`
 print([i+j for i in "abc" for j in "def"])
 ```
 
-a) `[‘da’, ‘ea’, ‘fa’, ‘db’, ‘eb’, ‘fb’, ‘dc’, ‘ec’, ‘fc’]`
-b) `[[‘ad’, ‘bd’, ‘cd’], [‘ae’, ‘be’, ‘ce’], [‘af’, ‘bf’, ‘cf’]]`
-c) `[[‘da’, ‘db’, ‘dc’], [‘ea’, ‘eb’, ‘ec’], [‘fa’, ‘fb’, ‘fc’]]`
+a) `[‘da’, ‘ea’, ‘fa’, ‘db’, ‘eb’, ‘fb’, ‘dc’, ‘ec’, ‘fc’]`\
+b) `[[‘ad’, ‘bd’, ‘cd’], [‘ae’, ‘be’, ‘ce’], [‘af’, ‘bf’, ‘cf’]]`\
+c) `[[‘da’, ‘db’, ‘dc’], [‘ea’, ‘eb’, ‘ec’], [‘fa’, ‘fb’, ‘fc’]]`\
 **d) `[‘ad’, ‘ae’, ‘af’, ‘bd’, ‘be’, ‘bf’, ‘cd’, ‘ce’, ‘cf’]`**
 
 ## 8. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
@@ -4396,10 +4396,10 @@ c) `[[‘da’, ‘db’, ‘dc’], [‘ea’, ‘eb’, ‘ec’], [‘fa’, 
 print([[i+j for i in "abc"] for j in "def"])
 ```
 
-a) `[‘da’, ‘ea’, ‘fa’, ‘db’, ‘eb’, ‘fb’, ‘dc’, ‘ec’, ‘fc’]`
-**b) `[[‘ad’, ‘bd’, ‘cd’], [‘ae’, ‘be’, ‘ce’], [‘af’, ‘bf’, ‘cf’]]`**
-c) `[[‘da’, ‘db’, ‘dc’], [‘ea’, ‘eb’, ‘ec’], [‘fa’, ‘fb’, ‘fc’]]`
-d) `[‘ad’, ‘ae’, ‘af’, ‘bd’, ‘be’, ‘bf’, ‘cd’, ‘ce’, ‘cf’]`
+a) `[‘da’, ‘ea’, ‘fa’, ‘db’, ‘eb’, ‘fb’, ‘dc’, ‘ec’, ‘fc’]`\
+**b) `[[‘ad’, ‘bd’, ‘cd’], [‘ae’, ‘be’, ‘ce’], [‘af’, ‘bf’, ‘cf’]]`**\
+c) `[[‘da’, ‘db’, ‘dc’], [‘ea’, ‘eb’, ‘ec’], [‘fa’, ‘fb’, ‘fc’]]`\
+d) `[‘ad’, ‘ae’, ‘af’, ‘bd’, ‘be’, ‘bf’, ‘cd’, ‘ce’, ‘cf’]`\
 
 ## 9. What will be the output of the following Python code snippet? [Що буде результатом виконання наступного шматка Python-коду?]
 
