@@ -8829,6 +8829,490 @@ d) from folder.subfolder.mod1 import objects imports packages
 # Section 20
 
 # Section 21
+	
+Python Question and Answers – Datetime Module – 1
+	
+## 1. [broken] What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+import datetime
+d=datetime.date(2016,7,24) тут переплутали рік
+print(d)
+	
+a) Error
+**b) 2017-07-24**
+c) 2017-7-24
+d) 24-7-2017
+> In the snippet of code shown above, we are simply printing the date entered by us. We enter the date in the format: yyyy,m,dd. The date is then printed in the format: yyyy-mm-dd. Hence the output is: 2017-07-24.
+
+## 2. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+import datetime
+d=datetime.date(2017,06,18)
+print(d)
+	
+**a) Error**
+b) 2017-06-18
+c) 18-06-2017
+d) 06-18-2017
+> The code shown above will result in an error because of the format of the date entered. Had the date been entered as: d=datetime.date(2017,6,18), no error would have been thrown.
+	
+## 3. [broken] What will be the output of the following Python code if the system date is 18th August, 2016? [Яким буде результат наступного коду Python, якщо системна дата – 18 серпня 2016 р.?]
+Ну мабуть тут має бути import datetime
+tday=datetime.date.today()
+print(tday.month()) а тут треба писати tday.month
+
+Якщо виконати всі зауваження то відповідь підсвічена нижче, інашке Error
+a) August
+b) Aug
+c) 08
+**d) 8**
+> The code shown above prints the month number from the system date. Therefor the output will be 8 if the system date is 18th August, 2016.
+	
+## 4. What will be the output of the following Python code if the system date is 18th June, 2017? [Яким буде вихід наступного коду Python, якщо системна дата – 18 червня 2017 р.?]
+import datetime
+tday=datetime.date.today()
+print(tday)
+
+a) 18-06-2017
+b) 06-18-2017
+**c) 2017-06-18**
+d) Error
+> The code shown above prints the system date in the format yyyy-mm-dd. Hence the output of this code is: 2017-06-18.
+	
+## 5. [broken] What will be the output of the following Python code if the system date is 18th June, 2017 (Sunday)? [Яким буде результат наступного коду Python, якщо системна дата – 18 червня 2017 року (неділя)?]
+Ну мабуть тут має бути ```import datetime```
+tday=datetime.date.today()
+print(tday.weekday())
+
+**a) 6**
+b) 1
+c) 0
+d) 7
+> The code shown above prints an integer depending on which day of the week it is. Monday-0, Tuesday-1, Wednesday-2, Thursday-3, Friday-4, Saturday-5, Sunday-6. Hence the output is 6 in the case shown above.
+	
+## 6. [broken] What will be the output of the following Python code if the system date is 21st June, 2017 (Wednesday)? [Яким буде результат наступного коду Python, якщо системна дата – 21 червня 2017 року (середа)?]
+Ну мабуть тут має бути ```import datetime```
+tday=datetime.date.today()
+print(tday.isoweekday())
+
+a) Wed
+b) Wednesday
+c) 2
+**d) 3**
+> This code prints an integer depending on which day of the week it is. Monday-1, Tuesday-2, Wednesday-3, Thursday-4, Friday-5, Saturday-6, Sunday-7. Hence the output of the code shown above is 3.
+	
+## 7. [broken] Point out the error (if any) in the code shown below if the system date is 18th June, 2017? [Вкажіть на помилку (якщо є) у коді, показаному нижче, якщо системна дата – 18 червня 2017 р.?]
+Ну мабуть тут має бути import datetime
+tday=datetime.date.today()
+bday=datetime.date(2017,9,18)
+till_bday=bday-tday
+print(till_bday)
+
+a) 3 months, 0:00:00
+b) 90 days, 0:00:00
+c) 3 months 2 days, 0:00:00
+**d) 92 days, 0:00:00**
+> The code shown above can be used to find the number of days between two given dates. The output of the code shown above will thus be 92.
+	
+## 8. The value returned when we use the function isoweekday() is ______ and that for the function weekday() is ________ if the system date is 19th June, 2017 (Monday)? [Значення, яке повертається, коли ми використовуємо функцію isoweekday(), дорівнює ______, а для функції weekday() — ________, якщо системна дата — 19 червня 2017 року (понеділок)?]
+
+a) 0,0
+b) 0,1
+**c) 1,0**
+d) 1,1
+> The value returned when we use the function isoweekday() is 1 and that for the function weekday() is 0 if the system date is 19th June, 2017 (Monday).
+	
+## 9. [broken] Which of the following will throw an error if used after the following Python code? [Що з наведеного нижче призведе до помилки, якщо використовується після наступного коду Python?]
+Ну мабуть тут має бути import datetime
+tday=datetime.date.today()
+bday=datetime.date(2017,9,18)
+t_day=bday-tday
+
+a) print(t_day.seconds)
+**b) print(t_day.months)**
+c) print(t_day.max)
+d) print(t_day.resolution)
+> The statement: print(t_day.months) will throw an error because there is no function such as t_day.months, whereas t_day.seconds, t_day.max and t_day.resolution are valid, provided that t_day is defined.
+	
+## 10. [broken] What will be the output of the following Python code if the system date is: 6/19/2017? [Яким буде вихід наступного коду Python, якщо системна дата: 19.06.2017?]
+Ну мабуть тут має бути import datetime
+tday=datetime.date.today()
+tdelta=datetime.timedelta(days=10)
+print(tday+tdelta)
+
+a) 2017-16-19
+b) 2017-06-9
+**c) 2017-06-29**
+d) Error
+> The code shown above will add the specified number of days to the current date and print the new date. On adding ten days to 6/19/2017, we get 6/29/2017. Hence the output is: 2017-06-29.
+
+Python Question and Answers – Datetime Module – 2
+
+## 1. [broken] The output of both of the print statements is the same. [Висновок обох операторів друку однаковий.]
+import datetime
+dt_1 = datetime.datetime.today()
+dt_2 = datetime.datetime.now()
+print(dt_1)
+print(dt_2)
+	
+У відповідях було написано що правильно False бо - див. Explanation, але якщо в питанні малось на увазі чи виводить воно одне і те саме - то відповідь True + я скомпілив і різниці у часі не було помітно.
+
+**a) True**
+b) False
+> The output of the two print statements is not the same because of the difference in time between the execution of the two print statements. There is a difference in the order of milliseconds between the two statements and this is reflected in the output.
+	
+## 2. Which of the following functions can be used to find the coordinated universal time, assuming that the datetime module has already been imported? [Яку з наведених нижче функцій можна використовувати, щоб знайти скоординований універсальний час, якщо припустити, що модуль datetime вже імпортовано?]
+	
+a) datetime.utc()
+b) datetime.datetime.utc()
+c) datetime.utcnow()
+**d) datetime.datetime.utcnow()**
+
+> The function datetime.datetime.utcnow() can be used to find the UTC (Coordinated Universal Time), assuming that the datetime module has already been imported. The other function s shown above are invalid.
+	
+## 3. [broken] What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+import time
+time.time()
+	
+a) The number of hours passed since 1st January, 1970
+b) The number of days passed since 1st January, 1970
+**c) The number of seconds passed since 1st January, 1970**
+d) The number of minutes passed since 1st January, 1970
+	
+Якщо дописати print(time.time()) то відповідь c.
+
+> The code shown above will return the number of seconds passed since 1st January, 1970.
+	
+## 4. [broken] What will be the output of the following Python code, if the time module has already been imported? [Яким буде результат наступного коду Python, якщо модуль часу вже імпортовано?]
+def num(m):
+	t1 = time.time()
+	for i in range(0,m):
+		print(i)
+	t2 = time.time()
+	print(str(t2-t1))
+ 
+    num(3)
+	
+**a) 1**
+**   2**
+**   3**
+**   The time taken for the execution of the code**
+b) 3
+   The time taken for the execution of the code
+c) 1
+   2
+   3
+   UTC time 
+d) 3
+   UTC time
+	
+Якась діч, бо воно має виводити з 0 а не з 1 як у відповідях. У мене після запуску вивело 0 1 2 0.0
+
+> The code shown above will return the numbers 1, 2, 3, followed by the time taken in the execution of the code.
+Output:
+1
+2
+3
+The time taken for the execution of the code
+	
+## 5. [broken] What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+import time
+time.asctime()
+	
+a) Current date only
+b) UTC time
+**c) Current date and time**
+d) Current time only
+	
+Якщо дописати print(time.asctime()) то відповідь c.
+
+> The function time.asctime(), present if the time module can be used to return the current date and time. It can also accept a parameter and return the date and time in a particular format. However in the above code, since we have not passed any parameters in the above code, the current date and time is returned.
+	
+## 6. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+import time
+t=(2010, 9, 20, 8, 15, 12, 6)
+time.asctime(t)
+	
+a) ‘20 Sep 2010 8:15:12 Sun’
+b) ‘2010 20 Sept 08:15:12 Sun’
+c) ‘Sun Sept 20 8:15:12 2010’
+**d) Error**
+
+> The code shown above results in an error because this function accepts exactly 9 arguments (including day of the year and DST), but only 7 are given. Hence an error is thrown.
+	
+## 7. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+import time
+t=(2010, 9, 20, 8, 45, 12, 6, 0, 0)
+time.asctime(t)
+	
+a) ‘Sep 20 2010 08:45:12 Sun’
+**b) ‘Sun Sep 20 08:45:12 2010’**
+c) ’20 Sep 08:45:12 Sun 2010’
+d) ‘2010 20 Sep 08:45:12 Sun’
+
+> The code shown above returns the given date and time in a particular format. Hence the output of the code shown above will be: ‘Sun Sep 20 08:45:12 2010’.
+	
+## 8. The sleep function (under the time module) is used to ___________ [Функція сну (під модулем часу) використовується для ___________]
+**a) Pause the code for the specified number of seconds**
+b) Return the specified number of seconds, in terms of milliseconds
+c) Stop the execution of the code
+d) Return the output of the code had it been executed earlier by the specified number of seconds
+
+> The sleep function (under the time module) is used to pause the code for the specified number of seconds. The number of seconds is taken as an argument by this function.
+	
+## 9. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+import time
+for i in range(0,5):
+	print(i)
+	time.sleep(2)
+	
+a) After an interval of 2 seconds, the numbers 1, 2, 3, 4, 5 are printed all together
+b) After an interval of 2 seconds, the numbers 0, 1, 2, 3, 4 are printed all together
+c) Prints the numbers 1, 2, 3, 4, 5 at an interval of 2 seconds between each number
+**d) Prints the numbers 0, 1, 2, 3, 4 at an interval of 2 seconds between each number**
+
+> The output of the code shown above will be the numbers 0, 1, 2, 3, 4 at an interval of 2 seconds each.
+	
+## 10. What will be the output if we try to extract only the year from the following Python code? (time.struct_time(tm_year=2017, tm_mon=6, tm_mday=25, tm_hour=18, tm_min=26, tm_sec=6, tm_wday=6, tm_yday=176, tm_isdst=0))? [Яким буде результат, якщо ми спробуємо витягти лише рік із наступного коду Python? (time.struct_time(tm_year=2017, tm_mon=6, tm_mday=25, tm_hour=18, tm_min=26, tm_sec=6, tm_wday=6, tm_yday=176, tm_isdst=0))?]
+import time
+t=time.localtime()
+print(t)
+	
+a) t[1]
+b) tm_year
+**c) t[0]**
+d) t_year
+
+> To extract the year from the code shown above, we use the command t[0]. The command t[1] will return the month number (6 in the above case). The commands tm_year and t_year will result in errors.
+	
+Python Question and Answers – Random module – 1
+	
+## 1. To include the use of functions which are present in the random library, we must use the option: [Щоб включити використання функцій, які присутні у випадковій бібліотеці, ми повинні використовувати параметр:]
+**a) import random**
+b) random.h
+c) import.random
+d) random.random
+
+> The command import random is used to import the random module, which enables us to use the functions which are present in the random library.
+
+## 2. The output of the following Python code is either 1 or 2 [Результатом наступного коду Python є 1 або 2]
+import random
+random.randint(1,2)
+	
+**a) True**
+b) False
+
+> The function random.randint(a,b) helps us to generate an integer between ‘a’ and ‘b’, including ‘a’ and ‘b’. In this case, since there are no integers between 1 and 2, the output will necessarily be either 1 or 2’.
+	
+## 3. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+import random
+random.choice(2,3,4)
+	
+a) An integer other than 2, 3 and 4
+b) Either 2, 3 or 4
+**c) Error**
+d) 3 only
+
+> The code shown above displays the incorrect syntax of the function random.choice(). This functions takes its numeric parameter in the form of a list. Hence the correct syntax world be: random.choice([2,3,4]).
+	
+## 4. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+import random
+random.choice([10.4, 56.99, 76])
+	
+a) Error
+**b) Either 10.4, 56.99 or 76**
+c) Any number other than 10.4, 56.99 and 76
+d) 56.99 only
+
+> The function random.choice(a,b,c,d) returns a random number which is selected from a, b, c and d. The output can be either a, b, c or d. Hence the output of the snippet of code shown above can be either 10.4, 56.99 or 76.
+
+## 5. What will be the output of the following Python function (random module has already been imported)? [Яким буде результат наступної функції Python (довільний модуль вже імпортовано)?]
+random.choice('sun')
+	
+a) sun
+b) u
+**c) either s, u or n**
+d) error
+
+> The above function works with alphabets just as it does with numbers. The output of this expression will be either s, u or n.
+	
+## 6. What will be the output of the following Python function, assuming that the random module has already been imported? [Яким буде результат наступної функції Python, якщо припустити, що випадковий модуль вже імпортовано?]
+random.uniform(3,4)
+	
+a) Error
+b) Either 3 or 4
+c) Any integer other than 3 and 4
+**d) Any decimal value between 3 and 4**
+
+> This question depicts the basic difference between the functions random.randint(a, b) and random.uniform(a, b). While random.randint(a,b) generates an integer between ‘a’ and ‘b’, including ‘a’ and ‘b’, the function random.uniform(a,b) generates a decimal value between ‘a’ and ‘b’.
+	
+## 7. What will be the output of the following Python function if the random module has already been imported? [Яким буде результат наступної функції Python, якщо випадковий модуль вже імпортовано?]
+random.randint(3.5,7)
+	
+**a) Error**
+b) Any integer between 3.5 and 7, including 7
+c) Any integer between 3.5 and 7, excluding 7
+d) The integer closest to the mean of 3.5 and 7
+
+> The function random.randint() does not accept a decimal value as a parameter. Hence the function shown above will throw an error.
+	
+## 8. Which of the following functions helps us to randomize the items of a list? [Яка з наведених нижче функцій допомагає нам рандомізувати елементи списку?]
+a) seed
+b) randomise
+**c) shuffle**
+d) uniform
+
+> The function shuffle, which is included in the random module, helps us to randomize the items of a list. This function takes the list as a parameter.
+	
+## 9. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+random.seed(3)
+random.randint(1,5)
+2
+random.seed(3)
+random.randint(1,5)
+	
+a) 3
+**b) 2**
+c) Any integer between 1 and 5, including 1 and 5
+d) Any integer between 1 and 5, excluding 1 and 5
+
+> We use the seed function when we want to use the same random number once again in our program. Hence the output of the code shown above will be 2, since 2 was generated previously following which we used the seed function.
+	
+## 10. What is the interval of the value generated by the function random.random(), assuming that the random module has already been imported? [Який інтервал значення генерується функцією random.random(), якщо припустити, що модуль random вже імпортовано?]
+a) (0,1)
+b) (0,1]
+c) [0,1]
+**d) [0,1)**
+
+> The function random.random() generates a random value in the interval [0,1), that is, including zero but excluding one.
+	
+## 11. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+random.randrange(0,91,5)
+	
+**a) 10**
+b) 18
+c) 79
+d) 95
+
+> The function shown above will generate an output which is a multiple of 5 and is between 0 and 91. The only option which satisfies these criteria is 10. Hence the only possible output of this function is 10.
+	
+## 12. Both the functions randint and uniform accept ____________ parameters. [Обидві функції randint і uniform приймають ____________ параметри.]
+a) 0
+b) 1
+c) 3
+**d) 2**
+
+> Both of these functions, that is, randint and uniform are included in the random module and both of these functions accept 2 parameters. For example: random.uniform(a,b) where ‘a’ and ‘b’ specify the range.
+	
+## 13. The randrange function returns only an integer value. [Функція randrange повертає лише ціле значення.]
+**a) True**
+b) False
+
+> The function randrange returns only an integer value. Hence this statement is true.
+	
+## 14. What will be the output of the following Python code? [Яким буде результат наступного коду Python?]
+random.randrange(1,100,10)
+	
+a) 32
+b) 67
+**c) 91**
+d) 80
+
+> The output of this function can be any value which is a multiple of 10, plus 1. Hence a value like 11, 21, 31, 41…91 can be the output. Also, the value should necessarily be between 1 and 100. The only option which satisfies this criteria is 91.
+	
+## 15. What will be the output of the following Python function, assuming that the random library has already been included? [Яким буде результат наступної функції Python, якщо припустити, що випадкова бібліотека вже включена?]
+random.shuffle[1,2,24]
+	
+a) Randomized list containing the same numbers in any order
+b) The same list, that is [1,2,24]
+c) A list containing any random numbers between 1 and 24
+**d) Error**
+
+> The function shown above will result in an error because this is the incorrect syntax for the usage of the function shuffle(). The list should be previously declared and then passed to this function to get an output.
+An example of the correct syntax:
+>>> l=['a','b','c','d']
+>>> random.shuffle(l)
+>>> print(l)
+	
+Python Questions and Answers – Random Module – 2
+	
+## 1. What the does random.seed(3) return? [Що повертає random.seed(3)?]
+a) True
+**b) None**
+c) 3
+d) 1
+
+> The function random.seed() always returns a None.
+	
+## 2. Which of the following cannot be returned by random.randrange(4)? [Що з наведеного нижче не може бути повернуто random.randrange(4)?]
+a) 0
+b) 3
+**c) 2.3**
+d) none of the mentioned
+
+> Only integers can be returned.
+	
+## 3. Which of the following is equivalent to random.randrange(3)? [Що з наведеного нижче є еквівалентним random.randrange(3)?]
+a) range(3)
+**b) random.choice(range(0, 3))**
+c) random.shuffle(range(3))
+d) random.select(range(3))
+
+> It returns one number from the given range.
+	
+## 4. The function random.randint(4) can return only one of the following values. Which? [Функція random.randint(4) може повертати лише одне з наступних значень. Котрий?]
+a) 4
+b) 3.4
+**c) error**
+d) 5
+
+> Error, the function takes two arguments.
+	
+## 5. Which of the following is equivalent to random.randint(3, 6)? [Що з наведеного нижче є еквівалентним random.randint(3, 6)?]
+a) random.choice([3, 6])
+b) random.randrange(3, 6)
+c) 3 + random.randrange(3)
+**d) 3 + random.randrange(4)**
+
+> Random.randint(3, 6) can return any one of 3, 4, 5 and 6.
+	
+## 6. Which of the following will not be returned by random.choice(“1 ,”)? [Що з наведеного нижче не буде повернуто random.choice(“1 ,”)?]
+a) 1
+b) (space)
+c) ,
+**d) none of the mentioned**
+
+> Any of the characters present in the string may be returned.
+	
+## 7. Which of the following will never be displayed on executing print(random.choice({0: 1, 2: 3}))? [Що з наведеного нижче ніколи не відображатиметься під час виконання print(random.choice({0: 1, 2: 3}))?]
+**a) 0**
+b) 1
+c) KeyError: 1
+d) none of the mentioned
+
+> It will not print 0 but dict[0] i.e. 1 may be printed.
+	
+## 8. What does random.shuffle(x) do when x = [1, 2, 3]? [Що робить random.shuffle(x), коли x = [1, 2, 3]?]
+a) error
+b) do nothing, it is a placeholder for a function that is yet to be implemented
+**c) shuffle the elements of the list in-place**
+d) none of the mentioned
+
+> The elements of the list passed to it are shuffled in-place.
+	
+## 9. Which type of elements are accepted by random.shuffle()? [Який тип елементів приймає random.shuffle()?]
+a) strings
+**b) lists**
+c) tuples
+d) integers
+
+> Strings and tuples are immutable and an integer has no len().
+	
+## 10. What is the range of values that random.random() can return? [Який діапазон значень може повернути random.random()?]
+a) [0.0, 1.0]
+b) (0.0, 1.0]
+c) (0.0, 1.0)
+**d) [0.0, 1.0)**
+
+> Any number that is greater than or equal to 0.0 and lesser than 1.0 can be returned.
 
 # Section 22
  
