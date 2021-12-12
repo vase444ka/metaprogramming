@@ -566,7 +566,472 @@ print(k)
 
 **c) 2**
 
-# Section 1
+# Section 1 
+
+## [Variable Names]
+
+## 1. Is Python case sensitive when dealing with identifiers?
+**a) yes**
+
+b) no
+
+c) machine dependent
+
+d) none of the mentioned
+
+> Python is case sensitive overall
+
+
+## 2. What is the maximum possible length of an identifier?
+a) 31 characters
+
+b) 63 characters
+
+c) 79 characters
+
+**d) none of the mentioned**
+
+>Any length
+
+## 3. Which of the following is invalid?
+a) _a = 1
+
+b) __a = 1
+
+c) \_\_str\_\_ = 1
+
+**d) none of the mentioned**
+
+>a) is package-private, b) will go through name mangling if inside a class, it’s not a good practice to have a name like c) without a strong reason. Bu all are valid
+
+## 4. Which of the following is an invalid variable?
+a) my_string_1
+
+**b) 1st_string**
+
+c) foo
+
+d) _
+
+
+## 5. Why are local variable names beginning with an underscore discouraged?
+**a) they are used to indicate a private variables of a class**
+
+b) they confuse the interpreter
+
+c) they are used to indicate global variables
+
+d) they slow down execution
+
+> As Python has no concept of private variables, leading underscores are used to indicate variables that must not be accessed from outside the class.
+
+## 6. Which of the following is not a keyword?
+**a) eval**
+
+b) assert
+
+c) nonlocal
+
+d) pass
+
+
+## 7. All keywords in Python are in _________
+a) lower case
+
+b) UPPER CASE
+
+c) Capitalized
+
+**d) None of the mentioned**
+
+>All lowercase except ```True```, ```False```, ```None```. 
+
+## 8. Which of the following is true for variable names in Python?
+**a) unlimited length**
+
+b) all private members must have leading and trailing underscores
+
+c) underscore and ampersand are the only two special characters allowed
+
+d) none of the mentioned
+
+
+## 9. Which of the following is an invalid statement?
+a) abc = 1,000,000
+
+**b) a b c = 1000 2000 3000**
+
+c) a,b,c = 1000, 2000, 3000
+
+d) a_b_c = 1,000,000
+
+
+## 10. Which of the following cannot be a variable?
+a) \_\_init\_\_
+
+**b) in**
+
+c) it
+
+d) on
+
+## [Basic Operators]
+
+## 1. Which is the correct operator for power(xy)?
+a) X^y
+
+**b) X\*\*y**
+
+c) X^^y
+
+d) None of the mentioned
+
+
+## 2. Which one of these is floor division?
+a) /
+
+**b) //**
+
+c) %
+
+d) None of the mentioned
+
+
+## 3. What is the order of precedence in python?
+i) Parentheses  
+ii) Exponential  
+iii) Multiplication  
+iv) Division  
+v) Addition  
+vi) Subtraction  
+
+**a) i,ii,iii,iv,v,vi**
+
+b) ii,i,iii,iv,v,vi
+
+c) ii,i,iv,iii,v,vi
+
+d) i,ii,iii,iv,vi,v
+
+
+## 4. What is the answer to this expression, 22 % 3 is?
+a) 7
+
+**b) 1**
+
+c) 0
+
+d) 5
+
+
+## 5. Mathematical operations can be performed on a string.
+a) True
+
+**b) False**
+
+>Convert to number first
+
+## 6. Operators with the same precedence are evaluated in which manner?
+**a) Left to Right**
+
+b) Right to Left
+
+c) Can’t say
+
+d) None of the mentioned
+
+
+## 7. What is the output of this expression, 3*1**3?
+a) 27
+
+b) 9
+
+**c) 3**
+
+d) 1
+
+
+## 8. Which one of the following has the same precedence level?
+**a) Addition and Subtraction**
+
+b) Multiplication, Division and Addition
+
+c) Multiplication, Division, Addition and Subtraction
+
+d) Addition and Multiplication
+
+
+## 9. The expression Int(x) implies that the variable x is converted to integer.
+a) True
+
+**b) False**
+
+>int(x), not Int(x). But original answer was ```True```
+
+## 10. Which one of the following has the highest precedence in the expression?
+a) Exponential
+
+b) Addition
+
+c) Multiplication
+
+**d) Parentheses**
+
+
+## [Core Data Types]
+
+1. Which of these in not a core data type?
+a) Lists
+b) Dictionary
+c) Tuples
+d) Class
+
+
+2. Given a function that does not return any value, What value is thrown by default when executed in shell.
+a) int
+b) bool
+c) void
+d) None
+
+
+3. What will be the output of the following Python code?
+
+advertisement
+
+>>>str="hello"
+>>>str[:2]
+>>>
+a) he
+b) lo
+c) olleh
+d) hello
+
+
+4. Which of the following will run without errors?
+a) round(45.8)
+b) round(6352.898,2,5)
+c) round()
+d) round(7463.123,2,1)
+
+
+5. What is the return type of function id?
+a) int
+b) float
+c) bool
+d) dict
+
+
+6. In python we do not specify types, it is directly interpreted by the compiler, so consider the following operation to be performed.
+
+>>>x = 13 ? 2
+objective is to make sure x has a integer value, select all that apply (python 3.xx)
+a) x = 13 // 2
+b) x = int(13 / 2)
+c) x = 13 % 2
+d) All of the mentioned
+
+
+7. What error occurs when you execute the following Python code snippet?
+
+apple = mango
+a) SyntaxError
+b) NameError
+c) ValueError
+d) TypeError
+
+
+8. What will be the output of the following Python code snippet?
+
+def example(a):
+    a = a + '2'
+     a = a*2
+    return a
+>>>example("hello")
+a) indentation Error
+b) cannot perform mathematical operation on strings
+c) hello2
+d) hello2hello2
+
+
+9. What data type is the object below?
+
+L = [1, 23, 'hello', 1]
+a) list
+b) dictionary
+c) array
+d) tuple
+
+
+10. In order to store values in terms of key and value we use what core data type.
+a) list
+b) tuple
+c) class
+d) dictionary
+
+
+11. Which of the following results in a SyntaxError?
+a) ‘”Once upon a time…”, she said.’
+b) “He said, ‘Yes!'”
+c) ‘3\’
+d) ”’That’s okay”’
+
+
+12. The following is displayed by a print function call. Select all of the function calls that result in this output.
+
+tom
+dick
+harry
+a)
+
+print('''tom
+\ndick
+\nharry''')
+b) print(”’tomdickharry”’)
+c) print(‘tom\ndick\nharry’)
+d)
+
+print('tom
+dick
+harry')
+  
+ 
+13. What is the average value of the following Python code snippet?
+
+>>>grade1 = 80
+>>>grade2 = 90
+>>>average = (grade1 + grade2) / 2
+a) 85.0
+b) 85.1
+c) 95.0
+d) 95.1
+
+
+14. Select all options that print.
+
+hello-how-are-you
+a) print(‘hello’, ‘how’, ‘are’, ‘you’)
+b) print(‘hello’, ‘how’, ‘are’, ‘you’ + ‘-‘ * 4)
+c) print(‘hello-‘ + ‘how-are-you’)
+d) print(‘hello’ + ‘-‘ + ‘how’ + ‘-‘ + ‘are’ + ‘you’)
+
+
+15. What is the return value of trunc()?
+a) int
+b) bool
+c) float
+d) None
+
+
+
+## [Numeric Types]
+
+
+## 1. What is the output of print 0.1 + 0.2 == 0.3?
+a) True
+
+b) False
+
+c) Machine dependent
+
+**d) Error**
+
+>Missing parentheses. But orig answer is ```False``` due to round off errors
+
+## 2. Which of the following is not a complex number?
+a) k = 2 + 3j
+
+b) k = complex(2, 3)
+
+**c) k = 2 + 3l**
+
+d) k = 2 + 3J
+
+>  l (or L) stands for long
+
+## 3. What is the type of inf?
+a) Boolean
+
+b) Integer
+
+**c) Float**
+
+d) Complex
+
+>Infinity is a special case of floating point numbers
+
+## 4. What does ~4 evaluate to?
+**a) -5**
+
+b) -4
+
+c) -3
+
+d) +3
+
+
+## 5. What does ~~~~~~5 evaluate to?
+**a) +5**
+
+b) -11
+
+c) +11
+
+d) -5
+
+
+## 6. Which of the following is incorrect?
+a) x = 0b101
+
+b) x = 0x4f5
+
+c) x = 19023
+
+**d) x = 03964**
+
+>Numbers starting with a 0 are octal numbers but 9 isn’t allowed in octal numbers.
+
+
+## 7. What is the result of cmp(3, 1)?
+**a) 1**
+
+b) 0
+
+c) True
+
+d) False
+
+>```cmp(x, y)``` returns ```1 if x > y, 0 if x == y``` and ```-1 if x < y```.
+
+## 8. Which of the following is incorrect?
+a) float(‘inf’)
+
+b) float(‘nan’)
+
+c) float(’56’+’78’)
+
+**d) float(’12+34′)**
+
+
+## 9. What is the result of round(0.5) – round(-0.5)?
+a) 1.0
+
+b) 2.0
+
+c) 0.0
+
+**d) Value depends on Python version**
+
+>
+
+## 10. What does 3 ^ 4 evaluate to?
+a) 81
+
+b) 12
+
+c) 0.75
+
+**d) 7**
+
 
 # Section 2
 
