@@ -10181,6 +10181,104 @@ d) from folder.subfolder.mod1 import objects imports packages
 
 # Section 20
 
+This set of Python Objective Questions & Answers focuses on “Math – 1”.
+
+### 1. What is returned by math.ceil(3.4)? [Що повертає math.ceil(3.4)?]
+   a) 3
+
+   **b) 4**
+
+   c) 4.0
+
+   d) 3.0
+
+Explanation: The ceil function returns the smallest integer that is bigger than or equal to the number itself.
+### 2. What is the value returned by math.floor(3.4)? [Яке значення повертає math.floor(3.4)?]
+   **a) 3**
+
+   b) 4
+
+   c) 4.0
+
+   d) 3.0
+
+Explanation: The floor function returns the biggest number that is smaller than or equal to the number itself.
+### 3. What will be the output of print(math.copysign(3, -1))? [Яким буде результат print(math.copysign(3, -1))?]
+   a) 1
+
+   b) 1.0
+
+   c) -3
+
+   **d) -3.0**
+
+Explanation: The copysign function returns a float whose absolute value is that of the first argument and the sign is that of the second argument.
+
+### 4. What is displayed on executing print(math.fabs(-3.4))? [Що відображається під час виконання print(math.fabs(-3.4))?]
+   a) -3.4
+
+   **b) 3.4**
+
+   c) 3
+
+   d) -3
+
+Explanation: A negative floating point number is returned as a positive floating point number.
+### 5. Is the output of the function abs() the same as that of the function math.fabs()? [Чи є результат функції abs() таким же, як і для функції math.fabs()]
+   **a) sometimes**
+
+   b) always
+
+   c) never
+
+   d) none of the mentioned
+   
+
+Explanation: math.fabs() always returns a float and does not work with complex numbers whereas the return type of abs() is determined by the type of value that is passed to it.
+### 6. What is the value returned by math.fact(6)? [Яке значення повертає math.fact(6)]
+   a) 720
+
+   b) 6
+
+   c) [1, 2, 3, 6]
+
+   **d) error**
+
+Explanation: NameError, fact() is not defined.
+### 7. What is the value of x if x = math.factorial(0)? [Яке значення x, якщо x = math.factorial(0)]
+   a) 0
+
+   **b) 1**
+
+   c) error
+
+   d) none of the mentioned
+
+Explanation: Factorial of 0 is 1.
+### 8. What is math.factorial(4.0)? [Чому дорівнює math.factorial(4.0)]
+   **a) 24**
+
+   b) 1
+
+   c) error
+
+   d) none of the mentioned
+
+
+### 9. What will be the output of print(math.factorial(4.5))? [Яким буде результат від print(math.factorial(4.5)]
+   a) 24 
+
+   b) 120
+
+   **c) error**
+
+   d) 24.0
+
+Explanation: Factorial is only defined for non-negative integers.
+### 10. What is math.floor(0o10)? [Чому дорівнює math.floor(0o10)?]
+**a) 8**
+
+Explanation: 0o10 is 8 and floor(8) is 8.
 # Section 21
 
 Python Question and Answers – Datetime Module – 1
