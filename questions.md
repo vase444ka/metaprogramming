@@ -4543,6 +4543,540 @@ d) Error, no method called issuperset() exists
 
 # Section 19
 
+### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+odd=lambda x: bool(x%2)
+numbers=[n for n in range(10)]
+print(numbers)
+n=list()
+for i in numbers:
+    if odd(i):
+        continue
+    else:
+        break
+```
+a) [0, 2, 4, 6, 8, 10]\
+**b) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]**\
+c) [1, 3, 5, 7, 9]\
+d) Error
+>Explanation: The code shown above returns a new list containing whole numbers up to 10 (excluding 10). Hence the output of the code is: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].
+### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+f=lambda x:bool(x%2)
+print(f(20), f(21))
+```
+**a) False True**\
+b) False False\
+c) True True\
+d) True False
+>Explanation: The code shown above will return true if the given argument is an odd number, and false if the given argument is an even number. Since the arguments are 20 and 21 respectively, the output of this code is: False True.
+### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+import functools
+l=[1,2,3,4]
+print(functools.reduce(lambda x,y:x*y,l))
+```
+a) Error\
+b) 10\
+**c) 24**\
+d) No output
+>Explanation: The code shown above returns the product of all the elements of the list. Hence the output is 1*2*3*4 = 24.
+### 4. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+l=[1, -2, -3, 4, 5]
+def f1(x):
+    return x<2
+m1=filter(f1, l)
+print(list(m1))
+```
+a) [1, 4, 5 ]\
+b) Error\
+c) [-2, -3]\
+**d) [1, -2, -3]**
+>Explanation: The code shown above returns only those elements from the list, which are less than 2. The functional programming tool used to achieve this operation is filter. Hence the output of the code is:[1, -2, -3].
+### 5. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+l=[-2, 4]
+m=map(lambda x:x*2, l)
+print(m)
+```
+a) [-4, 16]\
+**b) Address of m**\
+c) Error\
+d) 
+```
+-4
+   16
+```
+>Explanation: The code shown above returns the address of m. Had we used the statement: print(list(m)), the output would have been: [-4, 16].
+### 6. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+l=[1, -2, -3, 4, 5]
+def f1(x):
+    return x<-1
+m1=map(f1, l)
+print(list(m1))
+```
+a) [False, False, False, False, False]\
+**b) [False, True, True, False, False]**\
+c) [True, False, False, True, True]\
+d)  [True, True, True, True, True]
+>Explanation: This code shown returns a list which contains True if the corresponding element of the list is less than -1, and false if the corresponding element is greater than -1. Hence the output of the code shown above: [False, True, True, False, False].
+### 7. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+l=[1, 2, 3, 4, 5]
+m=map(lambda x:2**x, l)
+print(list(m))
+```
+a) [1, 4, 9, 16, 25 ]\
+**b) [2, 4, 8, 16, 32 ]**\
+c) [1, 0, 1, 0, 1]\
+d)  Error
+>Explanation: The code shown above prints a list containing each element of the list as the power of two. That is, the output is: [2, 4, 8, 16, 32].
+### 8. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+import functools
+l=[1, 2, 3, 4, 5]
+m=functools.reduce(lambda x, y:x if x>y else y, l)
+print(m)
+```
+a) Error\
+b) Address of m\
+c) 1\
+**d) 5**
+>Explanation: The code shown above can be used to find the maximum of the elements from the given list. In the above code, this operation is achieved by using the programming tool reduce. Hence the output of the code shown above is 5.
+### 9. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+l=[n for n in range(5)]
+f=lambda x:bool(x%2)
+print(f(3), f(1))
+for i in range(len(l)):
+    if f(l[i]):
+        del l[i]
+        print(i)
+```
+**a)**
+```
+  True True
+  1
+  2
+  Error
+```
+b)
+```
+  False False
+  1
+  2
+```
+c) 
+```
+  True False 
+  1
+  2
+  Error
+```
+d)  
+```
+  False True
+  1
+  2
+```
+>Explanation: The code shown above prints true if the value entered as an argument is odd, else false is printed. Hence the output: True True. The error is due to the list index being out of range.
+### 10. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+m=reduce(lambda x: x-3 in range(4, 10))
+print(list(m))
+```
+a) [1, 2, 3, 4, 5, 6, 7]\
+b) No output\
+c) [1, 2, 3, 4, 5, 6]\
+**d) Error**
+>Explanation: The code shown above will result in an error. This is because e have not imported functools. Further, ‘reduce’, as such is not defined. We should use functools.reduce to remove the error.
+### 11. Which of the following numbers will not be a part of the output list of the following Python code? [Яке з наступних чисел не буде частиною результуючого списку наступного фрагмента коду Python?]
+```
+def sf(a):
+    return a%3!=0 and a%5!=0
+m=filter(sf, range(1, 31))
+print(list(m)))
+```
+a) 1\
+b) 29\
+c) 6\
+**d) 10**
+>Explanation: The output list of the code shown above will not contain any element that is divisible by 3 or 5. Hence the number which is not present in the output list is 10. The output list: [1, 2, 4, 7, 8, 11, 13, 14, 16, 17, 19, 22, 23, 26, 28, 29]
+### 12. The single line equivalent of the following Python code? [Який рядок еквівалентний наступному фрагменту коду Python?]
+```
+l=[1, 2, 3, 4, 5]
+def f1(x):
+    return x<0
+m1=filter(f1, l)
+print(list(m1))
+```
+**a) filter(lambda x:x<0, l)**\
+b) filter(lambda x, y: x<0, l)\
+c) filter(reduce x<0, l)\
+d) reduce(x: x<0, l)
+>Explanation: The code shown above returns a new list containing only those elements from list l, which are less than 0. Since there are no such elements in the list l, the output of this code is: []. The single line equivalent of this code is filter(lambda x:x<0, l).
+### 13. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+list(map((lambda x:x^2), range(10)))
+```
+a) [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]\
+b) 29\
+**c) [2, 3, 0, 1, 6, 7, 4, 5, 10, 11]**\
+d) No output
+>Explanation: The line of code shown above returns a list of each number from 1 to 10, after an XOR operation is performed on each of these numbers with 2. Hence the output of this code is: [2, 3, 0, 1, 6, 7, 4, 5, 10, 11]
+### 14. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+list(map((lambda x:x**2), filter((lambda x:x%2==0), range(10))))
+```
+a) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\
+**b) [0, 4, 16, 36, 64]**\
+c) Error\
+d) No output
+>Explanation: The output list will contain each number up to 10 raised to 2, except odd numbers, that is, 1, 3, 5, 9. Hence the output of the code is: [0, 4, 16, 36, 64].
+### 15.The output of the following codes are the same. [Результати наступних рядків коду однакові. ]
+```
+[x**2 for x in range(10)]
+list(map((lambda x:x**2), range(10)))
+```
+a) True\
+b) False
+>Explanation: Both of the codes shown above print each whole number up to 10, raised to the power 2. Hence the output of both of these codes is: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]. Therefore, the statement is true.
+### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+elements = [0, 1, 2]
+def incr(x):
+    return x+1
+print(list(map(elements, incr)))
+```
+a) [1, 2, 3]\
+b) [0, 1, 2]\
+**c) error**\
+d) none of the mentioned
+>Explanation: The list should be the second parameter to the mapping function.
+### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+elements = [0, 1, 2]
+def incr(x):
+    return x+1
+print(list(map(incr, elements)))
+```
+**a) [1, 2, 3]**\
+b) [0, 1, 2]\
+c) error\
+d) none of the mentioned
+>Explanation: Each element of the list is incremented.
+### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = ['ab', 'cd']
+print(list(map(upper, x)))
+```
+a) [‘AB’, ‘CD’]\
+b) [‘ab’, ‘cd’]\
+**c) error**\
+d) none of the mentioned
+>Explanation: A NameError occurs because upper is a class method.
+### 4. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+def to_upper(k):
+    return k.upper()
+x = ['ab', 'cd']
+print(list(map(upper, x)))
+```
+a) [‘AB’, ‘CD’]\
+b) [‘ab’, ‘cd’]\
+**c) error**\
+d) none of the mentioned
+>Explanation: A NameError occurs because upper is a class method.
+### 5. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+def to_upper(k):
+    return k.upper()
+x = ['ab', 'cd']
+print(list(map(to_upper, x)))
+```
+**a) [‘AB’, ‘CD’]**\
+b) [‘ab’, ‘cd’]\
+c) error\
+d) none of the mentioned
+>Explanation: Each element of the list is converted to uppercase.
+### 6. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+def to_upper(k):
+    k.upper()
+x = ['ab', 'cd']
+print(list(map(to_upper, x)))
+```
+a) [‘AB’, ‘CD’]\
+b) [‘ab’, ‘cd’]\
+**c) none of the mentioned**\
+d) error
+>Explanation: A list of Nones is printed as to_upper() returns None.
+### 7. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = ['ab', 'cd']
+print(map(len, x))
+```
+a) [‘ab’, ‘cd’]\
+b) [2, 2]\
+c) [‘2’, ‘2’]\
+**d) none of the mentioned**
+>Explanation: A map object is generated by map(). We must convert this to a list to be able to print it in a human readable form.
+### 8. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = ['ab', 'cd']
+print(list(map(len, x)))
+```
+a) [‘ab’, ‘cd’]\
+**b) [2, 2]**\
+c) [‘2’, ‘2’]\
+d) none of the mentioned
+>Explanation: The length of each string is 2.
+### 9. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = ['ab', 'cd']
+print(len(map(list, x)))
+```
+a) [2, 2]\
+b) 2\
+c) 4\
+**d) none of the mentioned**
+>Explanation: A TypeError occurs as map has no len().
+### 10. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = ['ab', 'cd']
+print(len(list(map(list, x))))
+```
+a) [2, 2]\
+**b) 2**\
+c) 4\
+d) none of the mentioned
+>Explanation: The outer list has two lists in it. So it’s length is 2.
+### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = ['ab', 'cd']
+print(len(list(map(list, x))))))
+```
+a) 2\
+b) 4\
+**c) error**\
+d) none of the mentioned
+>Explanation: SyntaxError, unbalanced parenthesis.
+### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = ['ab', 'cd']
+print(list(map(list, x)))
+```
+a) [‘a’, ‘b’, ‘c’, ‘d’]\
+b) [[‘ab’], [‘cd’]]\
+**c) [[‘a’, ‘b’], [‘c’, ‘d’]]**\
+d) none of the mentioned
+>Explanation: Each element of x is converted into a list.
+### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [12, 34]
+print(len(list(map(len, x))))
+```
+a) 2\
+b) 1\
+**c) error**\
+d) none of the mentioned
+>Explanation: SyntaxError, unbalanced parenthesis.
+### 4. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [12, 34]
+print(len(list(map(int, x))))
+```
+**a) 2**\
+b) 1\
+c) error\
+d) none of the mentioned
+>Explanation: list(map()) returns a list of two items in this example.
+### 5. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [12, 34]
+print(len(''.join(list(map(int, x)))))
+```
+a) 4\
+b) 2\
+**c) error**\
+d) none of the mentioned
+>Explanation: SyntaxError, unbalanced parenthesis.
+### 6. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [12, 34]
+print(len(''.join(list(map(str, x)))))
+```
+**a) 4**\
+b) 5\
+c) 6\
+d) error
+>Explanation: Each number is mapped into a string of length 2.
+### 7. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [12, 34]
+print(len(' '.join(list(map(int, x)))))
+```
+a) 4\
+b) 5\
+c) 6\
+**d) error**
+>Explanation: TypeError. Execute in shell to verify.
+### 8. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [12.1, 34.0]
+print(len(' '.join(list(map(str, x)))))
+```
+a) 6\
+b) 8\
+**c) 9**\
+d) error
+>Explanation: The floating point numbers are converted to strings and joined with a space between them.
+### 9. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [12.1, 34.0]
+print(' '.join(list(map(str, x))))
+```
+a) 12 1 34 0\
+b) 12.1 34\
+c) 121 340\
+**d) 12.1 34.0**
+>Explanation: str(ab.c) is ‘ab.c’.
+### 10. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [[0], [1]]
+print(len(' '.join(list(map(str, x)))))
+```
+a) 2\
+b) 3\
+**c) 7**\
+d) 8
+>Explanation: map() is applied to the elements of the outer loop.
+### 1. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [[0], [1]]
+print((' '.join(list(map(str, x)))))
+```
+a) (‘[0] [1]’,)\
+b) (’01’,)\
+**c) [0] [1]**\
+d) 01
+>Explanation: (element) is the same as element. It is not a tuple with one item.
+### 2. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [[0], [1]]
+print((' '.join(list(map(str, x))),))
+```
+**a) (‘[0] [1]’,)**\
+b) (’01’)\
+c) [0] [1]\	
+d) 01
+>Explanation: (element,) is not the same as element. It is a tuple with one item.
+### 3. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [34, 56]
+print((''.join(list(map(str, x))),))
+```
+a) 3456\
+b) (3456)\
+c) (‘3456’)\
+**d) (‘3456’,)**
+>Explanation: We have created a tuple with one string in it.
+### 4. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [34, 56]
+print((''.join(list(map(str, x)))),)
+```
+**a) 3456**\
+b) (3456)\
+c) (‘3456’)\
+d) (‘3456’,)
+>Explanation: We have just created a string.
+### 5. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = [34, 56]
+print(len(map(str, x)))
+```
+a) [34, 56]\
+b) [’34’, ’56’]\
+c) 34 56\
+**d) error**
+>Explanation: TypeError, map has no len.
+### 6. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = 'abcd'
+print(list(map(list, x)))
+```
+a) [‘a’, ‘b’, ‘c’, ‘d’]\
+b) [‘abcd’]\
+**c) [[‘a’], [‘b’], [‘c’], [‘d’]]**\
+d) none of the mentioned
+>Explanation: list() is performed on each character in x.
+### 7. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = abcd
+print(list(map(list, x)))
+```
+a)  [‘a’, ‘b’, ‘c’, ‘d’]\
+b) [‘abcd’]\
+c) [[‘a’], [‘b’], [‘c’], [‘d’]]\
+**d) none of the mentioned**
+>Explanation: NameError, we have not defined abcd.
+### 8. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = 1234
+print(list(map(list, x)))
+```
+a) [1, 2, 3, 4]\
+b) [1234]\
+c) [[1], [2], [3], [4]]\ 	
+**d) none of the mentioned**
+>Explanation: TypeError, int is not iterable.
+### 9. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = 1234
+print(list(map(list, [x])))
+```
+a) [1, 2, 3, 4]\
+b) [1234]\
+c) [[1], [2], [3], [4]]\
+**d) none of the mentioned**
+>Explanation: TypeError, int is not iterable.
+### 10. What will be the output of the following Python code? [Яким буде результат наступного фрагмента коду Python?]
+```
+x = 'abcd'
+print(list(map([], x)))
+```
+a) [‘a’, ‘b’, ‘c’, ‘d’]\
+b) [‘abcd’]\
+c) [[‘a’], [‘b’], [‘c’], [‘d’]]\
+**d) none of the mentioned**
+>Explanation: TypeError, list object is not callable.
+### 11. Is Python code compiled or interpreted? [Python код компілюємий чи інтерпретуємий?]
+a) Python code is only compiled\
+**b) Python code is both compiled and interpreted**\
+c) Python code is only interpreted\
+d) Python code is neither compiled nor interpreted
+>Explanation: Many languages have been implemented using both compilers and interpreters, including C, Pascal, and Python.
+### 12. Which of these is the definition for packages in Python? [Що з цього є визначенням пакету у Python?]
+**a) A folder of python modules**\
+b) A set of programs making use of Python modules\
+c) A set of main modules\	
+d) A number of files containing Python definitions and statements
+>Explanation: A folder of python programs is called as a package of modules.
+### 13. Which of these is false about a package? [Що з цього неправда про Python?]
+```
+x = [[0], [1]]
+print(len(' '.join(list(map(str, x)))))
+```
+a) A package can have subfolders and modules\
+**b) Each import package need not introduce a namespace**\
+c) import folder.subfolder.mod1 imports packages\
+d) from folder.subfolder.mod1 import objects imports packages
+>Explanation:  Packages provide a way of structuring Python namespace. Each import package introduces a namespace.
+
+
 # Section 20
 
 # Section 21
