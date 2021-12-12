@@ -1980,7 +1980,650 @@ c) a a a a\
 
 >Explanation: abcd a a a is the output as x is modified only after ‘abcd’ has been printed once.
 
+
 # Section 6
+
+## Topic 18. While and For Loops – 4
+
+### 1. What will be the output of the following Python code?
+
+```python
+x = 123
+for i in x:
+    print(i)
+```
+
+* a) 1 2 3
+* b) 123
+* **c) error**
+* d) none of the mentioned
+
+> Objects of type int are not iterable.
+
+
+### 2. What will be the output of the following Python code?
+
+```python
+d = {0: 'a', 1: 'b', 2: 'c'}
+for i in d:
+    print(i)
+```
+
+* **a) 0 1 2**
+* b) a b c
+* c) 0 a 1 b 2 c
+* d) none of the mentioned
+
+> Loops over the keys of the dictionary.
+
+
+### 3. What will be the output of the following Python code?
+
+```python
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x, y in d:
+    print(x, y)
+```
+
+* a) 0 1 2
+* b) a b c
+* c) 0 a 1 b 2 c
+* **d) none of the mentioned**
+
+>  Error, objects of type int aren’t iterable.
+
+
+### 4. What will be the output of the following Python code?
+
+```python
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x, y in d.items():
+    print(x, y)
+```
+
+* a) 0 1 2
+* b) a b c
+* **c) 0 a 1 b 2 c**
+* d) none of the mentioned
+
+> Loops over key, value pairs.
+
+
+### 5. What will be the output of the following Python code?
+
+```python
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x in d.keys():
+    print(d[x])
+```
+
+* a) 0 1 2
+* **b) a b c**
+* c) 0 a 1 b 2 c
+* d) none of the mentioned
+
+> Loops over the keys and prints the values.
+
+
+### 6. What will be the output of the following Python code?
+
+```python
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x in d.values():
+    print(x)
+```
+
+* a) 0 1 2
+* **b) a b c**
+* c) 0 a 1 b 2 c
+* d) none of the mentioned
+
+> Loops over the values.
+
+
+### 7. What will be the output of the following Python code?
+
+```python
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x in d.values():
+    print(d[x])
+```
+
+* a) 0 1 2
+* b) a b c
+* c) 0 a 1 b 2 c
+* **d) none of the mentioned**
+
+> Causes a KeyError.
+
+
+### 8. What will be the output of the following Python code?
+
+```python
+d = {0, 1, 2}
+for x in d.values():
+    print(x)
+```
+
+* a) 0 1 2
+* b) None None None
+* **c) error**
+* d) none of the mentioned
+
+> Objects of type set have no attribute values.
+
+
+### 9. What will be the output of the following Python code?
+
+```python
+d = {0, 1, 2}
+for x in d:
+    print(x)
+```
+
+* **a) 0 1 2**
+* b) {0, 1, 2} {0, 1, 2} {0, 1, 2}
+* c) error
+* d) none of the mentioned
+
+> Loops over the elements of the set and prints them.
+
+
+### 10. What will be the output of the following Python code?
+
+```python
+d = {0, 1, 2}
+for x in d:
+    print(d.add(x))
+```
+
+* a) 0 1 2
+* b) 0 1 2 0 1 2 0 1 2 …
+* **c) None None None**
+* d) None of the mentioned
+
+> Variable x takes the values 0, 1 and 2. set.add() returns None which is printed.
+
+
+### 11. What will be the output of the following Python code?
+
+```python
+for i in range(0):
+    print(i)
+```
+
+* a) 0
+* **b) no output**
+* c) error
+* d) none of the mentioned
+
+> range(0) is empty.
+
+
+## Topic 19. While and For Loops – 5
+
+### 1. What will be the output of the following Python code?
+
+```python
+for i in range(2.0):
+    print(i)
+```
+
+* a) 0.0 1.0
+* b) 0 1
+* **c) error**
+* d) none of the mentioned
+
+> Object of type float cannot be interpreted as an integer.
+
+
+### 2. What will be the output of the following Python code?
+
+```python
+for i in range(int(2.0)):
+    print(i)
+```
+
+* a) 0.0 1.0
+* **b) 0 1**
+* c) error
+* d) none of the mentioned
+
+> range(int(2.0)) is the same as range(2).
+
+
+### 3. What will be the output of the following Python code?
+
+```python
+for i in range(float('inf')):
+    print (i)
+```
+
+* a) 0.0 0.1 0.2 0.3 …
+* b) 0 1 2 3 …
+* c) 0.0 1.0 2.0 3.0 …
+* **d) none of the mentioned**
+
+> Error, objects of type float cannot be interpreted as an integer.
+
+
+### 4. What will be the output of the following Python code?
+
+```python
+for i in range(int(float('inf'))):
+    print (i)
+```
+
+* a) 0.0 0.1 0.2 0.3 …
+* b) 0 1 2 3 …
+* c) 0.0 1.0 2.0 3.0 …
+* **d) none of the mentioned**
+
+> OverflowError, cannot convert float infinity to integer.
+
+
+### 5. What will be the output of the following Python code snippet?
+
+```python
+for i in [1, 2, 3, 4][::-1]:
+    print (i)
+```
+
+* a) 1 2 3 4
+* **b) 4 3 2 1**
+* c) error
+* d) none of the mentioned
+
+> [::-1] reverses the list.
+
+
+### 6. What will be the output of the following Python code snippet?
+
+```python
+for i in ''.join(reversed(list('abcd'))):
+    print (i)
+```
+
+* a) a b c d
+* **b) d c b a**
+* c) error
+* d) none of the mentioned
+
+> ‘‘.join(reversed(list(‘abcd’))) reverses a string.
+
+
+### 7. What will be the output of the following Python code snippet?
+
+```python
+for i in 'abcd'[::-1]:
+    print (i)
+```
+
+* a) a b c d
+* **b) d c b a**
+* c) error
+* d) none of the mentioned
+
+> [::-1] reverses the string.
+
+
+### 8. What will be the output of the following Python code snippet?
+
+```python
+for i in '':
+    print (i)
+```
+
+* a) None
+* **b) (nothing is printed)**
+* c) error
+* d) none of the mentioned
+
+> The string does not have any character to loop over.
+
+
+### 9. What will be the output of the following Python code snippet?
+
+```python
+x = 2
+for i in range(x):
+    x += 1
+    print (x)
+```
+
+* a) 0 1 2 3 4 …
+* b) 0 1
+* **c) 3 4**
+* d) 0 1 2 3
+
+> Variable x is incremented and printed twice.
+
+
+### 10. What will be the output of the following Python code snippet?
+
+```python
+x = 2
+for i in range(x):
+    x -= 2
+    print (x)
+```
+
+* a) 0 1 2 3 4 …
+* **b) 0 -2**
+* c) 0
+* d) error
+
+> The loop is entered twice.
+
+
+## Topic 20. While and For Loops – 6
+
+### 1. What will be the output of the following Python code?
+
+```python
+for i in range(10):
+    if i == 5:
+        break
+    else:
+        print(i)
+else:
+    print("Here")
+```
+
+* a) 0 1 2 3 4 Here
+* b) 0 1 2 3 4 5 Here
+* **c) 0 1 2 3 4**
+* d) 1 2 3 4 5
+
+> The else part is executed if control doesn’t break out of the loop.
+
+
+### 2. What will be the output of the following Python code?
+
+```python
+for i in range(5):
+    if i == 5:
+        break
+    else:
+        print(i)
+else:
+    print("Here")
+```
+
+* **a) 0 1 2 3 4 Here**
+* b) 0 1 2 3 4 5 Here
+* c) 0 1 2 3 4
+* d) 1 2 3 4 5
+
+> The else part is executed if control doesn’t break out of the loop.
+
+
+### 3. What will be the output of the following Python code?
+
+```python
+x = (i for i in range(3))
+for i in x:
+    print(i)
+```
+
+* **a) 0 1 2**
+* b) error
+* c) 0 1 2 0 1 2
+* d) none of the mentioned
+
+> The first statement creates a generator object.
+
+
+### 4. What will be the output of the following Python code?
+
+```python
+x = (i for i in range(3))
+for i in x:
+    print(i)
+for i in x:
+    print(i)
+```
+
+* **a) 0 1 2**
+* b) error
+* c) 0 1 2 0 1 2
+* d) none of the mentioned
+
+> We can loop over a generator object only once.
+
+
+### 5. What will be the output of the following Python code?
+
+```python
+string = "my name is x"
+for i in string:
+    print (i, end=", ")
+```
+
+* **a) m, y, , n, a, m, e, , i, s, , x,**
+* b) m, y, , n, a, m, e, , i, s, , x
+* c) my, name, is, x,
+* d) error
+
+> Variable i takes the value of one character at a time.
+
+
+### 6. What will be the output of the following Python code?
+
+```python
+string = "my name is x"
+for i in string.split():
+    print (i, end=", ")
+```
+
+* a) m, y, , n, a, m, e, , i, s, , x,
+* b) m, y, , n, a, m, e, , i, s, , x
+* **c) my, name, is, x,**
+* d) error
+
+> Variable i takes the value of one word at a time.
+
+
+### 7. What will be the output of the following Python code snippet?
+
+```python
+a = [0, 1, 2, 3]
+for a[-1] in a:
+    print(a[-1])
+```
+
+* a) 0 1 2 3
+* **b) 0 1 2 2**
+* c) 3 3 3 3
+* d) error
+
+> The value of a[-1] changes in each iteration.
+
+
+### 8. What will be the output of the following Python code snippet?
+
+```python
+a = [0, 1, 2, 3]
+for a[0] in a:
+    print(a[0])
+```
+
+* **a) 0 1 2 3**
+* b) 0 1 2 2
+* c) 3 3 3 3
+* d) error
+
+> The value of a[0] changes in each iteration. Since the first value that it takes is itself, there is no visible error in the current example.
+
+
+### 9. What will be the output of the following Python code snippet?
+
+```python
+a = [0, 1, 2, 3]
+i = -2
+for i not in a:
+    print(i)
+    i += 1
+```
+
+* a) -2 -1
+* b) 0
+* **c) error**
+* d) none of the mentioned
+
+> SyntaxError, not in isn’t allowed in for loops.
+
+
+### 10. What will be the output of the following Python code snippet?
+
+```python
+string = "my name is x"
+for i in ' '.join(string.split()):
+    print (i, end=", ")
+```
+
+* **a) m, y, , n, a, m, e, , i, s, , x,**
+* b) m, y, , n, a, m, e, , i, s, , x
+* c) my, name, is, x,
+* d) error
+
+> Variable i takes the value of one character at a time.
+
+
+### Topic 21. Strings – 1
+
+### 1. What will be the output of the following Python statement?
+
+```
+    >>>"a"+"bc"
+```
+
+* a) a
+* b) bc
+* c) bca
+* **d) abc**
+
+> + operator is concatenation operator.
+
+
+### 2. What will be the output of the following Python statement?
+
+    >>>"abcd"[2:]
+
+* a) a
+* b) ab
+* **c) cd**
+* d) dc
+
+> Slice operation is performed on string.
+
+
+### 3. The output of executing string.ascii_letters can also be achieved by: [Результату виконання string.ascii_letters також можна досягнути за допомогою:]
+
+* a) string.ascii_lowercase_string.digits
+* **b) string.ascii_lowercase+string.ascii_uppercase**
+* c) string.letters
+* d) string.lowercase_string.uppercase
+
+> Explanation: Execute in shell and check.
+
+))))))0)
+
+
+### 4. What will be the output of the following Python code?
+
+    >>> str1 = 'hello'
+
+    >>> str2 = ','
+
+    >>> str3 = 'world'
+
+    >>> str1[-1:]
+
+* a) olleh
+* b) hello
+* c) h
+* **d) o**
+
+> -1 corresponds to the last index.
+
+
+### 5. What arithmetic operators cannot be used with strings? [Які арифметичні оператори не можна застосовувати до строк?]
+* a) +
+* b) *
+* **c) -**
+* d) All of the mentioned
+
+> '+' is used to concatenate and * is used to multiply strings.
+
+
+### 6. What will be the output of the following Python code?
+
+    >>>print (r"\nhello")
+
+* a) a new line and hello
+* **b) \nhello**
+* c) the letter r and then hello
+* d) error
+
+> When prefixed with the letter ‘r’ or ‘R’ a string literal becomes a raw string and the escape sequences such as \n are not converted.
+
+
+### 7. What will be the output of the following Python statement?
+
+    >>>print('new' 'line')
+
+* a) Error
+* b) Output equivalent to print ‘new\nline’
+* **c) newline**
+* d) new line
+
+> String literal separated by whitespace are allowed. They are concatenated.
+
+
+### 8. What will be the output of the following Python statement?
+
+    >>> print('x\97\x98')
+
+* a) Error
+* b)
+    97
+    98
+* **c) x\97**
+* d) \x97\x98
+
+> \x is an escape sequence that means the following 2 digits are a hexadecimal number encoding a character.
+
+
+### 9. What will be the output of the following Python code?
+
+    >>>str1="helloworld"
+
+    >>>str1[::-1]
+
+* **a) dlrowolleh**
+* b) hello
+* c) world
+* d) helloworld
+
+> Explanation: Execute in shell to verify.
+
+lol
+
+
+### 10. What will be the output of the following Python code?
+
+```python
+print(0xA + 0xB + 0xC)
+```
+
+* a) 0xA0xB0xC
+* b) Error
+* c) 0x22
+* **d) 33**
+
+> 0xA and 0xB and 0xC are hexadecimal integer literals representing the decimal values 10, 11 and 12 respectively. There sum is 33.
+
 
 # Section 7
 
