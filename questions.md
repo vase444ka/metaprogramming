@@ -10403,6 +10403,120 @@ d) (0.5, 1.0)
 
 Explanation: The first element is the fractional part and the second element is the integral part of the argument.
 
+####Python Questions and Answers – Math – 3
+
+###1. What is the result of math.trunc(3.1)? [Який результат math.trunc(3.1)?]
+   
+a) 3.0
+   
+**b) 3**
+   
+c) 0.1
+   
+d) 1
+
+Explanation: The integral part of the floating point number is returned.
+###2. What is the output of print(math.trunc(‘3.1’))? [Який результат буде print(math.trunc(‘3.1’))?]
+   
+a) 3
+   
+b) 3.0
+   
+**c) error**
+   
+d) none of the mentioned
+
+Explanation: TypeError, a string does not have __trunc__ method.
+###3. Which of the following is the same as math.exp(p)? [Що з наведеного нижче відповідає math.exp(p)?]
+   
+a) e ** p
+   
+**b) math.e ** p**
+   
+c) p ** e
+   
+d) p ** math.e
+
+Explanation: math.e is the constant defined in the math module.
+
+###4. What is returned by math.expm1(p)? [Що повертає math.expm1(p)?]
+   
+**a) (math.e ** p) – 1**
+   
+b) math.e ** (p – 1)
+   
+c) error
+   
+d) none of the mentioned
+
+Explanation: One is subtracted from the result of math.exp(p) and returned.
+###5. What is the default base used when math.log(x) is found? [Яка база за замовчуванням використовується, коли знайдено math.log(x)?]
+   
+**a) e**
+   
+b) 10
+   
+c) 2
+   
+d) none of the mentioned
+
+Explanation: The natural log of x is returned by default.
+###6. Which of the following aren’t defined in the math module? [Що з наведеного нижче не визначено в математичному модулі?]
+   
+a) log2()
+   
+b) log10()
+   
+**c) logx()**
+   
+d) none of the mentioned
+
+Explanation: log2() and log10() are defined in the math module.
+###7. What is returned by int(math.pow(3, 2))? [Що повертає int(math.pow(3, 2))?]
+   
+a) 6
+   
+**b) 9**
+   
+c) error, third argument required
+   
+d) error, too many arguments
+
+Explanation: math.pow(a, b) returns a ** b.
+###8. What is output of print(math.pow(3, 2))? [Який вивід print(math.pow(3, 2))?]
+   
+a) 9
+   
+**b) 9.0**
+   
+c) None
+   
+d) None of the mentioned
+
+Explanation: math.pow() returns a floating point number.
+###9. What is the value of x if x = math.sqrt(4)? [Яке значення x, якщо x = math.sqrt(4)?]
+   
+a) 2
+   
+**b) 2.0**
+   
+c) (2, -2)
+   
+d) (2.0, -2.0)
+
+Explanation: The function returns one floating point number.
+###10. What does math.sqrt(X, Y) do? [Що робить math.sqrt(X, Y)?]
+    
+a) calculate the Xth root of Y
+    
+b) calculate the Yth root of X
+    
+**c) error**
+    
+d) return a tuple with the square root of X and Y
+
+Explanation: The function takes only one argument.
+
 # Section 21
 
 Python Question and Answers – Datetime Module – 1
