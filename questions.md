@@ -26,13 +26,13 @@ c) functional programming
 
 ## 5. Is Python code compiled or interpreted?
 
-? **a) Python code is both compiled and interpreted**
+**a) Python code is both compiled and interpreted**
 
 b) Python code is neither compiled nor interpreted
 
 c) Python code is only compiled
 
-? **d) Python code is only interpreted**
+d) Python code is only interpreted
 
 > Explanation: Many languages have been implemented using both compilers and interpreters, including C, Pascal, and Python.
 
@@ -93,9 +93,6 @@ while True:
 
 > Explanation: SyntaxError, there shouldn’t be a space between + and = in +=.
 
-## 12. Which of the following functions can help us to find the version of python that we are currently working on? [версія python]
-
-**a) sys.version(1)**
 
 ## 13. Python supports the creation of anonymous functions at runtime, using a construct called \***\*\_\_\*\*** [анонімні функції]
 
@@ -280,9 +277,9 @@ a) str()
 
 b) format()
 
-**c) \_ _ str _ \_()**
+c) \_ _ str _ \_()
 
-d) \_ _ format _ \_()
+**d) \_ _ format _ \_()**
 
 ## 34. Which one of the following is not a keyword in Python language?
 
